@@ -1,12 +1,12 @@
 import React from "react";
 import Clients from "../ClientsArray";
+import "./ClientCard.css";
 
-import { BsFilePersonFill } from "react-icons/bs";
 
 export default function ClientCard(props) {
     return (
-        <div>
-            <img src={props.img}></img>
+        <div className="client_card">
+            <img className= "client_image" src={props.img} alt={props.alt}></img>
         </div>
     );
-};
+}
