@@ -1,7 +1,7 @@
-.screen-component {
+/* .screen-component {
     top: 0px;
     position: absolute;
-}
+} */
 .portofolio-title{
     text-align: center;
     margin: auto;
@@ -14,7 +14,7 @@
     opacity: 0.6;
     background: transparent;
 }
-.portfolio-list-outside {
+.portofolio-list-outside {
     display: flex;
     align-items: center;
     width: 1200px;
