@@ -12,7 +12,6 @@ import ContactForm from "../../Components/ContactForm/ContactForm";
 export default function MainPage() {
     return (
         <div className="MainPage">
-            <NavigationBar></NavigationBar>
             <LandingSection></LandingSection>
             <StrengthsSection></StrengthsSection>
             <AboutUs></AboutUs>
@@ -24,4 +23,3 @@ export default function MainPage() {
         </div>
     );
 }
-
