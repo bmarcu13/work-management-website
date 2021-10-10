@@ -1,0 +1,129 @@
+.navigation-menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-menu-container {
+    height: 50px;
+    width: fit-content;
+    margin-right: -30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    background-color: #04264e;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu-container h3 {
+    vertical-align: middle;
+}
+
+.navigation-menu-container.inactive {
+    animation-name: kf-burger-menu-inactive;
+    animation-duration: 0.3s;
+}
+
+.navigation-menu-container.active {
+    animation-name: kf-burger-menu-active;
+    animation-duration: 0.3s;
+}
+
+.burger-menu-button-container:hover {
+    cursor: pointer;
+}
+
+.navigation-menu-items {
+    display: flex;
+}
+
+.burger-menu-button-container {
+    display: none;
+}
+
+.side-menu-wrapper {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    /* Animation */
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    right: -100%;
+}
+
+.side-menu-wrapper.active {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    /* Animation */
+    right: 0%;
+}
+
+.side-menu-container {
+    width: 250px;
+    background-color: #04264e;
+    padding-top: 80px;
+}
+
+@media (max-width: 850px) {
+    .navigation-menu-items {
+        display: none;
+    }
+
+    .navigation-menu-container {
+        width: 60px;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .burger-menu-button-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@keyframes kf-burger-menu-active {
+    0% {
+        margin-right: -30px;
+    }
+    50% {
+        margin-right: -115px;
+    }
+    100% {
+        margin-right: -30px;
+    }
+}
+
+@keyframes kf-burger-menu-inactive {
+    0% {
+        margin-right: -30px;
+    }
+    50% {
+        margin-right: -115px;
+    }
+    100% {
+        margin-right: -30px;
+    }
+}
+.logo {
+    width: auto;
+    height: 70px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
