@@ -8,7 +8,7 @@ export default function PortfolioPage() {
     return (
         <div className="screen-component">
          <h2 className="portofolio-title"> Portofoliu</h2>
-         <Scroll>
+         {/* <Scroll> */}
             <div className="portofolio-list-outside">
                 <div className="clients_grid">
                     {Clients.map((client, index) => {
@@ -16,7 +16,7 @@ export default function PortfolioPage() {
                     })}
                 </div>
             </div>
-        </Scroll>
+        {/* </Scroll> */}
         </div>
     );
 }
