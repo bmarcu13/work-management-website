@@ -8,7 +8,15 @@ export default function LandingSection() {
     return (
         <>
             <div className="landing-section-container">
-                <div className="left-panel"></div>
+                <div className="left-panel">
+                    <h1>Misiunea noastră e sănătatea și siguranța companiei și a angajaților tăi.</h1>
+                    <h3>Servicii de securitate și sănătate în muncă și de protecție a mediului.</h3>
+                    <div className="landing-page-buttons">
+                         <button>Servicii</button>
+                         <button>Cerere Oferta</button>
+                    </div>
+                </div>
+
                 <div className="right-panel">
                     <img src={lpArrow1} />
                     <img src={lpArrow2} style={{ marginLeft: "-50px" }} />
