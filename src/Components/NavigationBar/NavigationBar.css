@@ -14,10 +14,13 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 25px;
-    background-color: #04264e;
+    background-color: #004094;
     border-radius: 35px;
     display: flex;
     align-items: center;
+
+    /*  */
+    box-shadow: 4px 3px 8px 0px #000000;
 }
 
 .navigation-menu-container h3 {
