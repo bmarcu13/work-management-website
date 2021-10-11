@@ -12,11 +12,9 @@ import PortfolioPage from "./Screens/PortfolioPage/PortfolioPage";
 function App() {
     return (
         <BrowserRouter>
-            <div className="body">
-                <NavigationBar></NavigationBar>
-            </div>
             <Route path="/" component={MainPage} exact />
             <Route path="/portofoliu" component={PortfolioPage} exact />
+            <NavigationBar></NavigationBar>
         </BrowserRouter>
     );
 }

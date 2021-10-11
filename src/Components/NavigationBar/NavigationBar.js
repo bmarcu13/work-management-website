@@ -25,7 +25,7 @@ export default function NavigationBar() {
     });
 
     return (
-        <div>
+        <div style={{ position: "fixed", top: "0", width: "100%" }}>
             <div
                 className={
                     isDrawerOpen
