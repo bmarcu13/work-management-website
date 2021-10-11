@@ -11,7 +11,7 @@ import ContactForm from "../../Components/ContactForm/ContactForm";
 
 export default function MainPage() {
     return (
-        <div className="MainPage">
+        <div className="main-page">
             <LandingSection></LandingSection>
             <StrengthsSection></StrengthsSection>
             <AboutUs></AboutUs>

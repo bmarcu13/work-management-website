@@ -6,7 +6,7 @@ import { dropdownItemsLeft, dropdownItemsRight } from "../NavigationBarData";
 
 export default function NavigationBarButton({ buttonData, index }) {
     return (
-        <Link to={buttonData.path}>
+        <Link to={buttonData.path} style={{ textDecoration: "none" }}>
             <div
                 className="navigation-bar-button"
                 style={
@@ -34,18 +34,28 @@ function renderDropdown(buttonData) {
                     <div className="dropdown-container-left">
                         {dropdownItemsLeft.map((item, index) => {
                             return (
-                                <p>
-                                    {item.icon} {item.name}
-                                </p>
+                                <Link
+                                    to="/placeholder"
+                                    style={{ textDecoration: "none" }}
+                                >
+                                    <p>
+                                        {item.icon} {item.name}
+                                    </p>
+                                </Link>
                             );
                         })}
                     </div>
                     <div className="dropdown-container-right">
                         {dropdownItemsRight.map((item, index) => {
                             return (
-                                <p>
-                                    {item.icon} {item.name}
-                                </p>
+                                <Link
+                                    to="/placeholder"
+                                    style={{ textDecoration: "none" }}
+                                >
+                                    <p>
+                                        {item.icon} {item.name}
+                                    </p>
+                                </Link>
                             );
                         })}
                     </div>
@@ -55,4 +65,4 @@ function renderDropdown(buttonData) {
     } else {
         return;
     }
-};
+}
