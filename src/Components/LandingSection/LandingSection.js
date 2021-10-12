@@ -4,11 +4,43 @@ import "./LandingSection.css";
 import lpArrow1 from "../../img/arrow1.png";
 import lpArrow2 from "../../img/arrow2.png";
 
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 export default function LandingSection() {
     return (
         <>
             <div className="landing-section-container">
-                <div className="left-panel"></div>
+                <div className="left-panel">
+                    <h1>
+                        Misiunea noastră e sănătatea și siguranța companiei și a
+                        angajaților tăi.
+                    </h1>
+                    <h3>
+                        Servicii de securitate și sănătate în muncă și de
+                        protecție a mediului.
+                    </h3>
+                    <div className="landing-page-buttons">
+                        <button>
+                            Servicii
+                            <RiArrowDropDownLine
+                                size={30}
+                                style={{
+                                    transform: "rotate(-90deg)",
+                                }}
+                            />
+                        </button>
+                        <button>
+                            Cerere Oferta
+                            <RiArrowDropDownLine
+                                size={30}
+                                style={{
+                                    transform: "rotate(-90deg)",
+                                }}
+                            />
+                        </button>
+                    </div>
+                </div>
+
                 <div className="right-panel">
                     <img src={lpArrow1} />
                     <img src={lpArrow2} style={{ marginLeft: "-50px" }} />
