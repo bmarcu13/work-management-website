@@ -1,8 +1,9 @@
 import React from "react";
 import "./LandingSection.css";
+import "animate.css";
 
-import lpArrow1 from "../../img/arrow1.png";
-import lpArrow2 from "../../img/arrow2.png";
+import lpArrow2 from "../../img/arrow2Rounded.png";
+import lpArrowR from "../../img/arrow1Rounded.png";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -42,8 +43,13 @@ export default function LandingSection() {
                 </div>
 
                 <div className="right-panel">
-                    <img src={lpArrow1} />
-                    <img src={lpArrow2} style={{ marginLeft: "-50px" }} />
+                    <img src={lpArrowR} style={{}} />
+                    <img
+                        src={lpArrow2}
+                        style={{
+                            marginLeft: "-50px",
+                        }}
+                    />
                 </div>
                 <div className="custom-shape-divider-bottom-1633974734">
                     <svg
