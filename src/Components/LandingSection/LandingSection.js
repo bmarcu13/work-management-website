@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import "./LandingSection.css";
 import "animate.css";
 
@@ -8,10 +10,45 @@ import lpArrowR from "../../img/arrow1Rounded.png";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function LandingSection() {
+    useEffect(() => {
+        if (window.innerWidth <= 850) {
+            const newParent = document.getElementById(
+                "landing-section-container"
+            );
+            const child = document.getElementById("landing-page-buttons");
+
+            newParent.appendChild(child);
+        }
+    });
+
+    const minWidthQuery = window.matchMedia("(min-width: 851px)");
+    minWidthQuery.addEventListener("change", (query) => {
+        if (query.matches) {
+            const newParent = document.getElementById("left-panel");
+            const child = document.getElementById("landing-page-buttons");
+            newParent.appendChild(child);
+        }
+    });
+
+    const maxWidthQuery = window.matchMedia("(max-width: 851px)");
+    maxWidthQuery.addEventListener("change", (query) => {
+        if (query.matches) {
+            const newParent = document.getElementById(
+                "landing-section-container"
+            );
+            const child = document.getElementById("landing-page-buttons");
+
+            newParent.appendChild(child);
+        }
+    });
+
     return (
         <>
-            <div className="landing-section-container">
-                <div className="left-panel">
+            <div
+                id="landing-section-container"
+                className="landing-section-container"
+            >
+                <div id="left-panel" className="left-panel">
                     <h1>
                         Misiunea noastră e sănătatea și siguranța companiei și a
                         angajaților tăi.
@@ -20,7 +57,10 @@ export default function LandingSection() {
                         Servicii de securitate și sănătate în muncă și de
                         protecție a mediului.
                     </h3>
-                    <div className="landing-page-buttons">
+                    <div
+                        id="landing-page-buttons"
+                        className="landing-page-buttons"
+                    >
                         <button>
                             Servicii
                             <RiArrowDropDownLine

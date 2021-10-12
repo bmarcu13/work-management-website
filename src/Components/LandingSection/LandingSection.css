@@ -1,6 +1,6 @@
 .main-page .landing-section-container {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .main-page .landing-section-container .right-panel img {
@@ -88,6 +88,7 @@
     flex-direction: row;
 }
 .landing-page-buttons button {
+    min-height: 40px;
     margin-right: 20px;
     width: fit-content;
     padding: 5px 20px;
@@ -113,6 +114,21 @@
     box-shadow: rgb(65, 60, 51) 1px 1.5px;
     cursor: pointer;
     color: white;
+}
+
+@media (max-width: 850px) {
+    .main-page .landing-section-container {
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .main-page .landing-section-container .right-panel {
+        padding-left: 20px;
+    }
+
+    .landing-section-container .landing-page-buttons {
+        padding-left: 40px;
+    }
 }
 
 @keyframes fadeInLeft {
