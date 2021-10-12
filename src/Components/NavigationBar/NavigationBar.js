@@ -25,7 +25,7 @@ export default function NavigationBar() {
     });
 
     return (
-        <div>
+        <div style={{ position: "fixed", top: "0", width: "100%" }}>
             <div
                 className={
                     isDrawerOpen
@@ -44,9 +44,9 @@ export default function NavigationBar() {
                     </div>
                 </div>
             </div>
-            
+
             <div className="navigation-menu-section">
-            <img className="logo" src={Logo} alt="logo" ></img>
+                <img className="logo" src={Logo} alt="logo"></img>
                 <div
                     className={
                         isDrawerOpen
@@ -72,9 +72,9 @@ export default function NavigationBar() {
                         }}
                     >
                         {isDrawerOpen ? (
-                            <IoClose size={28} />
+                            <IoClose size={28} color="white" />
                         ) : (
-                            <TiThMenu size={24} />
+                            <TiThMenu size={24} color="white" />
                         )}
                     </div>
                 </div>

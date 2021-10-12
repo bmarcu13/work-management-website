@@ -14,9 +14,7 @@ function App() {
         <BrowserRouter>
             <Route path="/" component={MainPage} exact />
             <Route path="/portofoliu" component={PortfolioPage} exact />
-            <div className="body">
-                <NavigationBar></NavigationBar>
-            </div>
+            <NavigationBar></NavigationBar>
         </BrowserRouter>
     );
 }

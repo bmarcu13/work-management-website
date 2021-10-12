@@ -9,9 +9,11 @@ import StatisticsSection from "../../Components/StatisticsSection/StatisticsSect
 import Footer from "../../Components/Footer/Footer";
 import ContactForm from "../../Components/ContactForm/ContactForm";
 
+import "./MainPage.css";
+
 export default function MainPage() {
     return (
-        <div className="MainPage">
+        <div className="main-page">
             <LandingSection></LandingSection>
             <StrengthsSection></StrengthsSection>
             <AboutUs></AboutUs>
