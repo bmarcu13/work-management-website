@@ -21,7 +21,7 @@ export default function LandingSection() {
         }
     });
 
-    const minWidthQuery = window.matchMedia("(min-width: 851px)");
+    const minWidthQuery = window.matchMedia("(min-width: 850px)");
     minWidthQuery.addEventListener("change", (query) => {
         if (query.matches) {
             const newParent = document.getElementById("left-panel");
@@ -30,7 +30,7 @@ export default function LandingSection() {
         }
     });
 
-    const maxWidthQuery = window.matchMedia("(max-width: 851px)");
+    const maxWidthQuery = window.matchMedia("(max-width: 850px)");
     maxWidthQuery.addEventListener("change", (query) => {
         if (query.matches) {
             const newParent = document.getElementById(

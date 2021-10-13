@@ -1,65 +1,71 @@
-
-.strengths-section{
+.strengths-section {
     display: flex;
+    margin: auto;
+    padding-top: 20px;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: tomato;
-    height: 200px;
+    justify-content: space-between;
 }
-.strengths-grid {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-  .strength {
+.strength {
     background: #fff;
-    margin: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
+    margin: 20px;
     text-align: center;
-    -webkit-box-flex: 1;
     flex: 1;
-    display: -webkit-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: 2px solid #e7e7e7;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-  }
-  .strength1:hover {
+    user-select: none;
+}
+
+.strength .icon {
+    font-size: 40px;
+    min-width: 40px;
+}
+
+.strength h3 {
+    max-width: 200px;
+    text-align: center;
+    margin-top: 10px auto;
+}
+
+.strength p {
+    font-size: 100%;
+    max-lines: 4;
+    margin: auto;
+}
+
+.strength1:hover {
     border: 2px solid #42b7ca;
-  }
-  .strength2:hover {
+}
+.strength2:hover {
     border: 2px solid #425fca;
-  }
-  .strength3:hover {
+}
+.strength3:hover {
     border: 2px solid #8c37b6;
-  }
-  .strength h3{
-        max-width: 200px;
-        text-align: center;
-  }
-  .strength:hover {
+}
+
+.strength:hover {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-  }
-.strengths-icon{
-    font-size: 3.45rem;
-  margin: 1rem 0;
 }
-@media all and (max-width:900px) {
-    .strengths-grid {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      flex-direction: column;
-    }
-  }
+.strengths-icon {
+    font-size: 3.45rem;
+    margin: 1rem 0;
+}
 
+@media (max-width: 700px) {
+    .strengths-section {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
