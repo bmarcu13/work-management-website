@@ -1,0 +1,99 @@
+.main-page .services {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main-page .services .grid-container {
+    padding: 0px 40px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-columns: 100px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    margin: auto;
+    /* justify-content: space-evenly; */
+}
+
+.main-page .services .grid-container .grid-item-container {
+    width: fit-content;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid #e7e7e7;
+    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.main-page .services .grid-container .grid-item-container .img-container {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-page .services .grid-container .grid-item-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.main-page .services .grid-container .grid-item-container:hover img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    object-fit: cover;
+}
+
+.main-page .services .grid-container .grid-item-container h3 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.main-page .services .grid-container .grid-item-container p {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.main-page .services .grid-container .grid-item-container .read-more-button {
+    cursor: pointer;
+    color: black;
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    border: 2px solid rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0);
+    border-left: none;
+    padding: 7px 5px 7px 20px;
+    border-radius: 5px;
+    margin-left: -3px;
+    box-shadow: 2px 3px 6px black;
+    transition-delay: 0.1s;
+}
+
+.main-page
+    .services
+    .grid-container
+    .grid-item-container
+    .read-more-button:hover {
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 1px 3px black;
+}
+
+@media (max-width: 900px) {
+    .main-page .services .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-page .services .grid-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
