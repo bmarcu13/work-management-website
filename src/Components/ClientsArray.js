@@ -31,6 +31,7 @@ import libra from '../img/clientsImages/libra.png'
 import maguay from '../img/clientsImages/maguay.png'
 import maral from '../img/clientsImages/maral.jpg'
 import marsh from '../img/clientsImages/marsh.png'
+import megaimage from '../img/clientsImages/mega_image.png'
 import metro from '../img/clientsImages/metro.png'
 import militari from '../img/clientsImages/militari.jpg'
 import ministerul_comunicatiilor from '../img/clientsImages/ministerul_comunicatiilor.png'
@@ -51,7 +52,7 @@ import sephora from '../img/clientsImages/sephora.png'
 import still from '../img/clientsImages/still.png'
 import telelink from '../img/clientsImages/telelink.png'
 import thyssenkrupp from '../img/clientsImages/thyssenkrupp.png'
-
+import brico_depot from '../img/clientsImages/brico_depot.png'
 const Clients = [
         {
         "key": 1,
@@ -358,11 +359,21 @@ const Clients = [
         "src": telelink,
         "name": "telelink"
         },
-        
+        {
+        "key": 53,
+        "src": megaimage,
+        "name": "megaimage"
+        },
         {
         "key": 52,
         "src": thyssenkrupp,
         "name": "thyssenkrupp"
         },
+        {
+        "key": 54,
+        "src": brico_depot,
+        "name": "brico_depot"
+         },
+
 ]
 export default Clients;
