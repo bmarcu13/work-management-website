@@ -1,20 +1,26 @@
 .about-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
     background:url('https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg');
     height: 700px;
+} 
+.about-section h1{
+  text-align: center;
 }
+
 .second-container{
-    display: flex;
-    flex-direction: row;
-    height: 350px;
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  height: 350px;
 }
 .first-container {
     display: flex;
     flex-direction: row;
     height: 350px;
-    
+    margin-left: 50px;
 }
 .about-section h1{
     color: black;
@@ -28,18 +34,47 @@
     margin-top: -10px;
 }
 .who-we-are-text{
-   
-      height:350px;
-      width:700px;
-   
-    margin-right: 50px;
+  height:350px;
+  width:700px;
+}
+.iso-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 70px;
+}
+.first-row-certificates{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+.second-row-certificates{
+  margin-top: 10px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iso-img{
+  margin-right: 60px;
 }
 .our-mission-text{
-    margin-right: -100px;
-    margin-left: 200px;
-   text-align: left;
-    width: 400px;
-    height: 300px;
+   flex: 1;
+  width: 500px;
+    text-align:start;
+    margin-right: 40px;
+    
+}
+.our-mission-text h2{
+  text-align: center;
+}
+.our-mission-text h5{
+ 
+  font-style: italic;
+  text-align: right;
+  font-size: larger;
+  color: blue;
+  
 }
 .pic
 {
@@ -74,9 +109,4 @@ background-size: auto 280px;
 {
   box-shadow: 3px 3px 7px #888888;
   cursor:pointer;
-}
-.iso-img{
-    width: 150px;
-    height: 150px;
-    padding: 20px 30px;
 }
