@@ -1,8 +1,37 @@
 .main-page .services {
     width: 100%;
     padding-bottom: 40px;
-    padding-top: 40px;
     text-align: center;
+    margin-top: 20px;
+}
+
+.main-page .services .divider {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.main-page .services .divider h1 {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.main-page .services .divider hr {
+    border: 2px solid white;
+    background: rgb(255, 255, 255);
+    width: 200px;
+    border-radius: 30px;
+}
+
+.main-page .services .divider img {
+    width: 100%;
+    height: auto;
+    margin-top: 220px;
+    margin-right: 0px;
 }
 
 .main-page .services .grid-container {
@@ -11,28 +40,37 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-auto-columns: 100px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     grid-column-gap: 40px;
     margin: auto;
     /* justify-content: space-evenly; */
 }
 
 .main-page .services .grid-container .grid-item-container {
-    width: fit-content;
+    width: 350;
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    outline: 2px solid #e7e7e7;
+    outline: 1.8px solid #e7e7e7;
     align-items: flex-start;
     overflow: hidden;
     border-radius: 10px;
     cursor: default;
+    background-color: white;
+    transition: 0.2s;
+    transition-delay: 0.15;
+    grid-auto-rows: auto;
 }
 
 .main-page .services .grid-container .grid-item-container .img-container {
     height: 200px;
     width: 100%;
     overflow: hidden;
+}
+
+.main-page .services .grid-container .grid-item-container:hover {
+    box-shadow: 2px 2px 5px rgb(99, 99, 99);
+    outline: 1.8px solid rgb(11, 59, 161);
 }
 
 .main-page .services .grid-container .grid-item-container img {
@@ -58,22 +96,25 @@
 .main-page .services .grid-container .grid-item-container p {
     text-align: left;
     padding-left: 20px;
+    padding-right: 20px;
     margin-top: 0px;
+    font-size: 18px;
 }
 
 .main-page .services .grid-container .grid-item-container .read-more-button {
     cursor: pointer;
     color: black;
     /* text-transform: uppercase; */
-    font-size: 14px;
-    border: 2px solid rgb(255, 166, 0);
-    background-color: rgb(255, 166, 0);
-    border-left: none;
-    padding: 7px 5px 7px 20px;
-    border-radius: 5px;
-    margin-left: -3px;
-    box-shadow: 2px 3px 6px black;
+    font-size: 16px;
     transition-delay: 0.1s;
+    margin-top: auto;
+    padding-left: 0px;
+    margin-left: 20px;
+    outline: 2px solid rgb(11, 59, 161);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    user-select: none;
 }
 
 .main-page
@@ -81,9 +122,8 @@
     .grid-container
     .grid-item-container
     .read-more-button:hover {
-    cursor: pointer;
+    background-color: rgb(11, 59, 161);
     color: white;
-    box-shadow: 1px 1px 3px black;
 }
 
 @media (max-width: 900px) {
@@ -96,4 +136,28 @@
     .main-page .services .grid-container {
         grid-template-columns: repeat(1, auto);
     }
+}
+
+.main-page .services .all-services-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: #ff9f1c;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 2px 3px 6px black;
+
+    transition: 0.1s;
+}
+
+.main-page .services .all-services-button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 4px black;
+}
+
+.main-page .services .all-services-button h3 {
+    margin: 0;
 }
