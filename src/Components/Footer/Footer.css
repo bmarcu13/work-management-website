@@ -1,5 +1,4 @@
-/* styles for devider */
-.custom-shape-divider-top-1634322472 {
+.custom-shape-divider-top-1634560944 {
     position: absolute;
     top: 0;
     left: 0;
@@ -8,61 +7,106 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1634322472 svg {
+.custom-shape-divider-top-1634560944 svg {
     position: relative;
     display: block;
-    width: calc(128% + 1.3px);
-    height: 118px;
+    width: calc(115% + 1.3px);
+    height: 150px;
 }
 
-.custom-shape-divider-top-1634322472 .shape-fill {
+.custom-shape-divider-top-1634560944 .shape-fill {
     fill: #FFFFFF;
 }
 
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1634560944 svg {
+        width: calc(115% + 1.3px);
+        height: 63px;
+    }
+}
+
+/*footer styles*/
 
 .footer-section{
-    background-color: cadetblue;
-    height: 400px;
+    background-color: rgb(49, 82, 143);
+    height: 500px;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
+    font-weight: 600;
     justify-content: space-evenly;
   }
 .footer{
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-top: 80px;
+    padding-top: 130px;
+   
 }
 .footer-title {
-    margin-bottom: 10px;
+    
     color: #fff;
     font-weight: 500;
-    text-transform: capitalize;
-    font-size: 20px;
+    text-align: left;
+    font-size: 22px;
     position: relative;
 }
 .footer-left-container img{
     width: 300px;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: -30px;
+    height: auto;
 }
-.footer-left-container hr{
-    width: 200px;
-}
+
 .footer-left-container p{
     text-align: center;
     font-style: italic;
 }
 .footer-center-container{
     color: #ffffff;
-    text-align: center;
-    line-height: 42px;
-    vertical-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 .footer-center-container hr{
     width: 100px;
 }
+.footer-icon:hover{
+    color: rgb(255, 173, 80);
+    cursor: pointer;
+}
+.footer-right-container{
+    width: 350px;
+}
+.footer hr{
+    width: 150px;
+    height: 2px;
+    border : none;
+    background: black;
 
+}
+.footer-right-container p{
+    text-decoration-style: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(255, 173, 80);
+}
+.footer-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 40px 0px 40px;
+}
+.footer-with-copyrights{
+    background-color: rgb(49, 82, 143);
+    padding-bottom: 10px;
+}
+.links-list{
+   list-style: none;
+}
