@@ -1,12 +1,10 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./ServicesMainPage.css";
 
-import protectiaMunciiPsiImg from "../../img/services/protectia-muncii-psi.jpg";
+import "animate.css";
 
-import {
-    MdOutlineHorizontalRule,
-    MdOutlineArrowForwardIos,
-} from "react-icons/md";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
 import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
@@ -18,6 +16,55 @@ import AnalizaRiscuri from "../../img/services/analiza-riscuri.jpg";
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 
 export default function ServicesMainPage() {
+    const [animationClass, setAnimationClass] = useState("grid-item-container");
+
+    let observer = new IntersectionObserver((entries) => {
+        console.log(entries);
+        if (entries[0].isIntersecting) {
+            console.log("ceva");
+            setAnimationClass(
+                "animate__animated animate__fadeInDown grid-item-container"
+            );
+        } else {
+            console.log("Not past 100px");
+        }
+    });
+
+    useEffect(() => {
+        observer.observe(document.querySelector(".grid-container"));
+    });
+
+    const gridItemComponent = (item, index) => {
+        return (
+            <div
+                className={animationClass}
+                style={{
+                    animationDelay: "1." + 1 * index + "s",
+                    animationDuration: "1s",
+                }}
+            >
+                <div className="img-container">
+                    <img src={item.img}></img>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <p
+                    className="read-more-button"
+                    style={{ fontWeight: "900", transition: ".2s" }}
+                >
+                    <MdOutlineArrowForwardIos
+                        style={{
+                            paddingRight: "5px",
+                            verticalAlign: "middle",
+                            marginBottom: "3px",
+                        }}
+                    />
+                    Mai multe
+                </p>
+            </div>
+        );
+    };
+
     return (
         <div className="services">
             <div className="divider">
@@ -39,7 +86,7 @@ export default function ServicesMainPage() {
 
             <div className="grid-container">
                 {servicesList.map((item, index) => {
-                    return gridItemComponent(item);
+                    return gridItemComponent(item, index);
                 })}
             </div>
             <div className="all-services-button">
@@ -51,27 +98,6 @@ export default function ServicesMainPage() {
         </div>
     );
 }
-
-const gridItemComponent = (item) => {
-    return (
-        <div className="grid-item-container">
-            <div className="img-container">
-                <img src={item.img}></img>
-            </div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <p
-                className="read-more-button"
-                style={{ fontWeight: "900", transition: ".2s" }}
-            >
-                Mai multe
-                <MdOutlineHorizontalRule
-                    style={{ paddingLeft: "5px", verticalAlign: "middle" }}
-                />
-            </p>
-        </div>
-    );
-};
 
 const servicesList = [
     {
