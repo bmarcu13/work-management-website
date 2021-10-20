@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./ServicesMainPage.css";
 
 import "animate.css";
@@ -17,21 +17,22 @@ import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 
 export default function ServicesMainPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
+    const itemContainerRef = useRef(null);
 
     let observer = new IntersectionObserver((entries) => {
         console.log(entries);
         if (entries[0].isIntersecting) {
-            console.log("ceva");
+            console.log(itemContainerRef.current);
             setAnimationClass(
-                "animate__animated animate__fadeInDown grid-item-container"
+                "grid-item-container fadeInDownCustom"
             );
+            // itemContainerRef.current.style.opacity = "1";
         } else {
-            console.log("Not past 100px");
         }
     });
 
     useEffect(() => {
-        observer.observe(document.querySelector(".grid-container"));
+        observer.observe(document.querySelector(".grid-item-container"));
     });
 
     const gridItemComponent = (item, index) => {
@@ -39,9 +40,10 @@ export default function ServicesMainPage() {
             <div
                 className={animationClass}
                 style={{
-                    animationDelay: "1." + 1 * index + "s",
-                    animationDuration: "1s",
+                    animationDelay: "." + 1 * index + "s",
+                    animationDuration: "1.5s",
                 }}
+                ref = {itemContainerRef}
             >
                 <div className="img-container">
                     <img src={item.img}></img>
@@ -107,7 +109,8 @@ const servicesList = [
     },
     {
         title: "Situatii de Urgenta (Prevenirea si Stingerea Incendiilor / Protectie Civila)",
-        description: "",
+        description: "Firma noastră asigură instructaj introductiv, periodic și specific locului de muncă, astfel încât angajații dvs să fie informați cu privire la măsurile tehnice şi organizatorice de"+
+        "desfășurare a activității, în condiții de securitate în S.U. Mai mult oferim Asistența de specialitate în cazul controalelor.",
         img: SituatiiUrgenta,
     },
     {
