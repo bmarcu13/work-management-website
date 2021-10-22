@@ -17,16 +17,11 @@ import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 
 export default function ServicesMainPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
-    const itemContainerRef = useRef(null);
 
     let observer = new IntersectionObserver((entries) => {
         console.log(entries);
         if (entries[0].isIntersecting) {
-            console.log(itemContainerRef.current);
-            setAnimationClass(
-                "grid-item-container fadeInDownCustom"
-            );
-            // itemContainerRef.current.style.opacity = "1";
+            setAnimationClass("grid-item-container fadeInDownCustom");
         } else {
         }
     });
@@ -43,7 +38,6 @@ export default function ServicesMainPage() {
                     animationDelay: "." + 1 * index + "s",
                     animationDuration: "1.5s",
                 }}
-                ref = {itemContainerRef}
             >
                 <div className="img-container">
                     <img src={item.img}></img>
@@ -109,8 +103,9 @@ const servicesList = [
     },
     {
         title: "Situatii de Urgenta (Prevenirea si Stingerea Incendiilor / Protectie Civila)",
-        description: "Firma noastră asigură instructaj introductiv, periodic și specific locului de muncă, astfel încât angajații dvs să fie informați cu privire la măsurile tehnice şi organizatorice de"+
-        "desfășurare a activității, în condiții de securitate în S.U. Mai mult oferim Asistența de specialitate în cazul controalelor.",
+        description:
+            "Firma noastră asigură instructaj introductiv, periodic și specific locului de muncă, astfel încât angajații dvs să fie informați cu privire la măsurile tehnice şi organizatorice de" +
+            "desfășurare a activității, în condiții de securitate în S.U. Mai mult oferim Asistența de specialitate în cazul controalelor.",
         img: SituatiiUrgenta,
     },
     {
