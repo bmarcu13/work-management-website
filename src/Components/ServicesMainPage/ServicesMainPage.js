@@ -36,7 +36,7 @@ export default function ServicesMainPage() {
                 className={animationClass}
                 style={{
                     animationDelay: "." + 1 * index + "s",
-                    animationDuration: "1.5s",
+                    animationDuration: "3s",
                 }}
             >
                 <div className="img-container">
@@ -98,7 +98,8 @@ export default function ServicesMainPage() {
 const servicesList = [
     {
         title: "Securitate si Sanatate in Munca",
-        description: "",
+        description:
+            "Scapă de grija organizării activității de securitate și sănătate în muncă din interiorul companiei tale. Ne ocupăm noi de pregătirea, instruirea și verificarea lucrătorilor, de elaborarea documentației necesare și alte acțiuni specifice SSM.",
         img: SecuritateSanatateInMunca,
     },
     {

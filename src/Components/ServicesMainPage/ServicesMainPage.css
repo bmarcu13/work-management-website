@@ -56,11 +56,11 @@
     align-items: flex-start;
     opacity: 0;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: default;
     background-color: white;
-    /* transition: 0.2s;
-    transition-delay: 0.15; */
+    transition: 0.2s;
+    transition-delay: 0.15;
     grid-auto-rows: auto;
     box-shadow: 0 0 2.5em -1em black;
 }
