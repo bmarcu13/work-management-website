@@ -72,8 +72,11 @@
 .footer-center-container hr{
     width: 100px;
 }
+.footer-icon{
+    color:white;
+}
 .footer-icon:hover{
-    color: rgb(255, 173, 80);
+    color: rgb(207, 126, 34);
     cursor: pointer;
 }
 .footer-right-container{
@@ -109,4 +112,11 @@ a:hover{
 }
 .links-list{
    list-style: none;
+}
+.policy-button{
+    font-size:medium;
+}
+.policy-button:hover{
+    cursor: pointer;
+    color: white;
 }

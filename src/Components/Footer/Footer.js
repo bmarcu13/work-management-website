@@ -22,7 +22,7 @@ export default function Footer() {
                 <hr></hr>
                 <p> S.C. WORK MANAGEMENT S.R.L.</p>
                 <hr></hr>
-                <a href="https://www.facebook.com/workmanagement.bucuresti"><FaFacebookSquare className="footer-icon" size={40}></FaFacebookSquare></a>
+                <a href="https://www.facebook.com/workmanagement.bucuresti"><FaFacebookSquare className="footer-icon" size={40} ></FaFacebookSquare></a>
             </div>
             <div className="footer footer-center-container">
                 <h2 className="footer-title">Navighează</h2>
@@ -56,13 +56,13 @@ export default function Footer() {
             
             </div>
         </div>
-        <hr style={{height: '2px',
+        <hr style={{height: '1px',
                     border : 'none',
                     background: 'grey'}}></hr>
         <div className="footer-down">
-            <div>Politica de Securitate a Datelor cu caracter personal</div>
-            <div>Politica privind Prelucrarea Datelor cu caracter personal</div>
-            <div>Website created by  Copyright © ?</div>
+            <div className="policy-button">Politica de Securitate a Datelor cu caracter personal</div>
+            <div className="policy-button">Politica privind Prelucrarea Datelor cu caracter personal</div>
+            <div className="policy-button">Website created by  Copyright © ?</div>
         </div>
     </div>
         </>
