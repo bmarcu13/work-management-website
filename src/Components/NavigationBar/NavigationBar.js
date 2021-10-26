@@ -2,7 +2,7 @@ import React from "react";
 import "./NavigationBar.css";
 
 import { useState } from "react";
-import Logo from "../../img/logo.png";
+import Logo from "../../img/logo-white-inside.png";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
 import SideBarButton from "../MenuButtons/SideBarButton";
@@ -46,6 +46,9 @@ export default function NavigationBar() {
             </div>
 
             <div className="navigation-menu-section">
+            {/* <svg className="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="white" d="M27.5,-35C41.9,-27.5,64,-27.7,69.6,-20.3C75.2,-12.9,64.3,2.2,54.2,12.7C44.1,23.2,34.8,29.1,25.9,29.7C17,30.2,8.5,25.3,-4,30.8C-16.4,36.3,-32.9,52.1,-40.8,51.2C-48.7,50.4,-48.1,32.9,-53.1,17.3C-58.1,1.7,-68.8,-12.1,-66.9,-22.9C-65,-33.7,-50.4,-41.6,-37.2,-49.5C-23.9,-57.4,-12,-65.4,-2.7,-61.7C6.6,-58,13.2,-42.6,27.5,-35Z" transform="translate(100 100)" />
+</svg> */}
                 <img className="logo" src={Logo} alt="logo"></img>
                 <div
                     className={

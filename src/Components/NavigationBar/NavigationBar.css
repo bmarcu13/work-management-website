@@ -20,7 +20,30 @@
     align-items: center;
 
     /*  */
-    box-shadow: 4px 3px 15px 0px #000000;
+    box-shadow: 4px 4px 15px 0px #000000;
+}
+.logo-shape{
+    height: 50px;
+    width: fit-content;
+    margin-left: -25px;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    background-color: #dbe5f8;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 4px 3px 15px 0px #004094;
+    /* box-shadow: 4px 4px 15px 0px #080808; */
+}
+.blob{
+ 
+    height: 520px;
+
+    position: absolute;
+    top: -220px;
+    left: -140px;
 }
 
 .navigation-menu-container h3 {
