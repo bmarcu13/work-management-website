@@ -1,4 +1,4 @@
-.custom-shape-divider-top-1634560944 {
+.custom-shape-divider-top-1635267772 {
     position: absolute;
     top: 0;
     left: 0;
@@ -7,17 +7,16 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1634560944 svg {
+.custom-shape-divider-top-1635267772 svg {
     position: relative;
     display: block;
-    width: calc(115% + 1.3px);
-    height: 150px;
+    width: calc(112% + 1.3px);
+    height: 93px;
 }
 
-.custom-shape-divider-top-1634560944 .shape-fill {
+.custom-shape-divider-top-1635267772 .shape-fill {
     fill: #FFFFFF;
 }
-
 /** For mobile devices **/
 @media (max-width: 767px) {
     .custom-shape-divider-top-1634560944 svg {
@@ -29,27 +28,28 @@
 /*footer styles*/
 
 .footer-section{
-    background-color: #332e79;
+    background:  -webkit-linear-gradient(to left, #000000, #303030);
+    background:linear-gradient(to left, #000000, #303030) ;
     height: 500px;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
-    font-weight: 600;
+    font-weight: 400;
     justify-content: space-evenly;
   }
 .footer{
     display: flex;
     flex-direction: column;
     width: 300px;
-    padding-top: 130px;
+    padding-top: 120px;
    
 }
 .footer-title {
     
-    color: #fff;
+    color: white;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     font-size: 22px;
     position: relative;
 }
@@ -60,18 +60,17 @@
 
 .footer-left-container p{
     text-align: center;
+  
     font-style: italic;
 }
 .footer-center-container{
-    color: #ffffff;
+    color: white;
     
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
-.footer-center-container hr{
-    width: 100px;
-}
+
 .footer-icon{
     color:white;
 }
@@ -82,20 +81,13 @@
 .footer-right-container{
     width: 350px;
 }
-.footer hr{
-    width: 150px;
-    height: 2px;
-    border : none;
-    background: black;
-
-}
 .footer-right-container p{
     text-decoration-style: none;
-    color: black;
+    color: white;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 a:hover{
     color: rgb(255, 173, 80);
@@ -104,10 +96,11 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 40px 0px 40px;
+    margin: 0px 30px 0px 40px;
 }
 .footer-with-copyrights{
-    background-color: #7f7d9c;
+    background:  -webkit-linear-gradient(to left, #000000, #303030);
+    background:linear-gradient(to left, #000000, #303030) ;
     padding-bottom: 10px;
 }
 .links-list{
@@ -115,8 +108,19 @@ a:hover{
 }
 .policy-button{
     font-size:medium;
+    color: rgb(168, 162, 162);
 }
 .policy-button:hover{
     cursor: pointer;
     color: white;
+}
+.links-list li{
+    font-size: 18px;
+}
+.links-list li:hover{
+    cursor: pointer;
+    color: burlywood;
+}
+.footer-icon{
+    color:rgb(253, 114, 0);
 }
