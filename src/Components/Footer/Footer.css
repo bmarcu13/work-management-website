@@ -29,7 +29,7 @@
 /*footer styles*/
 
 .footer-section{
-    background-color: rgb(49, 82, 143);
+    background-color: #7f7d9c;
     height: 500px;
     position: relative;
     width: 100%;
@@ -76,7 +76,7 @@
     color:white;
 }
 .footer-icon:hover{
-    color: rgb(207, 126, 34);
+    color: rgb(255, 173, 80);
     cursor: pointer;
 }
 .footer-right-container{
@@ -107,7 +107,7 @@ a:hover{
     margin: 0px 40px 0px 40px;
 }
 .footer-with-copyrights{
-    background-color: rgb(49, 82, 143);
+    background-color: #7f7d9c;
     padding-bottom: 10px;
 }
 .links-list{

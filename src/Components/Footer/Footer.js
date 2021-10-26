@@ -57,12 +57,13 @@ export default function Footer() {
             </div>
         </div>
         <hr style={{height: '1px',
+                    width:'90%',
                     border : 'none',
-                    background: 'grey'}}></hr>
+                    background: 'black'}}></hr>
         <div className="footer-down">
             <div className="policy-button">Politica de Securitate a Datelor cu caracter personal</div>
             <div className="policy-button">Politica privind Prelucrarea Datelor cu caracter personal</div>
-            <div className="policy-button">Website created by  Copyright © ?</div>
+            <div>Website created by  Copyright © ?</div>
         </div>
     </div>
         </>
