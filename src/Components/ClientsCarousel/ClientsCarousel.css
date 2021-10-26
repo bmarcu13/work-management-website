@@ -1,60 +1,72 @@
-.carousel-section{
-  align-items: center;
-  background: #ffffff;
-  display: flex;
-  height: 40vh;
-  justify-content: center;
+.carousel-section {
+    align-items: center;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-200px * 52));
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 52));
+    }
 }
 .slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: fit-content;
+    background: white;
+
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
 }
-.slider::before, .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
+.slider::before,
+.slider::after {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
 }
-.slide{
-  margin-left: 10px;
+.slide {
+    margin-left: 10px;
 }
 .slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
 .slider::before {
-  left: 0;
-  top: 0;
+    left: 0;
+    top: 0;
 }
 .slider .slide-track {
-  animation: scroll 96s linear infinite;
-  display: flex;
-  width: calc(200px * 52);
+    animation: scroll 96s linear infinite;
+    display: flex;
+    width: calc(200px * 52);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .slider .slide {
-  height: 100px;
-  width: 200px;
+    height: 100px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .slide-track .slide img {
-  object-fit: contain;
-  height: 100px;
-  width: 200px;
+    object-fit: contain;
+    height: 100px;
+    width: 200px;
 }
