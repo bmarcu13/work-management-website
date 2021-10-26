@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     min-height: calc(100vh - 80px);
     text-align: center;
-    background-color:#dd9a9a;
     width: 100%;
     height: auto;
     z-index: 2;
@@ -19,11 +18,26 @@ form {
     text-align: center;
     z-index: 2;
 }
+.contact-right-container{
+    width: 50%;
+    height: auto;
+    background-color: orange;
+    display: flex;
+}
+
+.left-container-contact
+{
+    background-color: rgb(202, 202, 245);
+    height: auto;
+    width: 50%;
+}
 
 .form-container {
+    height: auto;
+    width: fit-content;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     z-index:0;
     padding: 20px 20px;
@@ -32,9 +46,9 @@ form {
 }
 .form-container p {
     text-overflow: ellipsis;
-    width: 300px;
+    width: 320px;
     align-self: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #form-container-background {
@@ -150,6 +164,7 @@ textarea {
 .message-icon{
     margin-left: 40px;
 }
+
 .cerere-oferta-button{
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
@@ -164,4 +179,27 @@ textarea {
     transition: all 0.1s ease-in-out;
     color: white;
     font-size: 16px;
+}
+
+/* devider styles */
+
+.custom-shape-divider-bottom-1635273785 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635273785 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 289px;
+}
+
+.custom-shape-divider-bottom-1635273785 .shape-fill {
+    fill: #FFFFFF;
 }
