@@ -10,23 +10,27 @@ import {CgAsterisk} from "react-icons/cg";
 import { HiOutlineMail as IconEmail } from "react-icons/hi";
 
 
-
-
-
 export default function ContactForm() {
     const [checked, setChecked] = React.useState(true);
     return (
-        <div>
+        
             <div className="contact-page">
            <div className="left-container-contact">
                <h3>Solicită o ofertă personalizată, completând formularul de aici.</h3>
                <button className="cerere-oferta-button" >Cerere Oferta </button>
            </div>
+    <div class="custom-shape-divider-bottom-1635273785">
+        {/* devider */}
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+</div>
+        <div className="contact-right-container">
             <div className="form-container">
                 <form>
                     <h1 id="contact-form-title"> SCRIE-NE! <SiTheconversation size={70} className="message-icon"></SiTheconversation></h1>
                     <p>
-                        Vrei să afli mai multe, să ne cunoști sau să faci orice fel de sesizare? Suntem la un mail distanță.
+                        Vrei să afli mai multe, să ne cunoști sau să faci o sesizare? Suntem la un mail distanță.
                     </p>
                     <div class="form-group position-relative">
                         <div className="input-wrapper" id="formName">
@@ -75,9 +79,11 @@ export default function ContactForm() {
                 <div id="form-container-background"></div>
             </div>
         </div>
+        </div>
+
         
            			
             
-        </div>
+     
         );
 }
