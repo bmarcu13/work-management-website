@@ -35,7 +35,7 @@ export default function ServicesMainPage() {
             <div
                 className={animationClass}
                 style={{
-                    animationDelay: "." + 1 * index + "s",
+                    animationDelay: 0.3 * index + "s",
                     animationDuration: "3s",
                 }}
             >
@@ -63,6 +63,19 @@ export default function ServicesMainPage() {
 
     return (
         <div className="services">
+            <div
+                className="bg"
+                style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "calc(100% - 200px)",
+                    // backgroundColor: "white",
+                    // opacity: ".5",
+                    top: "200px",
+                    left: 0,
+                    filter: "blur(1.5px)",
+                }}
+            ></div>
             <div className="divider">
                 <img src={DividerPhoto} />
                 <div

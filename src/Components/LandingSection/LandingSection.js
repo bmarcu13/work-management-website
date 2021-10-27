@@ -6,6 +6,7 @@ import "animate.css";
 
 import lpArrow2 from "../../img/arrow2Rounded.png";
 import lpArrowR from "../../img/arrow1Rounded.png";
+import logo from "../../img/logo.png";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -48,7 +49,29 @@ export default function LandingSection() {
                 id="landing-section-container"
                 className="landing-section-container"
             >
+                <div
+                    style={{
+                        position: "absolute",
+                        width: "100%",
+                        height: "100%",
+                        background: "rgb(29, 0, 255)",
+                        background:
+                            "linear-gradient( 40deg, rgba(29, 0, 255, 1) 0%, rgba(111, 0, 255, 1) 90%)",
+                        opacity: ".4",
+                        top: 0,
+                        left: 0,
+                    }}
+                ></div>
                 <div id="left-panel" className="left-panel">
+                    {/* <img
+                        src={logo}
+                        style={{
+                            top: 30,
+                            width: "60%",
+                            height: "auto",
+                            marginBottom: "20px",
+                        }}
+                    /> */}
                     <h1>
                         Misiunea noastră e sănătatea și siguranța companiei și a
                         angajaților tăi.
