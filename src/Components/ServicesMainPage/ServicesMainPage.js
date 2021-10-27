@@ -110,47 +110,47 @@ export default function ServicesMainPage() {
 
 const servicesList = [
     {
-        title: "Securitate si Sanatate in Munca",
+        title: "Securitate și Sănătate în Muncă",
         description:
             "Scapă de grija organizării activității de securitate și sănătate în muncă din interiorul companiei tale. Ne ocupăm noi de pregătirea, instruirea și verificarea lucrătorilor, de elaborarea documentației necesare și alte acțiuni specifice SSM.",
         img: SecuritateSanatateInMunca,
     },
     {
-        title: "Situatii de Urgenta (Prevenirea si Stingerea Incendiilor / Protectie Civila)",
+        title: "Situații de Urgență (Prevenirea și Stingerea Incendiilor / Protecție Civilă)",
         description:
             "Firma noastră asigură instructaj introductiv, periodic și specific locului de muncă, astfel încât angajații dvs să fie informați cu privire la măsurile tehnice şi organizatorice de" +
-            "desfășurare a activității, în condiții de securitate în S.U. Mai mult oferim Asistența de specialitate în cazul controalelor.",
+            " desfășurare a activității, în condiții de securitate în S.U. Mai mult, oferim Asistență de Specialitate în cazul controalelor.",
         img: SituatiiUrgenta,
     },
     {
         title: "RSVTI",
         description:
-            "Compania noastra este autorizată de ISCIR, să desfășoare activități de supraveghere și" +
-            "verificare tehnică a echipamentelor/instalațiilor de ridicat și sub presiune și deține un număr de" +
-            "peste 25 ingineri specialiști în domeniul ISCIR, cu multă experiență.",
+            "Compania noastră este autorizată de ISCIR, să desfășoare activități de supraveghere și" +
+            " verificare tehnică a echipamentelor/instalațiilor de ridicat și sub presiune. Punem la dispoziție un număr de" +
+            " peste 25 ingineri specialiști în domeniul ISCIR, cu vastă experiență.",
         img: RSVTI,
     },
     {
-        title: "Gestiunea Deseurilor si Managementul Mediului",
+        title: "Gestiunea Deșeurilor și Managementul Mediului",
         description:
             "Ținând cont de faptul că activitatea economică are impact asupra mediului, orice operator economic, cu atât mai mult cel care, prin activitatea sa, produce diferite tipuri de deșeuri, este obligat să dețină un departament de protecția mediului" +
-            " Noi preluăm responsabilitatea gestiunii deșeurilor și vă punem la dispoziție un specialist în managementul deșeurilor.",
+            " Noi preluăm responsabilitatea gestiunii deșeurilor și vă punem la dispoziție un specialist în managementul acestora.",
         img: Deseuri,
     },
     {
-        title: "Coordonarea Santierelor",
+        title: "Coordonarea Șantierelor",
         description:
-            "Sunteti beneficiarul unui proiect de constructii si aveti nevoie de un Coordonator SSM pentru" +
-            "santierul Dvs pentru a indeplini cerintele minime ale HG 300/2006?" +
-            "Sunteti o firma de proiectare si aveti nevoie de intocmirea planului de securitate si sanatate" +
+            "Sunteți beneficiarul unui proiect de construcții și aveți nevoie de un Coordonator SSM pentru" +
+            " șantierul Dvs pentru a îndeplini cerințele minime ale HG 300/2006?" +
+            "Sunteți o firmă de proiectare și trebuie să intocmiți planul de securitate și sănătate" +
             "pentru proiectele Dvs?",
         img: CoordonareaSantierelor,
     },
     {
-        title: "Analiza de Risc la Securitate Fizica",
+        title: "Analiză de Risc la Securitate Fizică",
         description:
-            "Identificam si evaluam riscurile profesionale la care sunt expusi angajatii la locurile de munca si intocmim planul de prevenire si protectie pe baza acestora." +
-            "Scopul evaluării nivelului de risc este de a oferi posibilitatea cunoaşterii situaţiei reale, de la fiecare loc de muncă, din punct de vedere al securităţii şi sănătăţii în muncă, pentru a se lua măsurile de prevenire optime şi realiste.",
+            "Identificăm și evaluăm riscurile profesionale la care sunt expuși angajații la locurile de muncă și întocmim planul de prevenire și protecție pe baza acestora." +
+            " Scopul evaluării nivelului de risc este de a oferi posibilitatea cunoaşterii situaţiei reale, de la fiecare loc de muncă, din punct de vedere al securităţii şi sănătăţii în muncă, pentru a se lua măsurile de prevenire optime şi realiste.",
         img: AnalizaRiscuri,
     },
 ];
