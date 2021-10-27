@@ -73,7 +73,7 @@ export default function ServicesMainPage() {
                     // opacity: ".5",
                     top: "200px",
                     left: 0,
-                    filter: "blur(1.5px)",
+                    filter: "blur(1px)",
                 }}
             ></div>
             <div className="divider">
