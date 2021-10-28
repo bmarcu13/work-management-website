@@ -13,7 +13,8 @@
 
 .navigation-bar-button:hover {
     cursor: pointer;
-    background-color: #ffbf69;
+    background-color: rgba(255, 162, 56, 0.719)
+   
 }
 
 .navigation-bar-button .dropdown-wrapper {
@@ -26,7 +27,7 @@
     border-bottom-right-radius: 10px;
     position: absolute;
     visibility: hidden;
-
+    
     display: flex;
     flex-direction: column;
 }
@@ -42,8 +43,7 @@
     border-bottom-right-radius: 10px;
     display: flex;
     flex-direction: row;
-
-    /*  */
+    /* border:1px solid black; */
     box-shadow: 4px 3px 8px 0px #000000;
 
     /* Animation */
@@ -67,7 +67,7 @@
 }
 
 .navigation-bar-button .dropdown-container p:hover {
-    color: #fff;
+    color: rgb(34, 64, 161);
 }
 
 .navigation-bar-button .dropdown-separator {
@@ -113,6 +113,7 @@
 
 .sidebar-button .button-data h3 {
     margin: 0px;
+    color: white;
 }
 
 .sidebar-button .dropdown-container {
@@ -128,8 +129,8 @@
 }
 
 .sidebar-button:hover {
-    background-color: #ffbf69;
     cursor: pointer;
+    background-color: rgba(255, 162, 56, 0.719)
 }
 
 /* Dropdown active styles */
