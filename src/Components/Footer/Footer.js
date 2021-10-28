@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
             <div className="footer footer-center-container">
                 <h2 className="footer-title" style={{alignContent:'center'}}>Navighează</h2>
-                <hr style={{width:'200px', marginTop:'-5px', backgroundColor:'rgb(255, 173, 80)', marginBottom:'50px'}}></hr>
+                <hr style={{width:'200px', marginTop:'-5px', background:'orange', marginBottom:'50px'}}></hr>
                 <ul className="links-list">
                 <li><IoIosArrowForward className="footer-icon"></IoIosArrowForward>Acasa</li>
                     <li><IoIosArrowForward className="footer-icon"></IoIosArrowForward>Toate Serviciile</li>
