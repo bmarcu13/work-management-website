@@ -1,6 +1,46 @@
 .services-page-container {
     width: 100%;
+    padding-top: 120px;
 }
 
 .services-page-container .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: 1fr;
+    width: fit-content;
+    margin: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.services-page-container .grid-element-wrapper {
+    max-width: 300px;
+    min-height: 250px;
+}
+
+.services-page-container .card-container {
+    background-color: blue;
+    border-radius: 10px;
+    max-width: 270px;
+    padding: 15px 15px;
+}
+
+.services-page-container .dropdown {
+    position: absolute;
+    left: 0px;
+    margin: 0px 30px;
+    width: calc(100vw - 60px);
+    height: 0px;
+    background-color: blue;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.services-page-container .dropdown-arrow {
+    position: relative;
+    left: 0px;
+    margin-bottom: -24px;
+    transition: 0.1s;
+    height: 0px;
+    opacity: 0;
 }

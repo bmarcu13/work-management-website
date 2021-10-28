@@ -8,12 +8,14 @@ import NavigationBar from "./Components/NavigationBar/NavigationBar";
 
 import MainPage from "./Screens/MainPage/MainPage";
 import PortfolioPage from "./Screens/PortfolioPage/PortfolioPage";
+import ServicesPage from "./Screens/ServicesPage/ServicesPage";
 
 function App() {
     return (
         <BrowserRouter>
             <Route path="/" component={MainPage} exact />
             <Route path="/portofoliu" component={PortfolioPage} exact />
+            <Route path="/servicii" component={ServicesPage} exact />
             <NavigationBar></NavigationBar>
         </BrowserRouter>
     );
