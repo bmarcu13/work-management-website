@@ -2,6 +2,7 @@ import React from "react";
 import "./CerereOferta.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
+import {MdAlternateEmail} from "react-icons/md";
 import cerere_oferta from "../../img/cerere_oferta.jpg";
 export default function CerereOferta() {
     const [checked, setChecked] = React.useState(true);
@@ -10,7 +11,8 @@ export default function CerereOferta() {
             <div className="cerere-oferta-page">
                 <div className="form-wrapper">
                     <form className="cerere-oferta-form">
-                        <p className="title">Formular Cerere Ofertă</p>
+                        
+                        <p className="title"><MdAlternateEmail size={50} color="grey" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
                         <div className="row">
                             <p>
                                 Nume și Prenume
@@ -23,13 +25,7 @@ export default function CerereOferta() {
                                 autofocus
                             />
                         </div>
-                        <div
-                            style={{
-                                display: "flex",
-                                flexDirection: "row",
-                                justifyContent: "left",
-                            }}
-                        >
+                        <div className="special-inputs">
                             <div>
                                 <p>
                                     Companie
@@ -43,7 +39,7 @@ export default function CerereOferta() {
                                     autofocus
                                 />
                             </div>
-                            <div style={{ marginLeft: "30px" }}>
+                            <div >
                                 <p>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
@@ -53,13 +49,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                         </div>
-                        <div
-                            style={{
-                                display: "flex",
-                                flexDirection: "row",
-                                justifyContent: "left",
-                            }}
-                        >
+                        <div className="special-inputs">
                             <div>
                                 <p>
                                     Email<CgAsterisk color="red"></CgAsterisk>
@@ -71,7 +61,7 @@ export default function CerereOferta() {
                                     autofocus
                                 />
                             </div>
-                            <div style={{ marginLeft: "30px" }}>
+                            <div>
                                 <p>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>
@@ -83,6 +73,17 @@ export default function CerereOferta() {
                                 />
                             </div>
                         </div>
+                        <div className="row">
+                                <p>
+                                    Subiect<CgAsterisk color="red"></CgAsterisk>
+                                </p>
+                                <input
+                                    className="cerere-oferta-input"
+                                    type="text"
+                                    placeholder="Subiect"
+                                    autofocus
+                                />
+                            </div>
                         <div className="row">
                             <p>Conținutul E-mailului</p>
                             <textarea
@@ -105,8 +106,9 @@ export default function CerereOferta() {
                             </span>
                             <CgAsterisk color="red"></CgAsterisk>
                         </p>
-                        <button>
-                            <span className="send-button">Trimite</span>
+                        <button className="cerere-oferta-send-btn">
+                           
+                            Trimite
                         </button>
                     </form>
                 </div>
