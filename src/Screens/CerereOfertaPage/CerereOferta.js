@@ -9,10 +9,11 @@ export default function CerereOferta() {
     return (
         <>
             <div className="cerere-oferta-page">
+                <h2> Solicita o oferta personalizata si fa primul pas pentru protejarea echipei tale.</h2>
                 <div className="form-wrapper">
                     <form className="cerere-oferta-form">
                         
-                        <p className="title"><MdAlternateEmail size={50} color="grey" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
+                        <p className="title"><MdAlternateEmail size={50} color="rgb(255, 147, 6)" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
                         <div className="row">
                             <p>
                                 Nume și Prenume
