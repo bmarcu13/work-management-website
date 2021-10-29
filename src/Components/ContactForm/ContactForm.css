@@ -1,6 +1,85 @@
+<<<<<<< HEAD
 .contact__container {
     display: block;
     border: 10px solid #62b6cb;
+=======
+.contact-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 80px);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+}
+.contact-right-container{
+    width: 50%;
+    height: auto;
+    background-color: orange;
+    display: flex;
+}
+
+.left-container-contact
+{
+    background-color: rgb(202, 202, 245);
+    height: auto;
+    width: 50%;
+}
+
+.form-container {
+    height: auto;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    z-index:0;
+    padding: 20px 20px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 15px;
+}
+.form-container p {
+    text-overflow: ellipsis;
+    width: 320px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#form-container-background {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    border: none;
+    align-items: center;
+    color: #212529;
+    font-size: 1.1rem;
+    width: fit-content;
+>>>>>>> cfe931d3e14cd22f353de79159b3069d3826f950
     border-radius: 10px;
     padding: 0 0 10px 10px;
     max-width: 330px;
@@ -86,3 +165,45 @@ input[type="button"]:hover {
     background-color: #368da2;
     border: #368da2;
 }
+<<<<<<< HEAD
+=======
+
+.cerere-oferta-button{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-color: #004094;
+    background-size: 300% 100%;
+    transition: all 0.1s ease-in-out;
+    color: white;
+    font-size: 16px;
+}
+
+/* devider styles */
+
+.custom-shape-divider-bottom-1635273785 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635273785 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 289px;
+}
+
+.custom-shape-divider-bottom-1635273785 .shape-fill {
+    fill: #FFFFFF;
+}
+>>>>>>> cfe931d3e14cd22f353de79159b3069d3826f950
