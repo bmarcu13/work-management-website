@@ -1,6 +1,6 @@
 .services-page-container {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 50px);
     padding-top: 120px;
     background-color: rgb(204, 204, 204);
 }

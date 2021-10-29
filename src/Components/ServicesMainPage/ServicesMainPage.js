@@ -12,6 +12,11 @@ import SituatiiUrgenta from "../../img/services/situatii-urgenta.jpg";
 import Deseuri from "../../img/services/deseuri.jpg";
 import RSVTI from "../../img/services/rsvti.jpg";
 import AnalizaRiscuri from "../../img/services/analiza-riscuri.jpg";
+import ELearning from "../../img/services/e-learning.jpg";
+import Vibratii from "../../img/services/vibratii.png";
+import Indicatoare from "../../img/services/indicatoare-ssm.jpg";
+import ResurseUmane from "../../img/services/resurse-umane.jpg";
+import Audit from "../../img/services/audit.jpg";
 
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 
@@ -149,8 +154,48 @@ export const servicesList = [
     {
         title: "Analiză de Risc la Securitate Fizică",
         description:
-            "Identificăm și evaluăm riscurile profesionale la care sunt expuși angajații la locurile de muncă și întocmim planul de prevenire și protecție pe baza acestora." +
-            " Scopul evaluării nivelului de risc este de a oferi posibilitatea cunoaşterii situaţiei reale, de la fiecare loc de muncă, din punct de vedere al securităţii şi sănătăţii în muncă, pentru a se lua măsurile de prevenire optime şi realiste.",
+        "Siguranta companiei  (unitatii) dumneavoastra se realizaeaza prin efectuarea unei analize de risc la securitate fizica,"+ 
+        "in baza careia se vor stabili cerintele, masurile si mecanismele de securitate pentru sistemul ce urmeaza a fi imlementat, de ordin tehnic, tehnologic si operational."+
+        " Societatea noastra, este abilitata, sa intocmeasca astfel de evaluari, fiind inscrisa, in Registrul National al Evaluatorilor de Risc, la Securitate Fizica.",
         img: AnalizaRiscuri,
+    },
+    {
+        title: "Formare Profesională",
+        description:
+            "Vin-o la cursurile organizate de noi în vederea perfecționării în conformitate cu cerințele ANC."+ 
+            " În urma finalizării cursului, poți obține certificatul de absolvire în meseria de inspector în domeniul securității și sănătății în muncă.",
+           
+        img: AnalizaRiscuri,
+    },
+    {
+        title: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
+        description:
+            "Oferim servicii de măsurare a zgomotului şi a vibraţiilor transmise omului, în regim abilitat de Ministerul Sănătăţii. Echipamentele utilizate pentru măsurători corespund cerinţelor standardelor internaţionale şi răspund întocmai cerinţelor minime de securitate şi sănătate la locul de muncă.",
+        img: Vibratii,
+    },
+    {
+        title: "Platformă E-learning ",
+        description:
+            "Beneficiază de aplicația “Work” pentru PC/IOS/Android. Poți vizualiza, descărca și modifica documentele, dar și monitoriza statusul privind parcurgerea instructajelor și tesătrilor de către angajații tăi. Reprezentanții Work Management pot face verificări/checklist-uri privind respectarea normelor SSM, SU, PC, RSVTI și Mediu în sediile/punctele de lucru ale Beneficiarului.",
+        img: ELearning,
+    },
+    {
+        title: "Audit si Evaluarea Riscurilor",
+        description:
+        "Identificăm și evaluăm riscurile profesionale la care sunt expuși angajații la locurile de muncă și întocmim planul de prevenire și protecție pe baza acestora." +
+        " Scopul evaluării nivelului de risc este de a oferi posibilitatea cunoaşterii situaţiei reale, de la fiecare loc de muncă, din punct de vedere al securităţii şi sănătăţii în muncă, pentru a se lua măsurile de prevenire optime şi realiste.",
+        img: Audit,
+    },
+    {
+        title: " Indicatoare de securitate SSM & SU",
+        description:
+        "fara info",
+        img: Indicatoare,
+    },
+    {
+        title: "Resurse Umane",
+        description:
+        "Resursa umană este cea cea mai importantă dintre toate resursele existente într-o companie. Work Management oferă în domeniul resurselor umane servicii complete de personal, salarizare, consultanţă şi asistenţă la controalele Instituţiilor de drept.",
+        img: ResurseUmane,
     },
 ];
