@@ -7,9 +7,9 @@ import ServicesMainPage from "../../Components/ServicesMainPage/ServicesMainPage
 import ClientsCarousel from "../../Components/AboutUs/AboutUs";
 import StatisticsSection from "../../Components/StatisticsSection/StatisticsSection";
 import Footer from "../../Components/Footer/Footer";
-import ContactForm from "../../Components/ContactForm/ContactForm";
 
 import "./MainPage.css";
+import ContactSection from "../../Components/ContactSection/ContactSection";
 
 export default function MainPage() {
     return (
@@ -20,7 +20,7 @@ export default function MainPage() {
             <ServicesMainPage></ServicesMainPage>
             <ClientsCarousel></ClientsCarousel>
             <StatisticsSection></StatisticsSection>
-            <ContactForm></ContactForm>
+            <ContactSection></ContactSection>
             <Footer></Footer>
         </div>
     );
