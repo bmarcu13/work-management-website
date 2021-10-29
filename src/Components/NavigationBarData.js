@@ -2,6 +2,12 @@ import { GiElectricalResistance } from "react-icons/gi";
 import { FaUserInjured, FaSignInAlt, FaTools } from "react-icons/fa";
 import { VscMortarBoard, VscHorizontalRule } from "react-icons/vsc";
 import { IoAnalyticsSharp } from "react-icons/io5";
+import FireEstinguisher from '../img/services/fire_estinguisher.png';
+import Securitate from '../img/services/icon_securitate.png';
+import SSM from '../img/services/icon-ssm.png';
+import Audit from '../img/services/icon_audit.png';
+import Deseuri from '../img/services/icon_deseuri.png';
+import Santiere from '../img/services/icon_santiere.png';
 
 import { AiOutlineAlert } from "react-icons/ai";
 import {
@@ -48,26 +54,75 @@ export const dropdownItemsLeft = [
     {
         name: "Securitate și sănătate în muncă",
         icon: <MdOutlineHealthAndSafety className="icon" />,
+        card_icon: SSM,
+        keyword1:"consultanta",
+        keyword2:"documentatie",
+        keyword3:"ceva",
+        style: {
+            backgroundColor: '#cce0db',
+    
+        }
     },
     {
         name: "(SU) Situații de urgență",
         icon: <AiOutlineAlert className="icon" />,
+        card_icon: FireEstinguisher,
+        keyword1:"instructaj",
+        keyword2:"Verificarea periodica",
+        keyword3:"Modificări legislative",
+        style: {
+            backgroundColor: '#c0adc5',
+    
+        }
     },
     {
-        name: "RSVTI",
+        name: "ISCIR-RSVTI",
         icon: <GiElectricalResistance className="icon" />,
+        card_icon: Securitate,
+        keyword1:"Verificare Tehnica",
+        keyword2:"Instalatii ",
+        keyword3:"ceva",
+        style: {
+            backgroundColor: '#f9f2d4',
+    
+        }
+
     },
     {
         name: "Managementul mediului și gestiunea deșeurilor",
         icon: <MdRecycling className="icon" />,
+        card_icon: Deseuri,
+        keyword1:"Specialist",
+        keyword2:"Studii de Mediu",
+        keyword3:"Autorizatie de Mediu",
+        style: {
+            backgroundColor: '#edddd1',
+    
+        }
     },
     {
         name: "Audit și Evaluarea riscurilor de accidentare și îmbolnăvire profesională",
         icon: <FaUserInjured className="icon" />,
+        card_icon: Audit,
+        keyword1:"Factori de Risc",
+        keyword2:"ceva",
+        keyword3:"ceva",
+        style: {
+            backgroundColor: '#b5cddc',
+    
+        }
     },
     {
         name: "Coordonarea șantierelor",
         icon: <FaTools className="icon" />,
+        card_icon: Santiere,
+        keyword1:"Prevenire si protectie",
+        keyword2:"ceva",
+        keyword3:"ceva",
+        style: {
+            backgroundColor: '#EACDD0',
+    
+        }
     },
 ];
 

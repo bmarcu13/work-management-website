@@ -6,6 +6,7 @@ import "./ServicesPage.css";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
+
 import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
 import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
 import SituatiiUrgenta from "../../img/services/situatii-urgenta.jpg";
@@ -17,7 +18,9 @@ import Vibratii from "../../img/services/vibratii.png";
 import Indicatoare from "../../img/services/indicatoare-ssm.jpg";
 import ResurseUmane from "../../img/services/resurse-umane.jpg";
 import Audit from "../../img/services/audit.jpg";
+import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
+import Footer from "../../Components/Footer/Footer";
 
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
@@ -66,6 +69,7 @@ export default function ServicesPage() {
     };
 
     return (
+        <>
         <div className="services">
             <div
                 className="bg"
@@ -102,13 +106,9 @@ export default function ServicesPage() {
                     return gridItemComponent(item, index);
                 })}
             </div>
-            <div className="all-services-button">
-                <h3 style={{ display: "flex" }}>
-                    Toate Serviciile
-                    <MdOutlineArrowForwardIos style={{ alignSelf: "center" }} />
-                </h3>
-            </div>
         </div>
+        <Footer></Footer>
+        </>
     );
 }
 
@@ -164,7 +164,7 @@ export const servicesList = [
             "Vin-o la cursurile organizate de noi în vederea perfecționării în conformitate cu cerințele ANC." +
             " În urma finalizării cursului, poți obține certificatul de absolvire în meseria de inspector în domeniul securității și sănătății în muncă.",
 
-        img: AnalizaRiscuri,
+        img: FormareProfesionala,
     },
     {
         title: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",

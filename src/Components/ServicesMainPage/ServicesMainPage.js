@@ -50,13 +50,13 @@ export default function ServicesMainPage() {
                             dignissim suspendisse in est.
                         </p>
                     </div>
-                    <button
+                    <button className="our-services-btn"
                         style={{
                             marginBottom: "auto",
                             width: "150px",
                             height: "40px",
                             backgroundColor: "orange",
-                            border: "none",
+                           
                             borderRadius: "20px",
                             fontSize: "16px",
                             fontWeight: "bold",
@@ -84,5 +84,19 @@ const CardGrid = () => {
 };
 
 const Card = ({ cardData }) => {
-    return <div className="card-wrapper">DANA!</div>;
+    return (<div className="card-wrapper" style={cardData.style}>
+        <div style={{display:'flex', flexDirection:'row'}}> 
+            <img src={cardData.card_icon} style={{width:'70px', marginTop:'10px'}}></img>
+            <h3 style={{marginLeft:'10px',height:'50px' }}>{cardData.name}</h3> 
+        </div>
+         <div className="key-words">
+             <div className="key-word-card" style={{backgroundColor:'#a49c94', color:'white'}}>{cardData.keyword1}</div>
+             <div className="key-word-card" 
+                style={{marginLeft:'10px', backgroundColor:'#c9a4a0'}}>{cardData.keyword2}</div>
+         </div>
+         <div className="key-word-card" style={{marginLeft:'40px', marginTop:'2px', marginBottom:'-20px', backgroundColor:'#a891a0', width:'fit-content'}}>{cardData.keyword3}</div>
+        </div>);
+        
 };
+
+
