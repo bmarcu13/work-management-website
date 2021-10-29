@@ -94,7 +94,7 @@ const Card = ({ cardData }) => {
              <div className="key-word-card" 
                 style={{marginLeft:'10px', backgroundColor:'#c9a4a0'}}>{cardData.keyword2}</div>
          </div>
-         <div className="key-word-card" style={{marginLeft:'40px', marginTop:'2px', marginBottom:'-20px', backgroundColor:'#a891a0', width:'fit-content'}}>{cardData.keyword3}</div>
+         <div className="key-word-card" style={{marginLeft:'10px', marginTop:'2px', marginBottom:'-20px', backgroundColor:'#a891a0', width:'fit-content'}}>{cardData.keyword3}</div>
         </div>);
         
 };

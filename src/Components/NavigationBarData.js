@@ -55,9 +55,9 @@ export const dropdownItemsLeft = [
         name: "Securitate și sănătate în muncă",
         icon: <MdOutlineHealthAndSafety className="icon" />,
         card_icon: SSM,
-        keyword1:"consultanta",
-        keyword2:"documentatie",
-        keyword3:"ceva",
+        keyword1:"Consultanță",
+        keyword2:"Documentație",
+        keyword3:"Echipament de Protecție",
         style: {
             backgroundColor: '#cce0db',
     
@@ -67,8 +67,8 @@ export const dropdownItemsLeft = [
         name: "(SU) Situații de urgență",
         icon: <AiOutlineAlert className="icon" />,
         card_icon: FireEstinguisher,
-        keyword1:"instructaj",
-        keyword2:"Verificarea periodica",
+        keyword1:"Instructaj",
+        keyword2:"Verificare periodică",
         keyword3:"Modificări legislative",
         style: {
             backgroundColor: '#c0adc5',
@@ -79,9 +79,9 @@ export const dropdownItemsLeft = [
         name: "ISCIR-RSVTI",
         icon: <GiElectricalResistance className="icon" />,
         card_icon: Securitate,
-        keyword1:"Verificare Tehnica",
-        keyword2:"Instalatii ",
-        keyword3:"ceva",
+        keyword1:"Verificare Tehnică",
+        keyword2:"Instalații ",
+        keyword3:"Autorizație",
         style: {
             backgroundColor: '#f9f2d4',
     
@@ -94,7 +94,7 @@ export const dropdownItemsLeft = [
         card_icon: Deseuri,
         keyword1:"Specialist",
         keyword2:"Studii de Mediu",
-        keyword3:"Autorizatie de Mediu",
+        keyword3:"Autorizație de Mediu",
         style: {
             backgroundColor: '#edddd1',
     
@@ -105,8 +105,8 @@ export const dropdownItemsLeft = [
         icon: <FaUserInjured className="icon" />,
         card_icon: Audit,
         keyword1:"Factori de Risc",
-        keyword2:"ceva",
-        keyword3:"ceva",
+        keyword2:"Măsuri",
+        keyword3:"Evitarea Accidentelor",
         style: {
             backgroundColor: '#b5cddc',
     
@@ -116,9 +116,9 @@ export const dropdownItemsLeft = [
         name: "Coordonarea șantierelor",
         icon: <FaTools className="icon" />,
         card_icon: Santiere,
-        keyword1:"Prevenire si protectie",
-        keyword2:"ceva",
-        keyword3:"ceva",
+        keyword1:"Prevenire",
+        keyword2:"Coordonator",
+        keyword3:"Plan de securitate",
         style: {
             backgroundColor: '#EACDD0',
     
