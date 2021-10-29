@@ -9,6 +9,7 @@ import CerereOferta from "./Screens/CerereOfertaPage/CerereOferta";
 
 import MainPage from "./Screens/MainPage/MainPage";
 import PortfolioPage from "./Screens/PortfolioPage/PortfolioPage";
+import ServicesPage from "./Screens/ServicesPage/ServicesPage";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" component={MainPage} exact />
             <Route path="/portofoliu" component={PortfolioPage} exact />
             <Route path="/cerere-oferta" component={CerereOferta} exact />
+            <Route path="/servicii" component={ServicesPage} exact />
             <NavigationBar></NavigationBar>
         </BrowserRouter>
     );

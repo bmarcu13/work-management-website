@@ -108,7 +108,7 @@ export default function ServicesMainPage() {
     );
 }
 
-const servicesList = [
+export const servicesList = [
     {
         title: "Securitate și Sănătate în Muncă",
         description:

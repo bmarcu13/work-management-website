@@ -56,7 +56,6 @@
 }
 
 .main-page .services .grid-container .grid-item-container {
-    width: 400;
     max-width: 400px;
     display: flex;
     flex-direction: column;
