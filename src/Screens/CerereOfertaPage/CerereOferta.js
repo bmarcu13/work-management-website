@@ -9,13 +9,13 @@ export default function CerereOferta() {
     return (
         <>
             <div className="cerere-oferta-page">
-                <h2> Solicita o oferta personalizata si fa primul pas pentru protejarea echipei tale.</h2>
+            <h2> Solicită o ofertă personalizată și fă primul pas în protejarea echipei tale.</h2>
                 <div className="form-wrapper">
                     <form className="cerere-oferta-form">
-                        
-                        <p className="title"><MdAlternateEmail size={50} color="rgb(255, 147, 6)" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
+                    <p className="title"><MdAlternateEmail size={50} color="rgb(255, 147, 6)" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
+
                         <div className="row">
-                            <p>
+                            <p style={{fontWeight:'bold'}}>
                                 Nume și Prenume
                                 <CgAsterisk color="red"></CgAsterisk>
                             </p>
@@ -28,8 +28,7 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div>
-                                <p>
-                                    Companie
+                            <p style={{fontWeight:'bold'}}>                                    Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -41,7 +40,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                             <div >
-                                <p>Funcție</p>
+                                 <p style={{fontWeight:'bold'}}>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
@@ -52,7 +51,7 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div>
-                                <p>
+                            <p style={{fontWeight:'bold'}}>
                                     Email<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -63,7 +62,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                             <div>
-                                <p>
+                            <p style={{fontWeight:'bold'}}>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -75,7 +74,7 @@ export default function CerereOferta() {
                             </div>
                         </div>
                         <div className="row">
-                                <p>
+                                <p style={{fontWeight:'bold'}}>
                                     Subiect<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -86,7 +85,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                         <div className="row">
-                            <p>Conținutul E-mailului</p>
+                        <p style={{fontWeight:'bold'}}>Conținutul E-mailului</p>
                             <textarea
                                 className="cerere-oferta-input mesaj-input"
                                 rows="10"
@@ -103,7 +102,7 @@ export default function CerereOferta() {
                             ></input>
                             Sunt de acord cu{" "}
                             <span style={{ textDecoration: "underline" }}>
-                                Politica de Confidentialitate.
+                                Politica de Confidențialitate.
                             </span>
                             <CgAsterisk color="red"></CgAsterisk>
                         </p>
