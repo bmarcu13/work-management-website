@@ -13,7 +13,7 @@ export default function CerereOferta() {
                 <div className="form-wrapper">
                     <form className="cerere-oferta-form">
                     <p className="title"><MdAlternateEmail size={50} color="rgb(255, 147, 6)" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
-                  
+
                         <div className="row">
                             <p style={{fontWeight:'bold'}}>
                                 Nume și Prenume

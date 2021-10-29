@@ -43,8 +43,6 @@
     background: #ffffff;
     position: relative;
     padding-bottom: 50px;
-    /* box-shadow: 5px 5px 8px 5px rgba(253, 253, 253, 0.3); */
-    
 }
 .title {
     color: #100164;
@@ -93,12 +91,12 @@
   font-weight: 600!important;
   text-transform: uppercase!important;
   padding-top: 10px !important;
-    padding-right: 25px!important;
-    padding-bottom: 10px !important;
-    padding-left: 25px!important; 
+  padding-right: 25px!important;
+  padding-bottom: 10px !important;
+  padding-left: 25px!important; 
 }
 .cerere-oferta-send-btn:hover{
   cursor: pointer;
   transform: scale3d(1.1, 1.2, 0.3);
   border: 2px solid rgb(255, 147, 6);
-} 
+}
