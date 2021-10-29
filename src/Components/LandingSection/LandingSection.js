@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import "./LandingSection.css";
 import "animate.css";
 
@@ -84,24 +86,34 @@ export default function LandingSection() {
                         id="landing-page-buttons"
                         className="landing-page-buttons"
                     >
-                        <button>
-                            Servicii
-                            <RiArrowDropDownLine
-                                size={30}
-                                style={{
-                                    transform: "rotate(-90deg)",
-                                }}
-                            />
-                        </button>
-                        <button>
-                            Cerere Ofertă
-                            <RiArrowDropDownLine
-                                size={30}
-                                style={{
-                                    transform: "rotate(-90deg)",
-                                }}
-                            />
-                        </button>
+                        <Link
+                            to={"/servicii"}
+                            style={{ textDecoration: "none" }}
+                        >
+                            <button>
+                                Servicii
+                                <RiArrowDropDownLine
+                                    size={30}
+                                    style={{
+                                        transform: "rotate(-90deg)",
+                                    }}
+                                />
+                            </button>
+                        </Link>
+                        <Link
+                            to={"/cerere-oferta"}
+                            style={{ textDecoration: "none" }}
+                        >
+                            <button>
+                                Cerere Ofertă
+                                <RiArrowDropDownLine
+                                    size={30}
+                                    style={{
+                                        transform: "rotate(-90deg)",
+                                    }}
+                                />
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
