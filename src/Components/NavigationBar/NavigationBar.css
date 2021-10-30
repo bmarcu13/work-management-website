@@ -4,8 +4,7 @@
     justify-content: space-between;
     padding-top: 20px;
     align-items: center;
-    position: relative;
-    z-index: 3;
+    z-index: 10;
 }
 
 .navigation-menu-container {
@@ -20,11 +19,9 @@
     display: flex;
     align-items: center;
     z-index: 4;
-
-    /*  */
     box-shadow: 4px 4px 15px 0px #000000;
 }
-.logo-shape{
+.logo-shape {
     height: 50px;
     width: fit-content;
     margin-left: -25px;
@@ -39,8 +36,7 @@
     box-shadow: inset 4px 3px 15px 0px #004094;
     /* box-shadow: 4px 4px 15px 0px #080808; */
 }
-.blob{
- 
+.blob {
     height: 520px;
 
     position: absolute;
