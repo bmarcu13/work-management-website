@@ -1,7 +1,14 @@
-.mapdiv{
-    height: 400px;
-    width: 500px;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(229, 227, 223);
+.contact-first-container{
+    display: flex;
+    flex-direction: row;
+   
+}
+.contact-infos{
+    display: flex;
+    
+}
+.contact-first-container .contact-infos p{
+    font-weight: bold;
+    font-size: larger;
+    
 }
