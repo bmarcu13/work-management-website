@@ -24,15 +24,6 @@
     padding: 10px 10px 0 0;
 }
 
-hr {
-    width: 100%;
-    display: block;
-    margin: 5px 0;
-    height: 5px;
-    border: 0;
-    background-color: #fbfbfb;
-}
-
 .contact__container input,
 textarea {
     width: 100%;

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 import { Link } from "react-router-dom";
 
-import Logo from "../../img/logo.png";
+import Logo from "../../img/logo-work.png";
 import { FaMapMarkerAlt, FaFacebookSquare } from "react-icons/fa";
 import { BsPersonCircle } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
@@ -29,7 +29,15 @@ export default function Footer() {
                     </div>
 
                     <div className="footer footer-left-container">
-                        <img src={Logo} alt="logo"></img>
+                        <img
+                            src={Logo}
+                            alt="logo"
+                            style={{
+                                width: "100px",
+                                height: "auto",
+                                margin: "auto",
+                            }}
+                        ></img>
                         <br></br>
                         <p style={{ color: "white", fontSize: "18px" }}>
                             Servicii de securitate și sănătate în muncă și de
