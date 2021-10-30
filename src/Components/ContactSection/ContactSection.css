@@ -20,9 +20,6 @@
     border-radius: 20px;
 }
 
-.contact-section .wrapper .title {
-}
-
 .cerere-oferta-button {
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
@@ -57,5 +54,5 @@
 }
 
 .custom-shape-divider-top-1635533765 .shape-fill {
-    fill: #ac0c0c;
+    fill: white;
 }

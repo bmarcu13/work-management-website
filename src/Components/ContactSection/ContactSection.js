@@ -29,7 +29,6 @@ export default function ContactSection() {
                         SCRIE-NE!{" "}
                         <SiTheconversation
                             size={36}
-                            className="message-icon"
                             style={{ verticalAlign: "top" }}
                         ></SiTheconversation>
                     </h1>
