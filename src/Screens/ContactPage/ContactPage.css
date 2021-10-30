@@ -1,14 +1,11 @@
-.contact-first-container{
+.contact-first-container {
     display: flex;
     flex-direction: row;
-   
 }
-.contact-infos{
+.contact-infos {
     display: flex;
-    
 }
-.contact-first-container .contact-infos p{
+.contact-first-container .contact-infos p {
     font-weight: bold;
     font-size: larger;
-    
 }
