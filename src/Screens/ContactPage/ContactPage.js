@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
-import headerBanner from "../../img/our-clients-banner.png";
+import headerBanner from "../../img/contact-bckgr.jpg";
 import ContactSection from "../../Components/ContactSection/ContactSection";
 import Footer from "../../Components/Footer/Footer";
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
     return (
         <div className="screen-component">
             <div className="portfolio-header">
-                <img src={headerBanner} />
+                <img  style={{height:'270px',width:'auto',marginTop:'-20px'}}src={headerBanner} />
                 <div
                     style={{
                         backgroundColor: "black",
@@ -49,8 +49,8 @@ export default function ContactPage() {
                     style={{
                         display: "flex",
                         textAlign: "right",
-                        height: "300px",
-                        width: "60%",
+                        height: "350px",
+                        width: "100%",
                     }}
                 >
                     <div
@@ -58,7 +58,7 @@ export default function ContactPage() {
                         style={{
                             background: "none!important",
                             height: "100%",
-                            width: "100%",
+                            width: "90%",
                             marginTop: "30px",
                             marginLeft: "20px",
                         }}
@@ -84,8 +84,9 @@ export default function ContactPage() {
                                 color: "rgb(0, 61, 153)",
                             }}
                         ></BsFillHouseFill>
-                        Denumire
+                        Denumire: S.C. WORK MANAGEMENT S.R.L.
                     </p>
+                    <br></br>
                     <p>
                         <BsPinMapFill
                             size={25}
@@ -97,6 +98,7 @@ export default function ContactPage() {
                         Sediul social: B-dul Regina Maria, Nr. 25, Etaj 1,
                         Camerele 6-9, Sector 4, Bucureşti
                     </p>
+                    <br></br>
                     <p>
                         <AiOutlineFieldNumber
                             size={25}
@@ -107,6 +109,7 @@ export default function ContactPage() {
                         ></AiOutlineFieldNumber>
                         Nr. Reg. Com: J40 / 127 / 2007
                     </p>
+                    <br></br>
                     <p>
                         <BsFillFileEarmarkCodeFill
                             size={25}

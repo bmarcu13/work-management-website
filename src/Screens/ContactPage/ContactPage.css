@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 .contact-infos {
-    display: flex;
+    
 }
 .contact-first-container .contact-infos p {
     font-weight: bold;
