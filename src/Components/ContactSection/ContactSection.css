@@ -3,42 +3,24 @@
     height: 100vh;
     display: flex;
     position: relative;
-    padding-top: 40px;
     background-image: url("../../img/bg-map.png");
+    align-items: center;
+    padding-top: 40px;
 }
 
 .contact-section .wrapper {
-    max-width: 1100px;
+    max-width: 600px;
     width: 70%;
-    height: 600px;
+    height: fit-content;
     margin: auto;
     display: flex;
-    padding: 20px;
+    padding: 40px;
     flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
 }
 
-.contact-section .wrapper .top {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-}
-
-.contact-section .wrapper .bottom {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-color: coral;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.wrapper .left-side-wrapper {
-    height: calc(100%);
-    flex: 1;
-    margin: 20px 20px 20px 0px;
-    background-color: #7235ea;
-    border-radius: 10px;
+.contact-section .wrapper .title {
 }
 
 .cerere-oferta-button {

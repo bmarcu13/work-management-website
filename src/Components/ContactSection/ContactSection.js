@@ -3,7 +3,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 import "./ContactSection.css";
 
-import bg from "../../img/bg-map.png";
+import { SiTheconversation } from "react-icons/si";
 
 export default function ContactSection() {
     return (
@@ -23,11 +23,22 @@ export default function ContactSection() {
             </div>
 
             <div className="wrapper">
-                <div className="top">
-                    <div className="left-side-wrapper">ceva</div>
-                    <ContactForm></ContactForm>
+                <div className="title">
+                    <h1 id="contact-form-title">
+                        {" "}
+                        SCRIE-NE!{" "}
+                        <SiTheconversation
+                            size={36}
+                            className="message-icon"
+                            style={{ verticalAlign: "top" }}
+                        ></SiTheconversation>
+                    </h1>
+                    <p style={{ fontSize: "20px" }}>
+                        Vrei să afli mai multe, să ne cunoști sau să faci o
+                        sesizare? Suntem la un mail distanță.
+                    </p>
                 </div>
-                <div className="bottom"></div>
+                <ContactForm></ContactForm>
             </div>
         </div>
     );
