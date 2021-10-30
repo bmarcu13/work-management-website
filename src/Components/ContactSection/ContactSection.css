@@ -1,0 +1,61 @@
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-image: url("../../img/bg-map.png");
+    align-items: center;
+    padding-top: 40px;
+}
+
+.contact-section .wrapper {
+    max-width: 600px;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contact-section .wrapper .title {
+}
+
+.cerere-oferta-button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-color: #004094;
+    background-size: 300% 100%;
+    transition: all 0.1s ease-in-out;
+    color: white;
+    font-size: 16px;
+}
+
+.custom-shape-divider-top-1635533765 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1635533765 svg {
+    position: relative;
+    display: block;
+    width: calc(199% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1635533765 .shape-fill {
+    fill: #ac0c0c;
+}
