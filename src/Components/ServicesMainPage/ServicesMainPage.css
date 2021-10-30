@@ -74,12 +74,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    margin-top: 20px;
 }
 
 .key-word-card {
     padding: 3px 4px 3px 4px;
     border-radius: 5px;
+    margin: 0;
 }
 .our-services-btn:hover {
     cursor: pointer;

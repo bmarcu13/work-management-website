@@ -32,7 +32,15 @@ export default function ServicesMainPage() {
                             margin: "auto",
                         }}
                     >
-                        <h2 style={{ color: "white", margin: "auto", marginBottom:'20px', fontSize:'28px', fontWeight:'bold'}}>
+                        <h2
+                            style={{
+                                color: "white",
+                                margin: "auto",
+                                marginBottom: "20px",
+                                fontSize: "28px",
+                                fontWeight: "bold",
+                            }}
+                        >
                             Serviciile noastre
                         </h2>
                         <p
@@ -40,11 +48,12 @@ export default function ServicesMainPage() {
                                 color: "white",
                                 margin: "10px 20px auto",
                                 textAlign: "center",
-                                fontSize:'20px',
-                                fontWeight:'bold'
+                                fontSize: "20px",
+                                fontWeight: "bold",
                             }}
                         >
-                            WORK MANAGEMENT prestează servicii și consultanță, în urmatoarele domenii:
+                            WORK MANAGEMENT prestează servicii și consultanță,
+                            în urmatoarele domenii:
                         </p>
                     </div>
                     <button
@@ -55,7 +64,7 @@ export default function ServicesMainPage() {
                             height: "40px",
                             backgroundColor: "orange",
                             borderRadius: "20px",
-                            border:'none',
+                            border: "none",
                             fontSize: "16px",
                             fontWeight: "bold",
                             color: "white",
@@ -98,7 +107,7 @@ const Card = ({ cardData }) => {
                 <h3 style={{ marginLeft: "10px" }}>{cardData.name}</h3>
             </div>
             <div className="key-words">
-                <div
+                <p
                     className="key-word-card"
                     style={{
                         backgroundColor: "#a49c94",
@@ -107,14 +116,14 @@ const Card = ({ cardData }) => {
                     }}
                 >
                     {cardData.keyword1}
-                </div>
-                <div
+                </p>
+                <p
                     className="key-word-card"
                     style={{ marginRight: "10px", backgroundColor: "#c9a4a0" }}
                 >
                     {cardData.keyword2}
-                </div>
-                <div
+                </p>
+                <p
                     className="key-word-card"
                     style={{
                         marginTop: "2px",
@@ -123,7 +132,7 @@ const Card = ({ cardData }) => {
                     }}
                 >
                     {cardData.keyword3}
-                </div>
+                </p>
             </div>
         </div>
     );
