@@ -3,6 +3,8 @@ import ContactForm from "../ContactForm/ContactForm";
 
 import "./ContactSection.css";
 
+import bg from "../../img/bg-map.png";
+
 export default function ContactSection() {
     return (
         <div className="contact-section">

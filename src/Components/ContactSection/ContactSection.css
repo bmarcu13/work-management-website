@@ -3,6 +3,8 @@
     height: 100vh;
     display: flex;
     position: relative;
+    padding-top: 40px;
+    background-image: url("../../img/bg-map.png");
 }
 
 .contact-section .wrapper {
@@ -13,7 +15,6 @@
     display: flex;
     padding: 20px;
     flex-direction: column;
-    background-color: chartreuse;
 }
 
 .contact-section .wrapper .top {

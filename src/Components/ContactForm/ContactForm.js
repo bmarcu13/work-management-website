@@ -1,12 +1,7 @@
 import React from "react";
 import "./ContactForm.css";
 
-import { useState } from "react";
-import { FaRegUser as IconName } from "react-icons/fa";
-import { GrPhone } from "react-icons/gr";
-import { SiTheconversation } from "react-icons/si";
-import { CgAsterisk } from "react-icons/cg";
-import { HiOutlineMail as IconEmail } from "react-icons/hi";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 export default function ContactForm() {
     const [checked, setChecked] = React.useState(true);
@@ -14,18 +9,27 @@ export default function ContactForm() {
         <div class="contact__container">
             <form class="contact__form">
                 <p>Name</p>
-                <input class="contact__form-input" type="name" />
+                <input class="contact__form-input" type="name" required />
 
                 <p>Email</p>
-                <input class="contact__form-input" type="email" />
+                <input class="contact__form-input" type="email" required />
 
                 <p>Phone</p>
                 <input class="contact__form-input" type="phone" />
 
                 <p>Message</p>
-                <textarea class="contact__form-textarea" type="text"></textarea>
+                <textarea
+                    class="contact__form-textarea"
+                    type="text"
+                    required
+                ></textarea>
 
-                <input type="submit" value="Send message" />
+                <button type="submit">
+                    <p style={{ marginRight: "10px", fontSize: "16px" }}>
+                        Trimite
+                    </p>
+                    <BsArrowReturnRight size={16} />
+                </button>
             </form>
         </div>
     );
