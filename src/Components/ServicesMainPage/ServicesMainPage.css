@@ -2,7 +2,7 @@
     width: 100%;
     height: calc(100vh);
     padding-top: 120px;
-    background: #878384;
+    background: #dadada;
 }
 
 .services-page-container .cards-container {
@@ -15,6 +15,7 @@
     background-color: white;
     margin: auto;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .cards-container .title-section {
