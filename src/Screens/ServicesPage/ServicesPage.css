@@ -26,14 +26,9 @@
     color: white;
     font-weight: 900;
     letter-spacing: 2px;
+ 
 }
 
-.services .divider hr {
-    border: 2px solid white;
-    background: rgb(255, 255, 255);
-    width: 200px;
-    border-radius: 30px;
-}
 
 .services .divider img {
     width: 100%;

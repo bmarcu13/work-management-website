@@ -32,7 +32,7 @@ export default function ServicesMainPage() {
                             margin: "auto",
                         }}
                     >
-                        <h2 style={{ color: "white", margin: "auto" }}>
+                        <h2 style={{ color: "white", margin: "auto", marginBottom:'20px', fontSize:'28px', fontWeight:'bold'}}>
                             Serviciile noastre
                         </h2>
                         <p
@@ -40,14 +40,11 @@ export default function ServicesMainPage() {
                                 color: "white",
                                 margin: "10px 20px auto",
                                 textAlign: "center",
+                                fontSize:'20px',
+                                fontWeight:'bold'
                             }}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Eget mauris pharetra et
-                            ultrices neque ornare aenean euismod elementum. Amet
-                            dictum sit amet justo. Pretium quam vulputate
-                            dignissim suspendisse in est.
+                            WORK MANAGEMENT prestează servicii și consultanță, în urmatoarele domenii:
                         </p>
                     </div>
                     <button
@@ -58,6 +55,7 @@ export default function ServicesMainPage() {
                             height: "40px",
                             backgroundColor: "orange",
                             borderRadius: "20px",
+                            border:'none',
                             fontSize: "16px",
                             fontWeight: "bold",
                             color: "white",

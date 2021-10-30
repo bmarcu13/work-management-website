@@ -35,8 +35,7 @@ const TitleBg = () => {
                 style={{
                     border: "2px solid #003d99",
                     borderRadius: "3px",
-                    marginLeft: "25px",
-                    marginRight: "25px",
+                   
                     marginBottom: "20px",
                 }}
             ></hr>

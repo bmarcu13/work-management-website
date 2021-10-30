@@ -40,13 +40,13 @@
     margin: auto;
 }
 
-.strength1:hover {
+.strength1 {
     border: 2px solid #42b7ca;
 }
-.strength2:hover {
+.strength2 {
     border: 2px solid #425fca;
 }
-.strength3:hover {
+.strength3 {
     border: 2px solid #8c37b6;
 }
 

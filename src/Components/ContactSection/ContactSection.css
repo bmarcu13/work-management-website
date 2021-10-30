@@ -1,6 +1,6 @@
 .contact-section {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     position: relative;
     background-image: url("../../img/bg-map.png");
@@ -18,6 +18,8 @@
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
+    z-index: 1;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .cerere-oferta-button {

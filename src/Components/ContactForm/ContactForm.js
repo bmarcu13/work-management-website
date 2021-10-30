@@ -8,16 +8,16 @@ export default function ContactForm() {
     return (
         <div class="contact__container">
             <form class="contact__form">
-                <p>Name</p>
+                <p>Nume</p>
                 <input class="contact__form-input" type="name" required />
 
                 <p>Email</p>
                 <input class="contact__form-input" type="email" required />
 
-                <p>Phone</p>
+                <p>Telefon</p>
                 <input class="contact__form-input" type="phone" />
 
-                <p>Message</p>
+                <p>Mesaj</p>
                 <textarea
                     class="contact__form-textarea"
                     type="text"

@@ -2,7 +2,9 @@
     width: 100%;
     height: calc(100vh);
     padding-top: 120px;
-    background: #dadada;
+    background: #f7f5f5;
+    border-top: 2px groove rgb(252, 220, 171);
+    border-bottom: 2px groove rgb(240, 215, 178);
 }
 
 .services-page-container .cards-container {
