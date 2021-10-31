@@ -1,6 +1,6 @@
 .services-page-container {
     width: 100%;
-    height: calc(100vh);
+    min-height: calc(100vh);
     padding-top: 120px;
     background: #f7f5f5;
     border-top: 2px groove rgb(252, 220, 171);
@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: row;
     height: 90%;
-    max-height: 700px;
     max-width: 1200px;
     width: 90%;
     background-color: white;
@@ -49,7 +48,8 @@
 .cards-container .card-section {
     flex: 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-auto-rows: 1fr;
     margin-top: 40px;
     margin-bottom: 40px;
     row-gap: 20px;
@@ -63,6 +63,7 @@
     border-radius: 20px;
     padding: 10px;
     flex: 1;
+    min-height: 250px;
 }
 
 .card-section .card-wrapper:hover {
@@ -85,8 +86,18 @@
     cursor: pointer;
     border: 2px solid black;
 }
+@media screen and (max-width: 1150px) and (min-width: 920px) {
+    .cards-container .card-section {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+        margin-top: 40px;
+        margin-bottom: 40px;
+        row-gap: 20px;
+    }
+}
 
-@media (max-width: 780px) {
+@media (max-width: 920px) {
     .services-page-container .cards-container {
         display: flex;
         flex-direction: column;
@@ -94,6 +105,6 @@
 
     .cards-container .card-section {
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(10px, 1fr));
     }
 }

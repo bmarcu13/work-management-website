@@ -100,11 +100,30 @@ const Card = ({ cardData }) => {
                     height: "fit-content",
                 }}
             >
-                <img
-                    src={cardData.card_icon}
-                    style={{ width: "70px", height: "70px", marginTop: "10px" }}
-                ></img>
-                <h3 style={{ marginLeft: "10px" }}>{cardData.name}</h3>
+                <div
+                    style={{
+                        width: "calc(30% - 10px)",
+                        aspectRatio: "1",
+                        position: "relative",
+                        marginRight: "10px",
+                    }}
+                >
+                    <img
+                        src={cardData.card_icon}
+                        style={{
+                            position: "absolute",
+                            width: "100%",
+                            height: "auto",
+                            margin: "auto",
+                            top: 0,
+                            bottom: 0,
+                            right: 0,
+                            left: 0,
+                        }}
+                    ></img>
+                </div>
+
+                <h3 style={{ width: "70%" }}>{cardData.name}</h3>
             </div>
             <div className="key-words">
                 <p
