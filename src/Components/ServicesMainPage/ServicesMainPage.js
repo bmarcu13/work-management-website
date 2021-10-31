@@ -98,6 +98,7 @@ const Card = ({ cardData }) => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems:'center',
+        
                     height: "fit-content",
                 }}
             >
@@ -112,8 +113,7 @@ const Card = ({ cardData }) => {
                     <img
                         src={cardData.card_icon}
                         style={{
-                            position: "absolute",
-                            alignSelf:"center",
+                            position: "absolute", 
                             width: "100%",
                             height: "auto",
                             margin: "auto",
@@ -131,7 +131,7 @@ const Card = ({ cardData }) => {
                 <p
                     className="key-word-card"
                     style={{
-                        backgroundColor: "#A3C1AD",
+                        backgroundColor: "#00416A",
                         color: "white",
                         marginRight: "10px",
                     }}

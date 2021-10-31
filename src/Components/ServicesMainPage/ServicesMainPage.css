@@ -74,6 +74,8 @@
 
 .key-words {
     display: inline-flex;
+    justify-content: center;
+    align-self: flex-end;
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
@@ -90,6 +92,7 @@
 .our-services-btn:hover {
     cursor: pointer;
     border: 2px solid black;
+   
 }
 
 @media screen and (max-width: 1150px) and (min-width: 920px) {
