@@ -1,7 +1,7 @@
 .services-page-container {
     width: 100%;
     min-height: calc(100vh);
-    padding-top: 120px;
+    padding-top: 90px;
     background: #f7f5f5;
     border-top: 2px groove rgb(252, 220, 171);
     border-bottom: 2px groove rgb(240, 215, 178);
@@ -61,11 +61,14 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #e0e7fc;
+    background-color: #ffffff;
     margin: 0px 15px;
     border-radius: 5px;
+    border: 1px solid rgb(11, 59, 161);
+    box-shadow: 3px 3px 4px 4px  rgb(211, 211, 211); 
     padding: 10px;
     flex: 1;
+    /* height: fit-content; */
     min-height: 250px;
     padding-bottom: 20px;
 }

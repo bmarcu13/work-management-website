@@ -68,7 +68,7 @@ export const dropdownItemsLeft = [
         icon: <AiOutlineAlert className="icon" />,
         card_icon: SSM,
         keyword1:"Instructaj",
-        keyword2:"Verificare periodică",
+        keyword2:"Verificare",
         keyword3:"Modificări legislative",
         style: {
             backgroundColor: '#c0adc5',

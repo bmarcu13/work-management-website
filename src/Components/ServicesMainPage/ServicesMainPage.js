@@ -163,7 +163,8 @@ const Card = ({ cardData }) => {
                     className="key-word-card"
                     style={{
                         marginRight: "5px",
-                        backgroundColor: "#c9a4a0",
+                        color: "white",
+                        backgroundColor: "#00416A",
                         marginBottom: "5px",
                     }}
                 >
@@ -172,7 +173,8 @@ const Card = ({ cardData }) => {
                 <p
                     className="key-word-card"
                     style={{
-                        backgroundColor: "#a891a0",
+                        color: "white",
+                        backgroundColor: "#00416A",
                     }}
                 >
                     {cardData.keyword3}
