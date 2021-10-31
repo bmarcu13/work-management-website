@@ -65,6 +65,7 @@
     padding: 10px;
     flex: 1;
     min-height: 250px;
+    justify-content: space-between;
 }
 
 .card-section .card-wrapper:hover {
@@ -74,7 +75,11 @@
 .key-words {
     display: inline-flex;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
     /* overflow: hidden; */
+    position: relative;
+    bottom: 0;
 }
 
 .key-word-card {

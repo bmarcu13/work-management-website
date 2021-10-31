@@ -146,7 +146,6 @@ const Card = ({ cardData }) => {
                     className="key-word-card"
                     style={{
                         marginTop: "2px",
-                        marginBottom: "-20px",
                         backgroundColor: "#a891a0",
                     }}
                 >
