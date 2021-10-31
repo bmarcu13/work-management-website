@@ -2,11 +2,14 @@ import React from "react";
 import "./ServicesMainPage.css";
 
 import { TiArrowSortedUp } from "react-icons/ti";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 import {
     dropdownItemsLeft,
     dropdownItemsRight,
 } from "../../Components/NavigationBarData";
+
+import cascuta from "../../img/service-icons/casca-f.png";
 
 let menuItems = [].concat(dropdownItemsLeft).concat(dropdownItemsRight);
 
@@ -111,7 +114,7 @@ const Card = ({ cardData }) => {
                     }}
                 >
                     <img
-                        src={cardData.card_icon}
+                        src={cascuta}
                         style={{
                             position: "absolute",
                             width: "100%",
@@ -125,7 +128,12 @@ const Card = ({ cardData }) => {
                     ></img>
                 </div>
 
-                <h3 style={{ width: "100%", textAlign: "center" }}>
+                <h3
+                    style={{
+                        width: "100%",
+                        textAlign: "center",
+                    }}
+                >
                     {cardData.name}
                 </h3>
             </div>
@@ -135,25 +143,41 @@ const Card = ({ cardData }) => {
                     style={{
                         backgroundColor: "#00416A",
                         color: "white",
-                        marginRight: "10px",
+                        marginRight: "6px",
+                        marginBottom: "5px",
                     }}
                 >
                     {cardData.keyword1}
                 </p>
                 <p
                     className="key-word-card"
-                    style={{ marginRight: "10px", backgroundColor: "#c9a4a0" }}
+                    style={{
+                        marginRight: "5px",
+                        backgroundColor: "#c9a4a0",
+                        marginBottom: "5px",
+                    }}
                 >
                     {cardData.keyword2}
                 </p>
                 <p
                     className="key-word-card"
                     style={{
-                        marginTop: "2px",
                         backgroundColor: "#a891a0",
                     }}
                 >
                     {cardData.keyword3}
+                </p>
+            </div>
+            <div className="read-more-button" style={{ fontWeight: "900" }}>
+                <p>
+                    <MdOutlineArrowForwardIos
+                        style={{
+                            paddingRight: "5px",
+                            verticalAlign: "middle",
+                            marginBottom: "3px",
+                        }}
+                    />
+                    Mai multe
                 </p>
             </div>
         </div>

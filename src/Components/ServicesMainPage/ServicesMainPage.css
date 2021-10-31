@@ -60,12 +60,14 @@
 .card-section .card-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #e0e7fc;
     margin: 0px 15px;
     border-radius: 5px;
     padding: 10px;
     flex: 1;
     min-height: 250px;
+    padding-bottom: 20px;
 }
 
 .card-section .card-wrapper:hover {
@@ -74,10 +76,11 @@
 
 .key-words {
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-self: flex-end;
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 10px;
     box-sizing: border-box;
     /* overflow: hidden; */
     position: relative;
@@ -85,13 +88,42 @@
 }
 
 .key-word-card {
-    padding: 3px 4px 3px 4px;
+    padding: 3px 4px;
     border-radius: 5px;
     margin: 0;
+    height: 20px;
 }
 .our-services-btn:hover {
     cursor: pointer;
     border: 2px solid black;
+}
+
+.card-section .card-wrapper .read-more-button {
+    color: rgb(11, 59, 161);
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    padding-left: 0px;
+    font-size: 18px;
+    margin-left: 10px;
+    /* border-radius: 5px; */
+    /* padding: 5px 10px 5px 0px; */
+    user-select: none;
+    width: 120px;
+    height: 24px;
+    transition: 0.2s;
+    margin-top: 30px;
+    position: relative;
+}
+
+.card-section .card-wrapper .read-more-button p {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-section .card-wrapper .read-more-button:hover p {
+    /* color: white; */
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 1150px) and (min-width: 920px) {
