@@ -46,12 +46,7 @@ export default function ContactPage() {
             <div className="contact-first-container">
                 <div
                     className="mapouter"
-                    style={{
-                        display: "flex",
-                        textAlign: "right",
-                        height: "350px",
-                        width: "100%",
-                    }}
+                   
                 >
                     <div
                         class="gmap_canvas"
@@ -60,7 +55,7 @@ export default function ContactPage() {
                             height: "100%",
                             width: "90%",
                             marginTop: "30px",
-                            marginLeft: "20px",
+                            marginLeft: "40px",
                         }}
                     >
                         <iframe
@@ -86,7 +81,6 @@ export default function ContactPage() {
                         ></BsFillHouseFill>
                         Denumire: S.C. WORK MANAGEMENT S.R.L.
                     </p>
-                    <br></br>
                     <p>
                         <BsPinMapFill
                             size={25}
@@ -95,10 +89,8 @@ export default function ContactPage() {
                                 color: "rgb(0, 61, 153)",
                             }}
                         ></BsPinMapFill>
-                        Sediul social: B-dul Regina Maria, Nr. 25, Etaj 1,
-                        Camerele 6-9, Sector 4, Bucureşti
+                        Sediul social: B-dul Regina Maria, Nr. 25
                     </p>
-                    <br></br>
                     <p>
                         <AiOutlineFieldNumber
                             size={25}
@@ -109,7 +101,6 @@ export default function ContactPage() {
                         ></AiOutlineFieldNumber>
                         Nr. Reg. Com: J40 / 127 / 2007
                     </p>
-                    <br></br>
                     <p>
                         <BsFillFileEarmarkCodeFill
                             size={25}
