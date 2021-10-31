@@ -17,7 +17,7 @@ export default function ContactPage() {
     return (
         <div className="screen-component">
             <div className="portfolio-header">
-                <img  style={{height:'270px',width:'auto',marginTop:'-20px'}}src={headerBanner} />
+                <img  style={{height:'500px',width:'100%',marginTop:'-20px'}}src={headerBanner} />
                 <div
                     style={{
                         backgroundColor: "black",
