@@ -92,13 +92,13 @@ const CardGrid = () => {
 
 const Card = ({ cardData }) => {
     return (
-        <div className="card-wrapper" style={cardData.style}>
+        <div className="card-wrapper">
             <div
                 style={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems:'center',
-        
+                    alignItems: "center",
+
                     height: "fit-content",
                 }}
             >
@@ -113,7 +113,7 @@ const Card = ({ cardData }) => {
                     <img
                         src={cardData.card_icon}
                         style={{
-                            position: "absolute", 
+                            position: "absolute",
                             width: "100%",
                             height: "auto",
                             margin: "auto",
@@ -125,7 +125,9 @@ const Card = ({ cardData }) => {
                     ></img>
                 </div>
 
-                <h3 style={{ width: "100%", textAlign:'center'}}>{cardData.name}</h3>
+                <h3 style={{ width: "100%", textAlign: "center" }}>
+                    {cardData.name}
+                </h3>
             </div>
             <div className="key-words">
                 <p
