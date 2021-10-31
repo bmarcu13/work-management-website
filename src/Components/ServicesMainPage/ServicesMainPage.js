@@ -132,11 +132,21 @@ const Card = ({ cardData }) => {
                     style={{
                         width: "100%",
                         textAlign: "center",
+                        marginBottom: "0px",
                     }}
                 >
                     {cardData.name}
                 </h3>
             </div>
+            <hr
+                style={{
+                    width: "80px",
+                    backgroundColor: "#ee9b14",
+                    border: "none",
+                    height: "3px",
+                    marginTop: "20px",
+                }}
+            ></hr>
             <div className="key-words">
                 <p
                     className="key-word-card"

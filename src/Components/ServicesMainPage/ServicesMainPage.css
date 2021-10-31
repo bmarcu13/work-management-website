@@ -60,7 +60,7 @@
 .card-section .card-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
     background-color: #e0e7fc;
     margin: 0px 15px;
     border-radius: 5px;
@@ -83,8 +83,8 @@
     padding-left: 10px;
     box-sizing: border-box;
     /* overflow: hidden; */
-    position: relative;
-    bottom: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .key-word-card {
@@ -102,7 +102,6 @@
     color: rgb(11, 59, 161);
     display: inline-flex;
     align-items: center;
-    margin-top: auto;
     padding-left: 0px;
     font-size: 18px;
     margin-left: 10px;
@@ -112,7 +111,7 @@
     width: 120px;
     height: 24px;
     transition: 0.2s;
-    margin-top: 30px;
+    margin-top: auto;
     position: relative;
 }
 
