@@ -65,7 +65,7 @@
     padding: 10px;
     flex: 1;
     min-height: 250px;
-    justify-content: space-between;
+    
 }
 
 .card-section .card-wrapper:hover {

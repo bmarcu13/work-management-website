@@ -2,7 +2,7 @@ import { GiElectricalResistance } from "react-icons/gi";
 import { FaUserInjured, FaSignInAlt, FaTools } from "react-icons/fa";
 import { VscMortarBoard, VscHorizontalRule } from "react-icons/vsc";
 import { IoAnalyticsSharp } from "react-icons/io5";
-import FireEstinguisher from '../img/services/fire_estinguisher.png';
+import FireEstinguisher from '../img/services/icon-securitate.png';
 import Securitate from '../img/services/icon_securitate.png';
 import SSM from '../img/services/icon-ssm.png';
 import Audit from '../img/services/icon_audit.png';
@@ -54,7 +54,7 @@ export const dropdownItemsLeft = [
     {
         name: "Securitate și sănătate în muncă",
         icon: <MdOutlineHealthAndSafety className="icon" />,
-        card_icon: SSM,
+        card_icon: FireEstinguisher,
         keyword1:"Consultanță",
         keyword2:"Documentație",
         keyword3:"Echipament de Protecție",
@@ -66,7 +66,7 @@ export const dropdownItemsLeft = [
     {
         name: "(SU) Situații de urgență",
         icon: <AiOutlineAlert className="icon" />,
-        card_icon: FireEstinguisher,
+        card_icon: SSM,
         keyword1:"Instructaj",
         keyword2:"Verificare periodică",
         keyword3:"Modificări legislative",
@@ -83,7 +83,7 @@ export const dropdownItemsLeft = [
         keyword2:"Instalații ",
         keyword3:"Autorizație",
         style: {
-            backgroundColor: '#f9f2d4',
+            backgroundColor: '#ADD8E6',
     
         }
 
@@ -96,7 +96,7 @@ export const dropdownItemsLeft = [
         keyword2:"Studii de Mediu",
         keyword3:"Autorizație de Mediu",
         style: {
-            backgroundColor: '#edddd1',
+            backgroundColor: '#CCCCFF',
     
         }
     },
@@ -108,7 +108,7 @@ export const dropdownItemsLeft = [
         keyword2:"Măsuri",
         keyword3:"Evitarea Accidentelor",
         style: {
-            backgroundColor: '#b5cddc',
+            backgroundColor: '#AFDBF5',
     
         }
     },
@@ -120,7 +120,7 @@ export const dropdownItemsLeft = [
         keyword2:"Coordonator",
         keyword3:"Plan de securitate",
         style: {
-            backgroundColor: '#EACDD0',
+            backgroundColor: '#B0C4DE',
     
         }
     },

@@ -71,9 +71,6 @@
     justify-content: left;
 }
 
-.footer-icon{
-    color:white;
-}
 .footer-icon:hover{
     color: rgb(255, 173, 80);
     cursor: pointer;

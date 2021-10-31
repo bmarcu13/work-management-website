@@ -4,8 +4,9 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 import Logo from "../../img/logo-work.png";
-import { FaMapMarkerAlt, FaFacebookSquare } from "react-icons/fa";
-import { BsPersonCircle } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
+import { BsPersonCircle,  BsLinkedin } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -67,8 +68,7 @@ export default function Footer() {
                                     className="footer-icon"
                                     size={30}
                                 ></FaMapMarkerAlt>
-                                B-dul Regina Maria, Nr. 25, Etaj 1,
-                                <br></br>Camerele 6-9, Sector 4, Bucureşti
+                                B-dul Regina Maria, Nr. 25                                
                             </p>
                         </a>
                     </div>
@@ -156,7 +156,7 @@ export default function Footer() {
                                 className="footer-icon"
                                 size={20}
                             ></BsPersonCircle>{" "}
-                            Stefana Tanase<br></br>
+                            Stefana Tănase<br></br>
                             <a href="tel: 0730.709.723">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 0730.709.723
@@ -176,30 +176,42 @@ export default function Footer() {
                             <BsPersonCircle
                                 className="footer-icon"
                                 size={20}
-                            ></BsPersonCircle>{" "}
-                            George Chisiu<br></br>
-                            <a href="mailto:george.chisiu@workmanagement.ro">
+                            ></BsPersonCircle>
+                            Alina Mihai<br></br>
+                            <a href="mailto:alina.mihai@workmanagement.ro">
                                 <FiMail className="footer-icon"></FiMail>{" "}
-                                george.chisiu@workmanagement.ro
+                                alina.mihai@workmanagement.ro
                             </a>
                             <br></br>
                             <br></br>
                             <BsPersonCircle
                                 className="footer-icon"
                                 size={20}
-                            ></BsPersonCircle>
-                            Sandu Martinescu<br></br>
-                            <a href="mailto:sandu.martinescu@workmanagement.ro">
+                            ></BsPersonCircle>{" "}
+                            George Chișiu<br></br>
+                            <a href="mailto:george.chisiu@workmanagement.ro">
                                 <FiMail className="footer-icon"></FiMail>{" "}
-                                sandu.martinescu@workmanagement.ro
+                                george.chisiu@workmanagement.ro
                             </a>
+                            
+                            
                         </p>
+                        <div style={{display:'flex', justifyContent: 'center'}}>
                         <a href="https://www.facebook.com/workmanagement.bucuresti">
-                            <FaFacebookSquare
+                            <ImFacebook2
                                 className="footer-icon"
                                 size={30}
-                            ></FaFacebookSquare>
+                                style={{margin:'5px 10px'}}
+                            ></ImFacebook2>
                         </a>
+                        <a href="https://ro.linkedin.com/company/work-management">
+                            < BsLinkedin
+                                className="footer-icon"
+                                size={30}
+                                style={{margin:'5px 10px'}}
+                            ></BsLinkedin>
+                        </a>
+                       </div>
                     </div>
                 </div>
                 <hr

@@ -96,7 +96,8 @@ const Card = ({ cardData }) => {
             <div
                 style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: "column",
+                    alignItems:'center',
                     height: "fit-content",
                 }}
             >
@@ -112,6 +113,7 @@ const Card = ({ cardData }) => {
                         src={cardData.card_icon}
                         style={{
                             position: "absolute",
+                            alignSelf:"center",
                             width: "100%",
                             height: "auto",
                             margin: "auto",
@@ -123,13 +125,13 @@ const Card = ({ cardData }) => {
                     ></img>
                 </div>
 
-                <h3 style={{ width: "70%" }}>{cardData.name}</h3>
+                <h3 style={{ width: "100%", textAlign:'center'}}>{cardData.name}</h3>
             </div>
             <div className="key-words">
                 <p
                     className="key-word-card"
                     style={{
-                        backgroundColor: "#a49c94",
+                        backgroundColor: "#A3C1AD",
                         color: "white",
                         marginRight: "10px",
                     }}
