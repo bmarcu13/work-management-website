@@ -9,8 +9,6 @@ import {
     dropdownItemsRight,
 } from "../../Components/NavigationBarData";
 
-import cascuta from "../../img/service-icons/casca-f.png";
-
 let menuItems = [].concat(dropdownItemsLeft).concat(dropdownItemsRight);
 
 export default function ServicesMainPage() {
@@ -114,7 +112,7 @@ const Card = ({ cardData }) => {
                     }}
                 >
                     <img
-                        src={cascuta}
+                        src={cardData.card_icon}
                         style={{
                             position: "absolute",
                             width: "100%",

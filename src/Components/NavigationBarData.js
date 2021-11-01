@@ -2,12 +2,6 @@ import { GiElectricalResistance } from "react-icons/gi";
 import { FaUserInjured, FaSignInAlt, FaTools } from "react-icons/fa";
 import { VscMortarBoard, VscHorizontalRule } from "react-icons/vsc";
 import { IoAnalyticsSharp } from "react-icons/io5";
-import FireEstinguisher from '../img/services/icon-securitate.png';
-import Securitate from '../img/services/icon_securitate.png';
-import SSM from '../img/services/icon-ssm.png';
-import Audit from '../img/services/icon_audit.png';
-import Deseuri from '../img/services/icon_deseuri.png';
-import Santiere from '../img/services/icon_santiere.png';
 
 import { AiOutlineAlert } from "react-icons/ai";
 import {
@@ -16,6 +10,13 @@ import {
     MdWorkOutline,
 } from "react-icons/md";
 import { GiSoundWaves } from "react-icons/gi";
+
+import cascuta from "../img/service-icons/casca-f.png";
+import atentie from "../img/service-icons/atentie-f.png";
+import hidrant from "../img/service-icons/hidrant-f.png";
+import macara from "../img/service-icons/macara-f.png";
+import reciclare from "../img/service-icons/reciclare-f.png";
+import vestuta from "../img/service-icons/vestuta-f.png";
 
 export const menuItems = [
     {
@@ -54,75 +55,68 @@ export const dropdownItemsLeft = [
     {
         name: "Securitate și sănătate în muncă",
         icon: <MdOutlineHealthAndSafety className="icon" />,
-        card_icon: FireEstinguisher,
-        keyword1:"Consultanță",
-        keyword2:"Documentație",
-        keyword3:"Echipament de Protecție",
+        card_icon: cascuta,
+        keyword1: "Consultanță",
+        keyword2: "Documentație",
+        keyword3: "Echipament de Protecție",
         style: {
-            backgroundColor: '#cce0db',
-    
-        }
+            backgroundColor: "#cce0db",
+        },
     },
     {
         name: "(SU) Situații de urgență",
         icon: <AiOutlineAlert className="icon" />,
-        card_icon: SSM,
-        keyword1:"Instructaj",
-        keyword2:"Verificare",
-        keyword3:"Modificări legislative",
+        card_icon: hidrant,
+        keyword1: "Instructaj",
+        keyword2: "Verificare",
+        keyword3: "Modificări legislative",
         style: {
-            backgroundColor: '#c0adc5',
-    
-        }
+            backgroundColor: "#c0adc5",
+        },
     },
     {
         name: "ISCIR-RSVTI",
         icon: <GiElectricalResistance className="icon" />,
-        card_icon: Securitate,
-        keyword1:"Verificare Tehnică",
-        keyword2:"Instalații ",
-        keyword3:"Autorizație",
+        card_icon: vestuta,
+        keyword1: "Verificare Tehnică",
+        keyword2: "Instalații ",
+        keyword3: "Autorizație",
         style: {
-            backgroundColor: '#ADD8E6',
-    
-        }
-
+            backgroundColor: "#ADD8E6",
+        },
     },
     {
         name: "Managementul mediului și gestiunea deșeurilor",
         icon: <MdRecycling className="icon" />,
-        card_icon: Deseuri,
-        keyword1:"Specialist",
-        keyword2:"Studii de Mediu",
-        keyword3:"Autorizație de Mediu",
+        card_icon: reciclare,
+        keyword1: "Specialist",
+        keyword2: "Studii de Mediu",
+        keyword3: "Autorizație de Mediu",
         style: {
-            backgroundColor: '#CCCCFF',
-    
-        }
+            backgroundColor: "#CCCCFF",
+        },
     },
     {
         name: "Audit și Evaluarea riscurilor de accidentare și îmbolnăvire profesională",
         icon: <FaUserInjured className="icon" />,
-        card_icon: Audit,
-        keyword1:"Factori de Risc",
-        keyword2:"Măsuri",
-        keyword3:"Evitarea Accidentelor",
+        card_icon: atentie,
+        keyword1: "Factori de Risc",
+        keyword2: "Măsuri",
+        keyword3: "Evitarea Accidentelor",
         style: {
-            backgroundColor: '#AFDBF5',
-    
-        }
+            backgroundColor: "#AFDBF5",
+        },
     },
     {
         name: "Coordonarea șantierelor",
         icon: <FaTools className="icon" />,
-        card_icon: Santiere,
-        keyword1:"Prevenire",
-        keyword2:"Coordonator",
-        keyword3:"Plan de securitate",
+        card_icon: macara,
+        keyword1: "Prevenire",
+        keyword2: "Coordonator",
+        keyword3: "Plan de securitate",
         style: {
-            backgroundColor: '#B0C4DE',
-    
-        }
+            backgroundColor: "#B0C4DE",
+        },
     },
 ];
 
