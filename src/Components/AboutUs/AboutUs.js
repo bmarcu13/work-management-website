@@ -17,13 +17,12 @@ export default function AboutUs() {
                     }}
                 ></div>
                
-                <h2 style={{textAlign:'center', color:"black"}}> DESPRE NOI</h2>
+                <h2 style={{textAlign:'center', color:"black", fontSize:'28px'}}> DESPRE NOI</h2>
             </div>
             <div className="first-container">
-                <div className="who-we-are-text">
+                
                     <div class="our-mission-text">
                     <h2>CINE SUNTEM?</h2>
-                    </div>
                     <p>WORK MANAGEMENT este abilitată, conform certificatelor de abilitare nr.1312/PS din 24.02.2021 emis de Ministerul Muncii, Familiei și Protecției Sociale – ITM București, să desfășoare activități specifice de prevenire și protecție.
                         <br/><br/>
                        <p> Ne-am început activitatea în anul 2007, iar de atunci ne ocupăm de siguranța clienților din portofoliul nostru și ne asiguram că aceștia funcționează sub regulile prevazute de legea în vigoare.</p><br/><br/>

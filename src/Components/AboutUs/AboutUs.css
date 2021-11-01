@@ -1,7 +1,7 @@
 .about-section{
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-self: flex-start;
     background:white;
     height: 700px;
 } 
@@ -18,12 +18,14 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  justify-items: center;
+  justify-content: space-around;
+  justify-items: flex-start;
   height: 250px;
+  width: fit-content;
+  border: 2px solid rgb(51, 60, 100);
   border-radius: 30px;
-  background: #dad9d9;
-  padding: 30px 20px;
+  background: #ffffff;
+  padding: 20px ;
   margin: 5px 15px;
 }
 
@@ -31,13 +33,14 @@
 
   display: flex;
   flex-direction: row;
-  height: 350px;
-  background: #dad9d9;
+  height: auto;
+  border: 2px solid rgb(51, 60, 100);
+  background: #ffffff;
   padding: 30px 20px;
   margin: 5px 15px;
   border-radius: 30px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
   .first-container{
     display: flex;
     flex-direction: column;
@@ -47,6 +50,12 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+  }
+  .pic{
+    align-self: center;
+  }
+  .iso-images{
+    align-self: center;
   }
 }
 .about-section h1{
@@ -95,7 +104,7 @@
    flex: 1;
     width: auto;
     text-align:start;
-   
+   margin: 10px 40px;
     
 }
 .our-mission-text h5{
@@ -123,31 +132,15 @@
 {
   content: '';
   position: absolute;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   background: url('https://cdn.discordapp.com/attachments/864558741701132338/897956347830739024/slide1.png') ;
   background-size: auto 300px;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* 
-.pic1
-{
-  box-shadow: 6px 6cpx 7px #888888;
-  width:300px;
-  height:300px;
-  position: relative;
-  overflow: hidden;
-    background-image: url({Iso_blue});
-background-size: auto 280px;
-    margin-top: -20px;
-  margin-left:135px;
-  object-fit: cover;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-} */
+
 .pic:hover
 {
   box-shadow: 3px 3px 7px #888888;
