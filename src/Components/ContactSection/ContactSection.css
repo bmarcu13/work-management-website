@@ -75,11 +75,11 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 95px;
+    height: 72px;
 }
 
 .custom-shape-divider-bottom-1635751933 .shape-fill {
-    fill: rgb(0, 0, 0);
+    fill: #000000;
 }
 
 /** For tablet devices **/
