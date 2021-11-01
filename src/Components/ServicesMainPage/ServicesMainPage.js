@@ -138,15 +138,17 @@ const Card = ({ cardData }) => {
                     {cardData.name}
                 </h3>
             </div>
-            <hr
-                style={{
-                    width: "80px",
-                    backgroundColor: "#ee9b14",
-                    border: "none",
-                    height: "3px",
-                    marginTop: "20px",
-                }}
-            ></hr>
+            <div
+                className="cvcv"
+                // style={{
+                //     width: "60px",
+                //     backgroundColor: "#ee9b14",
+                //     border: "none",
+                //     height: "3px",
+                //     margin: "20px auto",
+                //     transition: ".2s",
+                // }}
+            ></div>
             <div className="key-words">
                 <p
                     className="key-word-card"
@@ -157,7 +159,7 @@ const Card = ({ cardData }) => {
                         marginBottom: "5px",
                     }}
                 >
-                    {cardData.keyword1}
+                    • {cardData.keyword1}
                 </p>
                 <p
                     className="key-word-card"
@@ -168,7 +170,7 @@ const Card = ({ cardData }) => {
                         marginBottom: "5px",
                     }}
                 >
-                    {cardData.keyword2}
+                    • {cardData.keyword2}
                 </p>
                 <p
                     className="key-word-card"
@@ -177,7 +179,7 @@ const Card = ({ cardData }) => {
                         backgroundColor: "#00416A",
                     }}
                 >
-                    {cardData.keyword3}
+                    • {cardData.keyword3}
                 </p>
             </div>
             <div className="read-more-button" style={{ fontWeight: "900" }}>
