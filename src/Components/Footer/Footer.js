@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo-work.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
-import { BsPersonCircle,  BsLinkedin } from "react-icons/bs";
+import { BsPersonCircle, BsLinkedin } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -15,20 +15,6 @@ export default function Footer() {
         <>
             <div className="footer-with-copyrights">
                 <div className="footer-section">
-                    <div class="custom-shape-divider-top-1635267772">
-                        <svg
-                            data-name="Layer 1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 1200 120"
-                            preserveAspectRatio="none"
-                        >
-                            <path
-                                d="M1200 0L0 0 892.25 114.72 1200 0z"
-                                class="shape-fill"
-                            ></path>
-                        </svg>
-                    </div>
-
                     <div className="footer footer-left-container">
                         <img
                             src={Logo}
@@ -68,7 +54,7 @@ export default function Footer() {
                                     className="footer-icon"
                                     size={30}
                                 ></FaMapMarkerAlt>
-                                B-dul Regina Maria, Nr. 25                                
+                                B-dul Regina Maria, Nr. 25
                             </p>
                         </a>
                     </div>
@@ -193,25 +179,28 @@ export default function Footer() {
                                 <FiMail className="footer-icon"></FiMail>{" "}
                                 george.chisiu@workmanagement.ro
                             </a>
-                            
-                            
                         </p>
-                        <div style={{display:'flex', justifyContent: 'center'}}>
-                        <a href="https://www.facebook.com/workmanagement.bucuresti">
-                            <ImFacebook2
-                                className="footer-icon"
-                                size={30}
-                                style={{margin:'5px 10px'}}
-                            ></ImFacebook2>
-                        </a>
-                        <a href="https://ro.linkedin.com/company/work-management">
-                            < BsLinkedin
-                                className="footer-icon"
-                                size={30}
-                                style={{margin:'5px 10px'}}
-                            ></BsLinkedin>
-                        </a>
-                       </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                            }}
+                        >
+                            <a href="https://www.facebook.com/workmanagement.bucuresti">
+                                <ImFacebook2
+                                    className="footer-icon"
+                                    size={30}
+                                    style={{ margin: "5px 10px" }}
+                                ></ImFacebook2>
+                            </a>
+                            <a href="https://ro.linkedin.com/company/work-management">
+                                <BsLinkedin
+                                    className="footer-icon"
+                                    size={30}
+                                    style={{ margin: "5px 10px" }}
+                                ></BsLinkedin>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <hr
