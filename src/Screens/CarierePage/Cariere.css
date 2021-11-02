@@ -1,0 +1,32 @@
+.cariere-form-title{
+    font-size: 30px;
+}
+
+.item-title {
+    width: 40%;
+	font-size: 60px;
+	font-weight: 800;
+
+}
+.team-beliefs{
+    margin-top: 100px;
+    display: flex;
+    padding: 0px 40px 0px;
+}
+.team-beliefs .item-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+    width: 60%;
+}
+.single-belief {
+    padding: 20px;
+    width: 100%;
+}
+.single-belief .belief-title{
+    margin: 0px 0px 5px 0px;
+    color: blue;
+    border-bottom: 1px solid pink;
+    font-size: 20px;
+    font-weight: 600;
+}
