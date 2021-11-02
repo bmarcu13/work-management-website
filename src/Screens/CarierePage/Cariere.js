@@ -5,12 +5,40 @@ import { CgAsterisk } from "react-icons/cg";
 import {MdAlternateEmail} from "react-icons/md";
 import {ImAttachment} from "react-icons/im";
 
+import careerHeader from "../../img/team-header.png";
+
 export default function CarierePage() {
     const [checked, setChecked] = React.useState(true);
     return (
         <>
          <div className="cariera-page">
-            
+         <div className="portfolio-header">
+                <img src={careerHeader} />
+                <div
+                    style={{
+                        backgroundColor: "black",
+                        top: "0",
+                        position: "absolute",
+                        opacity: ".3",
+                        height: "350px",
+                        width: "100%",
+                    }}
+                ></div>
+                <h2 style={{width:'18ch', textAlign:'center'}}> Alătură-te echipei <span > "WORK Management"</span></h2>
+                <div class="custom-shape-divider-bottom-1634577933">
+                    <svg
+                        data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1200 120"
+                        preserveAspectRatio="none"
+                    >
+                        <path
+                            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
+                            class="shape-fill"
+                        ></path>
+                    </svg>
+                </div>
+            </div>      
 <div class="team-beliefs">
 	
 	<div class="item-title">
@@ -19,7 +47,7 @@ export default function CarierePage() {
 	
 	<div class="item-content">
         <div class="single-belief">
-			<div class="belief-title">Ce vei gasi în echipa Work</div>
+			<div class="belief-title">Ce vei găsi în echipa Work</div>
 			<div class="belief-content">Work Management oferă mediul ideal de dezvoltare persoanelor interesate să facă carieră în domeniul protecției muncii, prevenirea și stingerea incendiilor (p.s.i.) evaluarea riscurilor sau RSVTI.</div>
 		</div>
 		<div class="single-belief">
@@ -36,6 +64,7 @@ export default function CarierePage() {
 	</div>
 		
 </div>
+            <div className="careers-second-layer">
 
             <div className="form-wrapper">
                     <form className="cariere-form">
@@ -121,6 +150,12 @@ export default function CarierePage() {
                         </button>
                     </form>
                 </div>
+                <div className="job-search">
+                    <h2>VEZI POSTURILE VACANTE</h2>
+                
+                </div>
+            </div>
+           
          </div>
             <Footer></Footer>
         </>

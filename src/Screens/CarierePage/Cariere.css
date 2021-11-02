@@ -4,12 +4,11 @@
 
 .item-title {
     width: 40%;
-	font-size: 60px;
+	font-size: 3rem;
 	font-weight: 800;
-
 }
 .team-beliefs{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     padding: 0px 40px 0px;
 }
@@ -19,15 +18,16 @@
     padding: 0px 40px;
     width: 60%;
 }
+
 .single-belief {
     padding: 20px;
     width: 100%;
 }
 .single-belief .belief-title{
     margin: 0px 0px 5px 0px;
-    color: blue;
-    border-bottom: 1px solid pink;
-    font-size: 20px;
+    color: rgb(3, 3, 88);
+    border-bottom: 2px solid rgb(109, 108, 108);
+    font-size: 22px;
     font-weight: 600;
 }
 .trimite-btn{
@@ -43,4 +43,25 @@
 }
 .attach-text{
     text-align: center;
+}
+@media (max-width: 800px) {
+    .team-beliefs {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-title {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.careers-second-layer{
+    display: flex;
+    width:100%
+}
+.job-search{
+    margin-top: 50px;
+    border-top: 1px dashed black;
+    border-left: 1px dashed black;
 }
