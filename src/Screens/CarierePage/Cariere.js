@@ -3,6 +3,7 @@ import "./Cariere.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
 import {MdAlternateEmail} from "react-icons/md";
+import {ImAttachment} from "react-icons/im";
 
 export default function CarierePage() {
     const [checked, setChecked] = React.useState(true);
@@ -13,22 +14,22 @@ export default function CarierePage() {
 <div class="team-beliefs">
 	
 	<div class="item-title">
-		Cateva lucruri despre echipa noastra.
+		Câteva lucruri despre echipa noastră.
 	</div>
 	
 	<div class="item-content">
         <div class="single-belief">
-			<div class="belief-title">Ce vei gasi in echipa Work</div>
-			<div class="belief-content">Work Management ofera mediul ideal de dezvoltare persoanelor interesate sa faca cariera in domeniulprotectia muncii, prevenirea si stingerea incendiilor (p.s.i.) evaluarea riscurilor si RSVTI.</div>
+			<div class="belief-title">Ce vei gasi în echipa Work</div>
+			<div class="belief-content">Work Management oferă mediul ideal de dezvoltare persoanelor interesate să facă carieră în domeniul protecției muncii, prevenirea și stingerea incendiilor (p.s.i.) evaluarea riscurilor sau RSVTI.</div>
 		</div>
 		<div class="single-belief">
-			<div class="belief-title">Putin despre viitorul tau job</div>
-			<div class="belief-content">Vei beneficia de un program flexibil: part time, full time sau colaborare externă. Oferim de asemenea recompensare satisfăcătoare a muncii;</div>
+			<div class="belief-title">Puțin despre viitorul tău job</div>
+			<div class="belief-content">Vei beneficia de un program flexibil: part time, full time sau colaborare externă. Oferim, de asemenea, recompensare satisfăcătoare a muncii.</div>
 		</div>
 		
 		<div class="single-belief">
 			<div class="belief-title">Ca si echipa</div>
-			<div class="belief-content">Suntem un colectiv profesionist şi dinamic. Ne focusam mereu spre nevoile clientilor nostri si dispunem de logistică la un nivel înalt de performanţă.</div>
+			<div class="belief-content">Suntem un colectiv profesionist şi dinamic. Ne concentrăm mereu pe nevoile clienților noștri și dispunem de logistică la un nivel înalt de performanţă.</div>
 		</div>
 		
 		
@@ -77,7 +78,7 @@ export default function CarierePage() {
                         </div>
                         <div className="row">
                                 <p style={{fontWeight:'bold'}}>
-                                    Pozitia pe care doriti sa o ocupati<CgAsterisk color="red"></CgAsterisk>
+                                    Poziția pe care doriți să o ocupați<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
                                     className="cerere-oferta-input"
@@ -85,19 +86,20 @@ export default function CarierePage() {
                                     placeholder="Subiect"
                                     autofocus
                                 />
-                            </div>
+                        </div>
                         <div className="row">
                         <p style={{fontWeight:'bold'}}>Mesaj</p>
                             <textarea
                                 className="cerere-oferta-input mesaj-input"
                                 rows="10"
-                                placeholder="Scrisoare de intentie."
+                                placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
                             />
                         </div>
-                        <label for="avatar">Ataseaza aici CV-ul tau:</label><br></br>
-                        <input type="file"
+                        <p className="attach-text"><ImAttachment size={25}></ImAttachment>Atașați aici CV-ul dvs:</p>
+                    
+                        <input type="file" style={{alignSelf:'center'}}
                                 id="avatar" name="avatar"
-                                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf">
                         </input>
                         <p>
                             {" "}
@@ -113,7 +115,7 @@ export default function CarierePage() {
                             </span>
                             <CgAsterisk color="red"></CgAsterisk>
                         </p>
-                        <button className="cerere-oferta-send-btn">
+                        <button className="trimite-btn">
                            
                             Trimite
                         </button>
