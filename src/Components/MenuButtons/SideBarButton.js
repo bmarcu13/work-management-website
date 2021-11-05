@@ -65,22 +65,23 @@ export default function SideBarButtons({ buttonData }) {
             >
                 <div
                     className="button-data"
-                    onClick={() => {
-                        setIsDropdownExpanded(!isDropdownExpanded);
-                    }}
+                    // onClick={() => {
+                    //     setIsDropdownExpanded(!isDropdownExpanded);
+                    // }}
                 >
-                    {renderButtonLayout(buttonData)}
+                    {/* {renderButtonLayout(buttonData)} */}
                     <h3
                         style={
-                            buttonData.hasDropdown
-                                ? { paddingLeft: "0px", marginLeft: "-5px" }
-                                : {}
+                            // buttonData.hasDropdown
+                            //     ? { paddingLeft: "0px", marginLeft: "-5px" }
+                            //     : {}
+                            {}
                         }
                     >
                         {buttonData.name}
                     </h3>
                 </div>
-                {renderDropdown(buttonData.hasDropdown)}
+                {/* {renderDropdown(buttonData.hasDropdown)} */}
             </div>
         </Link>
     );
