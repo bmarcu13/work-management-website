@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
 import {MdAlternateEmail} from "react-icons/md";
 import {ImAttachment} from "react-icons/im";
+import {FiMapPin} from "react-icons/fi";
 
 import careerHeader from "../../img/team-header.png";
 
@@ -152,7 +153,7 @@ export default function CarierePage() {
                 </div>
                 <div className="job-search">
                     <h2>VEZI POSTURILE VACANTE</h2>
-                
+                    <JobsGrid></JobsGrid>
                 </div>
             </div>
            
@@ -161,3 +162,43 @@ export default function CarierePage() {
         </>
     );
 }
+const JobsGrid = () => {
+    if(jobsData.length==0)
+        return <h3>Momentan nu exista posturi libere.</h3>
+    else
+    return jobsData.map((data, index) => {
+            return <JobCard JobCardData={data}></JobCard>;
+    });
+};
+
+
+const JobCard = ({ JobCardData }) => {
+    return (
+        <div className="job-card-wrapper">
+            <div className="job-title">
+                <h3>{JobCardData.position}</h3>
+                <p><FiMapPin></FiMapPin>{JobCardData.city}</p>
+            </div>
+            <div className="job-description">
+                <h4>Descrierea jobului:</h4>
+                <p>{JobCardData.job_description}</p>
+            </div>
+        </div>
+     );
+};
+
+const jobsData = [
+    // {
+    //     position:"INSPECTOR",
+    //     city:"Cluj",
+    //     job_description:"tralalalalalal",
+    //     expectations:""
+    // },
+    // {
+    //     position:"INSPECTOR",
+    //     city:"Cluj",
+    //     job_description:"tralalalalalal",
+    //     expectations:""
+    // },
+
+]
