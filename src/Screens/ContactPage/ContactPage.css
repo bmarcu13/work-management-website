@@ -1,14 +1,30 @@
-.contact-first-container{
+.contact-first-container {
     display: flex;
     flex-direction: row;
-   
 }
-.contact-infos{
-    display: flex;
-    
+.contact-infos {
+    margin-top: 20px;
+    align-self: center;
 }
-.contact-first-container .contact-infos p{
+.contact-first-container .contact-infos p {
     font-weight: bold;
     font-size: larger;
-    
+}
+.mapouter{
+    display: flex;
+    text-align: right;
+    height: 350px;
+    width: 68%;
+}
+@media (max-width: 767px){
+    .mapouter{
+        display: flex;
+        text-align: center;
+        height: 350px;
+        width: 100%;
+    }
+    .contact-first-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
