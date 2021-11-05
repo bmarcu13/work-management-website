@@ -187,7 +187,9 @@ export const servicesList = [
     },
     {
         title: " Indicatoare de securitate SSM & SU",
-        description: "fara info",
+        description: " Producem și comercializăm, întreaga gamă de indicatoare de securitate,"+
+        " care sunt prevăzute de normele legale în vigoare. Acestea sunt foarte importante, fiind o modalitate rapidă de a comunica"+
+        " informații importante angajaților, colaboratorilor și vizitatorilor.",
         img: Indicatoare,
     },
     {
