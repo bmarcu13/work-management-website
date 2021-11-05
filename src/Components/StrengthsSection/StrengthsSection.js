@@ -11,7 +11,10 @@ export default function StrengthsSection() {
                 <FcDiploma1 size={40}></FcDiploma1>
                 <h3>Deţinem Asigurare de Răspundere Civilă</h3>
                 <p>
-                    WORK MANAGEMENT deține Asigurarea de Răspundere Civilă
+                    WORK MANAGEMENT deține{" "}
+                    <span style={{ fontWeight: "bold" }}>
+                        Asigurarea de Răspundere Civilă
+                    </span>
                     pentru toate serviciile prestate - limita de despăgubire
                     500.000 EUR.
                 </p>
@@ -22,8 +25,9 @@ export default function StrengthsSection() {
                 <h3>Experiență si Profesionalism</h3>
                 <p>
                     Personal calificat, cu vastă experiență, în toate domeniile
-                    prestate. Activitatea sediului central este împărțită în 8
-                    departamente, pentru o mai bună centralizare a locațiilor.
+                    prestate. Activitatea sediului central este împărțită în
+                    <span style={{ fontWeight: "bold" }}> 8 departamente</span>,
+                    pentru o mai bună centralizare a locațiilor.
                 </p>
             </div>
 
@@ -37,6 +41,10 @@ export default function StrengthsSection() {
                 <p>
                     Dispunem de acoperire națională pentru a fi cât mai aproape
                     de clienții noștri.
+                    <span style={{ fontWeight: "bold" }}>
+                        {" "}
+                        Nu subcontractăm serviciile.
+                    </span>
                 </p>
             </div>
         </div>

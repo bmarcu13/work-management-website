@@ -2,6 +2,7 @@ import React from "react";
 import "./ServicesMainPage.css";
 
 import { TiArrowSortedUp } from "react-icons/ti";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 import {
     dropdownItemsLeft,
@@ -32,7 +33,15 @@ export default function ServicesMainPage() {
                             margin: "auto",
                         }}
                     >
-                        <h2 style={{ color: "white", margin: "auto", marginBottom:'20px', fontSize:'28px', fontWeight:'bold'}}>
+                        <h2
+                            style={{
+                                color: "white",
+                                margin: "auto",
+                                marginBottom: "20px",
+                                fontSize: "28px",
+                                fontWeight: "bold",
+                            }}
+                        >
                             Serviciile noastre
                         </h2>
                         <p
@@ -40,11 +49,12 @@ export default function ServicesMainPage() {
                                 color: "white",
                                 margin: "10px 20px auto",
                                 textAlign: "center",
-                                fontSize:'20px',
-                                fontWeight:'bold'
+                                fontSize: "20px",
+                                fontWeight: "bold",
                             }}
                         >
-                            WORK MANAGEMENT prestează servicii și consultanță, în urmatoarele domenii:
+                            WORK MANAGEMENT prestează servicii și consultanță,
+                            în urmatoarele domenii:
                         </p>
                     </div>
                     <button
@@ -55,7 +65,7 @@ export default function ServicesMainPage() {
                             height: "40px",
                             backgroundColor: "orange",
                             borderRadius: "20px",
-                            border:'none',
+                            border: "none",
                             fontSize: "16px",
                             fontWeight: "bold",
                             color: "white",
@@ -83,47 +93,104 @@ const CardGrid = () => {
 
 const Card = ({ cardData }) => {
     return (
-        <div className="card-wrapper" style={cardData.style}>
+        <div className="card-wrapper">
             <div
                 style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: "column",
+                    alignItems: "center",
+
                     height: "fit-content",
                 }}
             >
-                <img
-                    src={cardData.card_icon}
-                    style={{ width: "70px", height: "70px", marginTop: "10px" }}
-                ></img>
-                <h3 style={{ marginLeft: "10px" }}>{cardData.name}</h3>
-            </div>
-            <div className="key-words">
                 <div
-                    className="key-word-card"
                     style={{
-                        backgroundColor: "#a49c94",
-                        color: "white",
+                        width: "calc(30% - 10px)",
+                        aspectRatio: "1",
+                        position: "relative",
                         marginRight: "10px",
                     }}
                 >
-                    {cardData.keyword1}
+                    <img
+                        src={cardData.card_icon}
+                        style={{
+                            position: "absolute",
+                            width: "100%",
+                            height: "auto",
+                            margin: "auto",
+                            top: 0,
+                            bottom: 0,
+                            right: 0,
+                            left: 0,
+                        }}
+                    ></img>
                 </div>
-                <div
-                    className="key-word-card"
-                    style={{ marginRight: "10px", backgroundColor: "#c9a4a0" }}
-                >
-                    {cardData.keyword2}
-                </div>
-                <div
-                    className="key-word-card"
+
+                <h3
                     style={{
-                        marginTop: "2px",
-                        marginBottom: "-20px",
-                        backgroundColor: "#a891a0",
+                        width: "100%",
+                        textAlign: "center",
+                        marginBottom: "0px",
                     }}
                 >
-                    {cardData.keyword3}
-                </div>
+                    {cardData.name}
+                </h3>
+            </div>
+            <div
+                className="cvcv"
+                // style={{
+                //     width: "60px",
+                //     backgroundColor: "#ee9b14",
+                //     border: "none",
+                //     height: "3px",
+                //     margin: "20px auto",
+                //     transition: ".2s",
+                // }}
+            ></div>
+            <div className="key-words">
+                <p
+                    className="key-word-card"
+                    style={{
+                        backgroundColor: "#00416A",
+                        color: "white",
+                        marginRight: "6px",
+                        marginBottom: "5px",
+                    }}
+                >
+                    • {cardData.keyword1}
+                </p>
+                <p
+                    className="key-word-card"
+                    style={{
+                        marginRight: "5px",
+                        color: "white",
+                        backgroundColor: "#00416A",
+                        marginBottom: "5px",
+                    }}
+                >
+                    • {cardData.keyword2}
+                </p>
+                <p
+                    className="key-word-card"
+                    style={{
+                        color: "white",
+                        backgroundColor: "#00416A",
+                    }}
+                >
+                    • {cardData.keyword3}
+                </p>
+            </div>
+            <div className="read-more-button" style={{ fontWeight: "900" }}>
+                <p>
+                    <MdOutlineArrowForwardIos
+                        style={{
+                            paddingRight: "5px",
+                            verticalAlign: "middle",
+                            marginBottom: "3px",
+                        }}
+                    />
+                    Mai multe
+                </p>
             </div>
         </div>
     );

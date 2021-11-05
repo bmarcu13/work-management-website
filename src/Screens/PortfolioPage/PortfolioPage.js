@@ -6,6 +6,7 @@ import Clients from "../../Components/ClientsArray";
 import Scroll from "../../Components/Scroll";
 
 import headerBanner from "../../img/our-clients-banner.png";
+import Footer from "../../Components/Footer/Footer";
 
 export default function PortfolioPage() {
     return (
@@ -52,6 +53,7 @@ export default function PortfolioPage() {
                 </div>
             </div>
             {/* </Scroll> */}
+            <Footer></Footer>
         </div>
     );
 }

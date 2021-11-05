@@ -33,7 +33,7 @@ function App() {
         <BrowserRouter>
             <Route path="/" component={MainPage} exact />
             <Route path="/portofoliu" component={PortfolioPage} exact />
-            <Route path="/contact" component={ContactPage} exact/>
+            <Route path="/contact" component={ContactPage} exact />
             <Route path="/cerere-oferta" component={CerereOferta} exact />
             <Route path="/servicii" component={ServicesPage} exact />
             <NavigationBar></NavigationBar>
