@@ -212,13 +212,18 @@ export default function Footer() {
                     }}
                 ></hr>
                 <div className="footer-down">
+                <Link to={"/securiatea-datelor"}
+                        style={{ textDecoration: "none" }}>
                     <div className="policy-button">
                         Politica de Securitate a Datelor cu caracter personal
                     </div>
+                    </Link>
+                    <Link to={"/protectia-datelor"}
+                        style={{ textDecoration: "none" }}>
                     <div className="policy-button">
-                        Politica privind Prelucrarea Datelor cu caracter
-                        personal
+                        Politica privind Protecția Datelor cu caracter personal
                     </div>
+                    </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
                         Website created by ?
                     </div>
