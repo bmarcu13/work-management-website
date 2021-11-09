@@ -27,27 +27,27 @@ export const menuItems = [
     {
         name: "Servicii",
         hasDropdown: true,
-        path: "servicii",
+        path: "/servicii",
     },
     {
         name: "Portofoliu Clienti",
         hasDropdown: false,
-        path: "portofoliu",
+        path: "/portofoliu",
     },
     {
         name: "Cerere oferta",
         hasDropdown: false,
-        path: "cerere-oferta",
+        path: "/cerere-oferta",
     },
     {
         name: "Cariere",
         hasDropdown: false,
-        path: "cariere",
+        path: "/cariere",
     },
     {
         name: "Contact",
         hasDropdown: false,
-        path: "contact",
+        path: "/contact",
     },
 ];
 

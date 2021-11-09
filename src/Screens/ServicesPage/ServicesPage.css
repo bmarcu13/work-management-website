@@ -26,9 +26,7 @@
     color: white;
     font-weight: 900;
     letter-spacing: 2px;
- 
 }
-
 
 .services .divider img {
     width: 100%;
@@ -151,6 +149,10 @@
 
 .services .all-services-button h3 {
     margin: 0;
+}
+
+.services link {
+    text-decoration: none;
 }
 
 @media (max-width: 1000px) {

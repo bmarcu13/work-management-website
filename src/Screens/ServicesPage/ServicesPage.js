@@ -2,10 +2,11 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 
+import { Link, useRouteMatch } from "react-router-dom";
+
 import "./ServicesPage.css";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-
 
 import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
 import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
@@ -21,6 +22,7 @@ import Audit from "../../img/services/audit.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 import Footer from "../../Components/Footer/Footer";
+import IndividualServicePage from "../IndividualServicePage/IndividualServicePage";
 
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
@@ -37,6 +39,8 @@ export default function ServicesPage() {
         observer.observe(document.querySelector(".grid-item-container"));
     });
 
+    let { path, url } = useRouteMatch();
+
     const gridItemComponent = (item, index) => {
         return (
             <div
@@ -51,63 +55,66 @@ export default function ServicesPage() {
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <p
-                    className="read-more-button"
-                    style={{ fontWeight: "900", transition: ".2s" }}
+                <Link
+                    to={`${url}/${index}`}
+                    style={{ textDecoration: "none", marginTop: "auto" }}
                 >
-                    <MdOutlineArrowForwardIos
-                        style={{
-                            paddingRight: "5px",
-                            verticalAlign: "middle",
-                            marginBottom: "3px",
-                        }}
-                    />
-                    Mai multe
-                </p>
+                    <p
+                        className="read-more-button"
+                        style={{ fontWeight: "900", transition: ".2s" }}
+                    >
+                        <MdOutlineArrowForwardIos
+                            style={{
+                                paddingRight: "5px",
+                                verticalAlign: "middle",
+                                marginBottom: "3px",
+                            }}
+                        />
+                        Mai multe
+                    </p>
+                </Link>
             </div>
         );
     };
 
     return (
         <>
-        <div className="services">
-            <div
-                className="bg"
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "calc(100% - 200px)",
-                    // backgroundColor: "white",
-                    // opacity: ".5",
-                    top: "200px",
-                    left: 0,
-                    filter: "blur(1px)",
-                }}
-            ></div>
-            <div className="divider">
-                <img src={DividerPhoto} />
+            <div className="services">
                 <div
+                    className="bg"
                     style={{
-                        backgroundColor: "black",
                         position: "absolute",
-                        opacity: ".4",
-                        height: "200px",
                         width: "100%",
+                        height: "calc(100% - 200px)",
+                        top: "200px",
+                        left: 0,
+                        filter: "blur(1px)",
                     }}
                 ></div>
-                <h1 style={{ position: "absolute" }}>
-                    Serviciile Noastre
-                    <hr></hr>
-                </h1>
-            </div>
+                <div className="divider">
+                    <img src={DividerPhoto} />
+                    <div
+                        style={{
+                            backgroundColor: "black",
+                            position: "absolute",
+                            opacity: ".4",
+                            height: "200px",
+                            width: "100%",
+                        }}
+                    ></div>
+                    <h1 style={{ position: "absolute" }}>
+                        Serviciile Noastre
+                        <hr></hr>
+                    </h1>
+                </div>
 
-            <div className="grid-container">
-                {servicesList.map((item, index) => {
-                    return gridItemComponent(item, index);
-                })}
+                <div className="grid-container">
+                    {servicesList.map((item, index) => {
+                        return gridItemComponent(item, index);
+                    })}
+                </div>
             </div>
-        </div>
-        <Footer></Footer>
+            <Footer></Footer>
         </>
     );
 }
@@ -187,9 +194,10 @@ export const servicesList = [
     },
     {
         title: " Indicatoare de securitate SSM & SU",
-        description: " Producem și comercializăm, întreaga gamă de indicatoare de securitate,"+
-        " care sunt prevăzute de normele legale în vigoare. Acestea sunt foarte importante, fiind o modalitate rapidă de a comunica"+
-        " informații importante angajaților, colaboratorilor și vizitatorilor.",
+        description:
+            " Producem și comercializăm, întreaga gamă de indicatoare de securitate," +
+            " care sunt prevăzute de normele legale în vigoare. Acestea sunt foarte importante, fiind o modalitate rapidă de a comunica" +
+            " informații importante angajaților, colaboratorilor și vizitatorilor.",
         img: Indicatoare,
     },
     {
