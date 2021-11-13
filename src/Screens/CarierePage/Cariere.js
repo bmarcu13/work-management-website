@@ -48,17 +48,17 @@ export default function CarierePage() {
 	
 	<div class="item-content">
         <div class="single-belief">
-			<div class="belief-title">Ce vei găsi în echipa Work</div>
+			<div class="belief-title">Ce vei găsi în echipa "Work"</div>
 			<div class="belief-content">Work Management oferă mediul ideal de dezvoltare persoanelor interesate să facă carieră în domeniul protecției muncii, prevenirea și stingerea incendiilor (p.s.i.) evaluarea riscurilor sau RSVTI.</div>
 		</div>
 		<div class="single-belief">
 			<div class="belief-title">Puțin despre viitorul tău job</div>
-			<div class="belief-content">Vei beneficia de un program flexibil: part time, full time sau colaborare externă. Oferim, de asemenea, recompensare satisfăcătoare a muncii.</div>
+			<div class="belief-content">Vei beneficia de un program flexibil: part time sau full time. Oferim, de asemenea, recompensare satisfăcătoare a muncii.</div>
 		</div>
 		
 		<div class="single-belief">
-			<div class="belief-title">Ca si echipa</div>
-			<div class="belief-content">Suntem un colectiv profesionist şi dinamic. Ne concentrăm mereu pe nevoile clienților noștri și dispunem de logistică la un nivel înalt de performanţă.</div>
+			<div class="belief-title">Ca și echipă</div>
+			<div class="belief-content">Suntem un colectiv profesionist şi dinamic. Ne concentrăm mereu pe nevoile clienților noștri și dispunem de logistică la un nivel înalt de performanţă. Te potrivești într-un mediu ca acesta și vrei să lucrezi alaturi de o echipă profesionistă?<br></br><span style={{fontWeight:'bold'}}>Așteptăm CV-ul tău pe email sau completează formularul de mai jos!</span></div>
 		</div>
 		
 		
@@ -69,7 +69,7 @@ export default function CarierePage() {
 
             <div className="form-wrapper">
                     <form className="cariere-form">
-                    <p className="cariere-form-title">Vino in Echipa WORK</p>
+                    <p className="cariere-form-title">Vino în Echipa WORK!</p>
                         <div className="row">
                             <p style={{fontWeight:'bold'}}>
                                 Nume și Prenume
@@ -152,7 +152,7 @@ export default function CarierePage() {
                     </form>
                 </div>
                 <div className="job-search">
-                    <h2>VEZI POSTURILE VACANTE</h2>
+                    <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>
                     <JobsGrid></JobsGrid>
                 </div>
             </div>
@@ -188,17 +188,17 @@ const JobCard = ({ JobCardData }) => {
 };
 
 const jobsData = [
-    // {
-    //     position:"INSPECTOR",
-    //     city:"Cluj",
-    //     job_description:"tralalalalalal",
-    //     expectations:""
-    // },
-    // {
-    //     position:"INSPECTOR",
-    //     city:"Cluj",
-    //     job_description:"tralalalalalal",
-    //     expectations:""
-    // },
+    {
+        position:"INSPECTOR",
+        city:"Cluj",
+        job_description:"tralalalalalal",
+        expectations:""
+    },
+    {
+        position:"INSPECTOR",
+        city:"Cluj",
+        job_description:"tralalalalalal",
+        expectations:""
+    },
 
 ]
