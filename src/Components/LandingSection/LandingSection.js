@@ -104,7 +104,7 @@ export default function LandingSection() {
                             to={"/cerere-oferta"}
                             style={{ textDecoration: "none" }}
                         >
-                            <button>
+                            <button >
                                 Cerere Ofertă
                                 <RiArrowDropDownLine
                                     size={30}
