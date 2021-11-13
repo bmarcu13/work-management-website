@@ -1,0 +1,97 @@
+.cariere-form-title{
+    font-size: 30px;
+}
+
+.item-title {
+    width: 40%;
+	font-size: 3rem;
+	font-weight: 800;
+    color: rgb(27, 6, 122);
+}
+.team-beliefs{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    padding: 0px 40px 0px;
+    
+    background: url("../../img/background.png") no-repeat center center;
+}
+.team-beliefs .item-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+    width: 60%;
+}
+
+.single-belief {
+    padding: 20px;
+    width: 100%;
+}
+.single-belief .belief-title{
+    margin: 0px 0px 5px 0px;
+    color: rgb(3, 3, 88);
+    border-bottom: 2px solid rgb(109, 108, 108);
+    font-size: 22px;
+    font-weight: 700;
+}
+.trimite-btn{
+    padding: 10px 15px;
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    border: 2px solid rgb(6, 6, 114);
+    font-size: 16px;
+    color: rgb(6, 6, 114);
+    background-color: white;
+   
+}
+.attach-text{
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .team-beliefs {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-title {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.careers-second-layer{
+    display: flex;
+    width:100%
+}
+.job-search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 2px solid rgb(6, 6, 114);
+    border-left: 2px solid rgb(6, 6, 114);
+}
+.job-card-wrapper{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 4px 5px grey;
+    background-color: rgb(235, 231, 231);
+}
+.job-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.job-description{
+    margin-top: -15px;
+}

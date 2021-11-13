@@ -11,6 +11,7 @@ import MainPage from "./Screens/MainPage/MainPage";
 import ContactPage from "./Screens/ContactPage/ContactPage";
 import PortfolioPage from "./Screens/PortfolioPage/PortfolioPage";
 import ServicesPage from "./Screens/ServicesPage/ServicesPage";
+import CarierePage from "./Screens/CarierePage/Cariere";
 import ProtectiaDate from "./Screens/PoliticiPage/ProtectiaDate";
 import SecuritateDate from "./Screens/PoliticiPage/SecuritateDate";
 
@@ -37,6 +38,7 @@ function App() {
             <Route path="/portofoliu" component={PortfolioPage} exact />
             <Route path="/contact" component={ContactPage} exact />
             <Route path="/cerere-oferta" component={CerereOferta} exact />
+            <Route path="/cariere" component={CarierePage} exact />
             <Route path="/servicii" component={ServicesPage} exact />
             <Route path="/protectia-datelor" component={ProtectiaDate} exact />
             <Route path="/securiatea-datelor" component={SecuritateDate} exact />
