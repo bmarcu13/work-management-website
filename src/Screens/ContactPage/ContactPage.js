@@ -7,17 +7,22 @@ import {
     BsPinMapFill,
     BsFillFileEarmarkCodeFill,
 } from "react-icons/bs";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
 import headerBanner from "../../img/contact-bckgr.jpg";
 import ContactSection from "../../Components/ContactSection/ContactSection";
 import Footer from "../../Components/Footer/Footer";
 
+import StefanaTanase from "../../img/stefana_tanase.jpg";
+import NicoletaRosu from "../../img/nicoleta_rosu.jpg";
+import AlinaMihai from "../../img/alina_mihai.jpg";
+
 export default function ContactPage() {
     return (
         <div className="screen-component">
             <div className="portfolio-header">
-                <img  style={{height:'500px',width:'100%',marginTop:'-20px'}}src={headerBanner} />
+                <img  style={{height:'350px',width:'100%',marginTop:'-20px', marginBottom:'40px'}}src={headerBanner} />
                 <div
                     style={{
                         backgroundColor: "black",
@@ -113,8 +118,76 @@ export default function ContactPage() {
                     </p>
                 </div>
             </div>
+            <h1 style={{textAlign:'center', marginTop:'90px', marginBottom:'40px'}}>Colegii noștri sunt aici să raspundă întrebărilor tale!</h1>
+            <div className="team-section">
+                <div className="team-member">
+                    <div className="our-team">
+                        <div className="pic">
+                            <img src={StefanaTanase}></img>
+                        </div>
+                        <div class="team-content">
+                            <h3 className="name">Ștefana Tănase</h3>
+                            <span className="post"></span>
+                        </div>
+                        <ul className="social">
+                            <li>
+                                <a href="tel: 0730.709.723" ><FiPhoneCall></FiPhoneCall></a>
+                            </li>
+                            <li>
+                                <a href="mailto:stefana.tanase@workmanagement.ro" ><FiMail></FiMail></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="our-team">
+                        <div className="pic">
+                            <img src={NicoletaRosu}></img>
+                        </div>
+                        <div className="team-content">
+                            <h3 className="name">Roșu Nicoleta </h3>
+                            <h4 className="post">Contactează-mă în cazul în care ai nevoie de consultanță tehnică!</h4>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="tel: 0736602115"><FiPhoneCall></FiPhoneCall></a>
+                            </li>
+                            {/* <li>
+                                <a href="#" ><FiMail></FiMail></a>
+                            </li> */}
+                        </ul>
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="our-team">
+                        <div className="pic">
+                            <img src={AlinaMihai}></img>
+                        </div>
+                        <div className="team-content">
+                            <h3 className="name">Mihai Alina</h3>
+                            <span className="post"></span>
+                        </div>
+                        <ul className="social">
+                            {/* <li>
+                                <a href="#" ><FiPhoneCall></FiPhoneCall></a>
+                            </li> */}
+                            <li>
+                                <a href="mailto:alina.mihai@workmanagement.ro" ><FiMail></FiMail></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <ContactSection></ContactSection>
             <Footer></Footer>
         </div>
     );
 }
+const TeamArray=[
+    {
+        name:"",
+        photo:"",
+        description:"",
+        phone:"",
+    }
+]
