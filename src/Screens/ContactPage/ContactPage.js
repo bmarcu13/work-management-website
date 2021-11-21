@@ -127,6 +127,7 @@ export default function ContactPage() {
                         </div>
                         <div class="team-content">
                             <h3 className="name">Ștefana Tănase</h3>
+                            <h4 className="post">Contactează-mă dacă dorești o ofertă!</h4>
                             <span className="post"></span>
                         </div>
                         <ul className="social">
@@ -165,6 +166,7 @@ export default function ContactPage() {
                         </div>
                         <div className="team-content">
                             <h3 className="name">Mihai Alina</h3>
+                            <h4 className="post">Contactează-mă dacă dorești o ofertă!</h4>
                             <span className="post"></span>
                         </div>
                         <ul className="social">

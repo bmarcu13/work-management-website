@@ -82,6 +82,9 @@ export default function LandingSection() {
                         Servicii de securitate și sănătate în muncă și de
                         protecție a mediului.
                     </h3>
+                    <h3>
+                    	Lasă totul pe mâna experților noștri care te vor asista pe toată durata colaborării și vor avea grijă ca afacerea ta să ramână în siguranță !
+                    </h3>
                     <div
                         id="landing-page-buttons"
                         className="landing-page-buttons"

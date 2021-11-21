@@ -39,7 +39,7 @@
 .our-team {
     height: 300px;
     width: 300px;
-    padding: 30px 0 40px;
+    padding: 20px 0 30px;
     background: #f9f9f9;
     text-align: center;
     overflow: hidden;
@@ -53,9 +53,8 @@
 
 .our-team .pic{
     display: inline-block;
-    width: 130px;
-    height: 130px;
-    margin-bottom: 20px;
+    width: 160px;
+    height: 160px;
     z-index: 1;
     position: relative;
 }
@@ -74,7 +73,7 @@
     transition: all 0.3s linear 0s;
 }
 .our-team:hover .pic:before{
- height: 100%;
+ 
     background: #2f2f2f; 
  }
 .our-team .pic:after {
@@ -90,11 +89,11 @@
     transition: all 0.3s linear 0s;
 }
 .our-team:hover .pic:after{
-    background: #7ab92d;
+    background: #ffa600;
 }
 .our-team .pic img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
     transform: scale(1);
     transition: all 0.9s ease 0s;
@@ -107,7 +106,7 @@
     box-shadow: 0 0 0 14px #f7f5ec;
     transform: scale(0.7);
 }
-.our-team .team-content{ margin-bottom: 10px; width: 90%; display: flex; flex-direction: column;justify-content: center;}
+.our-team .team-content{  width: 90%; display: flex; flex-direction: column;justify-content: center;}
 .our-team .name{
     font-size: 22px;
     font-weight: 700;
@@ -118,6 +117,8 @@
 .our-team .post{
     display: block;
     font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: #4e5052;
 }
 .our-team .social{
@@ -126,7 +127,7 @@
     margin: 0;
     background: #2f2f2f;
     position: absolute;
-    bottom: -100px;
+
     left: 0;
     transition: all 0.5s ease 0s;
 }
@@ -144,7 +145,7 @@
     background: #f7f5ec;
 }
 @media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
+    .our-team{ margin-bottom: 20px; }
     .team-section{
         display: flex;
         flex-wrap: wrap;

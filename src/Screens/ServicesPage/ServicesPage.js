@@ -76,10 +76,10 @@ export default function ServicesPage() {
                 style={{
                     position: "absolute",
                     width: "100%",
-                    height: "calc(100% - 200px)",
+                    height: "calc(100% - 300px)",
                     // backgroundColor: "white",
                     // opacity: ".5",
-                    top: "200px",
+                    top: "300px",
                     left: 0,
                     filter: "blur(1px)",
                 }}
@@ -91,7 +91,7 @@ export default function ServicesPage() {
                         backgroundColor: "black",
                         position: "absolute",
                         opacity: ".4",
-                        height: "200px",
+                        height: "300px",
                         width: "100%",
                     }}
                 ></div>

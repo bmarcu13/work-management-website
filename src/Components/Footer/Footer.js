@@ -64,7 +64,7 @@ export default function Footer() {
                     <div className="footer footer-center-container">
                         <h2
                             className="footer-title"
-                            style={{ alignContent: "center" }}
+                            style={{ alignContent: "center", fontWeight: '900' }}
                         >
                             Navighează
                         </h2>
@@ -131,7 +131,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="footer footer-right-container">
-                        <h2 className="footer-title">Contact</h2>
+                        <h2 className="footer-title" style={{fontWeight: '900'}}>Contact</h2>
                         <hr
                             style={{
                                 width: "200px",
