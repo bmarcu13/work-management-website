@@ -2,6 +2,8 @@ import React from "react";
 import "./AboutUs.css"
 import Iso_blue from "../../img/albastru.png";
 import Iso_orange from "../../img/portocaliu.png";
+import Iso_purple from "../../img/iso_mov.png";
+import Iso_green from "../../img/iso_green.png";
 import Worker from "../../img/worker_graphics.png";
 export default function AboutUs() {
     return (
@@ -33,8 +35,8 @@ export default function AboutUs() {
             <div className="second-container">
                     <div className="iso-images">   
                             <img className="iso-img" src={Iso_blue} alt="iso_blue" style={{width:'150px', height:'150px'}}></img>
-                            <img className="iso-img"  src={Iso_orange} alt="iso_orange"style={{width:'150px', height:'150px'}} ></img>
-                            <img className="iso-img" src={Iso_blue} alt="iso_blue" style={{width:'150px', height:'150px'}}></img>
+                            <img className="iso-img"  src={Iso_purple} alt="iso_orange"style={{width:'150px', height:'150px'}} ></img>
+                            <img className="iso-img" src={Iso_green} alt="iso_blue" style={{width:'150px', height:'150px'}}></img>
                             <img className="iso-img"  src={Iso_orange} alt="iso_orange" style={{width:'150px', height:'150px'}}></img>
                     </div>
                     <div className="our-mission-text">
