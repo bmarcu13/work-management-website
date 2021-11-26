@@ -16,39 +16,48 @@ import ProtectiaDate from "./Screens/PoliticiPage/ProtectiaDate";
 import SecuritateDate from "./Screens/PoliticiPage/SecuritateDate";
 
 function App() {
-        // The back-to-top button is hidden at the beginning
+    // The back-to-top button is hidden at the beginning
     const [showButton, setShowButton] = useState(false);
-      
-    useEffect(() => {
-          window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-              setShowButton(true);
-            } else {
-              setShowButton(false);
-            }
-      });
-    }, []);
-    const scrollToTop = () => {
-         window.scrollTo(0, 0);
-    };
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         if (window.pageYOffset > 300) {
+    //             setShowButton(true);
+    //         } else {
+    //             setShowButton(false);
+    //         }
+    //     });
+    // }, []);
+    // const scrollToTop = () => {
+    //     window.scrollTo(0, 0);
+    // };
+
     return (
         <>
-        <BrowserRouter>
-            <Route path="/" component={MainPage} exact />
-            <Route path="/portofoliu" component={PortfolioPage} exact />
-            <Route path="/contact" component={ContactPage} exact />
-            <Route path="/cerere-oferta" component={CerereOferta} exact />
-            <Route path="/cariere" component={CarierePage} exact />
-            <Route path="/servicii" component={ServicesPage} exact />
-            <Route path="/protectia-datelor" component={ProtectiaDate} exact />
-            <Route path="/securiatea-datelor" component={SecuritateDate} exact />
-            <NavigationBar></NavigationBar>
-        </BrowserRouter>
-        {showButton && (
-        <button onClick={scrollToTop} className="back-to-top">
-          &#8679;
-        </button>
-      )}
+            <BrowserRouter>
+                <Route path="/" component={MainPage} exact />
+                <Route path="/portofoliu" component={PortfolioPage} exact />
+                <Route path="/contact" component={ContactPage} exact />
+                <Route path="/cerere-oferta" component={CerereOferta} exact />
+                <Route path="/cariere" component={CarierePage} exact />
+                <Route path="/servicii" component={ServicesPage} exact />
+                <Route
+                    path="/protectia-datelor"
+                    component={ProtectiaDate}
+                    exact
+                />
+                <Route
+                    path="/securiatea-datelor"
+                    component={SecuritateDate}
+                    exact
+                />
+                <NavigationBar></NavigationBar>
+            </BrowserRouter>
+            {/* {showButton && (
+                <button onClick={scrollToTop} className="back-to-top">
+                    &#8679;
+                </button>
+            )} */}
         </>
     );
 }

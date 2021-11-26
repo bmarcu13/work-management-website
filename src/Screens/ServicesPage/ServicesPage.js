@@ -6,7 +6,6 @@ import "./ServicesPage.css";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
-
 import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
 import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
 import SituatiiUrgenta from "../../img/services/situatii-urgenta.jpg";
@@ -22,8 +21,14 @@ import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 import Footer from "../../Components/Footer/Footer";
 
+let scrolled = false;
+
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     let observer = new IntersectionObserver((entries) => {
         console.log(entries);
@@ -35,6 +40,8 @@ export default function ServicesPage() {
 
     useEffect(() => {
         observer.observe(document.querySelector(".grid-item-container"));
+        // window.scrollTo(0, 0);
+        console.log("dsadsa");
     });
 
     const gridItemComponent = (item, index) => {
@@ -70,44 +77,44 @@ export default function ServicesPage() {
 
     return (
         <>
-        <div className="services">
-            <div
-                className="bg"
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "calc(100% - 300px)",
-                    // backgroundColor: "white",
-                    // opacity: ".5",
-                    top: "300px",
-                    left: 0,
-                    filter: "blur(1px)",
-                }}
-            ></div>
-            <div className="divider">
-                <img src={DividerPhoto} />
+            <div className="services">
                 <div
+                    className="bg"
                     style={{
-                        backgroundColor: "black",
                         position: "absolute",
-                        opacity: ".4",
-                        height: "300px",
                         width: "100%",
+                        height: "calc(100% - 300px)",
+                        // backgroundColor: "white",
+                        // opacity: ".5",
+                        top: "300px",
+                        left: 0,
+                        filter: "blur(1px)",
                     }}
                 ></div>
-                <h1 style={{ position: "absolute" }}>
-                    Serviciile Noastre
-                    <hr></hr>
-                </h1>
-            </div>
+                <div className="divider">
+                    <img src={DividerPhoto} />
+                    <div
+                        style={{
+                            backgroundColor: "black",
+                            position: "absolute",
+                            opacity: ".4",
+                            height: "300px",
+                            width: "100%",
+                        }}
+                    ></div>
+                    <h1 style={{ position: "absolute" }}>
+                        Serviciile Noastre
+                        <hr></hr>
+                    </h1>
+                </div>
 
-            <div className="grid-container">
-                {servicesList.map((item, index) => {
-                    return gridItemComponent(item, index);
-                })}
+                <div className="grid-container">
+                    {servicesList.map((item, index) => {
+                        return gridItemComponent(item, index);
+                    })}
+                </div>
             </div>
-        </div>
-        <Footer></Footer>
+            <Footer></Footer>
         </>
     );
 }
@@ -187,9 +194,10 @@ export const servicesList = [
     },
     {
         title: " Indicatoare de securitate SSM & SU",
-        description: " Producem și comercializăm, întreaga gamă de indicatoare de securitate,"+
-        " care sunt prevăzute de normele legale în vigoare. Acestea sunt foarte importante, fiind o modalitate rapidă de a comunica"+
-        " informații importante angajaților, colaboratorilor și vizitatorilor.",
+        description:
+            " Producem și comercializăm, întreaga gamă de indicatoare de securitate," +
+            " care sunt prevăzute de normele legale în vigoare. Acestea sunt foarte importante, fiind o modalitate rapidă de a comunica" +
+            " informații importante angajaților, colaboratorilor și vizitatorilor.",
         img: Indicatoare,
     },
     {
