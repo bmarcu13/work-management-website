@@ -30,7 +30,7 @@ export default function AboutUs() {
                        <p> Ne-am început activitatea în anul 2007, iar de atunci ne ocupăm de siguranța clienților din portofoliul nostru și ne asiguram că aceștia funcționează sub regulile prevazute de legea în vigoare.</p><br/><br/>
                     </p>
                 </div>
-                <div className="pic"></div>
+                <div className="pic-romb"></div>
             </div>
             <div className="second-container">
                     <div className="iso-images">   

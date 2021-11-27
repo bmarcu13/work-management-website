@@ -51,7 +51,7 @@
     flex-direction: column;
     height: fit-content;
   }
-  .pic{
+  .pic-romb{
     align-self: center;
   }
   .iso-images{
@@ -115,7 +115,7 @@
   color: rgb(4, 4, 146);
   
 }
-.pic
+.pic-romb
 {
   box-shadow: 6px 6px 7px #888888;
   width:300px;
@@ -129,7 +129,7 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.pic:before
+.pic-romb:before
 {
   content: '';
   position: absolute;
@@ -142,7 +142,7 @@
   transform: rotate(-45deg);
 }
 
-.pic:hover
+.pic-romb:hover
 {
   box-shadow: 3px 3px 7px #888888;
 }
