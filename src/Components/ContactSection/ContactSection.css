@@ -1,12 +1,13 @@
 .contact-section {
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     position: relative;
     background-image: url("../../img/bg-map.png");
     background-size: cover;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 40px;
     z-index: 0;
 }
 
@@ -80,7 +81,7 @@
     fill: #000000;
 }
 
-.form-contact-section{
+.form-contact-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,15 +89,13 @@
 .car-image {
     display: flex;
     justify-content: center;
-     flex:1;
-     width: 50%;
-     margin: auto;
+    flex: 1;
+    width: 50%;
+    margin: auto;
 }
-.car-image img{
+.car-image img {
     align-self: flex-end;
-    margin-bottom: -90px;
-    height: 500px;
-    width: auto;
+    width: 80%;
     z-index: 2;
 }
 @media (max-width: 900px) {
@@ -104,14 +103,13 @@
         width: calc(100% + 1.3px);
         height: 49px;
     }
-    .form-contact-section{
+    .form-contact-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-   .car-image img{
-       width: 350px;
-       height: auto;
-       margin-left: 100px;
-   }
+    .car-image img {
+        width: 350px;
+        height: auto;
+    }
 }
