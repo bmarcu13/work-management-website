@@ -1,13 +1,20 @@
 .service-page-landing-container {
-    background-clip: url(../../../img/cerc_blana.svg);
-    background-color: red;
-    height: 100vh;
-    width: 100%;
+    background-image: url(../../../img/oras.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120vh;
+    background-color: rgb(255, 255, 255);
+    height: 200vh;
+    min-width: 100%;
 }
 
-.service-page-landing-container img {
+.service-page-landing-container .svg-bg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: url(../../../img/cerc_blana.svg);
+    height: auto;
+    aspect-ratio: 1;
+    background-image: url(../../../img//cerc_blana.svg);
+    background-size: 210vw;
+    background-repeat: no-repeat;
+    background-position-x: -1400px;
+    background-position-y: -2100px;
+    overflow-x: hidden;
 }
