@@ -1,11 +1,12 @@
 import React from "react";
+import ServiceLanding from "./ServiceLanding/ServiceLanding";
 
 import "./IndividualServicePage.css";
 
 export default function IndividualServicePage(props) {
     return (
-        <div style={{ width: "100%", height: "100%", background: "red" }}>
-            {props.match.params.serviciu}
+        <div>
+            <ServiceLanding></ServiceLanding>
         </div>
     );
 }

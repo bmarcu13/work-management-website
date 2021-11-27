@@ -52,6 +52,10 @@ function App() {
                     component={SecuritateDate}
                     exact
                 />
+                <Route
+                    path="/servicii/:serviciu"
+                    component={IndividualServicePage}
+                ></Route>
                 <NavigationBar></NavigationBar>
             </BrowserRouter>
             {/* {showButton && (

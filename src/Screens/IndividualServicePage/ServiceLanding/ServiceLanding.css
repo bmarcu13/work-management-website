@@ -1,4 +1,13 @@
 .service-page-landing-container {
-    clip-path: url(../../../img/cerc_blana.svg);
+    background-clip: url(../../../img/cerc_blana.svg);
     background-color: red;
+    height: 100vh;
+    width: 100%;
+}
+
+.service-page-landing-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: url(../../../img/cerc_blana.svg);
 }
