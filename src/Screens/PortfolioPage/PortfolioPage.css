@@ -20,11 +20,11 @@
 
 .portfolio-header h2 {
     position: absolute;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     font-family: "Raleway", sans-serif;
-    letter-spacing: 2px;
-    font-weight: 900;
+    letter-spacing: 4px;
+    font-weight: 1000;
 }
 
 .portofolio-list-outside {

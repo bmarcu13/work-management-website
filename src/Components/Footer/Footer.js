@@ -11,6 +11,9 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+   };
     return (
         <>
             <div className="footer-with-copyrights">
@@ -61,7 +64,7 @@ export default function Footer() {
                     <div className="footer footer-center-container">
                         <h2
                             className="footer-title"
-                            style={{ alignContent: "center" }}
+                            style={{ alignContent: "center", fontWeight: '900' }}
                         >
                             Navighează
                         </h2>
@@ -75,7 +78,7 @@ export default function Footer() {
                         ></hr>
                         <ul className="links-list">
                             <Link to={"/"} style={{ textDecoration: "none" }}>
-                                <li>
+                                <li onClick={scrollToTop}> 
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Acasa
                                 </li>
@@ -84,7 +87,7 @@ export default function Footer() {
                                 to={"/servicii"}
                                 style={{ textDecoration: "none" }}
                             >
-                                <li>
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Toate Serviciile
                                 </li>
@@ -93,7 +96,7 @@ export default function Footer() {
                                 to={"/portofoliu"}
                                 style={{ textDecoration: "none" }}
                             >
-                                <li>
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Portofoliu Clienți
                                 </li>
@@ -102,7 +105,7 @@ export default function Footer() {
                                 to={"/cerere-oferta"}
                                 style={{ textDecoration: "none" }}
                             >
-                                <li>
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cerere Ofertă
                                 </li>
@@ -111,7 +114,7 @@ export default function Footer() {
                                 to={"/cariere"}
                                 style={{ textDecoration: "none" }}
                             >
-                                <li>
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cariere
                                 </li>
@@ -120,7 +123,7 @@ export default function Footer() {
                                 to={"/contact"}
                                 style={{ textDecoration: "none" }}
                             >
-                                <li>
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Contact
                                 </li>
@@ -128,7 +131,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="footer footer-right-container">
-                        <h2 className="footer-title">Contact</h2>
+                        <h2 className="footer-title" style={{fontWeight: '900'}}>Contact</h2>
                         <hr
                             style={{
                                 width: "200px",
@@ -174,10 +177,10 @@ export default function Footer() {
                                 className="footer-icon"
                                 size={20}
                             ></BsPersonCircle>{" "}
-                            George Chișiu<br></br>
-                            <a href="mailto:george.chisiu@workmanagement.ro">
-                                <FiMail className="footer-icon"></FiMail>{" "}
-                                george.chisiu@workmanagement.ro
+                            Rosu Nicoleta<br></br>
+                            <a href="tel: 0736602115">
+                                <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
+                                (0736) 602 115
                             </a>
                         </p>
                         <div
@@ -214,13 +217,13 @@ export default function Footer() {
                 <div className="footer-down">
                 <Link to={"/securiatea-datelor"}
                         style={{ textDecoration: "none" }}>
-                    <div className="policy-button">
+                    <div className="policy-button" onClick={scrollToTop}>
                         Politica de Securitate a Datelor cu caracter personal
                     </div>
                     </Link>
                     <Link to={"/protectia-datelor"}
                         style={{ textDecoration: "none" }}>
-                    <div className="policy-button">
+                    <div className="policy-button" onClick={scrollToTop}>
                         Politica privind Protecția Datelor cu caracter personal
                     </div>
                     </Link>

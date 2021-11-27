@@ -28,7 +28,7 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div>
-                            <p style={{fontWeight:'bold'}}>                                    Companie
+                            <p style={{fontWeight:'bold'}}> Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input

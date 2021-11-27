@@ -24,8 +24,14 @@ import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 import Footer from "../../Components/Footer/Footer";
 import IndividualServicePage from "../IndividualServicePage/IndividualServicePage";
 
+let scrolled = false;
+
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     let observer = new IntersectionObserver((entries) => {
         console.log(entries);
@@ -37,6 +43,8 @@ export default function ServicesPage() {
 
     useEffect(() => {
         observer.observe(document.querySelector(".grid-item-container"));
+        // window.scrollTo(0, 0);
+        console.log("dsadsa");
     });
 
     let { path, url } = useRouteMatch();
@@ -85,8 +93,10 @@ export default function ServicesPage() {
                     style={{
                         position: "absolute",
                         width: "100%",
-                        height: "calc(100% - 200px)",
-                        top: "200px",
+                        height: "calc(100% - 300px)",
+                        // backgroundColor: "white",
+                        // opacity: ".5",
+                        top: "300px",
                         left: 0,
                         filter: "blur(1px)",
                     }}
@@ -98,7 +108,7 @@ export default function ServicesPage() {
                             backgroundColor: "black",
                             position: "absolute",
                             opacity: ".4",
-                            height: "200px",
+                            height: "300px",
                             width: "100%",
                         }}
                     ></div>

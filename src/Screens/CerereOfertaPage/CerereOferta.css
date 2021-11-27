@@ -83,6 +83,9 @@
 .cerere-oferta-send-btn {
     color: #100164 !important;
     border-width: 2px !important;
+    width: fit-content;
+    display: flex;
+  justify-items: right;
     border-color: #100164;
     border-radius: 100px;
     letter-spacing: 1px;

@@ -8,10 +8,14 @@ import {
     dropdownItemsLeft,
     dropdownItemsRight,
 } from "../../Components/NavigationBarData";
+import { Link } from "react-router-dom";
 
 let menuItems = [].concat(dropdownItemsLeft).concat(dropdownItemsRight);
 
 export default function ServicesMainPage() {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+   };
     return (
         <div className="services-page-container">
             <div className="cards-container">
@@ -57,10 +61,18 @@ export default function ServicesMainPage() {
                             în urmatoarele domenii:
                         </p>
                     </div>
+                    <div>
+                    <Link to={"/servicii"}
+                        style={{ textDecoration: "none" }}
+                        >
                     <button
                         className="our-services-btn"
                         style={{
-                            marginBottom: "auto",
+                            display:"flex",
+                            justifyContent:"center",
+                            alignItems:"center",
+                            alignSelf:"center",
+                            marginBottom:"30px",
                             width: "150px",
                             height: "40px",
                             backgroundColor: "orange",
@@ -72,9 +84,12 @@ export default function ServicesMainPage() {
                             marginLeft: "auto",
                             marginRight: "auto",
                         }}
+                        onClick={scrollToTop}
                     >
                         Toate serviciile
                     </button>
+                    </Link>
+                    </div>
                 </div>
 
                 <div className="card-section">

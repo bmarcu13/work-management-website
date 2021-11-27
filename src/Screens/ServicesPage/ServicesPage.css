@@ -14,7 +14,7 @@
 }
 
 .services .divider {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -24,8 +24,9 @@
 
 .services .divider h1 {
     color: white;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-weight: 1000;
+    font-size: 50px;
+    letter-spacing: 4px;
 }
 
 .services .divider img {
