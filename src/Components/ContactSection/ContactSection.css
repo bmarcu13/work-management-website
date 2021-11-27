@@ -15,6 +15,7 @@
     width: 70%;
     height: fit-content;
     margin: auto;
+    margin-left: 20px;
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -96,4 +97,9 @@
         width: calc(100% + 1.3px);
         height: 49px;
     }
+}
+.car-image img{
+   width: 60%;
+   height: auto;
+   margin-left: 20px;
 }

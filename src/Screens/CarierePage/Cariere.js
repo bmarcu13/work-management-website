@@ -53,12 +53,13 @@ export default function CarierePage() {
 		</div>
 		<div class="single-belief">
 			<div class="belief-title">Puțin despre viitorul tău job</div>
-			<div class="belief-content">Vei beneficia de un program flexibil: part time sau full time. Oferim, de asemenea, recompensare satisfăcătoare a muncii.</div>
+			<div class="belief-content">Vei beneficia de un program flexibil: part time sau full time. Oferim, de asemenea, recompensare satisfăcătoare a muncii. Suntem un colectiv profesionist şi dinamic. Ne concentrăm mereu pe nevoile clienților noștri și dispunem de logistică la un nivel înalt de performanţă.</div>
 		</div>
 		
 		<div class="single-belief">
-			<div class="belief-title">Ca și echipă</div>
-			<div class="belief-content">Suntem un colectiv profesionist şi dinamic. Ne concentrăm mereu pe nevoile clienților noștri și dispunem de logistică la un nivel înalt de performanţă. Te potrivești într-un mediu ca acesta și vrei să lucrezi alaturi de o echipă profesionistă?<br></br><span style={{fontWeight:'bold'}}>Așteptăm CV-ul tău pe email sau completează formularul de mai jos!</span></div>
+			<div class="belief-title">Condițiile care trebuie îndeplinite</div>
+			<div class="belief-content">Te potrivești într-un astfel de mediu? Mai avem câteva cerințe: Abilitare S.S.M., autorizare pe linie de P.S.I., autorizaţie RSVTI, experienţă în domeniu, permis auto (opţional), cunoştinţe de operare pe calculator (opţional).
+<br></br><span style={{fontWeight:'bold'}}>Așteptăm CV-ul tău pe email sau completează formularul de mai jos!</span></div>
 		</div>
 		
 		
