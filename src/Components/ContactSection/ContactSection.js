@@ -4,7 +4,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import "./ContactSection.css";
 
 import { SiTheconversation } from "react-icons/si";
-import car from "../../img/car.jpeg";
+import car from "../../img/blob_car.png";
 
 
 export default function ContactSection() {
@@ -23,27 +23,28 @@ export default function ContactSection() {
                     ></path>
                 </svg>
             </div>
-            
-            <div className="wrapper">
-                <div className="title">
-                    <h1 id="contact-form-title">
-                        {" "}
-                        SCRIE-NE!{" "}
-                        <SiTheconversation
-                            size={36}
-                            style={{ verticalAlign: "top" }}
-                        ></SiTheconversation>
-                    </h1>
-                    <p style={{ fontSize: "20px" }}>
-                        Vrei să afli mai multe, să ne cunoști sau să faci o
-                        sesizare? Suntem la un mail distanță.
-                    </p>
+            <div className="form-contact-section">
+                <div className="car-image">
+                    <img src={car}></img>
                 </div>
-                <ContactForm></ContactForm>
-            </div>
-            <div className="car-image">
-                <img src={car}></img>
-            </div>
+                <div className="wrapper">
+                    <div className="title">
+                        <h1 id="contact-form-title">
+                            {" "}
+                            SCRIE-NE!{" "}
+                            <SiTheconversation
+                                size={36}
+                                style={{ verticalAlign: "top" }}
+                            ></SiTheconversation>
+                        </h1>
+                        <p style={{ fontSize: "20px" }}>
+                            Vrei să afli mai multe, să ne cunoști sau să faci o
+                            sesizare? Suntem la un mail distanță.
+                        </p>
+                    </div>
+                    <ContactForm></ContactForm>
+                </div>
+           </div>
             <div class="custom-shape-divider-bottom-1635751933">
                 <svg
                     data-name="Layer 1"

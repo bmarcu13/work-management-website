@@ -1,6 +1,6 @@
 .contact-section {
     width: 100%;
-    height: 110vh;
+    height:auto;
     display: flex;
     position: relative;
     background-image: url("../../img/bg-map.png");
@@ -11,12 +11,9 @@
 }
 
 .contact-section .wrapper {
-    max-width: 600px;
-    width: 70%;
-    height: fit-content;
     margin: auto;
-    margin-left: 20px;
     display: flex;
+    flex: 1;
     padding: 40px;
     flex-direction: column;
     background-color: white;
@@ -83,23 +80,38 @@
     fill: #000000;
 }
 
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1635751933 svg {
-        width: calc(100% + 1.3px);
-        height: 63px;
-    }
+.form-contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
-/** For mobile devices **/
-@media (max-width: 767px) {
+.car-image {
+    display: flex;
+    justify-content: center;
+     flex:1;
+     width: 50%;
+     margin: auto;
+}
+.car-image img{
+    align-self: flex-end;
+    margin-bottom: -90px;
+    height: 500px;
+    width: auto;
+    z-index: 2;
+}
+@media (max-width: 900px) {
     .custom-shape-divider-bottom-1635751933 svg {
         width: calc(100% + 1.3px);
         height: 49px;
     }
-}
-.car-image img{
-   width: 60%;
-   height: auto;
-   margin-left: 20px;
+    .form-contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   .car-image img{
+       width: 350px;
+       height: auto;
+       margin-left: 100px;
+   }
 }

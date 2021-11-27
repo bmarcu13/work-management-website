@@ -4,7 +4,7 @@
 }
 .contact-infos {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     align-self: center;
 }
 .contact-first-container .contact-infos p {
@@ -49,7 +49,7 @@
     box-shadow: 3px 5px 5px #4e5052;
 }
 .our-team:hover {
-    border-bottom: 5px solid #00325a;
+    box-shadow: 5px 5px 5px #ff8800;
 }
 
 .our-team .pic {
