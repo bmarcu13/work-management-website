@@ -22,7 +22,13 @@ export default function ContactPage() {
     return (
         <div className="screen-component">
             <div className="portfolio-header">
-                <img  style={{height:'350px',width:'100%',marginTop:'-20px', marginBottom:'40px'}}src={headerBanner} />
+                <img
+                    style={{
+                        width: "100%",
+                        objectFit: "cover",
+                    }}
+                    src={headerBanner}
+                />
                 <div
                     style={{
                         backgroundColor: "black",
@@ -49,18 +55,15 @@ export default function ContactPage() {
                 </div>
             </div>
             <div className="contact-first-container">
-                <div
-                    className="mapouter"
-                   
-                >
+                <div className="mapouter">
                     <div
                         class="gmap_canvas"
                         style={{
                             background: "none!important",
                             height: "100%",
-                            width: "90%",
-                            marginTop: "30px",
-                            marginLeft: "40px",
+                            width: "70%",
+                            marginRight: "auto",
+                            marginLeft: "auto",
                         }}
                     >
                         <iframe
@@ -118,7 +121,15 @@ export default function ContactPage() {
                     </p>
                 </div>
             </div>
-            <h1 style={{textAlign:'center', marginTop:'90px', marginBottom:'40px'}}>Colegii noștri sunt aici să raspundă întrebărilor tale!</h1>
+            <h1
+                style={{
+                    textAlign: "center",
+                    marginTop: "90px",
+                    marginBottom: "40px",
+                }}
+            >
+                Colegii noștri sunt aici să raspundă întrebărilor tale!
+            </h1>
             <div className="team-section">
                 <div className="team-member">
                     <div className="our-team">
@@ -132,10 +143,14 @@ export default function ContactPage() {
                         </div>
                         <ul className="social">
                             <li>
-                                <a href="tel: 0730.709.723" ><FiPhoneCall></FiPhoneCall></a>
+                                <a href="tel: 0730.709.723">
+                                    <FiPhoneCall></FiPhoneCall>
+                                </a>
                             </li>
                             <li>
-                                <a href="mailto:stefana.tanase@workmanagement.ro" ><FiMail></FiMail></a>
+                                <a href="mailto:stefana.tanase@workmanagement.ro">
+                                    <FiMail></FiMail>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -147,11 +162,16 @@ export default function ContactPage() {
                         </div>
                         <div className="team-content">
                             <h3 className="name">Roșu Nicoleta </h3>
-                            <h4 className="post">Contactează-mă în cazul în care ai nevoie de consultanță tehnică!</h4>
+                            <h4 className="post">
+                                Contactează-mă în cazul în care ai nevoie de
+                                consultanță tehnică!
+                            </h4>
                         </div>
                         <ul class="social">
                             <li>
-                                <a href="tel: 0736602115"><FiPhoneCall></FiPhoneCall></a>
+                                <a href="tel: 0736602115">
+                                    <FiPhoneCall></FiPhoneCall>
+                                </a>
                             </li>
                             {/* <li>
                                 <a href="#" ><FiMail></FiMail></a>
@@ -174,7 +194,9 @@ export default function ContactPage() {
                                 <a href="#" ><FiPhoneCall></FiPhoneCall></a>
                             </li> */}
                             <li>
-                                <a href="mailto:alina.mihai@workmanagement.ro" ><FiMail></FiMail></a>
+                                <a href="mailto:alina.mihai@workmanagement.ro">
+                                    <FiMail></FiMail>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -185,11 +207,11 @@ export default function ContactPage() {
         </div>
     );
 }
-const TeamArray=[
+const TeamArray = [
     {
-        name:"",
-        photo:"",
-        description:"",
-        phone:"",
-    }
-]
+        name: "",
+        photo: "",
+        description: "",
+        phone: "",
+    },
+];
