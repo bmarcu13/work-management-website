@@ -4,6 +4,8 @@ import ContactForm from "../ContactForm/ContactForm";
 import "./ContactSection.css";
 
 import { SiTheconversation } from "react-icons/si";
+import car from "../../img/car.jpeg";
+
 
 export default function ContactSection() {
     return (
@@ -21,7 +23,7 @@ export default function ContactSection() {
                     ></path>
                 </svg>
             </div>
-
+            
             <div className="wrapper">
                 <div className="title">
                     <h1 id="contact-form-title">
@@ -38,6 +40,9 @@ export default function ContactSection() {
                     </p>
                 </div>
                 <ContactForm></ContactForm>
+            </div>
+            <div className="car-image">
+                <img src={car}></img>
             </div>
             <div class="custom-shape-divider-bottom-1635751933">
                 <svg
