@@ -1,8 +1,8 @@
 .service-page-landing-container {
     background-image: url(../../../img/oras.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 120vh;
-    background-color: rgb(255, 255, 255);
+    background-size: 100vw;
+    background-color: rgb(176, 91, 255);
     height: 200vh;
     min-width: 100%;
 }
@@ -11,10 +11,11 @@
     width: 100%;
     height: auto;
     aspect-ratio: 1;
-    background-image: url(../../../img//cerc_blana.svg);
-    background-size: 210vw;
+    background-image: url(../../../img/cerculet2.svg);
+    background-size: 100vw;
     background-repeat: no-repeat;
-    background-position-x: -1400px;
-    background-position-y: -2100px;
     overflow-x: hidden;
+}
+
+.service-page-landing-container .svg-bg .bg {
 }

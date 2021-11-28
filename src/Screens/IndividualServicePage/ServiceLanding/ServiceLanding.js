@@ -7,7 +7,9 @@ import "./ServiceLanding.css";
 export default function ServiceLanding(props) {
     return (
         <div className="service-page-landing-container">
-            <div className="svg-bg"></div>
+            <div className="svg-bg">
+                <div className="bg"></div>
+            </div>
         </div>
     );
 }
