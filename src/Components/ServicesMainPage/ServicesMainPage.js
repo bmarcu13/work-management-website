@@ -16,6 +16,8 @@ export default function ServicesMainPage() {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
    };
+
+  
     return (
         <div className="services-page-container">
             <div className="cards-container">
