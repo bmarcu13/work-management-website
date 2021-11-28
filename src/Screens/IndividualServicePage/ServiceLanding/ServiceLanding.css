@@ -1,21 +1,19 @@
 .service-page-landing-container {
-    background-image: url(../../../img/oras.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: rgb(176, 91, 255);
+    background-color: rgb(255, 255, 255);
     height: 200vh;
     min-width: 100%;
 }
 
-.service-page-landing-container .svg-bg {
-    width: 100%;
+.service-page-landing-container .svg-bg img {
+    width: 100vw;
     height: auto;
-    aspect-ratio: 1;
-    background-image: url(../../../img/cerculet2.svg);
-    background-size: 100vw;
-    background-repeat: no-repeat;
     overflow-x: hidden;
+    background-repeat: no-repeat;
 }
 
-.service-page-landing-container .svg-bg .bg {
+.service-page-landing-container .svg-bg {
+    background: url(../../../img/oras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5px;
 }
