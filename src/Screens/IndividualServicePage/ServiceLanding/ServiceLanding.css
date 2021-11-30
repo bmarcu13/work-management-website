@@ -6,7 +6,8 @@
 
 .service-page-landing-container .svg-bg img {
     width: 100vw;
-    height: 110vh;
+    min-height: 110vh;
+    aspect-ratio: initial;
     overflow-x: hidden;
     object-fit: cover;
 }
@@ -15,17 +16,15 @@
     background-image: url(../../../img/oras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -5px;
-    background-position: right, center;
-    /* object-fit: cover; */
+    background-position: right -5px;
 
     /* webkit */
-    -webkit-background-image: url(../../../img/cerculet2.svg),
+    /* -webkit-background-image: url(../../../img/cerculet2.svg),
         url(../../../img/oras.jpg);
     -webkit-background-repeat: no-repeat;
     -webkit-background-size: cover;
     -webkit-background-position-y: -5px;
-    -webkit-background-position: right bottom, center;
+    -webkit-background-position: right bottom, center; */
 }
 
 @media screen and (max-width: 1200px) {
