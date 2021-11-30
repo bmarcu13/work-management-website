@@ -9,7 +9,7 @@ export default function ServiceLanding(props) {
         <div className="service-page-landing-container">
             <div>
                 <div className="svg-bg">
-                    <img src={cercblana}></img>
+                    {/* <img src={cercblana}></img> */}
                 </div>
             </div>
         </div>
