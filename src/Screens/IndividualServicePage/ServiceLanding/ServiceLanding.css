@@ -14,19 +14,26 @@
 .service-page-landing-container .svg-bg {
     width: 100vw;
     height: calc(100vh + 5px);
-    background-image: url(../../../img/cerc_blana.svg),
+    background-image: url(../../../img/cerculet2.svg),
         url(../../../img/oras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -5px;
-    background-position: right bottom, center;
+    background-position: right, center;
     /* object-fit: cover; */
 
     /* webkit */
-    -webkit-background-image: url(../../../img/cerc_blana.svg),
+    -webkit-background-image: url(../../../img/cerculet2.svg),
         url(../../../img/oras.jpg);
     -webkit-background-repeat: no-repeat;
     -webkit-background-size: cover;
     -webkit-background-position-y: -5px;
     -webkit-background-position: right bottom, center;
+}
+
+@media screen and (max-width: 1200px) {
+    .service-page-landing-container .svg-bg {
+        background-position-y: 200px;
+        background-position: center;
+    }
 }
