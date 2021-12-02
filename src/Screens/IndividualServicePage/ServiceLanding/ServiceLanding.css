@@ -4,16 +4,39 @@
     min-width: 100%;
 }
 
-.service-page-landing-container .svg-bg img {
+.service-page-landing-container .svg-bg .cercc {
     width: 100vw;
     min-height: 110vh;
-    aspect-ratio: initial;
     overflow-x: hidden;
     object-fit: cover;
 }
 
+.service-page-landing-container .svg-bg .cerct {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    top: 0;
+}
+
+.service-page-landing-container .svg-bg .cercb {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    bottom: 0;
+}
+
 .service-page-landing-container .svg-bg {
-    background-image: url(../../../img/oras.jpg);
+    position: relative;
+    background-image: linear-gradient(
+            40deg,
+            rgba(29, 0, 255, 0.4) 0%,
+            rgba(111, 0, 255, 0.4) 90%
+        ),
+        url(../../../img/oras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right -5px;
