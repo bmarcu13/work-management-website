@@ -22,9 +22,8 @@ export default function LandingSection() {
 
             newParent.appendChild(child);
         }
-    });
 
-    const minWidthQuery = window.matchMedia("(min-width: 850px)");
+        const minWidthQuery = window.matchMedia("(min-width: 850px)");
     minWidthQuery.addEventListener("change", (query) => {
         if (query.matches) {
             const newParent = document.getElementById("left-panel");
@@ -45,6 +44,9 @@ export default function LandingSection() {
         }
     });
 
+    });
+
+    
     return (
         <>
             <div
