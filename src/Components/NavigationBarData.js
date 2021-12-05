@@ -53,6 +53,7 @@ export const menuItems = [
 
 export const dropdownItemsLeft = [
     {
+        id: "securitate-si-sanatate-in-munca",
         name: "Securitate și sănătate în muncă",
         icon: <MdOutlineHealthAndSafety className="icon" />,
         card_icon: cascuta,
@@ -64,6 +65,7 @@ export const dropdownItemsLeft = [
         },
     },
     {
+        id: "situatii-de-urgenta",
         name: "(SU) Situații de urgență",
         icon: <AiOutlineAlert className="icon" />,
         card_icon: hidrant,
@@ -75,6 +77,7 @@ export const dropdownItemsLeft = [
         },
     },
     {
+        id: "rsvti",
         name: "ISCIR-RSVTI",
         icon: <GiElectricalResistance className="icon" />,
         card_icon: vestuta,
@@ -86,6 +89,7 @@ export const dropdownItemsLeft = [
         },
     },
     {
+        id: "gestiunea-deseurilor",
         name: "Managementul mediului și gestiunea deșeurilor",
         icon: <MdRecycling className="icon" />,
         card_icon: reciclare,
@@ -97,6 +101,7 @@ export const dropdownItemsLeft = [
         },
     },
     {
+        id: "audit-si-evaluarea-riscurilor",
         name: "Audit și Evaluarea riscurilor de accidentare și îmbolnăvire profesională",
         icon: <FaUserInjured className="icon" />,
         card_icon: atentie,
@@ -108,6 +113,7 @@ export const dropdownItemsLeft = [
         },
     },
     {
+        id: "coordonarea-santierelor",
         name: "Coordonarea șantierelor",
         icon: <FaTools className="icon" />,
         card_icon: macara,
@@ -122,26 +128,33 @@ export const dropdownItemsLeft = [
 
 export const dropdownItemsRight = [
     {
+        id: "formare-profesionala",
         name: "Formare profesională",
         icon: <MdWorkOutline className="icon" />,
     },
     {
+        id: "indicatoare",
         name: "Indicatoare de securitate SSM și SU",
         icon: <FaSignInAlt className="icon" />,
     },
     {
+        id: "audit-si-evaluarea-riscurilor",
+        id: "e-learning",
         name: "Platformă E-Learning",
         icon: <VscMortarBoard className="icon" />,
     },
     {
+        id: "masurarea-zgomotului-si-vibratiilor",
         name: "Măsurarea Zgomotului si Vibrațiilor la Locul de Muncă",
         icon: <GiSoundWaves className="icon" />,
     },
     {
+        id: "resurse-umane",
         name: "Resurse Umane (HR)",
         icon: <VscHorizontalRule className="icon" />,
     },
     {
+        id: "analiza-de-risc-la-securitate-fizica",
         name: "Analiză de Risc la Securitate fizică",
         icon: <IoAnalyticsSharp className="icon" />,
     },
