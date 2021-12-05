@@ -44,7 +44,6 @@ export default function ServicesPage() {
     useEffect(() => {
         observer.observe(document.querySelector(".grid-item-container"));
         // window.scrollTo(0, 0);
-        console.log("dsadsa");
     });
 
     let { path, url } = useRouteMatch();
