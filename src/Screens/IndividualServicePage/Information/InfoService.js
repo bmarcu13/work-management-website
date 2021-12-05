@@ -1,23 +1,28 @@
 import { GoAlert } from "react-icons/go";
 import { CgFileDocument } from "react-icons/cg";
+import {RiOrganizationChart} from "react-icons/ri";
 import {
     MdAttachMoney,
     MdOutlineMedicalServices,
     MdReport,
+    MdFollowTheSigns,
+    MdMoreTime,
+    MdManageAccounts
 } from "react-icons/md";
 import { IoPeople, IoApps, IoSchool } from "react-icons/io5";
 import { IoIosApps } from "react-icons/io";
-import {BsPatchCheckFill} from "react-icons/bs";
-import { GiCustodianHelmet } from "react-icons/gi";
+import {BsPatchCheckFill, BsSignpostSplitFill, BsFillFileEarmarkTextFill} from "react-icons/bs";
+import { GiCustodianHelmet,GiToolbox } from "react-icons/gi";
 import {
     AiFillGift,
     AiOutlineFileProtect,
     AiFillSafetyCertificate,
-    AiOutlineComment
+    AiOutlineComment,
+    AiOutlineDeliveredProcedure
 } from "react-icons/ai";
 import { HiInformationCircle } from "react-icons/hi";
 import { FaFireExtinguisher, FaChalkboardTeacher, FaRadiation, FaHandsHelping } from "react-icons/fa";
-import { GrUserWorker, GrPlan, GrCertificate, GrUserExpert } from "react-icons/gr";
+import { GrUserWorker, GrPlan,  } from "react-icons/gr";
 
 export const servicesInfo = [
     {
@@ -61,7 +66,7 @@ export const servicesInfo = [
                 text: "Te informam cu privire la modificările legislative, apărute în domeniul S.U.",
             },
             {
-                icon: <GrPlan size={40}></GrPlan>,
+                icon: <RiOrganizationChart size={40}></RiOrganizationChart>,
                 name: "Suntem aici!",
                 text: "Asistență continuă la intocmirea și implementarea planului de măsuri.",
             },
@@ -73,11 +78,9 @@ export const servicesInfo = [
         name: "ISCIR-RSVTI",
         highlights: [
             {
-                icon: (
-                    <AiFillSafetyCertificate
+                icon: <AiFillSafetyCertificate
                         size={40}
-                    ></AiFillSafetyCertificate>
-                ),
+                    ></AiFillSafetyCertificate>,
                 name: "Siguranță",
                 text: "Asigurăm respectarea în totalitate a legalităţii şi a prescripţiilor tehnice în vigoare",
             },
@@ -99,8 +102,8 @@ export const servicesInfo = [
         name: "Gestiunea Deșeurilor și Managementul Mediului",
         highlights: [
             {
-                icon: <GrUserWorker size={40}></GrUserWorker>,
-                name: "",
+                icon: <MdManageAccounts size={40}></MdManageAccounts>,
+                name: "Profesionalism",
                 text: "Vă punem la dispoziție un specialist în managementul deșeurilor.",
             },
             {
@@ -121,7 +124,7 @@ export const servicesInfo = [
         name: "Coordonarea Șantierelor",
         highlights: [
             {
-                icon: <GrPlan color={"#ffffff"} size={40}></GrPlan>,
+                icon: <RiOrganizationChart color={"#ffffff"} size={40}></RiOrganizationChart>,
                 name: "Armonizăm",
                 text: "Planurile proprii de securitate şi sănătate ale antreprenorilor cu planul de securitate şi sănătate al şantierului.",
             },
@@ -187,7 +190,7 @@ export const servicesInfo = [
         name: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
         highlights: [
             {
-                icon: <GrUserWorker size={40}></GrUserWorker>,
+                icon: <GiToolbox size={40}></GiToolbox>,
                 name: "Calitate",
                 text: "Echipamentele coresponzătoare standardelor internaţionale",
             },
@@ -236,14 +239,14 @@ export const servicesInfo = [
                 text: "în implemenatarea certificărilor ISO ",
             },
             {
-                icon: <GrPlan size={40}></GrPlan>,
+                icon: <RiOrganizationChart size={40}></RiOrganizationChart>,
                 name: "Plan de măsuri",
                 text: "Veți primi un plan de măsuri tehnice și organizatorice, pentru a vă desfasura activitatea în deplină siguranță.",
             },
             {
-                icon: "",
+                icon: <AiOutlineDeliveredProcedure size={40}></AiOutlineDeliveredProcedure>,
                 name: "Asigurăm",
-                text: "Procedura de evaluare a riscurilor profesionale",
+                text: "Procedura de evaluare a riscurilor profesionale.",
             },
         ],
         information: "",
@@ -253,19 +256,19 @@ export const servicesInfo = [
         name: "Indicatoare de securitate SSM & SU",
         highlights: [
             {
-                icon: "",
+                icon: <MdFollowTheSigns size={40}></MdFollowTheSigns>,
                 name: "Producem",
-                text: "Întreaga gamă de indicatoare de securitate",
+                text: "Întreaga gamă de indicatoare de securitate.",
             },
             {
                 icon: <GoAlert size={40}></GoAlert>,
                 name: "Atenție!",
-                text: "Afișarea semnalisticii SSM & SU este de importanță majoră,",
+                text: "Afișarea semnalisticii SSM & SU este de importanță majoră.",
             },
             {
-                icon: "",
-                name: "",
-                text: "",
+                icon: <BsSignpostSplitFill size={40}></BsSignpostSplitFill>,
+                name: "Respectă",
+                text: "Normele legale de semnalizare și marcare.",
             },
         ],
         information: "",
@@ -280,14 +283,14 @@ export const servicesInfo = [
                 text: "Întocmim toată documentația necesară serviciilor de personal",
             },
             {
-                icon: "",
+                icon: <MdMoreTime size={40}></MdMoreTime>,
                 name: "Ne ocupăm noi de pontaj!",
                 text: "Consultanță în privința întocmirii foilor colective de prezență",
             },
             {
-                icon: "",
-                name: "",
-                text: "",
+                icon: <BsFillFileEarmarkTextFill size={40}></BsFillFileEarmarkTextFill>,
+                name: "ReGES",
+                text: "Întocmim Serviciul de Evidență al salariaţilor",
             },
         ],
         information: "",
