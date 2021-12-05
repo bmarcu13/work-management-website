@@ -16,7 +16,6 @@
     background-color: white;
     margin: auto;
     /* border-radius: 10px; */
-    box-shadow: 2px 2px 10px black;
 }
 
 .cards-container .title-section {
@@ -29,7 +28,7 @@
     background-size: cover;
     overflow: hidden;
     margin: 40px 10px 40px 30px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
 
 .cards-container .title-section:before {

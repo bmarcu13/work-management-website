@@ -17,106 +17,114 @@ import { HiInformationCircle } from "react-icons/hi";
 import { FaFireExtinguisher } from "react-icons/fa";
 import { GrUserWorker, GrPlan } from "react-icons/gr";
 
-export const servicesInfo = {
-    ssm: {
-        url: "",
+export const servicesInfo = [
+    {
+        id: "securitate-si-sanatate-in-munca",
         name: "Securitate și sănătate în muncă",
         highlights: [
             {
-                icon: <MdOutlineMedicalServices></MdOutlineMedicalServices>,
+                icon: (
+                    <MdOutlineMedicalServices
+                        size={40}
+                    ></MdOutlineMedicalServices>
+                ),
                 name: "Suport",
                 text: "Informăm, instruim și verificăm lucrătorii în domeniul ssm.",
             },
             {
-                icon: <FaFireExtinguisher></FaFireExtinguisher>,
+                icon: <FaFireExtinguisher size={40}></FaFireExtinguisher>,
                 name: "Evită",
                 text: "Accidentele de muncă sau îmbolnăvirile profesionale, ",
             },
             {
-                icon: <CgFileDocument></CgFileDocument>,
+                icon: <CgFileDocument size={40}></CgFileDocument>,
                 name: "Scapă de grija documentelor!",
                 text: "Întocmim toată documentația necesară serviciilor de personal.",
             },
         ],
         information: "",
     },
-    su: {
-        url: "",
+    {
+        id: "situatii-de-urgenta",
         name: "Situații de urgență",
         highlights: [
             {
-                icon: <AiFillGift></AiFillGift>,
+                icon: <AiFillGift size={40}></AiFillGift>,
                 name: "Beneficii nelimitate",
                 text: "Toate tipurile de instructaje, plus verificarea acestora.",
             },
             {
-                icon: <HiInformationCircle></HiInformationCircle>,
+                icon: <HiInformationCircle size={40}></HiInformationCircle>,
                 name: "Ramâi informat",
                 text: "Te informam cu privire la modificările legislative, apărute în domeniul S.U.",
             },
             {
-                icon: <GrPlan></GrPlan>,
+                icon: <GrPlan size={40}></GrPlan>,
                 name: "Suntem aici!",
                 text: "Asistență continuă la intocmirea și implementarea planului de măsuri.",
             },
         ],
         information: "",
     },
-    rsvti: {
-        url: "",
+    {
+        id: "rsvti",
         name: "ISCIR-RSVTI",
         highlights: [
             {
-                icon: <AiFillSafetyCertificate></AiFillSafetyCertificate>,
+                icon: (
+                    <AiFillSafetyCertificate
+                        size={40}
+                    ></AiFillSafetyCertificate>
+                ),
                 name: "Siguranță",
                 text: "Asigurăm respectarea în totalitate a legalităţii şi a prescripţiilor tehnice în vigoare",
             },
             {
-                icon: <MdAttachMoney></MdAttachMoney>,
+                icon: <MdAttachMoney size={40}></MdAttachMoney>,
                 name: "Atenție!",
                 text: "Nerespectarea prevederilor art. 15 se sancționează cu amendă de la 30.000 lei la 40.000 lei",
             },
             {
-                icon: <AiOutlineFileProtect></AiOutlineFileProtect>,
+                icon: <AiOutlineFileProtect size={40}></AiOutlineFileProtect>,
                 name: "Esti asigurat",
                 text: "Te protejăm de răspunderea penală în cazul producerii unor evenimente.",
             },
         ],
         information: "",
     },
-    mediu: {
-        url: "",
+    {
+        id: "gestiunea-deseurilor",
         name: "Gestiunea Deșeurilor și Managementul Mediului",
         highlights: [
             {
-                icon: <GrUserWorker></GrUserWorker>,
+                icon: <GrUserWorker size={40}></GrUserWorker>,
                 name: "",
                 text: "Vă punem la dispoziție un specialist în managementul deșeurilor.",
             },
             {
-                icon: <MdReport></MdReport>,
+                icon: <MdReport size={40}></MdReport>,
                 name: "SIM",
                 text: "Raportări în aplicația electronică SISTEMUL INTEGRAT DE MEDIU",
             },
             {
-                icon: <MdAttachMoney></MdAttachMoney>,
+                icon: <MdAttachMoney size={40}></MdAttachMoney>,
                 name: "EVITATI AMENDA!",
                 text: "Lipsa persoanei responsabile cu gestiunea deșeurilor se sancționează cu amendă între 15.000 și 30.000 lei.",
             },
         ],
         information: "",
     },
-    santiere: {
-        url: "",
+    {
+        id: "coordonarea-santierelor",
         name: "Coordonarea Șantierelor",
         highlights: [
             {
-                icon: <GrPlan></GrPlan>,
+                icon: <GrPlan color={"#ffffff"} size={40}></GrPlan>,
                 name: "Armonizăm",
                 text: "Planurile proprii de securitate şi sănătate ale antreprenorilor cu planul de securitate şi sănătate al şantierului.",
             },
             {
-                icon: <GiCustodianHelmet></GiCustodianHelmet>,
+                icon: <GiCustodianHelmet size={40}></GiCustodianHelmet>,
                 name: "Oferim",
                 text: "Serviciu extern de prevenire și protecție ",
             },
@@ -128,30 +136,30 @@ export const servicesInfo = {
         ],
         information: "",
     },
-    securitate_fizica: {
-        url: "",
+    {
+        id: "analiza-de-risc-la-securitate-fizica",
         name: "Analiză de Risc la Securitate Fizică",
         highlights: [
             {
-                icon: <GoAlert></GoAlert>,
+                icon: <GoAlert size={40}></GoAlert>,
                 name: "Atenție!",
                 text: "Analiza de risc este obligatorie conform Legii 333/2003!",
             },
             {
-                icon: <CgFileDocument></CgFileDocument>,
+                icon: <CgFileDocument size={40}></CgFileDocument>,
                 name: "Suntem înscriși",
                 text: "în Registrul Național al Evaluatorilor de Risc, la Securitate Fizică ",
             },
             {
-                icon: <MdAttachMoney></MdAttachMoney>,
+                icon: <MdAttachMoney size={40}></MdAttachMoney>,
                 name: "",
                 text: "În caz contrar riscați amenzi uriașe! (5000-10000 RON)",
             },
         ],
         information: "",
     },
-    formare_profesionala: {
-        url: "",
+    {
+        id: "formare-profesionala",
         name: "Formare Profesională",
         highlights: [
             {
@@ -172,8 +180,8 @@ export const servicesInfo = {
         ],
         information: "",
     },
-    zgomot: {
-        url: "",
+    {
+        id: "masurarea-zgomotului-si-vibratiilor",
         name: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
         highlights: [
             {
@@ -182,7 +190,7 @@ export const servicesInfo = {
                 text: "Echipamentele coresponzătoare standardelor internaţionale",
             },
             {
-                icon: <GoAlert></GoAlert>,
+                icon: <GoAlert size={40}></GoAlert>,
                 name: "Important",
                 text: "Vibraţiile afectează sănătatea, de aceea trebuie evaluate.",
             },
@@ -194,30 +202,30 @@ export const servicesInfo = {
         ],
         information: "",
     },
-    e_learning: {
-        url: "",
+    {
+        id: "e-learning",
         name: "Platformă E-learning",
         highlights: [
             {
-                icon: <IoApps></IoApps>,
+                icon: <IoApps size={40}></IoApps>,
                 name: "Digitalizare",
                 text: "Aplicație PC/IOS/ANDROID",
             },
             {
-                icon: <IoIosApps></IoIosApps>,
+                icon: <IoIosApps size={40}></IoIosApps>,
                 name: "Ai totul la îndemână",
                 text: "Cursuri, documente, teste toate într-un singur loc.",
             },
             {
-                icon: <IoPeople></IoPeople>,
+                icon: <IoPeople size={40}></IoPeople>,
                 name: "O aplicație pentru întreaga companie",
                 text: "Portal destinat angajaților, iar separat, unul pentru responsabilul SSM/ manager.",
             },
         ],
         information: "",
     },
-    audit: {
-        url: "",
+    {
+        id: "audit-si-evaluarea-riscurilor",
         name: "Audit si Evaluarea Riscurilor",
         highlights: [
             {
@@ -226,7 +234,7 @@ export const servicesInfo = {
                 text: "în implemenatarea certificărilor ISO ",
             },
             {
-                icon: <GrPlan></GrPlan>,
+                icon: <GrPlan size={40}></GrPlan>,
                 name: "Plan de măsuri",
                 text: "Veți primi un plan de măsuri tehnice și organizatorice, pentru a vă desfasura activitatea în deplină siguranță.",
             },
@@ -238,8 +246,8 @@ export const servicesInfo = {
         ],
         information: "",
     },
-    indicatoare: {
-        url: "",
+    {
+        id: "indicatoare",
         name: "Indicatoare de securitate SSM & SU",
         highlights: [
             {
@@ -248,7 +256,7 @@ export const servicesInfo = {
                 text: "Întreaga gamă de indicatoare de securitate",
             },
             {
-                icon: <GoAlert></GoAlert>,
+                icon: <GoAlert size={40}></GoAlert>,
                 name: "Atenție!",
                 text: "Afișarea semnalisticii SSM & SU este de importanță majoră,",
             },
@@ -260,12 +268,12 @@ export const servicesInfo = {
         ],
         information: "",
     },
-    resurse_umane: {
-        url: "",
+    {
+        id: "resurse-umane",
         name: "Resurse Umane",
         highlights: [
             {
-                icon: <CgFileDocument></CgFileDocument>,
+                icon: <CgFileDocument size={40}></CgFileDocument>,
                 name: "Documentație",
                 text: "Întocmim toată documentația necesară serviciilor de personal",
             },
@@ -282,4 +290,4 @@ export const servicesInfo = {
         ],
         information: "",
     },
-};
+];

@@ -1,10 +1,14 @@
 .service-page-landing-container {
+    z-index: 0;
+    position: relative;
     background-color: rgb(255, 255, 255);
     height: 200vh;
+    width: 100vw;
     min-width: 100%;
 }
 
 .service-page-landing-container .svg-bg .cercc {
+    z-index: 0;
     width: 100vw;
     min-height: 110vh;
     overflow-x: hidden;
@@ -31,6 +35,8 @@
 
 .service-page-landing-container .svg-bg {
     position: relative;
+    width: 100%;
+    aspect-ratio: 1.476923;
     background-image: linear-gradient(
             40deg,
             rgba(29, 0, 255, 0.4) 0%,
@@ -39,7 +45,7 @@
         url(../../../img/oras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right -5px;
+    background-position: right -7px;
 
     /* webkit */
     /* -webkit-background-image: url(../../../img/cerculet2.svg),
@@ -48,6 +54,12 @@
     -webkit-background-size: cover;
     -webkit-background-position-y: -5px;
     -webkit-background-position: right bottom, center; */
+}
+
+.service-page-landing-container .hightlights-container {
+    position: absolute;
+    top: 600px;
+    left: 0;
 }
 
 @media screen and (max-width: 1200px) {
