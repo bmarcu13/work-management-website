@@ -5,17 +5,19 @@ import {
     MdOutlineMedicalServices,
     MdReport,
 } from "react-icons/md";
-import { IoPeople, IoApps } from "react-icons/io5";
+import { IoPeople, IoApps, IoSchool } from "react-icons/io5";
 import { IoIosApps } from "react-icons/io";
+import {BsPatchCheckFill} from "react-icons/bs";
 import { GiCustodianHelmet } from "react-icons/gi";
 import {
     AiFillGift,
     AiOutlineFileProtect,
     AiFillSafetyCertificate,
+    AiOutlineComment
 } from "react-icons/ai";
 import { HiInformationCircle } from "react-icons/hi";
-import { FaFireExtinguisher } from "react-icons/fa";
-import { GrUserWorker, GrPlan } from "react-icons/gr";
+import { FaFireExtinguisher, FaChalkboardTeacher, FaRadiation, FaHandsHelping } from "react-icons/fa";
+import { GrUserWorker, GrPlan, GrCertificate, GrUserExpert } from "react-icons/gr";
 
 export const servicesInfo = [
     {
@@ -129,7 +131,7 @@ export const servicesInfo = [
                 text: "Serviciu extern de prevenire și protecție ",
             },
             {
-                icon: "",
+                icon: <AiOutlineComment size={40}></AiOutlineComment>,
                 name: "Asigurăm",
                 text: "Comunicare permanentă între beneficiar și coordonatorul în materie de securitate şi sănătate.",
             },
@@ -152,7 +154,7 @@ export const servicesInfo = [
             },
             {
                 icon: <MdAttachMoney size={40}></MdAttachMoney>,
-                name: "",
+                name: "Contravenții",
                 text: "În caz contrar riscați amenzi uriașe! (5000-10000 RON)",
             },
         ],
@@ -163,17 +165,17 @@ export const servicesInfo = [
         name: "Formare Profesională",
         highlights: [
             {
-                icon: "",
+                icon: <FaChalkboardTeacher size={40} color="white"></FaChalkboardTeacher>,
                 name: "Califică-te",
                 text: "Cursuri de perfecționare în conformitate cu cerințele ANC",
             },
             {
-                icon: "",
+                icon: <IoSchool size={40}></IoSchool>,
                 name: "Certificat de Absolvire",
                 text: "Dobândește competențele necesare pentru a deveni cadru tehnic în domeniul PSI.",
             },
             {
-                icon: "",
+                icon: <BsPatchCheckFill size={40}></BsPatchCheckFill>,
                 name: "Oferim",
                 text: "Curs de specializare/perfecționare stivuitorist",
             },
@@ -185,7 +187,7 @@ export const servicesInfo = [
         name: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
         highlights: [
             {
-                icon: "",
+                icon: <GrUserWorker size={40}></GrUserWorker>,
                 name: "Calitate",
                 text: "Echipamentele coresponzătoare standardelor internaţionale",
             },
@@ -195,7 +197,7 @@ export const servicesInfo = [
                 text: "Vibraţiile afectează sănătatea, de aceea trebuie evaluate.",
             },
             {
-                icon: "",
+                icon: <FaRadiation size={40}></FaRadiation>,
                 name: "Prevenim",
                 text: "Efectele expunerii pe termen lung si scurt.",
             },
@@ -229,7 +231,7 @@ export const servicesInfo = [
         name: "Audit si Evaluarea Riscurilor",
         highlights: [
             {
-                icon: "",
+                icon: <FaHandsHelping size={40}></FaHandsHelping>,
                 name: "Suport",
                 text: "în implemenatarea certificărilor ISO ",
             },

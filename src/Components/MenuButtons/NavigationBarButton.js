@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 import "./MenuButtons.css";
 import { dropdownItemsLeft, dropdownItemsRight } from "../NavigationBarData";
 
 export default function NavigationBarButton({ buttonData, index }) {
+    let { path, url } = useRouteMatch();
     return (
         <Link to={buttonData.path} style={{ textDecoration: "none" }}>
             <div
@@ -35,9 +36,9 @@ function renderDropdown(buttonData) {
                         {dropdownItemsLeft.map((item, index) => {
                             return (
                                 <Link
-                                    to="/placeholder"
-                                    style={{ textDecoration: "none" }}
-                                >
+                    to={`${url}/${item.url}`}
+                    style={{ textDecoration: "none", marginTop: "auto" }}
+                >
                                     <p>
                                         {item.icon} {item.name}
                                     </p>
