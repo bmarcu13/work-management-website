@@ -23,6 +23,7 @@ export default function IndividualServicePage(props) {
         <div>
             <ServiceLanding
                 infoHighlights={serviceData.highlights}
+                titleService = {serviceData.name}
             ></ServiceLanding>
         </div>
     );

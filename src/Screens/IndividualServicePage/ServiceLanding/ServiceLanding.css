@@ -46,6 +46,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right -7px;
+    margin-top: -50px;
 
     /* webkit */
     /* -webkit-background-image: url(../../../img/cerculet2.svg),
@@ -58,8 +59,9 @@
 
 .service-page-landing-container .hightlights-container {
     position: absolute;
-    top: 600px;
+    bottom: 20px;
     left: 0;
+    width: 90%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -67,4 +69,22 @@
         background-position-y: 200px;
         background-position: center;
     } */
+}
+.service-page-landing-container .title-container {
+    color: rgb(0, 13, 83);
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    width: 50%;
+    left:20px;
+}
+.service-page-landing-container .title-container h1{
+
+    font-family: raleway-bold, sans-serif;
+    font-weight: 800;
+}
+@media(min-width: 700px) {
+    .service-page-landing-container .title-container h1{
+        font-size: 50px;
+    }
 }
