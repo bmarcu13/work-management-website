@@ -12,12 +12,14 @@ export default function IndividualServicePage(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     });
-
+    
     let { serviciu } = useParams();
     let serviceData;
     for (let i = 0; i <= 11; i++) {
         if (serviciu == servicesInfo[i].id) serviceData = servicesInfo[i];
     }
+    const information= serviceData.information;
+    
     console.log(serviciu);
     return (
         <div>
@@ -25,6 +27,9 @@ export default function IndividualServicePage(props) {
                 infoHighlights={serviceData.highlights}
                 titleService = {serviceData.name}
             ></ServiceLanding>
+            <div className="text-information">
+                {information}
+            </div>
         </div>
     );
 }
