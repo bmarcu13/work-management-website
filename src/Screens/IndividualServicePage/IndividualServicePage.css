@@ -1,0 +1,8 @@
+.text-information{
+    white-space: pre-line;
+    width: 80%;
+    margin:auto;
+    padding: 25px;
+    border: 2px solid grey;
+    border-radius: 30px;
+}

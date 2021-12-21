@@ -49,7 +49,25 @@ export const servicesInfo = [
                 text: "Întocmim toată documentația necesară serviciilor de personal.",
             },
         ],
-        information: "",
+        info_title:"",
+        information: "a. organizarea activității de securitate și sănătate în muncă, la nivelul angajatorului și la nivelul fiecărui loc de muncă din organizație; "+ '\n'+
+        "b. pregătirea și instruirea lucrătorilor:\n"+
+        '\t'+"    i. la angajare;\u000A"+
+        "\t         ii. la locul de muncă;\u000A"+
+        "   iii. periodic;\u000A"+ 
+        "c. verificare, prin teste, a cunoștințelor dobândite în domeniul securității și sănătății în muncă;\n"+
+        "d. consultanță, privind metode și mijloace de propagandă, referitoare la securitatea și sănătatea în muncă a lucrătorilor;\n"+
+        "e. asistență la controalele efectuate de către I.T.M., privind activitatea de securitate și sănătate în muncă, dar și la cercetarea și întocmirea dosarului, în cazul producerii accidentelor de muncă;\n"+
+        "f. completarea documentelor de securitate și sănătate în muncă, conform Legii nr. 319/2006;\n"+
+        "g. elaborarea de instrucțiuni proprii de securitate și sănătate în muncă, pentru toate locurile de muncă;\n"+
+        "h. consultanță privind autorizarea societății din punct de vedere al protecției muncii;\n"+
+        "i. elaborarea și completarea documentelor de securitate și sănătate în muncă, conform Legii nr.319/2006 și a documentațiilor privind modul de acordare a echipamentului individual de protecție, a materialelor igenico-sanitare, a alimentației de protecție, în funcție de riscurile și de condițiile de lucru (mediu toxic), stabilite în cadrul societății;\n"+
+        "j. elaborarea tematicii pentru toate fazele de instruire și verificarea acesteia la locul de muncă și periodice;\n" +
+        "k. asigurarea informării şi instruirii lucrătorilor în domeniul securităţii şi sănătăţii în muncă şi verificarea cunoaşterii şi aplicării de către lucrători a informaţiilor primite;\n"+ 
+        "l. elaborarea și actualizarea planului de prevenire și protecție al societății;\n"+
+        "m. evidenţa zonelor cu risc prevăzute la art. 101-107, din Legea nr.319/2006 care necesită semnalizare de securitate şi sănătate în muncă, stabilirea tipului de semnalizare necesar şi amplasarea acestuia conform prevederilor Hotărârii Guvernului nr. 971/2006.\n"+ 
+        "n. informarea angajatorului, în scris, asupra deficienţelor constatate în timpul controalelor efectuate la locul de muncă şi propunerea de măsuri de prevenire şi protecţie;\n"+ 
+        "o. efectuarea cercetării în cazul unui eveniment de muncă.",
     },
     {
         id: "situatii-de-urgenta",
@@ -71,7 +89,32 @@ export const servicesInfo = [
                 text: "Asistență continuă la intocmirea și implementarea planului de măsuri.",
             },
         ],
-        information: "",
+        information: "a. Instructajul introductiv general:\n"+
+        "•sistemul de reglementări din domeniul situațiilor de urgență;\n"+
+        "•indicativ, mijloace tehnice în domeniul S.U., din dotarea societății;\n"+
+        "•aspecte specifice privind situațiile de urgență.\n"+
+        "b. Instructajul specific locului de muncă:\n"+
+        "•cauze de incendiu de natura electrică;\n"+
+        "•aspecte specifice privind prevenirea incendiilor ;\n"+
+        "•măsuri de prim ajutor.\n"+
+        "c. Instructajul periodic:\n"+
+        "•agenți pentru stingerea incendiilor;\n"+
+        "•observarea, anunțarea și intervenția în caz de incendiu;\n"+
+        "•cauze de incendiu;\n"+
+        "•reguli de ordine interioară;\n"+
+        "•principii privind evacuarea persoanelor și autoturismelor;\n"+
+        "•elemente specifice privind organizarea pe locuri de munca;\n"+
+        "•caracterizarea carburanților, din p.d.v. al pericolului de explozie și incendiu;\n"+
+        "•pericole specifice la și de la vecinătăți;\n"+
+        "•sistemul de încălzire și măsurile de protecție specifice;\n"+
+        "•măsurile specifice de prevenire, pe timpul anotimpului friguros și perioadelor caniculare;\n"+
+        "•obligații privind rețelele urbane pentru intervenții;\n"+
+        "•reglementarea lucrărilor cu foc deschis;\n"+
+        "d. Verificarea periodică a instruirii;\n"+
+        "e. Întocmirea documentației specifice, în domeniul situațiilor de urgentă, pentru orice tip de activitate (inclusiv planuri de evacuare bunuri și persoane, planuri de intervenție, planuri de analiză și acoperire a riscurilor, etc);\n"+
+        "f. Informarea scrisă a Beneficiarului, cu privire la măsurile tehnice şi organizatorice de desfășurare a activității si a modificărilor legislative, apărute în domeniul S.U;\n"+
+        "g. Asistență de specialitate în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;\n"+
+        "h. Asistență în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;",
     },
     {
         id: "rsvti",
@@ -117,7 +160,11 @@ export const servicesInfo = [
                 text: "Lipsa persoanei responsabile cu gestiunea deșeurilor se sancționează cu amendă între 15.000 și 30.000 lei.",
             },
         ],
-        information: "",
+        information: "Conform Legii 211/2011, toți deținătorii/producătorii de deșeuri persoane juridice, comercianții, precum și operatorii economici autorizați pentru colectare/transport deșeuri au OBLIGAȚIA să "+
+        "desemneze o persoană din rândul angajaților proprii care să gestioneze corespunzător deșeurile sau să delege această obligație unei terțe persoane.\n"+
+        "DE REȚINUT că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n" +
+        "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor."
+        ,
     },
     {
         id: "coordonarea-santierelor",
@@ -139,7 +186,11 @@ export const servicesInfo = [
                 text: "Comunicare permanentă între beneficiar și coordonatorul în materie de securitate şi sănătate.",
             },
         ],
-        information: "",
+        information: "Vă oferim:\n"+
+        "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează că obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n"+
+        "• Întocmire Plan de Securitate și Sănătate în faza de proiectare\n"+
+        "• Întocmire Plan de Securitate și Sănătate în faza de execuție\n"+
+        "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului",
     },
     {
         id: "analiza-de-risc-la-securitate-fizica",
