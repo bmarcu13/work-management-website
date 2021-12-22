@@ -7,7 +7,8 @@ import "./IndividualServicePage.css";
 import Service3Highlights from "./Service3Highlights/Service3Highlights";
 
 import { servicesInfo } from "./Information/InfoService";
-import { Stack } from "../../Modules/Stack";
+
+import { pf } from "../../Modules/Formatter";
 
 export default function IndividualServicePage(props) {
     useEffect(() => {
@@ -21,46 +22,9 @@ export default function IndividualServicePage(props) {
     }
     const information = serviceData.information;
 
-    let stack = new Stack();
-
-    function pf(string) {
-        let i = 0;
-        while (i < string.length) {
-            if (string.charAt(i) === "#" && string.charAt(i + 1) != "/") {
-                i++;
-                let ft = ""; //Parse formatting Type
-                while (string.charAt(i) != " " || string.charAt(i) != "(") {
-                    ft += string.charAt(i);
-                    i++;
-                }
-                let params = ""; //Parse parameters, if applicable
-                if (string.charAt(i) === "(") {
-                    while (string.charAt(i) != ")") {
-                        params += string.charAt(i);
-                        i++;
-                    }
-                }
-
-                switch (ft) {
-                    case "bold":
-                        stack.push({ start: i, type: ft });
-                        break;
-                    case "color":
-                        stack.push({ start: i, type: ft, params: params });
-                        break;
-                    case "size":
-                        stack.push({ start: i, type: ft, params: params });
-                        break;
-                }
-            } else if (
-                string.charAt(i) === "#" &&
-                string.charAt(i + 1) === "/"
-            ) {
-                i += 2;
-            }
-            i++;
-        }
-    }
+    pf(
+        'da, #style{"color": "#ffffff"} ana are mere #/ si #style{"color": "#fffff"} cirese #/ '
+    );
 
     console.log(serviciu);
     return (
