@@ -33,10 +33,11 @@ export default function IndividualServicePage(props) {
                 titleService={serviceData.name}
             ></ServiceLanding>
             <div className="text-information">{formatText(information)}</div>
-            {information2 &&
-                (<div className="text-information">
+            {information2 && (
+                <div className="text-information">
                     {formatText(information2)}
-                </div>)()}
+                </div>
+            )}
         </div>
     );
 }
