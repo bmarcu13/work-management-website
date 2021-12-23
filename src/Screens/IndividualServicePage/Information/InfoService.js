@@ -138,22 +138,22 @@ export const servicesInfo = [
                 text: "Te protejăm de răspunderea penală în cazul producerii unor evenimente.",
             },
         ],
-        information: "WORK MANAGEMENT deține personal autorizat pentru întocmirea:\n"+
+        information: '#style{"fontWeight":"bold"}WORK MANAGEMENT#/ deține personal autorizat pentru întocmirea:\n'+
        " - proiectelor de montaj, reparații, modernizare instalații sub prescripția ISCIR(inclusiv RADTP)\n"+
        " - expertizelor tehnice, pentru evaluarea și determinarea perioadei remanente de viață(inclusiv RADTE)\n\n"+
-        
-        "AVANTAJELE PRESTĂRII SERVICIULUI OPERATOR RSVTI DE CĂTRE O SOCIETATE EXTERNĂ, AUTORIZATĂ ISCIR, SUNT:\n"+
+       
+        '#style{"fontWeight":"bold"}AVANTAJELE PRESTĂRII SERVICIULUI OPERATOR RSVTI DE CĂTRE O SOCIETATE EXTERNĂ, AUTORIZATĂ ISCIR, SUNT: #/\n\n'+
         "•eliminarea răspunderii directe a beneficiarului în faţa organelor statului;\n"+
         "•asigurarea beneficiarului de respectarea în totalitate a legalităţii şi a prescripţiilor tehnice în vigoare;\n"+
         "•protejarea beneficiarului de răspunderea penală în cazul producerii unor evenimente;\n"+
         "•asigurarea verificării funcţionării în condiţii de maximă siguranţă a instalaţiilor;\n"+
         "•eliminarea unui număr mare de documente ce trebuie transmise la diverse instituţii ale statului.\n\n"+
-        "INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune."
+        '#style{"fontWeight":"bold"}INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI#/: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune.'
         ,
-        information2:"De ce să apelaţi la serviciile noastre de RSVTI?\n\n"+
+        information2:'#style{"fontWeight":"bold"}De ce să apelaţi la serviciile noastre de RSVTI? #/ \n\n'+
         "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n"+
         "Nu sunteţi afectat de fluctuaţia de personal, nu trebuie să asiguraţi pe durata concediului de odihnă său medical înlocuitor cu aceeaşi calificare pentru angajatul responsabil de RSVTI care să preia temporar atribuţiunile acestuia.\n"+
-        "Beneficiaţi de costuri mici şi fixe Evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
+        "Beneficiaţi de costuri mici şi fixe si evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
         "Contract anual şi o singură factură lunară."
     },
     {
@@ -178,7 +178,7 @@ export const servicesInfo = [
         ],
         information: "Conform Legii 211/2011, toți deținătorii/producătorii de deșeuri persoane juridice, comercianții, precum și operatorii economici autorizați pentru colectare/transport deșeuri au OBLIGAȚIA să "+
         "desemneze o persoană din rândul angajaților proprii care să gestioneze corespunzător deșeurile sau să delege această obligație unei terțe persoane.\n"+
-        "DE REȚINUT că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n" +
+        '#style{"fontWeight":"bold"}DE REȚINUT #/ că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n' +
         "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor."
         ,
     },

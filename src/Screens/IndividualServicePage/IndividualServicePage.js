@@ -21,14 +21,16 @@ export default function IndividualServicePage(props) {
         if (serviciu == servicesInfo[i].id) serviceData = servicesInfo[i];
     }
     const information = serviceData.information;
-    formatText(information);
+    const information2 = serviceData.information2;    
+    
     return (
         <div>
             <ServiceLanding
                 infoHighlights={serviceData.highlights}
                 titleService={serviceData.name}
             ></ServiceLanding>
-            <div className="text-information">{information}</div>
+            <div className="text-information">{formatText(information)}</div>
+            <div className="text-information">{formatText(information2)}</div>
         </div>
     );
 }
