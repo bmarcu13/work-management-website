@@ -21,8 +21,11 @@ export default function IndividualServicePage(props) {
         if (serviciu == servicesInfo[i].id) serviceData = servicesInfo[i];
     }
     const information = serviceData.information;
-    const information2 = serviceData.information2;    
-    
+    const information2 = serviceData.information2;
+
+    console.log(information + "\n");
+    console.log(information2);
+
     return (
         <div>
             <ServiceLanding
@@ -30,7 +33,10 @@ export default function IndividualServicePage(props) {
                 titleService={serviceData.name}
             ></ServiceLanding>
             <div className="text-information">{formatText(information)}</div>
-            <div className="text-information">{formatText(information2)}</div>
+            {information2 &&
+                (<div className="text-information">
+                    {formatText(information2)}
+                </div>)()}
         </div>
     );
 }
