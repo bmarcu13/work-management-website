@@ -1,6 +1,6 @@
 import { Stack } from "../Modules/Stack";
 
-export function pf(string) {
+function pf(string) {
     let stack = new Stack();
     let childrenArary = [];
 
@@ -23,11 +23,20 @@ export function pf(string) {
                 }
                 p += "}";
                 const params = JSON.parse(p);
-                stack.push({ start: i + 1, params: params });
+                stack.push({
+                    start: i + 1,
+                    params: params,
+                    tagLength: p.length + ft.length + 1,
+                });
             }
         } else if (string.charAt(i) === "#" && string.charAt(i + 1) === "/") {
             const top = stack.top();
-            const o = { start: top.start, end: i - 1, params: top.params };
+            const o = {
+                start: top.start,
+                end: i,
+                params: top.params,
+                tagLength: top.tagLength,
+            };
             childrenArary.push(o);
             stack.pop();
             i++;
@@ -37,28 +46,39 @@ export function pf(string) {
     childrenArary.sort((a, b) => {
         return a.start - b.start;
     });
-    console.log(childrenArary);
-    let parent = document.createElement("p");
-    let a = createNodes(childrenArary, string, parent, 0);
+
+    return childrenArary;
 }
 
-function createNodes(v, string, parent, pos) {
-    if (pos == v.length) {
-        console.log(parent);
-        return parent;
-    }
-    // Creating current element
-    let e = document.createElement("span");
-    const textNode = document.createTextNode(
-        string.substring(v[pos].start, v[pos].end)
-    );
-    e.append(textNode);
-    console.log(parent);
+export function formatText(string) {
+    let v = pf(string);
 
-    if (pos < v.length - 1 && v[pos + 1].end < v[pos].end) {
-        return createNodes(v, string, e, pos + 1);
-    } else {
-        parent.append(e);
-        return createNodes(v, string, parent, pos + 1);
-    }
+    return (
+        <p>
+            <span>{string.substring(0, v[0].start - v[0].tagLength)}</span>
+            {v.map((data, index) => {
+                const renderPrefix = () => {
+                    if (index > 0) {
+                        return (
+                            <span key={index + ".first"}>
+                                {string.substring(
+                                    v[index - 1].end + 2,
+                                    v[index].start - v[index].tagLength
+                                )}
+                            </span>
+                        );
+                    }
+                };
+                return [
+                    renderPrefix(),
+                    <span key={index + ".second"} style={v[index].params}>
+                        {string.substring(v[index].start, v[index].end)}
+                    </span>,
+                ];
+            })}
+            <span>
+                {string.substring(v[v.length - 1].end + 2, string.length)}
+            </span>
+        </p>
+    );
 }

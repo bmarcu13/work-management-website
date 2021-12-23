@@ -8,7 +8,7 @@ import Service3Highlights from "./Service3Highlights/Service3Highlights";
 
 import { servicesInfo } from "./Information/InfoService";
 
-import { pf } from "../../Modules/Formatter";
+import { formatText } from "../../Modules/Formatter";
 
 export default function IndividualServicePage(props) {
     useEffect(() => {
@@ -22,18 +22,13 @@ export default function IndividualServicePage(props) {
     }
     const information = serviceData.information;
 
-    pf(
-        'da, #style{"color": "#ffffff"} ana are mere #/ si #style{"color": "#fffff"} cirese #/ '
-    );
-
-    console.log(serviciu);
     return (
         <div>
             <ServiceLanding
                 infoHighlights={serviceData.highlights}
                 titleService={serviceData.name}
             ></ServiceLanding>
-            <div className="text-information">{information}</div>
+            <div className="text-information"></div>
         </div>
     );
 }
