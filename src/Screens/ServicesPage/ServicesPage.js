@@ -44,7 +44,6 @@ export default function ServicesPage() {
     useEffect(() => {
         observer.observe(document.querySelector(".grid-item-container"));
         // window.scrollTo(0, 0);
-        console.log("dsadsa");
     });
 
     let { path, url } = useRouteMatch();
@@ -64,7 +63,7 @@ export default function ServicesPage() {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <Link
-                    to={`${url}/${index}`}
+                    to={`${url}/${item.url}`}
                     style={{ textDecoration: "none", marginTop: "auto" }}
                 >
                     <p
@@ -131,12 +130,14 @@ export default function ServicesPage() {
 
 export const servicesList = [
     {
+        url: "securitate-si-sanatate-in-munca",
         title: "Securitate și Sănătate în Muncă",
         description:
             "Scapă de grija organizării activității de securitate și sănătate în muncă din interiorul companiei tale. Ne ocupăm noi de pregătirea, instruirea și verificarea lucrătorilor, de elaborarea documentației necesare și alte acțiuni specifice SSM.",
         img: SecuritateSanatateInMunca,
     },
     {
+        url: "situatii-de-urgenta",
         title: "Situații de Urgență (Prevenirea și Stingerea Incendiilor / Protecție Civilă)",
         description:
             "Firma noastră asigură instructaj introductiv, periodic și specific locului de muncă, astfel încât angajații dvs să fie informați cu privire la măsurile tehnice şi organizatorice de" +
@@ -144,6 +145,7 @@ export const servicesList = [
         img: SituatiiUrgenta,
     },
     {
+        url: "rsvti",
         title: "RSVTI",
         description:
             "Compania noastră este autorizată de ISCIR, să desfășoare activități de supraveghere și" +
@@ -152,6 +154,7 @@ export const servicesList = [
         img: RSVTI,
     },
     {
+        url: "gestiunea-deseurilor",
         title: "Gestiunea Deșeurilor și Managementul Mediului",
         description:
             "Ținând cont de faptul că activitatea economică are impact asupra mediului, orice operator economic, cu atât mai mult cel care, prin activitatea sa, produce diferite tipuri de deșeuri, este obligat să dețină un departament de protecția mediului" +
@@ -159,6 +162,7 @@ export const servicesList = [
         img: Deseuri,
     },
     {
+        url: "coordonarea-santierelor",
         title: "Coordonarea Șantierelor",
         description:
             "Sunteți beneficiarul unui proiect de construcții și aveți nevoie de un Coordonator SSM pentru" +
@@ -168,6 +172,7 @@ export const servicesList = [
         img: CoordonareaSantierelor,
     },
     {
+        url: "analiza-de-risc-la-securitate-fizica",
         title: "Analiză de Risc la Securitate Fizică",
         description:
             "Siguranta companiei  (unitatii) dumneavoastra se realizaeaza prin efectuarea unei analize de risc la securitate fizica," +
@@ -176,6 +181,7 @@ export const servicesList = [
         img: AnalizaRiscuri,
     },
     {
+        url: "formare-profesionala",
         title: "Formare Profesională",
         description:
             "Vin-o la cursurile organizate de noi în vederea perfecționării în conformitate cu cerințele ANC." +
@@ -184,18 +190,21 @@ export const servicesList = [
         img: FormareProfesionala,
     },
     {
+        url: "masurarea-zgomotului-si-vibratiilor",
         title: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
         description:
             "Oferim servicii de măsurare a zgomotului şi a vibraţiilor transmise omului, în regim abilitat de Ministerul Sănătăţii. Echipamentele utilizate pentru măsurători corespund cerinţelor standardelor internaţionale şi răspund întocmai cerinţelor minime de securitate şi sănătate la locul de muncă.",
         img: Vibratii,
     },
     {
+        url: "e-learning",
         title: "Platformă E-learning ",
         description:
             "Beneficiază de aplicația “Work” pentru PC/IOS/Android. Poți vizualiza, descărca și modifica documentele, dar și monitoriza statusul privind parcurgerea instructajelor și tesătrilor de către angajații tăi. Reprezentanții Work Management pot face verificări/checklist-uri privind respectarea normelor SSM, SU, PC, RSVTI și Mediu în sediile/punctele de lucru ale Beneficiarului.",
         img: ELearning,
     },
     {
+        url: "audit-si-evaluarea-riscurilor",
         title: "Audit si Evaluarea Riscurilor",
         description:
             "Identificăm și evaluăm riscurile profesionale la care sunt expuși angajații la locurile de muncă și întocmim planul de prevenire și protecție pe baza acestora." +
@@ -203,6 +212,7 @@ export const servicesList = [
         img: Audit,
     },
     {
+        url: "indicatoare",
         title: " Indicatoare de securitate SSM & SU",
         description:
             " Producem și comercializăm, întreaga gamă de indicatoare de securitate," +
@@ -211,6 +221,7 @@ export const servicesList = [
         img: Indicatoare,
     },
     {
+        url: "resurse-umane",
         title: "Resurse Umane",
         description:
             "Resursa umană este cea cea mai importantă dintre toate resursele existente într-o companie. Work Management oferă în domeniul resurselor umane servicii complete de personal, salarizare, consultanţă şi asistenţă la controalele Instituţiilor de drept.",

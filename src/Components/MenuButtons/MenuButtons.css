@@ -13,7 +13,7 @@
 
 .navigation-bar-button:hover {
     cursor: pointer;
-    background-color: rgba(255, 162, 56, 0.719)
+    background-color: #ff9c2b;
    
 }
 
@@ -37,7 +37,7 @@
 }
 
 .navigation-bar-button .dropdown-container {
-    background-color: #ffbf69;
+    background-color: #ff9c2b;
     margin-top: -5px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -59,7 +59,7 @@
 
 .navigation-bar-button .dropdown-container p {
     margin: 0;
-    border-top: 1px solid tan;
+    border-top: 1px solid rgb(248, 203, 107);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -67,7 +67,7 @@
 }
 
 .navigation-bar-button .dropdown-container p:hover {
-    color: rgb(34, 64, 161);
+    color: rgb(255, 255, 255);
 }
 
 .navigation-bar-button .dropdown-separator {

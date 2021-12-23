@@ -22,27 +22,27 @@ export default function LandingSection() {
 
             newParent.appendChild(child);
         }
-    });
 
-    const minWidthQuery = window.matchMedia("(min-width: 850px)");
-    minWidthQuery.addEventListener("change", (query) => {
-        if (query.matches) {
-            const newParent = document.getElementById("left-panel");
-            const child = document.getElementById("landing-page-buttons");
-            newParent.appendChild(child);
-        }
-    });
+        const minWidthQuery = window.matchMedia("(min-width: 850px)");
+        minWidthQuery.addEventListener("change", (query) => {
+            if (query.matches) {
+                const newParent = document.getElementById("left-panel");
+                const child = document.getElementById("landing-page-buttons");
+                newParent.appendChild(child);
+            }
+        });
 
-    const maxWidthQuery = window.matchMedia("(max-width: 850px)");
-    maxWidthQuery.addEventListener("change", (query) => {
-        if (query.matches) {
-            const newParent = document.getElementById(
-                "landing-section-container"
-            );
-            const child = document.getElementById("landing-page-buttons");
+        const maxWidthQuery = window.matchMedia("(max-width: 850px)");
+        maxWidthQuery.addEventListener("change", (query) => {
+            if (query.matches) {
+                const newParent = document.getElementById(
+                    "landing-section-container"
+                );
+                const child = document.getElementById("landing-page-buttons");
 
-            newParent.appendChild(child);
-        }
+                newParent.appendChild(child);
+            }
+        });
     });
 
     return (
@@ -83,7 +83,9 @@ export default function LandingSection() {
                         protecție a mediului.
                     </h3>
                     <h3>
-                    	Lasă totul pe mâna experților noștri care te vor asista pe toată durata colaborării și vor avea grijă ca afacerea ta să ramână în siguranță !
+                        Lasă totul pe mâna experților noștri care te vor asista
+                        pe toată durata colaborării și vor avea grijă ca
+                        afacerea ta să ramână în siguranță !
                     </h3>
                     <div
                         id="landing-page-buttons"
@@ -107,7 +109,7 @@ export default function LandingSection() {
                             to={"/cerere-oferta"}
                             style={{ textDecoration: "none" }}
                         >
-                            <button >
+                            <button>
                                 Cerere Ofertă
                                 <RiArrowDropDownLine
                                     size={30}
