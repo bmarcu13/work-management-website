@@ -250,7 +250,25 @@ export const servicesInfo = [
                 text: "Curs de specializare/perfecționare stivuitorist",
             },
         ],
-        information: "",
+        information: '#style{"fontWeight":"bold","fontSize":21}WORK MANAGEMENT #/ organizează cursuri de perfecționare în conformitate cu cerințele '+
+        "ANC în urma cărora participanții la programul de perfecționare vor susține un examen de "+
+        "absolvire și continuând cu primirea certificatului de absolvire în meseria de inspector în "+
+        "domeniul securității și sănătății în muncă\n\n"+
+        '#style{"fontWeight":"bold","fontSize":21}Competențele dobandite în urma cursului sunt:#/\n'+
+        "• Realizarea activităţilor de prevenire şi protecţie\n"+
+        "• Realizarea semnalizării de securitate şi/sau de sănătate la locurile de muncă\n"+
+        "•Instruirea lucrătorilor în domeniul securităţii şi sănătăţii în muncă\n"+
+        "•Informarea lucrătorilor în domeniul securităţii şi sănătăţii în muncă\n"+
+        "•Stabilirea mijloacelor materiale şi tehnice necesare securităţii şi sănătăţii în muncă\n"+
+        "•Prevenirea accidentelor de muncă şi a îmbolnăvirilor profesionale\n"+
+        "•Participarea la cercetarea evenimentelor care produc incapacitate temporară de muncă\n"+
+        "•Verificarea respectării prevederilor legale în domeniul securităţii şi sănătăţii în muncă\n"+
+        "•Monitorizarea activităţilor de evacuare şi intervenţie în situaţii de urgenţă\n"+
+        "•Dezvoltarea profesională\n"+
+        "•Planificarea activităţilor proprii",
+        information2: 'Organizăm #style{"fontWeight":"bold"}cursuri de specializare/perfecționare stivuitorist #/(COD COR 834403) în conformitate cu cerințele ANC si ISCIR.\n\n'+
+        "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distante scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemănare, organizare și siguranță."+
+        "În acest sens, venim în ajutorul dumneavoastră cu acest curs de specializare/perfecționare stivuitorist. Tematica acestui curs de stivuitorist este în acord cu metodologia în vigoare și respectă cele mai înalte standarde de instruire.",
     },
     {
         id: "masurarea-zgomotului-si-vibratiilor",
@@ -360,6 +378,6 @@ export const servicesInfo = [
                 text: "Întocmim Serviciul de Evidență al salariaţilor",
             },
         ],
-        information: "",
+        information:"",
     },
 ];
