@@ -24,6 +24,13 @@ import { HiInformationCircle } from "react-icons/hi";
 import { FaFireExtinguisher, FaChalkboardTeacher, FaRadiation, FaHandsHelping } from "react-icons/fa";
 import { GrUserWorker, GrPlan,  } from "react-icons/gr";
 
+import evaluarea_riscurilor from '../../../img/evaluarea-riscurilor.png';
+import formare_profesionala from '../../../img/formare-profesionala.png';
+import zgomote from '../../../img/zgomote.png';
+import santiere from '../../../img/santiere.png';
+import ssm from '../../../img/worker_graphics.png';
+
+
 export const servicesInfo = [
     {
         id: "securitate-si-sanatate-in-munca",
@@ -36,12 +43,12 @@ export const servicesInfo = [
                     ></MdOutlineMedicalServices>
                 ),
                 name: "Suport",
-                text: "Informăm, instruim și verificăm lucrătorii în domeniul ssm.",
+                text: "Informăm, instruim și verificăm lucrătorii în domeniul SSM.",
             },
             {
                 icon: <FaFireExtinguisher size={40}></FaFireExtinguisher>,
                 name: "Evită",
-                text: "Accidentele de muncă sau îmbolnăvirile profesionale, ",
+                text: "Accidentele de muncă sau îmbolnăvirile profesionale. ",
             },
             {
                 icon: <CgFileDocument size={40}></CgFileDocument>,
@@ -51,23 +58,24 @@ export const servicesInfo = [
         ],
         information: '#style{"fontWeight":"bold", "fontSize": 22}Serviciile noastre SSM includ#/:\n\n'+
         "a. organizarea activității de securitate și sănătate în muncă, la nivelul angajatorului și la nivelul fiecărui loc de muncă din organizație; "+ '\n'+
-        "b. pregătirea și instruirea lucrătorilor:\n"+
+        'b. #style{"fontWeight":"bold"}pregătirea și instruirea#/ lucrătorilor:\n'+
         ' #style{"marginLeft":"30px"}  i. la angajare;#/\u000A'+
-        ' #style{"marginLeft":"30px"} ii. la locul de muncă;\u000A'+
-        ' #style{"marginLeft":"30px"}  iii. periodic;\u000A'+ 
+        ' #style{"marginLeft":"30px"} ii. la locul de muncă;#/\u000A'+
+        ' #style{"marginLeft":"30px"}  iii. periodic;#/\u000A'+ 
         "c. verificare, prin teste, a cunoștințelor dobândite în domeniul securității și sănătății în muncă;\n"+
         "d. consultanță, privind metode și mijloace de propagandă, referitoare la securitatea și sănătatea în muncă a lucrătorilor;\n"+
         "e. asistență la controalele efectuate de către I.T.M., privind activitatea de securitate și sănătate în muncă, dar și la cercetarea și întocmirea dosarului, în cazul producerii accidentelor de muncă;\n"+
         "f. completarea documentelor de securitate și sănătate în muncă, conform Legii nr. 319/2006;\n"+
         "g. elaborarea de instrucțiuni proprii de securitate și sănătate în muncă, pentru toate locurile de muncă;\n"+
         "h. consultanță privind autorizarea societății din punct de vedere al protecției muncii;\n"+
-        "i. elaborarea și completarea documentelor de securitate și sănătate în muncă, conform Legii nr.319/2006 și a documentațiilor privind modul de acordare a echipamentului individual de protecție, a materialelor igenico-sanitare, a alimentației de protecție, în funcție de riscurile și de condițiile de lucru (mediu toxic), stabilite în cadrul societății;\n"+
+        'i. #style{"fontWeight":"bold"}elaborarea și completarea documentelor#/ de securitate și sănătate în muncă, conform Legii nr.319/2006 și a documentațiilor privind modul de acordare a echipamentului individual de protecție, a materialelor igenico-sanitare, a alimentației de protecție, în funcție de riscurile și de condițiile de lucru (mediu toxic), stabilite în cadrul societății;\n'+
         "j. elaborarea tematicii pentru toate fazele de instruire și verificarea acesteia la locul de muncă și periodice;\n" +
         "k. asigurarea informării şi instruirii lucrătorilor în domeniul securităţii şi sănătăţii în muncă şi verificarea cunoaşterii şi aplicării de către lucrători a informaţiilor primite;\n"+ 
-        "l. elaborarea și actualizarea planului de prevenire și protecție al societății;\n"+
+        'l. elaborarea și actualizarea #style{"fontWeight":"bold"}planului de prevenire și protecție al societății#/;\n'+
         "m. evidenţa zonelor cu risc prevăzute la art. 101-107, din Legea nr.319/2006 care necesită semnalizare de securitate şi sănătate în muncă, stabilirea tipului de semnalizare necesar şi amplasarea acestuia conform prevederilor Hotărârii Guvernului nr. 971/2006.\n"+ 
         "n. informarea angajatorului, în scris, asupra deficienţelor constatate în timpul controalelor efectuate la locul de muncă şi propunerea de măsuri de prevenire şi protecţie;\n"+ 
         "o. efectuarea cercetării în cazul unui eveniment de muncă.",
+        image:ssm,
     },
     {
         id: "situatii-de-urgenta",
@@ -89,30 +97,31 @@ export const servicesInfo = [
                 text: "Asistență continuă la intocmirea și implementarea planului de măsuri.",
             },
         ],
-        information: "a. Instructajul introductiv general:\n"+
-        "•sistemul de reglementări din domeniul situațiilor de urgență;\n"+
-        "•indicativ, mijloace tehnice în domeniul S.U., din dotarea societății;\n"+
-        "•aspecte specifice privind situațiile de urgență.\n"+
+        information: '#style{"fontWeight":"bold", "fontSize": 22}SITUAȚII DE URGENȚĂ ( PSI și PC)#/\n\n'+
+        "a. Instructajul introductiv general:\n"+
+        '#style{"marginLeft":"25px"}•sistemul de reglementări din domeniul situațiilor de urgență;#/\n'+
+        '#style{"marginLeft":"25px"}•indicativ, mijloace tehnice în domeniul S.U., din dotarea societății;#/\n'+
+        '#style{"marginLeft":"25px"}•aspecte specifice privind situațiile de urgență.#/\n\n'+
         "b. Instructajul specific locului de muncă:\n"+
-        "•cauze de incendiu de natura electrică;\n"+
-        "•aspecte specifice privind prevenirea incendiilor ;\n"+
-        "•măsuri de prim ajutor.\n"+
+        '#style{"marginLeft":"25px"}•cauze de incendiu de natura electrică;#/\n'+
+        '#style{"marginLeft":"25px"}•aspecte specifice privind prevenirea incendiilor;#/\n'+
+        '#style{"marginLeft":"25px"}•măsuri de prim ajutor.#/\n\n'+
         "c. Instructajul periodic:\n"+
-        "•agenți pentru stingerea incendiilor;\n"+
-        "•observarea, anunțarea și intervenția în caz de incendiu;\n"+
-        "•cauze de incendiu;\n"+
-        "•reguli de ordine interioară;\n"+
-        "•principii privind evacuarea persoanelor și autoturismelor;\n"+
-        "•elemente specifice privind organizarea pe locuri de munca;\n"+
-        "•caracterizarea carburanților, din p.d.v. al pericolului de explozie și incendiu;\n"+
-        "•pericole specifice la și de la vecinătăți;\n"+
-        "•sistemul de încălzire și măsurile de protecție specifice;\n"+
-        "•măsurile specifice de prevenire, pe timpul anotimpului friguros și perioadelor caniculare;\n"+
-        "•obligații privind rețelele urbane pentru intervenții;\n"+
-        "•reglementarea lucrărilor cu foc deschis;\n"+
+        '#style{"marginLeft":"25px"}•agenți pentru stingerea incendiilor;#/\n'+
+        '#style{"marginLeft":"25px"}•observarea, anunțarea și intervenția în caz de incendiu;#/\n'+
+        '#style{"marginLeft":"25px"}•cauze de incendiu;#/\n'+
+        '#style{"marginLeft":"25px"}•reguli de ordine interioară;#/\n'+
+        '#style{"marginLeft":"25px"}•principii privind evacuarea persoanelor și autoturismelor;#/\n'+
+        '#style{"marginLeft":"25px"}•elemente specifice privind organizarea pe locuri de munca;#/\n'+
+        '#style{"marginLeft":"25px"}•caracterizarea carburanților, din p.d.v. al pericolului de explozie și incendiu;#/\n'+
+        '#style{"marginLeft":"25px"}•pericole specifice la și de la vecinătăți;#/\n'+
+        '#style{"marginLeft":"25px"}•sistemul de încălzire și măsurile de protecție specifice;#/\n'+
+        '#style{"marginLeft":"25px"}•măsurile specifice de prevenire, pe timpul anotimpului friguros și perioadelor caniculare;#/\n'+
+        '#style{"marginLeft":"25px"}•obligații privind rețelele urbane pentru intervenții;#/\n'+
+        '#style{"marginLeft":"25px"}•reglementarea lucrărilor cu foc deschis;#/\n\n'+
         "d. Verificarea periodică a instruirii;\n"+
-        "e. Întocmirea documentației specifice, în domeniul situațiilor de urgentă, pentru orice tip de activitate (inclusiv planuri de evacuare bunuri și persoane, planuri de intervenție, planuri de analiză și acoperire a riscurilor, etc);\n"+
-        "f. Informarea scrisă a Beneficiarului, cu privire la măsurile tehnice şi organizatorice de desfășurare a activității si a modificărilor legislative, apărute în domeniul S.U;\n"+
+        "e. Întocmirea documentației specifice, în domeniul situațiilor de urgență, pentru orice tip de activitate (inclusiv planuri de evacuare bunuri și persoane, planuri de intervenție, planuri de analiză și acoperire a riscurilor, etc);\n"+
+        "f. Informarea scrisă a Beneficiarului, cu privire la măsurile tehnice şi organizatorice de desfășurare a activității și a modificărilor legislative, apărute în domeniul S.U;\n"+
         "g. Asistență de specialitate în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;\n"+
         "h. Asistență în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;",
     },
@@ -154,7 +163,8 @@ export const servicesInfo = [
         "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n"+
         "Nu sunteţi afectat de fluctuaţia de personal, nu trebuie să asiguraţi pe durata concediului de odihnă său medical înlocuitor cu aceeaşi calificare pentru angajatul responsabil de RSVTI care să preia temporar atribuţiunile acestuia.\n"+
         "Beneficiaţi de costuri mici şi fixe si evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
-        "Contract anual şi o singură factură lunară."
+        "Contract anual şi o singură factură lunară.",
+        image:"",
     },
     {
         id: "gestiunea-deseurilor",
@@ -181,6 +191,7 @@ export const servicesInfo = [
         '#style{"fontWeight":"bold"}DE REȚINUT #/ că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n' +
         "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor."
         ,
+        image:"",
     },
     {
         id: "coordonarea-santierelor",
@@ -207,6 +218,7 @@ export const servicesInfo = [
         "• Întocmire Plan de Securitate și Sănătate în faza de proiectare\n"+
         "• Întocmire Plan de Securitate și Sănătate în faza de execuție\n"+
         "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului",
+        image:santiere,
     },
     {
         id: "analiza-de-risc-la-securitate-fizica",
@@ -232,7 +244,8 @@ export const servicesInfo = [
         "Evaluarea de risc, la securitatea fizică, este documentul, prin care, un specialist analizează și stabilește, de ce anume este nevoie, pentru ca paza obiectivelor dumneavoastră, să acopere toate vulnerabilitatile acestuia, în fața hoților.\n"+
         "Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitat fizică, care să realizeze analiza de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră.\n\n"+
         'Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiză de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră. \n\n Societatea noastră, este abilitată, să întocmească astfel de evaluări, fiind înscrisă, în #style{"fontWeight":"bold"}Registrul Național al Evaluatorilor de Risc, la Securitate Fizică#/',
-        },
+        image:"",
+    },
     {
         id: "formare-profesionala",
         name: "Formare Profesională",
@@ -273,6 +286,7 @@ export const servicesInfo = [
         information2: 'Organizăm #style{"fontWeight":"bold"}cursuri de specializare/perfecționare stivuitorist #/(COD COR 834403) în conformitate cu cerințele ANC si ISCIR.\n\n'+
         "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distanțe scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemănare, organizare și siguranță."+
         "În acest sens, venim în ajutorul dumneavoastră cu acest curs de specializare/perfecționare stivuitorist. Tematica acestui curs de stivuitorist este în acord cu metodologia în vigoare și respectă cele mai înalte standarde de instruire.",
+        image:formare_profesionala,
     },
     {
         id: "masurarea-zgomotului-si-vibratiilor",
@@ -301,6 +315,7 @@ export const servicesInfo = [
         "• Tipul activităţii desfăşurate;\n"+
         "• Tipul vibraţiei transmise omului (mana-brat sau întregul corp);\n"+
         "• Durata expunerii la vibraţii.        De exemplu: muncitor în construcţii, lucrează la picamer (vibraţie tip mana-brat) timp de 4 ore.",
+        image:zgomote,
     },
     {
         id: "e-learning",
@@ -335,6 +350,7 @@ export const servicesInfo = [
         "Testele pot fi modificate în orice moment, în funcție de instructajele parcurse de angajați sau privind noi riscuri apărute, de exemplu riscul de infectare cu SARS-CoV-2. \n\n"+
         "Mai mult, reprezentanții Work Management pot face verificări/checklist-uri privind respectarea normelor SSM, SU, PC, RSVTI și Mediu în sediile/punctele de lucru ale Beneficiarului.\n\n"+
         '#style{"fontWeight":"bold", "color":"red", "display":"center"}TOATE ACESTE FUNCȚII ALE APLICAȚIEI NU SUNT LIMITATIVE, POT FI ADUSE ACTUALIZĂRI PENTRU A RĂSPUNDE TUTUROR NEVOILOR BENEFICIARULUI.#/',
+        image:"",
     },
     {
         id: "audit-si-evaluarea-riscurilor",
@@ -381,7 +397,9 @@ export const servicesInfo = [
         "- Analizarea pericolului, dacă acesta nu poate fi eliminat și evaluarea riscului\n"+
         "- Luarea de măsuri pentru a limita consecințele\n"+
         "- Supravegherea riscurilor\n"+
-        "- Metode și instrumente de evaluare a riscurilor.",
+        "- Metode și instrumente de evaluare a riscurilor.\n\n"+
+        "Evaluarea riscurilor de accidente și îmbolnăviri profesionale se face pentru fiecare loc de muncă (angajați care sunt expuși la același risc având activități similare sau apropiate).",
+        image:evaluarea_riscurilor,
     },
     {
         id: "indicatoare",
@@ -403,7 +421,14 @@ export const servicesInfo = [
                 text: "Normele legale de semnalizare și marcare.",
             },
         ],
-        information: "",
+        information: '#style{"fontWeight":"bold"}Producem și comercializam#/, întreaga gamă de indicatoare de securitate, care sunt prevăzute de normele legale în vigoare.\n'+
+        "- Indicatoare de interzicere,\n"+
+        "- Indicatoare de obligativitate,\n"+
+        "- Indicatoare de avertizare\n"+
+        "- Indicatoare de informare\n\n"+
+        
+        "Afișarea semnalisticii SSM & SU este de o importanță majoră, indiferent de activitatea pe care compania dumneavoastră o desfășoară. (vorbim despre semnalizarea prizelor, stingătoarelor și marcarea ieșirilor de urgență, obligativitatea purtării unui echipament de protecție, etc)\n"+
+        'Indicatoarele de semnalizare, sunt o modalitate rapidă de a comunica informații importante angajaților, colaboratorilor și vizitatorilor.\n Odată cu respectarea normelor legale #style{"fontWeight":"bold"} preveniți și accidentele de muncă#/, amplasând indicatoarele corespunzătoare riscurilor din compania dumneavoastră, într-un loc vizibil.',
     },
     {
         id: "resurse-umane",

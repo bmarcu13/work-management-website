@@ -13,9 +13,9 @@ export default function StrengthsSection() {
                 <p>
                     WORK MANAGEMENT deține{" "}
                     <span style={{ fontWeight: "bold" }}>
-                        Asigurarea de Răspundere Civilă
+                        Asigurarea de Răspundere Civilă- 
                     </span>
-                    pentru toate serviciile prestate - limita de despăgubire
+                     pentru toate serviciile prestate - limita de despăgubire
                     500.000 EUR.
                 </p>
             </div>

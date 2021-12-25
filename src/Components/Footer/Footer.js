@@ -177,7 +177,7 @@ export default function Footer() {
                                 className="footer-icon"
                                 size={20}
                             ></BsPersonCircle>{" "}
-                            Rosu Nicoleta<br></br>
+                            Roșu Nicoleta<br></br>
                             <a href="tel: 0736602115">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 (0736) 602 115

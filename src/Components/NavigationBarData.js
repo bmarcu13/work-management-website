@@ -30,12 +30,12 @@ export const menuItems = [
         path: "/servicii",
     },
     {
-        name: "Portofoliu Clienti",
+        name: "Portofoliu Clienți",
         hasDropdown: false,
         path: "/portofoliu",
     },
     {
-        name: "Cerere oferta",
+        name: "Cerere ofertă",
         hasDropdown: false,
         path: "/cerere-oferta",
     },

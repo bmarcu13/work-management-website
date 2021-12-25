@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavigationBar.css";
 
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Logo from "../../img/logo-white-inside.png";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
@@ -13,6 +13,19 @@ import { IoClose } from "react-icons/io5";
 let menuWasToggled = false;
 
 export default function NavigationBar() {
+    const [showLogo, setShowButton] = useState(false);
+    useEffect(() => {
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset < 300) {
+                    setShowButton(true);
+                } else {
+                    setShowButton(false);
+                }
+            });
+        }, []);
+        
+
+
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const scrollToTop = () => {
@@ -50,12 +63,18 @@ export default function NavigationBar() {
             </div>
 
             <div className="navigation-menu-section">
+      
+                 {/* {showLogo && ( */}
                 <img
                     className="logo"
                     src={Logo}
                     alt="logo"
                     onClick={scrollToTop}
+                    style={{ visibility: showLogo ? "hidden" : "block"}}
                 ></img>
+                {/* )} */}
+                {/* )} */}
+
                 <div
                     className={
                         isDrawerOpen
