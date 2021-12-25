@@ -28,8 +28,11 @@ import evaluarea_riscurilor from '../../../img/evaluarea-riscurilor.png';
 import formare_profesionala from '../../../img/formare-profesionala.png';
 import zgomote from '../../../img/zgomote.png';
 import santiere from '../../../img/santiere.png';
-import ssm from '../../../img/worker_graphics.png';
-
+// import ssm from '../../../img/worker_graphics.png';
+import e_learning from '../../../img/app-work.png';
+import hr from '../../../img/hr.png';
+import SU from '../../../img/SU.png';
+import ssm from '../../../img/ssm.png';
 
 export const servicesInfo = [
     {
@@ -98,15 +101,15 @@ export const servicesInfo = [
             },
         ],
         information: '#style{"fontWeight":"bold", "fontSize": 22}SITUAȚII DE URGENȚĂ ( PSI și PC)#/\n\n'+
-        "a. Instructajul introductiv general:\n"+
+        '#style{"fontWeight":"bold"}a. Instructajul introductiv general:#/\n'+
         '#style{"marginLeft":"25px"}•sistemul de reglementări din domeniul situațiilor de urgență;#/\n'+
         '#style{"marginLeft":"25px"}•indicativ, mijloace tehnice în domeniul S.U., din dotarea societății;#/\n'+
         '#style{"marginLeft":"25px"}•aspecte specifice privind situațiile de urgență.#/\n\n'+
-        "b. Instructajul specific locului de muncă:\n"+
+        '#style{"fontWeight":"bold"}b. Instructajul specific locului de muncă:#/\n'+
         '#style{"marginLeft":"25px"}•cauze de incendiu de natura electrică;#/\n'+
         '#style{"marginLeft":"25px"}•aspecte specifice privind prevenirea incendiilor;#/\n'+
         '#style{"marginLeft":"25px"}•măsuri de prim ajutor.#/\n\n'+
-        "c. Instructajul periodic:\n"+
+        '#style{"fontWeight":"bold"}c. Instructajul periodic:#/\n'+
         '#style{"marginLeft":"25px"}•agenți pentru stingerea incendiilor;#/\n'+
         '#style{"marginLeft":"25px"}•observarea, anunțarea și intervenția în caz de incendiu;#/\n'+
         '#style{"marginLeft":"25px"}•cauze de incendiu;#/\n'+
@@ -124,6 +127,7 @@ export const servicesInfo = [
         "f. Informarea scrisă a Beneficiarului, cu privire la măsurile tehnice şi organizatorice de desfășurare a activității și a modificărilor legislative, apărute în domeniul S.U;\n"+
         "g. Asistență de specialitate în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;\n"+
         "h. Asistență în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;",
+        image:SU,
     },
     {
         id: "rsvti",
@@ -308,7 +312,7 @@ export const servicesInfo = [
                 text: "Efectele expunerii pe termen lung și scurt.",
             },
         ],
-        information: '#style{"fontWeight":"bold", "fontSize": 21}Oferim\n'+
+        information: '#style{"fontWeight":"bold", "fontSize": 21}Oferim:#/\n\n'+
         "Servicii de măsurare a zgomotului şi a vibraţiilor transmise omului, în regim abilitat de Ministerul Sănătăţii.\n Echipamentele utilizate pentru măsurători corespund cerinţelor standardelor internaţionale şi răspund întocmai cerinţelor minime de securitate şi sănătate la locul de muncă, respective HG 1876/2005.\n"+
         "Pentru măsurarea vibraţiilor transmise omului este necesară cunoaşterea următoarelor informaţii:\n\n"+
         
@@ -350,7 +354,7 @@ export const servicesInfo = [
         "Testele pot fi modificate în orice moment, în funcție de instructajele parcurse de angajați sau privind noi riscuri apărute, de exemplu riscul de infectare cu SARS-CoV-2. \n\n"+
         "Mai mult, reprezentanții Work Management pot face verificări/checklist-uri privind respectarea normelor SSM, SU, PC, RSVTI și Mediu în sediile/punctele de lucru ale Beneficiarului.\n\n"+
         '#style{"fontWeight":"bold", "color":"red", "display":"center"}TOATE ACESTE FUNCȚII ALE APLICAȚIEI NU SUNT LIMITATIVE, POT FI ADUSE ACTUALIZĂRI PENTRU A RĂSPUNDE TUTUROR NEVOILOR BENEFICIARULUI.#/',
-        image:"",
+        image:e_learning,
     },
     {
         id: "audit-si-evaluarea-riscurilor",
@@ -450,6 +454,27 @@ export const servicesInfo = [
                 text: "Întocmim Serviciul de Evidență al salariaţilor",
             },
         ],
-        information:"",
+        information:'#style{"fontWeight":"bold", "fontSize": 22}Asigurarea serviciilor de personal#/\n\n'+
+        "Work Management oferă în domeniul resurselor umane servicii complete de personal, salarizare, consultanţă şi asistenţă la controalele Instituţiilor de drept:\n"+
+        '#style{"marginLeft":"25px"}•Întocmire Contracte individuale de muncă;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire acte adiţionale;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire decizii de încetare, suspendare;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire dosare de personal( Conţinutul acestui dosar se poate modifica în funcţie de noile reglementări legislative);#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire fişe de post;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire Registrul de Evidenţă al salariaţilor;#/\n'+
+        '#style{"marginLeft":"25px"}•Gestionarea relaţiei cu autorităţile;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire Regulament Intern.#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire Registrul de Evidenţă al salariaţilor (ReGES);#/\n\n'+
+        '#style{"fontWeight":"bold", "fontSize": 22}Asigurarea serviciilor de salarizare#/\n\n'+
+        '#style{"marginLeft":"25px"}•Întocmire stat de salariu;#/\n'+
+        '#style{"marginLeft":"25px"}•Document justificativ de înregistrare în contabilitate;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire stat individual de salariu (“fluturaşi”);#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire şi depunere declaraţii privind obligaţiile aferente drepturilor salariale şi de personal;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmire adeverinţe de venit(Angajatorii/Plătitorii de venituri din salarii şi asimilate salariilor au obligaţia depunerii fişelor fiscale în format electronic);#/\n',
+        information2:'#style{"fontWeight":"bold", "fontSize": 22}Asistenţă la controalele Instituţiilor de drept#/\n\n'+
+        '#style{"marginLeft":"25px"}•Ghidarea pe toată perioada controlului, facilitând acest proces şi prin comunicarea directă cu autorităţile în numele dumneavoastră, pentru a fi siguri că inspecţia se desfăşoară într-o manieră corectă, precum şi pentru a limita eventualele amenzi, penalităţi şi dobânzi aferente;#/\n'+
+        '#style{"marginLeft":"25px"}•Evaluarea procedurilor în domeniul resurselor umane şi investigarea situaţiei de fapt, pregătind argumentele ce pot fi aduse în favoarea poziţiei adoptate de dumneavoastră;#/\n'+
+        '#style{"marginLeft":"25px"}•Estimarea punctelor forte şi punctelor slabe în abordarea dumneavoastră faţă de aspectele procedurilor în cauză, cu scopul de a evalua şansele de reuşită în eventualitatea unui proces cu autorităţile fiscale române.#/\n',
+        image:hr,
     },
 ];

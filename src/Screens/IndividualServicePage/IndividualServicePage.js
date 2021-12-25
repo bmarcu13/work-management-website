@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import ServiceLanding from "./ServiceLanding/ServiceLanding";
-
+import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 import "./IndividualServicePage.css";
 import Service3Highlights from "./Service3Highlights/Service3Highlights";
 
@@ -33,14 +34,30 @@ export default function IndividualServicePage(props) {
                 infoHighlights={serviceData.highlights}
                 titleService={serviceData.name}
             ></ServiceLanding>
-            <div className="text-information">{formatText(information)}</div>
-            <img src={service_image}></img>
+           <div className="service-first-block"> 
+                <div className="text-information">{formatText(information)}</div>
+                <div><img className="service_image" src={service_image}></img></div>
+            </div>
             {information2 && (
                 <div className="text-information">
                     {formatText(information2)}
                 </div>
             )}
-            
+        <Link
+            to={"/cerere-oferta"}
+            style={{ textDecoration: "none" }}
+        >
+            <div className="offer-button-container">
+        <div className="offerBtn">
+            <span className="text1">Cere ofertă<br/>personalizată</span>
+            <span className="text2">apasă aici</span>
+            <span className="text3">WM</span>
+            <span className="text4">Contacteaza-ne</span>
+        </div>
+        </div>
+    </Link>
+    <Footer></Footer>
         </div>
     );
 }
+ 

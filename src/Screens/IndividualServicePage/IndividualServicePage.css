@@ -1,10 +1,121 @@
 .text-information{
     white-space: pre-line;
+    display: flex;
     width: 80%;
     margin:auto;
+    margin-left: 30px;
     padding: 25px;
-    border: 2px solid grey;
+   
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    line-height: 23px;
     
 }
+.service_image{
+    display: flex;
+    flex: 1;
+    width: 500px;
+    height: auto;
+}
+.service-first-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service-first-block div{
+    padding: 20px;
+}
+@media (max-width: 900px) {
+    .service-first-block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+.offer-button-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: flex-end;
+}
+.offerBtn {
+    background-color: rgb(56, 154, 220);
+    box-shadow: inset 0px 5px 0px 0px rgba(255, 255, 255, 0.15);
+    width: 450px;
+    height: 100px;
+
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Raleway', sans;
+    cursor: pointer;
+    transition: all .2s;
+    margin-bottom: 30px;
+  }
+  
+  .offerBtn:hover {
+    background: #0573bd;
+  }
+  .offerBtn:active {
+    -webkit-box-shadow: 0px 0px 15px 0px #7ebfea;
+  -moz-box-shadow: 0px 0px 15px 0px #7ebfea;
+  box-shadow: 0px 0px 15px 0px #7ebfea;
+  }
+  .offerBtn span {
+    position: absolute;
+  } 
+  .text1, .text2, .text3 {
+    color: #FFF;
+    font-weight: 800;
+  }
+  
+  .offerBtn:before {
+    content: '';
+    display: block;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .15);
+    transform: rotate(-45deg);
+    top: -200px;
+    left: -330px;
+    transition: all .2s;
+  }
+  
+  .offerBtn:hover:before {
+    left: -300px;
+  }
+  
+  .text1 {
+    font-size: 34px;
+    line-height: 1em;
+    left: 25px;
+    top: 13px;
+  }
+  
+  .text2 {
+    font-weight: 300;
+    right: 50px;
+    bottom: 10px;
+  }
+  
+  .text3 {
+    top: -5px;
+    right: 40px;
+    font-size: 70px;
+    font-family: 'Open Sans', sans;
+    font-weight: 400;
+    letter-spacing: -4px;
+  }
+  
+  .text4 {
+    transform: rotate(-90deg);
+    right: -39px;
+    top: 37px;
+    background: rgb(255, 166, 0);
+    padding: 7px 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
