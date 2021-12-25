@@ -14,7 +14,7 @@ export default function IndividualServicePage(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     });
-
+   
     let { serviciu } = useParams();
     let serviceData;
     for (let i = 0; i <= 11; i++) {
@@ -22,22 +22,25 @@ export default function IndividualServicePage(props) {
     }
     const information = serviceData.information;
     const information2 = serviceData.information2;
-
+    const service_image= serviceData.image;
     console.log(information + "\n");
     console.log(information2);
 
     return (
+    
         <div>
             <ServiceLanding
                 infoHighlights={serviceData.highlights}
                 titleService={serviceData.name}
             ></ServiceLanding>
             <div className="text-information">{formatText(information)}</div>
+            <img src={service_image}></img>
             {information2 && (
                 <div className="text-information">
                     {formatText(information2)}
                 </div>
             )}
+            
         </div>
     );
 }
