@@ -7,7 +7,6 @@ import { dropdownItemsLeft, dropdownItemsRight } from "../NavigationBarData";
 export default function NavigationBarButton({ buttonData, index }) {
     let location = useLocation();
     let goTo = "";
-    console.log(location);
     if (location.pathname.indexOf("/servicii/") == -1) {
         goTo = "servicii/";
     }

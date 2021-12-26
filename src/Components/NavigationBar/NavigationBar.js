@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavigationBar.css";
 
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Logo from "../../img/logo-white-inside.png";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
@@ -13,20 +13,27 @@ import { IoClose } from "react-icons/io5";
 let menuWasToggled = false;
 
 export default function NavigationBar() {
-    const [showLogo, setShowButton] = useState(false);
-    useEffect(() => {
-            window.addEventListener("scroll", () => {
-                if (window.pageYOffset < 300) {
-                    setShowButton(true);
-                } else {
-                    setShowButton(false);
-                }
-            });
-        }, []);
-        
-
-
+    const [showLogo, setShowButton] = useState(true);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset < 300) {
+            setShowButton(true);
+        } else if (window.pageYOffset > 300) {
+            setShowButton(false);
+        }
+    });
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         if (window.pageYOffset < 300) {
+    //             setShowButton(true);
+    //         } else {
+    //             setShowButton(false);
+    //         }
+    //         console.log(window.pageYOffset);
+    //     });
+    // }, []);
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -63,14 +70,13 @@ export default function NavigationBar() {
             </div>
 
             <div className="navigation-menu-section">
-      
-                 {/* {showLogo && ( */}
+                {/* {showLogo && ( */}
                 <img
                     className="logo"
                     src={Logo}
                     alt="logo"
                     onClick={scrollToTop}
-                    style={{ visibility: showLogo ? "hidden" : "block"}}
+                    style={{ visibility: showLogo ? "visible" : "hidden" }}
                 ></img>
                 {/* )} */}
                 {/* )} */}
