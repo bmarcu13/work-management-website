@@ -34,6 +34,7 @@ import libra from '../img/clientsImages/libra.png'
 import maguay from '../img/clientsImages/maguay.png'
 import maral from '../img/clientsImages/maral.jpg'
 import marsh from '../img/clientsImages/marsh.png'
+import megaimage from '../img/clientsImages/mega_image.png'
 import metro from '../img/clientsImages/metro.png'
 import militari from '../img/clientsImages/militari.jpg'
 import romarm from '../img/clientsImages/romarm.png'
@@ -54,6 +55,7 @@ import sephora from '../img/clientsImages/sephora.png'
 import still from '../img/clientsImages/still.png'
 import telelink from '../img/clientsImages/telelink.png'
 import thyssenkrupp from '../img/clientsImages/thyssenkrupp.png'
+import brico_depot from '../img/clientsImages/brico_depot.png'
 import mewi from '../img/clientsImages/mewi.png'
 import voievodal from '../img/clientsImages/voievodal.png'
 import gral from '../img/clientsImages/gral.png'
@@ -375,6 +377,11 @@ const Clients = [
         },
         {
         "key": 53,
+        "src": megaimage,
+        "name": "megaimage"
+        },
+        {
+        "key": 53,
         "src": mewi,
         "name": "mewi"
          },
@@ -398,6 +405,11 @@ const Clients = [
          "src": agromar,
          "name": "agromar"
         },
+        {
+        "key": 54,
+        "src": brico_depot,
+        "name": "brico_depot"
+         },
 
 ]
 export default Clients;
