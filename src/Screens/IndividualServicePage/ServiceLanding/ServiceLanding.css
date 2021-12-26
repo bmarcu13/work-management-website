@@ -1,0 +1,86 @@
+.service-page-landing-container {
+    z-index: 0;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 200vh;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.service-page-landing-container .svg-bg .cercc {
+    z-index: 0;
+    width: 100vw;
+    min-height: 110vh;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+.service-page-landing-container .svg-bg .cerct {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    top: 0;
+}
+
+.service-page-landing-container .svg-bg .cercb {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    bottom: 0;
+}
+
+.service-page-landing-container .svg-bg {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.476923;
+    background-image: linear-gradient(90deg, rgba(238,28,9,0.8) 0%, rgba(250,177,4,0.8) 100%),
+        url(../../../img/oras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -7px;
+    margin-top: -50px;
+
+    /* webkit */
+    /* -webkit-background-image: url(../../../img/cerculet2.svg),
+        url(../../../img/oras.jpg);
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-background-position-y: -5px;
+    -webkit-background-position: right bottom, center; */
+}
+
+.service-page-landing-container .hightlights-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+    /* .service-page-landing-container .svg-bg {
+        background-position-y: 200px;
+        background-position: center;
+    } */
+}
+.service-page-landing-container .title-container {
+    color: rgb(0, 13, 83);
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    width: 50%;
+    left:20px;
+}
+.service-page-landing-container .title-container h1{
+
+    letter-spacing: 1px;
+  
+}
+@media(min-width: 700px) {
+    .service-page-landing-container .title-container h1{
+        font-size: 50px;
+    }
+}

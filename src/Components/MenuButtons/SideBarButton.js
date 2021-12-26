@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
 
-import { dropdownItemsLeft , dropdownItemsRight} from "../NavigationBarData";
+import { dropdownItemsLeft, dropdownItemsRight } from "../NavigationBarData";
+
+import { Link } from "react-router-dom";
 
 import "./MenuButtons.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -27,7 +29,8 @@ export default function SideBarButtons({ buttonData }) {
                                         index == 0 ? { marginTop: "0px" } : {}
                                     }
                                 >
-                                    {item.icon}{item.name}
+                                    {item.icon}
+                                    {item.name}
                                 </p>
                             </div>
                         );
@@ -40,7 +43,8 @@ export default function SideBarButtons({ buttonData }) {
                                         index == 0 ? { marginTop: "0px" } : {}
                                     }
                                 >
-                                    {item.icon}{item.name}
+                                    {item.icon}
+                                    {item.name}
                                 </p>
                             </div>
                         );
@@ -51,32 +55,35 @@ export default function SideBarButtons({ buttonData }) {
     }
 
     return (
-        <div
-            className={
-                isDropdownExpanded && buttonData.hasDropdown
-                    ? "sidebar-button active"
-                    : "sidebar-button"
-            }
-        >
+        <Link to={buttonData.path} style={{ textDecoration: "none" }}>
             <div
-                className="button-data"
-                onClick={() => {
-                    setIsDropdownExpanded(!isDropdownExpanded);
-                }}
+                className={
+                    isDropdownExpanded && buttonData.hasDropdown
+                        ? "sidebar-button active"
+                        : "sidebar-button"
+                }
             >
-                {renderButtonLayout(buttonData)}
-                <h3
-                    style={
-                        buttonData.hasDropdown
-                            ? { paddingLeft: "0px", marginLeft: "-5px" }
-                            : {}
-                    }
+                <div
+                    className="button-data"
+                    // onClick={() => {
+                    //     setIsDropdownExpanded(!isDropdownExpanded);
+                    // }}
                 >
-                    {buttonData.name}
-                </h3>
+                    {/* {renderButtonLayout(buttonData)} */}
+                    <h3
+                        style={
+                            // buttonData.hasDropdown
+                            //     ? { paddingLeft: "0px", marginLeft: "-5px" }
+                            //     : {}
+                            {}
+                        }
+                    >
+                        {buttonData.name}
+                    </h3>
+                </div>
+                {/* {renderDropdown(buttonData.hasDropdown)} */}
             </div>
-            {renderDropdown(buttonData.hasDropdown)}
-        </div>
+        </Link>
     );
 }
 
@@ -98,18 +105,18 @@ function renderButtonLayout(buttonData) {
     }
 }
 
-function renderDropdown(hasDropdown) {
-    if (hasDropdown) {
-        return (
-            <div className="dropdown-container">
-                {dropdownItemsLeft.map((item, index) => {
-                    return (
-                        <p style={index == 0 ? { marginTop: "0px" } : {}}>
-                            {item.name}
-                        </p>
-                    );
-                })}
-            </div>
-        );
-    }
-}
+// function renderDropdown(hasDropdown) {
+//     if (hasDropdown) {
+//         return (
+//             <div className="dropdown-container">
+//                 {dropdownItemsLeft.map((item, index) => {
+//                     return (
+//                         <p style={index == 0 ? { marginTop: "0px" } : {}}>
+//                             {item.name}
+//                         </p>
+//                     );
+//                 })}
+//             </div>
+//         );
+//     }
+// }

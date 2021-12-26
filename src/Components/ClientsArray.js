@@ -11,6 +11,7 @@ import bunzl from '../img/clientsImages/bunzl.png'
 import ca from '../img/clientsImages/ca.png'
 import carnia from '../img/clientsImages/carnia.png'
 import carrefour from '../img/clientsImages/carrefour.png'
+import framag from '../img/clientsImages/framag.jpg'
 import ceaparu from '../img/clientsImages/ceaparu.png'
 import colegiul_medicilor from '../img/clientsImages/colegiul_medicilor.png'
 import consignor from '../img/clientsImages/consignor.png'
@@ -26,6 +27,8 @@ import inspectia_judiciara from '../img/clientsImages/inspectia_judiciara.png'
 import isaf from '../img/clientsImages/isaf.png'
 import kaeser from '../img/clientsImages/kaeser.png'
 import kanalD from '../img/clientsImages/kanalD.png'
+import agromar from '../img/clientsImages/agromar.jpg'
+import smc from '../img/clientsImages/smc.png'
 import kaufland from '../img/clientsImages/kaufland.png'
 import libra from '../img/clientsImages/libra.png'
 import maguay from '../img/clientsImages/maguay.png'
@@ -34,7 +37,7 @@ import marsh from '../img/clientsImages/marsh.png'
 import megaimage from '../img/clientsImages/mega_image.png'
 import metro from '../img/clientsImages/metro.png'
 import militari from '../img/clientsImages/militari.jpg'
-import ministerul_comunicatiilor from '../img/clientsImages/ministerul_comunicatiilor.png'
+import romarm from '../img/clientsImages/romarm.png'
 import ministerul_justitiei from '../img/clientsImages/ministerul_justitiei.png'
 import nestor from '../img/clientsImages/nestor.png'
 import osram from '../img/clientsImages/osram.png'
@@ -53,31 +56,66 @@ import still from '../img/clientsImages/still.png'
 import telelink from '../img/clientsImages/telelink.png'
 import thyssenkrupp from '../img/clientsImages/thyssenkrupp.png'
 import brico_depot from '../img/clientsImages/brico_depot.png'
+import mewi from '../img/clientsImages/mewi.png'
+import voievodal from '../img/clientsImages/voievodal.png'
+import gral from '../img/clientsImages/gral.png'
+import astellas from '../img/clientsImages/astellas.png'
+import lava_cuce from '../img/clientsImages/LAVACUCE.jpg'
+import biblioteca_nationala from '../img/clientsImages/biblioteca_nationala.jpg'
+
 const Clients = [
+           {
+        "key": 28,
+        "src": kaufland,
+        "name": "kaufland"
+        },
         {
-        "key": 1,
-        "src": algeco,
-        "name": "algeco"
+        "key": 12,
+        "src": carrefour,
+        "name": "carrefour"
+        },
+        {
+        "key": 11,
+        "src": carnia,
+        "name": "carnia"
+        },
+        {
+        "key": 34,
+        "src": militari,
+         "name": "militari"
+         },
+       
+        {
+        "key": 43,
+        "src": profi,
+        "name": "profi"
+        },
+        {
+        "key": 41,
+        "src": ploiesti_shopping_city,
+        "name": "ploiesti_shopping_city"
+        },
+         {
+        "key": 27,
+        "src": kanalD,
+        "name": "kanalD"
+        },
+        {
+        "key": 52,
+        "src": thyssenkrupp,
+        "name": "thyssenkrupp"
+        },
+        {
+        "key": 10,
+        "src": ca,
+        "name": "ca"
         },
         
         {
-        "key": 2,
-        "src": anima,
-        "name": "anima"
+        "key": 13,
+        "src": ceaparu,
+        "name": "ceaparu"
         },
-        
-        {
-        "key": 3,
-        "src": aspeti,
-        "name": "aspeti"
-        },
-        
-        {
-        "key": 4,
-        "src": augment,
-        "name": "augment"
-        },
-        
         {
         "key": 5,
         "src": autoperugia,
@@ -89,13 +127,22 @@ const Clients = [
         "src": autoritatea_nationala,
         "name": "autoritatea_nationala"
         },
+        {
+        "key": 4,
+        "src": augment,
+        "name": "augment"
+        },
         
         {
         "key": 7,
         "src": biblioteca_academiei,
         "name": "biblioteca_academiei"
         },
-        
+        {
+        "key": 44,
+        "src": puma,
+        "name": "puma"
+        },
         {
         "key": 8,
         "src": british_council,
@@ -107,37 +154,36 @@ const Clients = [
         "src": bunzl,
         "name": "bunzl"
         },
-        
         {
-        "key": 10,
-        "src": ca,
-        "name": "ca"
+        "key": 35,
+        "src": romarm,
+        "name": "romarm"
         },
-        
+         {
+        "key": 2,
+        "src": anima,
+        "name": "anima"
+        },
         {
-        "key": 11,
-        "src": carnia,
-        "name": "carnia"
+        "key": 55,
+        "src": gral,
+        "name": "gral"
         },
-        
-        {
-        "key": 12,
-        "src": carrefour,
-        "name": "carrefour"
-        },
-        
-        {
-        "key": 13,
-        "src": ceaparu,
-        "name": "ceaparu"
-        },
-        
         {
         "key": 14,
         "src": colegiul_medicilor,
         "name": "colegiul_medicilor"
         },
-        
+          {
+        "key": 14,
+        "src": biblioteca_nationala,
+        "name": "biblioteca_nationala"
+        },
+        {
+        "key": 1,
+        "src": algeco,
+        "name": "algeco"
+        },
         {
         "key": 15,
         "src": consignor,
@@ -191,7 +237,16 @@ const Clients = [
         "src": humana,
         "name": "humana"
         },
-        
+         {
+        "key": 56,
+        "src": framag,
+        "name": "framag"
+        },
+         {
+        "key": 57,
+        "src": smc,
+        "name": "smc"
+        },
         {
         "key": 24,
         "src": inspectia_judiciara,
@@ -209,19 +264,7 @@ const Clients = [
         "src": kaeser,
         "name": "kaeser"
         },
-        
-        {
-        "key": 27,
-        "src": kanalD,
-        "name": "kanalD"
-        },
-        
-        {
-        "key": 28,
-        "src": kaufland,
-        "name": "kaufland"
-        },
-        
+               
         {
         "key": 29,
         "src": libra,
@@ -251,19 +294,6 @@ const Clients = [
         "src": metro,
         "name": "metro"
         },
-        
-        {
-        "key": 34,
-        "src": militari,
-        "name": "militari"
-        },
-        
-        {
-        "key": 35,
-        "src": ministerul_comunicatiilor,
-        "name": "ministerul_comunicatiilor"
-        },
-        
         {
         "key": 36,
         "src": ministerul_justitiei,
@@ -295,29 +325,11 @@ const Clients = [
         },
         
         {
-        "key": 41,
-        "src": ploiesti_shopping_city,
-        "name": "ploiesti_shopping_city"
-        },
-        
-        {
         "key": 42,
         "src": prista_oil,
         "name": "prista_oil"
-        },
-        
-        {
-        "key": 43,
-        "src": profi,
-        "name": "profi"
-        },
-        
-        {
-        "key": 44,
-        "src": puma,
-        "name": "puma"
-        },
-        
+        },        
+              
         {
         "key": 45,
         "src": quintilesIMS,
@@ -329,7 +341,11 @@ const Clients = [
         "src": rewe,
         "name": "rewe"
         },
-        
+        {
+        "key": 3,
+        "src": aspeti,
+        "name": "aspeti"
+        },
         {
         "key": 47,
         "src": rocast,
@@ -365,9 +381,29 @@ const Clients = [
         "name": "megaimage"
         },
         {
-        "key": 52,
-        "src": thyssenkrupp,
-        "name": "thyssenkrupp"
+        "key": 53,
+        "src": mewi,
+        "name": "mewi"
+         },
+         {
+        "key": 54,
+        "src": voievodal,
+        "name": "voievodal"
+         },
+        {
+        "key": 57,
+        "src": astellas,
+        "name": "astellas"
+         },
+         {
+         "key": 58,
+         "src": lava_cuce,
+         "name": "lava&cuce"
+        },
+         {
+         "key": 59,
+         "src": agromar,
+         "name": "agromar"
         },
         {
         "key": 54,

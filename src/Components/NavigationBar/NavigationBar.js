@@ -2,7 +2,7 @@ import React from "react";
 import "./NavigationBar.css";
 
 import { useState } from "react";
-import Logo from "../../img/logo.png";
+import Logo from "../../img/logo-white-inside.png";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
 import SideBarButton from "../MenuButtons/SideBarButton";
@@ -14,6 +14,10 @@ let menuWasToggled = false;
 
 export default function NavigationBar() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     // Close the sidebar if the window width changes
     const mq = window.matchMedia("(min-width: 851px)");
@@ -46,7 +50,12 @@ export default function NavigationBar() {
             </div>
 
             <div className="navigation-menu-section">
-                <img className="logo" src={Logo} alt="logo"></img>
+                <img
+                    className="logo"
+                    src={Logo}
+                    alt="logo"
+                    onClick={scrollToTop}
+                ></img>
                 <div
                     className={
                         isDrawerOpen

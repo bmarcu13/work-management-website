@@ -1,23 +1,36 @@
-/* .screen-component {
-    top: 0px;
-    position: absolute;
-} */
-.portofolio-title {
-    text-align: center;
-    margin: auto;
-    height: 50px;
-    width: fit-content;
-    border: 3px solid transparent;
-    border-bottom-color: #e74c3c;
-    color: #e74c3c;
-    font-size: 30px;
-    opacity: 0.6;
-    background: transparent;
+.screen-component {
+    width: 100vw;
 }
+
+.portfolio-header {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portfolio-header img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.portfolio-header h2 {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    font-weight: 1000;
+}
+
 .portofolio-list-outside {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 160px;
     overflow: hidden;
@@ -50,4 +63,25 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+}
+
+/* ----------------------------- */
+.custom-shape-divider-bottom-1634577933 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1634577933 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 112px;
+}
+
+.custom-shape-divider-bottom-1634577933 .shape-fill {
+    fill: white;
 }

@@ -1,11 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import "./LandingSection.css";
 import "animate.css";
 
 import lpArrow2 from "../../img/arrow2Rounded.png";
 import lpArrowR from "../../img/arrow1Rounded.png";
+import logo from "../../img/logo.png";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -19,27 +22,27 @@ export default function LandingSection() {
 
             newParent.appendChild(child);
         }
-    });
 
-    const minWidthQuery = window.matchMedia("(min-width: 851px)");
-    minWidthQuery.addEventListener("change", (query) => {
-        if (query.matches) {
-            const newParent = document.getElementById("left-panel");
-            const child = document.getElementById("landing-page-buttons");
-            newParent.appendChild(child);
-        }
-    });
+        const minWidthQuery = window.matchMedia("(min-width: 850px)");
+        minWidthQuery.addEventListener("change", (query) => {
+            if (query.matches) {
+                const newParent = document.getElementById("left-panel");
+                const child = document.getElementById("landing-page-buttons");
+                newParent.appendChild(child);
+            }
+        });
 
-    const maxWidthQuery = window.matchMedia("(max-width: 851px)");
-    maxWidthQuery.addEventListener("change", (query) => {
-        if (query.matches) {
-            const newParent = document.getElementById(
-                "landing-section-container"
-            );
-            const child = document.getElementById("landing-page-buttons");
+        const maxWidthQuery = window.matchMedia("(max-width: 850px)");
+        maxWidthQuery.addEventListener("change", (query) => {
+            if (query.matches) {
+                const newParent = document.getElementById(
+                    "landing-section-container"
+                );
+                const child = document.getElementById("landing-page-buttons");
 
-            newParent.appendChild(child);
-        }
+                newParent.appendChild(child);
+            }
+        });
     });
 
     return (
@@ -48,7 +51,29 @@ export default function LandingSection() {
                 id="landing-section-container"
                 className="landing-section-container"
             >
+                <div
+                    style={{
+                        position: "absolute",
+                        width: "100%",
+                        height: "100%",
+                        background: "rgb(29, 0, 255)",
+                        background:
+                            "linear-gradient( 40deg, rgba(29, 0, 255, 1) 0%, rgba(111, 0, 255, 1) 90%)",
+                        opacity: ".4",
+                        top: 0,
+                        left: 0,
+                    }}
+                ></div>
                 <div id="left-panel" className="left-panel">
+                    {/* <img
+                        src={logo}
+                        style={{
+                            top: 30,
+                            width: "60%",
+                            height: "auto",
+                            marginBottom: "20px",
+                        }}
+                    /> */}
                     <h1>
                         Misiunea noastră e sănătatea și siguranța companiei și a
                         angajaților tăi.
@@ -57,28 +82,43 @@ export default function LandingSection() {
                         Servicii de securitate și sănătate în muncă și de
                         protecție a mediului.
                     </h3>
+                    <h3>
+                        Lasă totul pe mâna experților noștri care te vor asista
+                        pe toată durata colaborării și vor avea grijă ca
+                        afacerea ta să ramână în siguranță !
+                    </h3>
                     <div
                         id="landing-page-buttons"
                         className="landing-page-buttons"
                     >
-                        <button>
-                            Servicii
-                            <RiArrowDropDownLine
-                                size={30}
-                                style={{
-                                    transform: "rotate(-90deg)",
-                                }}
-                            />
-                        </button>
-                        <button>
-                            Cerere Oferta
-                            <RiArrowDropDownLine
-                                size={30}
-                                style={{
-                                    transform: "rotate(-90deg)",
-                                }}
-                            />
-                        </button>
+                        <Link
+                            to={"/servicii"}
+                            style={{ textDecoration: "none" }}
+                        >
+                            <button>
+                                Servicii
+                                <RiArrowDropDownLine
+                                    size={30}
+                                    style={{
+                                        transform: "rotate(-90deg)",
+                                    }}
+                                />
+                            </button>
+                        </Link>
+                        <Link
+                            to={"/cerere-oferta"}
+                            style={{ textDecoration: "none" }}
+                        >
+                            <button>
+                                Cerere Ofertă
+                                <RiArrowDropDownLine
+                                    size={30}
+                                    style={{
+                                        transform: "rotate(-90deg)",
+                                    }}
+                                />
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

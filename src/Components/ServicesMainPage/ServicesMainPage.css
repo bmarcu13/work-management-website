@@ -1,0 +1,193 @@
+.services-page-container {
+    width: 100%;
+    min-height: calc(100vh);
+    padding-top: 90px;
+    background: #ffffff;
+    /* border-top: 2px groove rgb(252, 220, 171);
+    border-bottom: 2px groove rgb(240, 215, 178); */
+}
+
+.services-page-container .cards-container {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    max-width: 1300px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    /* border-radius: 10px; */
+}
+
+.cards-container .title-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-image: url("../../img/landing-page-services-divider-photo.jpg");
+    background-position-x: -100px;
+    background-size: cover;
+    overflow: hidden;
+    margin: 40px 10px 40px 30px;
+    border-radius: 10px;
+}
+
+.cards-container .title-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.cards-container .title-section * {
+    position: relative;
+}
+
+.cards-container .card-section {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-auto-rows: 1fr;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    row-gap: 20px;
+    margin-right: 15px;
+}
+
+.card-section .card-wrapper {
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
+    margin: 0px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 10px;
+    flex: 1;
+    transition: 0.2s;
+    min-height: 250px;
+    padding-bottom: 20px;
+}
+
+.card-section .card-wrapper:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 50px -24px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 1px 2px 50px -24px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 2px 50px -24px rgba(0, 0, 0, 1);
+}
+
+.card-section .card-wrapper .cvcv {
+    width: 60px;
+    background-color: #ee9b14;
+    border: none;
+    height: 3px;
+    margin: 20px auto;
+    transition: 0.2s;
+    border-radius: 3px;
+}
+
+.card-section .card-wrapper:hover .cvcv {
+    width: 80px;
+}
+
+.key-words {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    margin-bottom: 30px;
+}
+
+.key-word-card {
+    padding: 3px 4px;
+    border-radius: 5px;
+    margin: 0;
+    height: 20px;
+}
+.our-services-btn:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+/* .card-section:hover .card-wrapper{
+    -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: perspective(1000) rotateY(180deg);
+  -moz-transform: perspective(1000) rotateY(180deg);
+  -ms-transform: perspective(1000) rotateY(180deg);
+  -o-transform: perspective(1000) rotateY(180deg);
+  transform: perspective(1000) rotateY(180deg);
+} */
+.card-section .card-wrapper .read-more-button {
+    color: rgb(11, 59, 161);
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0px;
+    font-size: 18px;
+    margin-left: 10px;
+    /* border-radius: 5px; */
+    /* padding: 5px 10px 5px 0px; */
+    user-select: none;
+    width: 120px;
+    height: 24px;
+    transition: 0.2s;
+    margin-top: auto;
+    position: relative;
+}
+
+.card-section .card-wrapper .read-more-button p {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-section .card-wrapper .read-more-button:hover p {
+    /* color: white; */
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 920px) {
+    .cards-container .card-section {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+        margin-top: 40px;
+        margin-bottom: 40px;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .services-page-container .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container .card-section {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+    }
+
+    .cards-container .title-section {
+        width: calc(100% - 60px);
+        margin: 20px 20px 0px 20px;
+        padding: 10px;
+        background-position: left;
+    }
+
+    @media screen and (max-width: 500px) {
+        .cards-container .card-section {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(10px, 1fr));
+        }
+    }
+}
