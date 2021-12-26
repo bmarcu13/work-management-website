@@ -45,9 +45,8 @@ export default function AboutUs() {
                     width="100%"
                     id="blobSvg"
                     style={{
+                        maxWidth: "90%",
                         position: "absolute",
-                        maxWidth: "80%",
-                        maxHeight: "80%",
                         zIndex: "0",
                     }}
                 >
