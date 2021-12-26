@@ -4,7 +4,7 @@ import iso_blue from "../../img/iso_albastru.png";
 import iso_orange from "../../img/iso-orange.png";
 import iso_purple from "../../img/iso_mov.png";
 import iso_green from "../../img/iso_green.png";
-import logo from "../../img/logo.png";
+import logo from "../../img/logo-work.png";
 
 import { RiDoubleQuotesL } from "react-icons/ri";
 
