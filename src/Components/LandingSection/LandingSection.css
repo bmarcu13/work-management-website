@@ -4,15 +4,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    /* background: rgb(29, 0, 255);
-    background: linear-gradient(
-        40deg,
-        rgba(29, 0, 255, 1) 0%,
-        rgba(111, 0, 255, 1) 90%
-    ); */
     background-image: url(../../img//landing-bg.jpg);
     background-size: cover;
-    background-position-y: -40px;
     padding-top: 83px;
     margin-top: 100px;
 }
@@ -55,7 +48,7 @@
 }
 
 .custom-shape-divider-bottom-1633974734 .shape-fill {
-    fill: rgba(255, 255, 255, 1);
+    fill: rgb(149, 75, 247);
 }
 
 /** For tablet devices **/
@@ -125,6 +118,7 @@
     .main-page .landing-section-container {
         flex-direction: column;
         padding-bottom: 100px;
+        background-position-x: center;
     }
 
     .main-page .landing-section-container .right-panel {

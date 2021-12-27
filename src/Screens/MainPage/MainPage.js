@@ -15,8 +15,8 @@ export default function MainPage() {
     return (
         <div className="main-page">
             <LandingSection></LandingSection>
-            <StrengthsSection></StrengthsSection>
             <AboutUs></AboutUs>
+            <StrengthsSection></StrengthsSection>
             <ServicesMainPage></ServicesMainPage>
             <ClientsCarousel></ClientsCarousel>
             <StatisticsSection></StatisticsSection>

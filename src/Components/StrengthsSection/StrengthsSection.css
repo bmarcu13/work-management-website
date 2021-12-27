@@ -1,10 +1,21 @@
 .strengths-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.strengths-section .cards {
     display: flex;
     margin: auto;
     padding-top: 20px;
     flex-direction: row;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 20px;
 }
+
 .strength {
+    max-width: 250px;
+    min-height: 300px;
     background: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -20,6 +31,9 @@
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
     user-select: none;
+    box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
 }
 
 .strength .icon {
@@ -49,22 +63,53 @@
     border: 2px solid #8c37b6;
 }
 
-.strength:hover {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-}
 .strengths-icon {
     font-size: 3.45rem;
     margin: 1rem 0;
 }
 
 @media (max-width: 700px) {
-    .strengths-section {
-        display: -webkit-box;
+    .strengths-section .cards {
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* DIVIDER */
+
+.custom-shape-divider-top-1640635384 {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1640635384 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-top-1640635384 .shape-fill {
+    fill: rgb(124, 44, 228);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1640635384 svg {
+        width: calc(100% + 1.3px);
+        height: 180px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1640635384 svg {
+        width: calc(100% + 1.3px);
+        height: 120px;
     }
 }

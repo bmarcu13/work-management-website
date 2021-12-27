@@ -14,9 +14,9 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-font-face{
+font-face {
     font-family: ralewaybold, sans-serif;
-    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Space+Grotesk&display=swap)
+    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Space+Grotesk&display=swap);
 }
 h3,
 h2,

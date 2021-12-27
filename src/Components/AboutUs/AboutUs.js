@@ -5,6 +5,7 @@ import iso_orange from "../../img/iso-orange.png";
 import iso_purple from "../../img/iso_mov.png";
 import iso_green from "../../img/iso_green.png";
 import logo from "../../img/logo-work.png";
+import bg from "../../img/about-us-circle.png";
 
 import { RiDoubleQuotesL } from "react-icons/ri";
 
@@ -19,17 +20,14 @@ export default function AboutUs() {
                     <p>
                         Ne-am început activitatea în anul 2007, iar de atunci ne
                         ocupăm de siguranța clienților din portofoliul nostru și
-                        ne asigurăm că aceștia funcționează sub regulile
-                        prevazute de legea în vigoare. WORK MANAGEMENT este
+                        își desfașoară activitatea în siguranță și în
+                        conformitate cu prevederile legale. WORK MANAGEMENT este
                         abilitată să desfășoare activități specifice de
-                        prevenire și protecție. Misiunea noastră este să ne
-                        asigurăm că partenerii nostri își desfașoară activitatea
-                        în siguranță și în conformitate cu prevederile legale.
-                        Abordarea aspectelor de securitate și sănătate, la
-                        nivelul societății, vă asigură nu numai evitarea
-                        costurilor mari cu accidentele și îmbolnăvirile
-                        profesionale, dar și îmbunătățirea productivității
-                        muncii.{" "}
+                        prevenire și protecție. Abordarea aspectelor de
+                        securitate și sănătate, la nivelul societății, vă
+                        asigură nu numai evitarea costurilor mari cu accidentele
+                        și îmbolnăvirile profesionale, dar și îmbunătățirea
+                        productivității muncii.{" "}
                     </p>
                     <RiDoubleQuotesL
                         className="icon"
@@ -40,23 +38,15 @@ export default function AboutUs() {
                         spune că lipsa acesteia costă și mai mult.
                     </h3>
                 </div>
-                <svg
-                    viewBox="0 0 500 500"
-                    width="100%"
-                    id="blobSvg"
+                <img
+                    class="bg"
+                    src={bg}
                     style={{
-                        maxWidth: "90%",
+                        maxWidth: "75%",
                         position: "absolute",
                         zIndex: "0",
                     }}
-                >
-                    <path
-                        id="blob"
-                        d="M397,338Q351,426,247.5,429.5Q144,433,90.5,341.5Q37,250,99,173Q161,96,254.5,88Q348,80,395.5,165Q443,250,397,338Z"
-                        fill="#d1d8e0"
-                        style={{ boxShadow: "1px 1px 2px black" }}
-                    ></path>
-                </svg>
+                ></img>
             </div>
             <div className="second">
                 <div
@@ -78,7 +68,6 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-            
         </div>
     );
 }

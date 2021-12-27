@@ -1,10 +1,14 @@
 .about-section {
     display: flex;
     flex-direction: row;
-    align-self: flex-start;
-    background: #d1a5e7;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgb(124, 44, 228) 0%,
+        rgb(149, 75, 247) 80%
+    );
     width: 100%;
-    height: 650px;
+    min-height: 800px;
     margin-top: -60px;
 }
 
@@ -16,11 +20,13 @@
     justify-content: center;
     position: relative;
     z-index: 0;
+    color: white;
 }
 
 .about-section .first .title {
     position: relative;
     z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .about-section .first .content {
@@ -29,6 +35,10 @@
     position: relative;
     font-weight: 800;
     z-index: 2;
+    line-height: 1.5;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    letter-spacing: 1px;
 }
 
 .about-section .first .content h3 {
@@ -41,6 +51,7 @@
 }
 
 .about-section .second {
+    height: 350px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -49,9 +60,9 @@
 
 .about-section .second .circle-container {
     position: absolute;
-    width: 275px;
-    height: 275px;
-    animation: rotation 10s infinite linear;
+    width: 300px;
+    height: 300px;
+    animation: rotation 20s infinite linear;
     transition: 0.2s;
     margin: 0px;
     border-radius: 100%;
@@ -65,9 +76,10 @@
     width: 120px;
     height: 120px;
     border-radius: 100%;
-    animation: counter-rotation 10s infinite linear;
+    animation: counter-rotation 20s infinite linear;
     position: absolute;
     object-fit: cover;
+    box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
 }
 
 .about-section .second .circle1 {
@@ -109,23 +121,43 @@
     }
 }
 
-
-@media (max-width: 900px)
-{
-    .about-section{
+@media (max-width: 900px) {
+    .about-section {
         margin-top: -100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        height: 1000px;
         align-self: center;
         padding-bottom: 100px;
+        padding-top: 100px;
     }
-    
-.about-section .first {
-    width: 100%;}
+
+    .about-section .second .circle-container {
+        position: absolute;
+        height: calc(100vw - 150px);
+        width: calc(100vw - 150px);
+        animation: rotation 20s infinite linear;
+        transition: 0.2s;
+        margin: 0px;
+        border-radius: 100%;
+    }
+
+    .about-section .second .circle-container:hover {
+        height: calc(100vw - 150px);
+        width: calc(100vw - 150px);
+    }
+
+    .about-section .first .bg {
+        bottom: 0px;
+    }
+
+    .about-section .first {
+        width: 100%;
+        margin-bottom: 100px;
+    }
     .about-section .second {
         width: 100%;
-        display: flex;}
+        display: flex;
+    }
 }
