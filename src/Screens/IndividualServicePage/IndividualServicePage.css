@@ -1,20 +1,19 @@
 .text-information{
     white-space: pre-line;
     display: flex;
+    align-content: flex-start;
     width: 80%;
     margin:auto;
     margin-left: 30px;
-    padding: 25px;
-   
     border-radius: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 23px;
     
 }
 .service_image{
     display: flex;
     flex: 1;
-    width: 500px;
+    width: 600px;
     height: auto;
 }
 .service-first-block{
