@@ -20,7 +20,7 @@ import AlinaMihai from "../../img/alina_mihai.jpg";
 
 export default function ContactPage() {
     return (
-        <div className="screen-component">
+        <div className="contact-screen-component">
             <div className="portfolio-header">
                 <img
                     style={{
@@ -97,7 +97,7 @@ export default function ContactPage() {
                                 color: "rgb(0, 61, 153)",
                             }}
                         ></BsPinMapFill>
-                        Sediul social: B-dul Regina Maria, Nr. 25
+                        Sediul social: B-dul Regina Maria, Nr. 25, Sector 4, București
                     </p>
                     <p>
                         <AiOutlineFieldNumber

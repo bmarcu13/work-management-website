@@ -19,12 +19,12 @@ export default function AboutUs() {
                     <p>
                         Ne-am început activitatea în anul 2007, iar de atunci ne
                         ocupăm de siguranța clienților din portofoliul nostru și
-                        ne asiguram că aceștia funcționează sub regulile
+                        ne asigurăm că aceștia funcționează sub regulile
                         prevazute de legea în vigoare. WORK MANAGEMENT este
-                        abilitata să desfășoare activități specifice de
-                        prevenire și protecție. Misiunea noastra este sa ne
-                        asiguram ca partenerii nostri își desfașoara activitatea
-                        in siguranță și în conformitate cu prevederile legale.
+                        abilitată să desfășoare activități specifice de
+                        prevenire și protecție. Misiunea noastră este să ne
+                        asigurăm că partenerii nostri își desfașoară activitatea
+                        în siguranță și în conformitate cu prevederile legale.
                         Abordarea aspectelor de securitate și sănătate, la
                         nivelul societății, vă asigură nu numai evitarea
                         costurilor mari cu accidentele și îmbolnăvirile
@@ -78,6 +78,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 }

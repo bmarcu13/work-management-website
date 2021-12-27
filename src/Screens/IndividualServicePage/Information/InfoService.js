@@ -193,8 +193,25 @@ export const servicesInfo = [
         information: "Conform Legii 211/2011, toți deținătorii/producătorii de deșeuri persoane juridice, comercianții, precum și operatorii economici autorizați pentru colectare/transport deșeuri au OBLIGAȚIA să "+
         "desemneze o persoană din rândul angajaților proprii care să gestioneze corespunzător deșeurile sau să delege această obligație unei terțe persoane.\n"+
         '#style{"fontWeight":"bold"}DE REȚINUT #/ că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n' +
-        "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor."
+        "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor.\n\n"+
+        '#style{"fontWeight":"bold", "fontSize":22}Externalizare Servicii Protecţia Mediului:#/\n'+
+        '#style{"marginLeft":"25px"}•Asigurarea îndeplinirii obligaţiilor, prevăzute de Legea 211/2011, cu personal calificat, de specialitate (Specialist managementul deşeurilor, cod COR 325713);#/\n\n'+
+        '#style{"marginLeft":"25px"}•Identificarea problemelor şi necesităţilor, pentru conformarea la prevederile legislaţiei de mediu în vigoare:#/\n'+
+        '#style{"marginLeft":"25px"}•Asistență în identificarea deşeurilor generate, conform codului deşeurilor (HG 856/2002);#/\n'+
+        '#style{"marginLeft":"25px"}•Elaborarea planului de intervenţie în caz de poluări accidentale;#/\n'+
+        '#style{"marginLeft":"25px"}•Elaborarea şi menţinerea evidenţei lunare privind gestiunea deşeurilor;#/\n'+
+        '#style{"marginLeft":"25px"}•Raportările în aplicaţia electronică SISTEMUL INTEGRAT DE MEDIU (SIM);#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmirea şi transmiterea raportărilor lunare/anuale către autoritatea competentă de protecţie a mediului;#/\n'+
+        '#style{"marginLeft":"25px"}•Întocmirea lunară a Declaraţiei privind obligaţiile la fondul de mediu.#/\n'+
+        '#style{"marginLeft":"25px"}• Menţinerea Autorizaţiei de Mediu, informarea permanentă a măsurilor impuse prin aceeasta; #/\n'
         ,
+        information2:'#style{"fontWeight":"bold"}Obţinere Autorizaţii / Avize#/\n'+
+        '#style{"marginLeft":"25px"}Autorizaţie de mediu;#/\n'+
+        '#style{"marginLeft":"25px"} Acord de mediu;#/\n'+
+        '#style{"marginLeft":"25px"}Accept de evacuare ape uzate.#/\n'+
+        '#style{"fontWeight":"bold"}+Întocmire studii de mediu#/'
+        ,
+        
         image:"",
     },
     {

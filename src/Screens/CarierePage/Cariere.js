@@ -197,7 +197,7 @@ const jobsData = [
     },
     {
         position:"INSPECTOR",
-        city:"Cluj",
+        city:"Bucuresti",
         job_description:"tralalalalalal",
         expectations:""
     },

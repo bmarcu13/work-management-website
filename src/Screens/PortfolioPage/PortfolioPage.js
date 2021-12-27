@@ -23,7 +23,8 @@ export default function PortfolioPage() {
                         width: "100%",
                     }}
                 ></div>
-                <h2> Portofoliu Clienti</h2>
+                <h2> Portofoliu Clienți</h2>
+                
                 <div class="custom-shape-divider-bottom-1634577933">
                     <svg
                         data-name="Layer 1"

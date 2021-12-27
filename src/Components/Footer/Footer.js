@@ -57,7 +57,7 @@ export default function Footer() {
                                     className="footer-icon"
                                     size={30}
                                 ></FaMapMarkerAlt>
-                                B-dul Regina Maria, Nr. 25
+                                B-dul Regina Maria, Nr. 25, Sector 4, București
                             </p>
                         </a>
                     </div>
@@ -170,6 +170,11 @@ export default function Footer() {
                             <a href="mailto:alina.mihai@workmanagement.ro">
                                 <FiMail className="footer-icon"></FiMail>{" "}
                                 alina.mihai@workmanagement.ro
+                            </a>
+                            <br></br>
+                            <a href="tel: 0728138235">
+                                <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
+                               0728138235
                             </a>
                             <br></br>
                             <br></br>

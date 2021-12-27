@@ -1,6 +1,7 @@
 .services-page-container {
     width: 100%;
     min-height: calc(100vh);
+    position: relative;
     padding-top: 90px;
     background: #ffffff;
     /* border-top: 2px groove rgb(252, 220, 171);
@@ -190,4 +191,25 @@
             grid-template-columns: repeat(1, minmax(10px, 1fr));
         }
     }
+}
+
+.custom-shape-divider-top-1640519852 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1640519852 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 87px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1640519852 .shape-fill {
+    fill: #d5a3ec;
 }

@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    background: #8fb5e0;
+    background: #d1a5e7;
     width: 100%;
-    height: 700px;
+    height: 650px;
+
 }
 
 .about-section .first {
@@ -26,11 +27,13 @@
     width: 80%;
     text-align: center;
     position: relative;
+    font-weight: 800;
     z-index: 2;
 }
 
 .about-section .first .content h3 {
     margin-top: 0;
+    font-weight: bold;
 }
 
 .about-section .first .content .icon {
@@ -104,4 +107,25 @@
     100% {
         transform: rotateZ(0deg);
     }
+}
+
+
+@media (max-width: 900px)
+{
+    .about-section{
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 1000px;
+        align-self: center;
+        padding-bottom: 100px;
+    }
+    
+.about-section .first {
+    width: 100%;}
+    .about-section .second {
+        width: 100%;
+        display: flex;}
 }

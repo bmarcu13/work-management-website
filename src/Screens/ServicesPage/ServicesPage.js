@@ -19,6 +19,7 @@ import Vibratii from "../../img/services/vibratii.png";
 import Indicatoare from "../../img/services/indicatoare-ssm.jpg";
 import ResurseUmane from "../../img/services/resurse-umane.jpg";
 import Audit from "../../img/services/audit.jpg";
+import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 import Footer from "../../Components/Footer/Footer";
@@ -184,7 +185,7 @@ export const servicesList = [
         url: "formare-profesionala",
         title: "Formare Profesională",
         description:
-            "Vin-o la cursurile organizate de noi în vederea perfecționării în conformitate cu cerințele ANC." +
+            "Vino la cursurile organizate de noi în vederea perfecționării în conformitate cu cerințele ANC." +
             " În urma finalizării cursului, poți obține certificatul de absolvire în meseria de inspector în domeniul securității și sănătății în muncă.",
 
         img: FormareProfesionala,
@@ -226,5 +227,12 @@ export const servicesList = [
         description:
             "Resursa umană este cea cea mai importantă dintre toate resursele existente într-o companie. Work Management oferă în domeniul resurselor umane servicii complete de personal, salarizare, consultanţă şi asistenţă la controalele Instituţiilor de drept.",
         img: ResurseUmane,
+    },
+    {
+        url: "medicina-muncii",
+        title: "Medicina Muncii",
+        description:
+            "Asistență lunară prin intermediul Work Management Medical. Ne ocupăm de consilierea angajatorului privind adaptarea muncii la caracteristicile psiho-fiziologice ale angajatului.și consultăm cu privire pentru fundamentarea strategiei de sănătate și securitate la locul de muncă.",
+        img: MedicinaMuncii,
     },
 ];
