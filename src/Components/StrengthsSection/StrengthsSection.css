@@ -34,6 +34,9 @@
     box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
     -webkit-box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
     -moz-box-shadow: 2px 2px 50px -15px rgba(0, 0, 0, 1);
+
+    /* Animation */
+    animation-delay: 0.5s;
 }
 
 .strength .icon {
