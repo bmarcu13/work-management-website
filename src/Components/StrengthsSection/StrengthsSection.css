@@ -76,6 +76,10 @@
     }
 }
 
+.invisible {
+    opacity: 0 !important;
+}
+
 /* DIVIDER */
 
 .custom-shape-divider-top-1640635384 {

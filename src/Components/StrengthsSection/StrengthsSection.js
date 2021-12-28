@@ -1,10 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./StrengthsSection.css";
 import { RiRoadMapLine } from "react-icons/ri";
 import { FcDiploma1 } from "react-icons/fc";
 import { RiTeamFill } from "react-icons/ri";
 
+import "animate.css";
+
 export default function StrengthsSection() {
+    const [animationClassLeft, setAnimationClassLeft] =
+        useState("invisible strength");
+    const [animationClassMiddle, setAnimationClassMiddle] =
+        useState("invisible strength");
+    const [animationClassRight, setAnimationClassRight] =
+        useState("invisible strength");
+
+    let observer1 = new IntersectionObserver((entries) => {
+        console.log(entries[0].intersectionRatio);
+        if (entries[0].isIntersecting) {
+            setAnimationClassLeft(
+                "strength strength1 animate__animated animate__fadeInLeft"
+            );
+        } else {
+        }
+    });
+
+    let observer2 = new IntersectionObserver((entries) => {
+        console.log(entries[0].intersectionRatio);
+        if (entries[0].isIntersecting) {
+            setAnimationClassMiddle(
+                "strength strength1 animate__animated animate__fadeInUp"
+            );
+        } else {
+        }
+    });
+
+    let observer3 = new IntersectionObserver((entries) => {
+        console.log(entries[0].intersectionRatio);
+        if (entries[0].isIntersecting) {
+            setAnimationClassRight(
+                "strength strength1 animate__animated animate__fadeInRight"
+            );
+        } else {
+        }
+    });
+
+    useEffect(() => {
+        observer1.observe(
+            document.getElementsByClassName("strength")[0].children[2]
+        );
+        observer2.observe(
+            document.getElementsByClassName("strength")[1].children[2]
+        );
+        observer3.observe(
+            document.getElementsByClassName("strength")[2].children[2]
+        );
+    });
+
     return (
         <div className="strengths-section">
             <div class="custom-shape-divider-top-1640635384">
@@ -21,7 +72,7 @@ export default function StrengthsSection() {
                 </svg>
             </div>
             <div className="cards">
-                <div className="strength strength1">
+                <div className={animationClassLeft}>
                     <FcDiploma1 size={40}></FcDiploma1>
                     <h3>Deţinem Asigurare de Răspundere Civilă</h3>
                     <p>
@@ -34,7 +85,7 @@ export default function StrengthsSection() {
                     </p>
                 </div>
 
-                <div className="strength strength2">
+                <div className={animationClassMiddle}>
                     <RiTeamFill color="#425fca" className="icon"></RiTeamFill>
                     <h3>Experiență si Profesionalism</h3>
                     <p>
@@ -49,7 +100,7 @@ export default function StrengthsSection() {
                     </p>
                 </div>
 
-                <div class="strength  strength3">
+                <div class={animationClassRight}>
                     <RiRoadMapLine
                         size={40}
                         color="#8c37b6"
