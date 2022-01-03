@@ -32,9 +32,12 @@ import santiere from '../../../img/santiere.png';
 import e_learning from '../../../img/app-work.png';
 import hr from '../../../img/hr.png';
 import SU from '../../../img/SU.png';
-import ssm from '../../../img/ssm.png';
+import ssm from '../../../img/work-safety.jpg';
 import protectia_mediului from '../../../img/prot-mediului.jpg';
 import signs from '../../../img/signs.png';
+import risc from '../../../img/risc.png';
+import rsvti from '../../../img/rsvti-sign.png';
+// import  from '../../../img/rsvti-sign.png';
 
 export const servicesInfo = [
     {
@@ -170,7 +173,7 @@ export const servicesInfo = [
         "Nu sunteţi afectat de fluctuaţia de personal, nu trebuie să asiguraţi pe durata concediului de odihnă său medical înlocuitor cu aceeaşi calificare pentru angajatul responsabil de RSVTI care să preia temporar atribuţiunile acestuia.\n"+
         "Beneficiaţi de costuri mici şi fixe si evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
         "Contract anual şi o singură factură lunară.",
-        image:"",
+        image:rsvti,
     },
     {
         id: "gestiunea-deseurilor",
@@ -194,7 +197,7 @@ export const servicesInfo = [
         ],
         information: "Conform Legii 211/2011, toți deținătorii/producătorii de deșeuri persoane juridice, comercianții, precum și operatorii economici autorizați pentru colectare/transport deșeuri au OBLIGAȚIA să "+
         "desemneze o persoană din rândul angajaților proprii care să gestioneze corespunzător deșeurile sau să delege această obligație unei terțe persoane.\n"+
-        '#style{"fontWeight":"bold"}DE REȚINUT #/ că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n' +
+        '#style{"boxShadow":"2px 3px blue", "fontWeight":"bold", "margin":"4px", "color": "blue"}DE REȚINUT #/ că persoanele desemnate, trebuie să fie instruite în domeniul gestiunii deșeurilor, inclusiv a deșeurilor periculoase, că urmare a absolvirii unor cursuri de specialitate.\n' +
         "Noi preluăm responsabilitatea gestiunii deșeurilor conform Legii 211/2011 în cadrul companiei dvs. și vă punem la dispoziție un specialist în managementul deșeurilor.\n\n"+
         '#style{"fontWeight":"bold", "fontSize":22}Externalizare Servicii Protecţia Mediului:#/\n\n'+
         '#style{"marginLeft":"25px"}•Asigurarea îndeplinirii obligaţiilor, prevăzute de Legea 211/2011, cu personal calificat, de specialitate (Specialist managementul deşeurilor, cod COR 325713);#/\n\n'+
@@ -267,7 +270,7 @@ export const servicesInfo = [
         "Evaluarea de risc, la securitatea fizică, este documentul, prin care, un specialist analizează și stabilește, de ce anume este nevoie, pentru ca paza obiectivelor dumneavoastră, să acopere toate vulnerabilitatile acestuia, în fața hoților.\n"+
         "Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitat fizică, care să realizeze analiza de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră.\n\n"+
         'Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiză de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră. \n\n Societatea noastră, este abilitată, să întocmească astfel de evaluări, fiind înscrisă, în #style{"fontWeight":"bold"}Registrul Național al Evaluatorilor de Risc, la Securitate Fizică#/',
-        image:"",
+        image:risc,
     },
     {
         id: "formare-profesionala",
