@@ -80,7 +80,7 @@ export default function Footer() {
                             <Link to={"/"} style={{ textDecoration: "none" }}>
                                 <li onClick={scrollToTop}> 
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
-                                    Acasa
+                                    Acasă
                                 </li>
                             </Link>
                             <Link
@@ -145,7 +145,7 @@ export default function Footer() {
                                 className="footer-icon"
                                 size={20}
                             ></BsPersonCircle>{" "}
-                            Stefana Tănase<br></br>
+                            Ștefana Tănase<br></br>
                             <a href="tel: 0730.709.723">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 0730.709.723
