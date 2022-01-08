@@ -106,6 +106,7 @@ export const servicesInfo = [
             },
         ],
         information: '#style{"fontWeight":"bold", "fontSize": 22}SITUAȚII DE URGENȚĂ ( PSI și PC)#/\n\n'+
+        '#style{"fontWeight":"bold"}Work Management#/ oferă în domeniul prevenirea şi stingerea incendiilor (PSI) consultanţă de specialitate în conformitate cu normele metodologice de aplicare a prevederilor din Legea Nr. 307/2006.\n\n'+
         '#style{"fontWeight":"bold"}a. Instructajul introductiv general:#/\n'+
         '#style{"marginLeft":"25px"}•sistemul de reglementări din domeniul situațiilor de urgență;#/\n'+
         '#style{"marginLeft":"25px"}•indicativ, mijloace tehnice în domeniul S.U., din dotarea societății;#/\n'+
