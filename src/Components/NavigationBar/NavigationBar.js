@@ -90,7 +90,7 @@ export default function NavigationBar() {
                             : "navigation-menu-container"
                     }
                 >
-                    <div className="navigation-menu-items">
+                    <div className="navigation-menu-items" onClick={scrollToTop}>
                         {menuItems.map((item, index) => {
                             return NavigationBarButton({
                                 buttonData: item,

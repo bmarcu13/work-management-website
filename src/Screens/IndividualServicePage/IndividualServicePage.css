@@ -13,7 +13,7 @@
 .service_image{
     display: flex;
     flex: 1;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 .service-first-block{

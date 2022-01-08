@@ -23,9 +23,10 @@ export default function CarierePage() {
                         opacity: ".3",
                         height: "350px",
                         width: "100%",
+                        
                     }}
                 ></div>
-                <h2 style={{width:'18ch', textAlign:'center'}}> Alătură-te echipei <span > "WORK Management"</span></h2>
+                <h2 style={{width:'18ch', textAlign:'center', textShadow: "2px 2px 8px rgba(0, 0, 0, 1)"}}> Alătură-te echipei <span > "WORK Management"</span></h2>
                 <div class="custom-shape-divider-bottom-1634577933">
                     <svg
                         data-name="Layer 1"

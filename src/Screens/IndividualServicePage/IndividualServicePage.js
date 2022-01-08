@@ -12,6 +12,10 @@ import { servicesInfo } from "./Information/InfoService";
 import { formatText } from "../../Modules/Formatter";
 
 export default function IndividualServicePage(props) {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+   };
+
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -47,7 +51,7 @@ export default function IndividualServicePage(props) {
                 </div>
             )}
             <Link to={"/cerere-oferta"} style={{ textDecoration: "none" }}>
-                <div className="offer-button-container">
+                <div className="offer-button-container" onClick={scrollToTop}>
                     <div className="offerBtn">
                         <span className="text1">
                             Cere ofertă
