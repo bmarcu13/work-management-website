@@ -63,24 +63,26 @@ export default function ServicesPage() {
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <Link
-                    to={`${url}/${item.url}`}
-                    style={{ textDecoration: "none", marginTop: "auto" }}
-                >
-                    <p
-                        className="read-more-button"
-                        style={{ fontWeight: "900", transition: ".2s" }}
+                {!item.disableButton && (
+                    <Link
+                        to={`${url}/${item.url}`}
+                        style={{ textDecoration: "none", marginTop: "auto" }}
                     >
-                        <MdOutlineArrowForwardIos
-                            style={{
-                                paddingRight: "5px",
-                                verticalAlign: "middle",
-                                marginBottom: "3px",
-                            }}
-                        />
-                        Mai multe
-                    </p>
-                </Link>
+                        <p
+                            className="read-more-button"
+                            style={{ fontWeight: "900", transition: ".2s" }}
+                        >
+                            <MdOutlineArrowForwardIos
+                                style={{
+                                    paddingRight: "5px",
+                                    verticalAlign: "middle",
+                                    marginBottom: "3px",
+                                }}
+                            />
+                            Mai multe
+                        </p>
+                    </Link>
+                )}
             </div>
         );
     };
@@ -234,5 +236,6 @@ export const servicesList = [
         description:
             "Asistență lunară prin intermediul Work Management Medical. Ne ocupăm de consilierea angajatorului privind adaptarea muncii la caracteristicile psiho-fiziologice ale angajatului.și consultăm cu privire pentru fundamentarea strategiei de sănătate și securitate la locul de muncă.",
         img: MedicinaMuncii,
+        disableButton: true,
     },
 ];
