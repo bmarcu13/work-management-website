@@ -199,18 +199,23 @@ const Card = ({ cardData }) => {
                     • {cardData.keyword3}
                 </p>
             </div>
-            <div className="read-more-button" style={{ fontWeight: "900" }}>
-                <p>
-                    <MdOutlineArrowForwardIos
-                        style={{
-                            paddingRight: "5px",
-                            verticalAlign: "middle",
-                            marginBottom: "3px",
-                        }}
-                    />
-                    Mai multe
-                </p>
-            </div>
+            <Link
+                to={`/servicii/${cardData.id}`}
+                style={{ textDecoration: "none", marginTop: "auto" }}
+            >
+                <div className="read-more-button" style={{ fontWeight: "900" }}>
+                    <p>
+                        <MdOutlineArrowForwardIos
+                            style={{
+                                paddingRight: "5px",
+                                verticalAlign: "middle",
+                                marginBottom: "3px",
+                            }}
+                        />
+                        Mai multe
+                    </p>
+                </div>
+            </Link>
         </div>
     );
 };
