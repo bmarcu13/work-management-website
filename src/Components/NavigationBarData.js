@@ -138,7 +138,6 @@ export const dropdownItemsRight = [
         icon: <FaSignInAlt className="icon" />,
     },
     {
-        id: "audit-si-evaluarea-riscurilor",
         id: "e-learning",
         name: "Platformă E-Learning",
         icon: <VscMortarBoard className="icon" />,
