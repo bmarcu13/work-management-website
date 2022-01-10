@@ -5,6 +5,7 @@ import { CgAsterisk } from "react-icons/cg";
 import {MdAlternateEmail} from "react-icons/md";
 import {ImAttachment} from "react-icons/im";
 import {FiMapPin} from "react-icons/fi";
+import Map from "./Map.js"
 
 import careerHeader from "../../img/team-header.png";
 
@@ -68,7 +69,7 @@ export default function CarierePage() {
 		
 </div>
             <div className="careers-second-layer">
-
+<div className="map_and_form">
             <div className="form-wrapper">
                     <form className="cariere-form">
                     <p className="cariere-form-title">Vino în Echipa WORK!</p>
@@ -153,6 +154,8 @@ export default function CarierePage() {
                         </button>
                     </form>
                 </div>
+               <Map></Map>
+                </div>
                 <div className="job-search">
                     <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>
                     <JobsGrid></JobsGrid>
@@ -184,6 +187,9 @@ const JobCard = ({ JobCardData }) => {
             <div className="job-description">
                 <h4>Descrierea jobului:</h4>
                 <p>{JobCardData.job_description}</p>
+                <h4>Candidatul ideal:</h4>
+                <p>{JobCardData.expectations}</p>
+                
             </div>
         </div>
      );
@@ -191,16 +197,43 @@ const JobCard = ({ JobCardData }) => {
 
 const jobsData = [
     {
-        position:"INSPECTOR",
-        city:"Cluj",
-        job_description:"tralalalalalal",
-        expectations:""
+        position:"Asistent Manager - sediu",
+        city:"București",
+        expectations:"- responsabil;\n"+
+        "- ambițios;\n"+
+        "- comunicativ;\n"+
+        "- ordonat și organizat;\n"+
+        "- absolvent de studii medii sau superioare;\n"+
+        "- să dețină cunoștințe de operare PC - Word, Excel, Power Point;\n"+
+        "- să aibă capacitatea de a se integra în echipa Work Management;\n",
+        job_description:"Atribuții și responsabilități:\n"+
+        "- primirea clienților;\n"+
+        "- suport pentru colegii din companie, care desfășoară activități de teren;\n"+
+        "- redactarea și elaborarea anumitor documente, în domeniile SSM, SU și RSVTI;\n"+
+        "- organizarea și derularea activitatilor zilnice;\n"+
+        "- menținerea legăturii cu colegii din țară, furnizorii și clienții Work Management;\n"+
+        "- utilizarea echipamentelor de birou (fax, xerox, imprimantă, scanner)\n"
     },
     {
         position:"INSPECTOR",
         city:"Bucuresti",
-        job_description:"tralalalalalal",
-        expectations:""
+        expectations:"- responsabil;\n"+
+        "- ambițios;\n"+
+        "- cu spirit de echipă;\n"+
+        "- comunicativ;\n"+
+        "- disponibil pentru deplăsari;\n"+
+        "- serios;\n"+
+        "- punctual;\n",
+        job_description:"Deplasarea la sediile clienților, pentru:\n\n"+
+        "- instruirea introductiv generală a angajaților în domeniile securității și sănătății în muncă și al situațiilor de urgență;\n"+
+        "- consultanță pe probleme SSM, SU, RSVTI și MEDIU, privind reglementările legale în domeniu (efectuarea controalelor interne la sediile clienților, diverse evidențe cerute de către clienți; actualizare documentații, etc);\n"+
+        "- planificarea și organizarea activităților de securitate și sănătate în muncă, situații de urgență, RSVTI și mediu;\n"+
+        "- supravegherea și verificarea tehnică a instalațiilor ce intră sub incidența legislației ISCIR;\n"+
+        "- alte activități conexe, ce reies din aceste domenii.\n\n"+
+        "Alte activități:\n\n"+
+        "- planificarea și organizarea portofoliului de clienți, din zona arondată (lunar, trimestrial);\n"+
+        "- disponibilitate pentru situații neprevăzute (controale din partea autorităților, evenimente de muncă, etc);\n"+
+        "- colaborarea cu departamentele interne ale Work Management;",
     },
 
 ]

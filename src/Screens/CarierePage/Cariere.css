@@ -89,8 +89,16 @@
 
 .careers-second-layer{
     display: flex;
-    width:100%
+    width:100%;
+    flex-direction: column;
 }
+.map_and_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .job-search{
     width: 100%;
     display: flex;
@@ -121,10 +129,17 @@
 }
 .job-description{
     margin-top: -15px;
+    white-space: pre-line;
 }
 @media only screen and (max-width: 990px){
 .careers-second-layer{
     display: flex;
     flex-direction: column;
+}
+.map_and_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 }

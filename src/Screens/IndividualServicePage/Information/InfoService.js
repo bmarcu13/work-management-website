@@ -172,7 +172,7 @@ export const servicesInfo = [
         information2:'#style{"fontWeight":"bold"}De ce să apelaţi la serviciile noastre de RSVTI? #/ \n\n'+
         "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n"+
         "Nu sunteţi afectat de fluctuaţia de personal, nu trebuie să asiguraţi pe durata concediului de odihnă său medical înlocuitor cu aceeaşi calificare pentru angajatul responsabil de RSVTI care să preia temporar atribuţiunile acestuia.\n"+
-        "Beneficiaţi de costuri mici şi fixe si evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
+        "Beneficiaţi de costuri mici şi fixe și evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
         "Contract anual şi o singură factură lunară.",
         image:rsvti,
     },
@@ -209,9 +209,9 @@ export const servicesInfo = [
         '#style{"marginLeft":"25px"}•Raportările în aplicaţia electronică SISTEMUL INTEGRAT DE MEDIU (SIM);#/\n'+
         '#style{"marginLeft":"25px"}•Întocmirea şi transmiterea raportărilor lunare/anuale către autoritatea competentă de protecţie a mediului;#/\n'+
         '#style{"marginLeft":"25px"}•Întocmirea lunară a Declaraţiei privind obligaţiile la fondul de mediu.#/\n'+
-        '#style{"marginLeft":"25px"}• Menţinerea Autorizaţiei de Mediu, informarea permanentă a măsurilor impuse prin aceeasta; #/'
-        ,
-        information2:'#style{"fontWeight":"bold"}Obţinere Autorizaţii / Avize#/\n'+
+        '#style{"marginLeft":"25px"}• Menţinerea Autorizaţiei de Mediu, informarea permanentă a măsurilor impuse prin aceeasta; #/\n\n'
+
+       +'#style{"fontWeight":"bold"}Obţinere Autorizaţii / Avize#/\n'+
         '#style{"marginLeft":"25px"}Autorizaţie de mediu;#/\n'+
         '#style{"marginLeft":"25px"} Acord de mediu;#/\n'+
         '#style{"marginLeft":"25px"}Accept de evacuare ape uzate.#/\n'+
@@ -310,14 +310,14 @@ export const servicesInfo = [
         "• Dezvoltarea profesională\n"+
         "• Planificarea activităţilor proprii",
 
-        information2: 'Organizăm #style{"fontWeight":"bold"}cursuri de specializare/perfecționare stivuitorist #/(COD COR 834403) în conformitate cu cerințele ANC si ISCIR.\n\n'+
+        information2: 'Organizăm #style{"fontWeight":"bold"}cursuri de specializare/perfecționare stivuitorist #/(COD COR 834403) în conformitate cu cerințele ANC și ISCIR.\n\n'+
         "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distanțe scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemănare, organizare și siguranță."+
         "În acest sens, venim în ajutorul dumneavoastră cu acest curs de specializare/perfecționare stivuitorist. Tematica acestui curs de stivuitorist este în acord cu metodologia în vigoare și respectă cele mai înalte standarde de instruire.",
         image:formare_profesionala,
     },
     {
         id: "masurarea-zgomotului-si-vibratiilor",
-        name: "Măsurarea Zgomotului si Vibrațiilor la locul de muncă",
+        name: "Măsurarea Zgomotului și Vibrațiilor la locul de muncă",
         highlights: [
             {
                 icon: <GiToolbox size={40}></GiToolbox>,
@@ -381,7 +381,7 @@ export const servicesInfo = [
     },
     {
         id: "audit-si-evaluarea-riscurilor",
-        name: "Audit si Evaluarea Riscurilor",
+        name: "Audit și Evaluarea Riscurilor",
         highlights: [
             {
                 icon: <FaHandsHelping size={40}></FaHandsHelping>,

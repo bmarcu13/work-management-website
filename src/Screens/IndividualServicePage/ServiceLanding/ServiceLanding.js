@@ -15,7 +15,12 @@ export default function ServiceLanding(props) {
         <div className="service-page-landing-container">
             <div className="title-container">
                 <h1>{title}</h1>
+                <p>CEVA CEVA CEVA</p>
+
             </div>
+            <div>s<button>
+                Mai multe 
+            </button></div>
             <div className="svg-bg">
                 <img className="cercc" src={cercc}></img>
             </div>
