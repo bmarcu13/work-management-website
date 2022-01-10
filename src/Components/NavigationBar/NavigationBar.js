@@ -3,6 +3,7 @@ import "./NavigationBar.css";
 
 import { useState, useEffect } from "react";
 import Logo from "../../img/logo-white-inside.png";
+import LogoSmall from "../../img/logo-work.png";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
 import SideBarButton from "../MenuButtons/SideBarButton";
@@ -17,23 +18,12 @@ export default function NavigationBar() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     window.addEventListener("scroll", () => {
-        if (window.pageYOffset < 300) {
+        if (window.pageYOffset < 70) {
             setShowButton(true);
-        } else if (window.pageYOffset > 300) {
+        } else if (window.pageYOffset > 70) {
             setShowButton(false);
         }
     });
-
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-    //         if (window.pageYOffset < 300) {
-    //             setShowButton(true);
-    //         } else {
-    //             setShowButton(false);
-    //         }
-    //         console.log(window.pageYOffset);
-    //     });
-    // }, []);
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -70,17 +60,13 @@ export default function NavigationBar() {
             </div>
 
             <div className="navigation-menu-section">
-                {/* {showLogo && ( */}
                 <img
                     className="logo"
-                    src={Logo}
+                    src={showLogo ? Logo : LogoSmall}
                     alt="logo"
                     onClick={scrollToTop}
-                    style={{ visibility: showLogo ? "visible" : "hidden" }}
+                    // style={{ visibility: showLogo ? "visible" : "hidden" }}
                 ></img>
-                {/* )} */}
-                {/* )} */}
-
                 <div
                     className={
                         isDrawerOpen
@@ -90,7 +76,10 @@ export default function NavigationBar() {
                             : "navigation-menu-container"
                     }
                 >
-                    <div className="navigation-menu-items" onClick={scrollToTop}>
+                    <div
+                        className="navigation-menu-items"
+                        onClick={scrollToTop}
+                    >
                         {menuItems.map((item, index) => {
                             return NavigationBarButton({
                                 buttonData: item,
