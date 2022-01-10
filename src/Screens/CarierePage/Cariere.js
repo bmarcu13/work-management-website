@@ -10,7 +10,6 @@ import Map from "./Map.js";
 import careerHeader from "../../img/team-header.png";
 
 export default function CarierePage() {
-    const [checked, setChecked] = React.useState(true);
     return (
         <>
             <div className="cariera-page">
@@ -180,8 +179,6 @@ export default function CarierePage() {
                                     <input
                                         required
                                         type="checkbox"
-                                        defaultChecked={!checked}
-                                        onChange={() => setChecked(!checked)}
                                         required
                                     ></input>
                                     Sunt de acord cu{" "}
