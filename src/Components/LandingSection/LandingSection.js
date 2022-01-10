@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -13,37 +13,54 @@ import logo from "../../img/logo.png";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function LandingSection() {
+    const [mobileViewEnabled, setMobileViewEnabled] = useState(false);
+
     useEffect(() => {
         if (window.innerWidth <= 850) {
-            const newParent = document.getElementById(
-                "landing-section-container"
-            );
-            const child = document.getElementById("landing-page-buttons");
-
-            newParent.appendChild(child);
+            setMobileViewEnabled(true);
         }
 
         const minWidthQuery = window.matchMedia("(min-width: 850px)");
         minWidthQuery.addEventListener("change", (query) => {
-            if (query.matches) {
-                const newParent = document.getElementById("left-panel");
-                const child = document.getElementById("landing-page-buttons");
-                newParent.appendChild(child);
+            if (query.matches && mobileViewEnabled == true) {
+                setMobileViewEnabled(false);
             }
         });
 
         const maxWidthQuery = window.matchMedia("(max-width: 850px)");
         maxWidthQuery.addEventListener("change", (query) => {
-            if (query.matches) {
-                const newParent = document.getElementById(
-                    "landing-section-container"
-                );
-                const child = document.getElementById("landing-page-buttons");
-
-                newParent.appendChild(child);
+            if (query.matches && mobileViewEnabled == false) {
+                setMobileViewEnabled(true);
             }
         });
     });
+
+    const buttonsJsx = (
+        <div id="landing-page-buttons" className="landing-page-buttons">
+            <Link to={"/servicii"} style={{ textDecoration: "none" }}>
+                <button>
+                    Servicii
+                    <RiArrowDropDownLine
+                        size={30}
+                        style={{
+                            transform: "rotate(-90deg)",
+                        }}
+                    />
+                </button>
+            </Link>
+            <Link to={"/cerere-oferta"} style={{ textDecoration: "none" }}>
+                <button>
+                    Cerere Ofertă
+                    <RiArrowDropDownLine
+                        size={30}
+                        style={{
+                            transform: "rotate(-90deg)",
+                        }}
+                    />
+                </button>
+            </Link>
+        </div>
+    );
 
     return (
         <>
@@ -87,39 +104,7 @@ export default function LandingSection() {
                         pe toată durata colaborării și vor avea grijă ca
                         afacerea ta să ramână în siguranță !
                     </h3>
-                    <div
-                        id="landing-page-buttons"
-                        className="landing-page-buttons"
-                    >
-                        <Link
-                            to={"/servicii"}
-                            style={{ textDecoration: "none" }}
-                        >
-                            <button>
-                                Servicii
-                                <RiArrowDropDownLine
-                                    size={30}
-                                    style={{
-                                        transform: "rotate(-90deg)",
-                                    }}
-                                />
-                            </button>
-                        </Link>
-                        <Link
-                            to={"/cerere-oferta"}
-                            style={{ textDecoration: "none" }}
-                        >
-                            <button>
-                                Cerere Ofertă
-                                <RiArrowDropDownLine
-                                    size={30}
-                                    style={{
-                                        transform: "rotate(-90deg)",
-                                    }}
-                                />
-                            </button>
-                        </Link>
-                    </div>
+                    {!mobileViewEnabled && buttonsJsx}
                 </div>
 
                 <div className="right-panel">
@@ -154,6 +139,7 @@ export default function LandingSection() {
                         ></path>
                     </svg>
                 </div>
+                {mobileViewEnabled && buttonsJsx}
             </div>
         </>
     );
