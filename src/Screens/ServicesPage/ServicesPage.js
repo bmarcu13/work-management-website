@@ -96,15 +96,12 @@ export default function ServicesPage() {
                         position: "absolute",
                         width: "100%",
                         height: "calc(100% - 300px)",
-                        // backgroundColor: "white",
-                        // opacity: ".5",
                         top: "300px",
                         left: 0,
                         filter: "blur(1px)",
                     }}
                 ></div>
                 <div className="divider">
-                    <img src={DividerPhoto} />
                     <div
                         style={{
                             backgroundColor: "black",

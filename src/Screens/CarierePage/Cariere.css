@@ -1,32 +1,56 @@
-.cariera-page{
+.cariera-page {
     margin-top: 90px;
 }
-.cariere-form-title{
+.cariere-form-title {
     font-size: 30px;
 }
-.title-cariere{
+.title-cariere {
     width: 50%;
-    text-align:center;
+    text-align: center;
     font-size: 22px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.cariera-page .careers-header {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url("../../img/team-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cariera-page .careers-header h2 {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    font-weight: 1000;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .item-title {
     width: 40%;
-	font-size: 3rem;
-	font-weight: 800;
+    font-size: 3rem;
+    font-weight: 800;
     color: rgb(27, 6, 122);
 }
-.team-beliefs{
+.team-beliefs {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     display: flex;
     padding: 0px 40px 0px;
-    
+
     background: url("../../img/background.png") no-repeat center center;
 }
-.team-beliefs .item-content{
+.team-beliefs .item-content {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 40px;
@@ -37,14 +61,14 @@
     padding: 20px;
     width: 100%;
 }
-.single-belief .belief-title{
+.single-belief .belief-title {
     margin: 0px 0px 5px 0px;
     color: rgb(3, 3, 88);
     border-bottom: 2px solid rgb(109, 108, 108);
     font-size: 22px;
     font-weight: 700;
 }
-.trimite-btn{
+.trimite-btn {
     padding: 10px 15px;
     display: flex;
     justify-self: center;
@@ -53,19 +77,17 @@
     font-size: 16px;
     color: rgb(6, 6, 114);
     background-color: white;
-   
 }
-.attach-text{
+.attach-text {
     text-align: center;
 }
 @media (max-width: 800px) {
-    .title-cariere{
-       
+    .title-cariere {
         font-size: 20px;
-       width: 100%;
+        width: 100%;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     }
-    .team-beliefs .item-content{
+    .team-beliefs .item-content {
         display: flex;
         flex-wrap: wrap;
         padding: 0px 30px;
@@ -80,26 +102,26 @@
         width: 100%;
         text-align: center;
     }
-    .job-search h2{
+    .job-search h2 {
         margin-left: 10px;
         margin-right: 10px;
         text-align: center;
     }
 }
 
-.careers-second-layer{
+.careers-second-layer {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: column;
 }
-.map_and_form{
+.map_and_form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.job-search{
+.job-search {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,7 +130,7 @@
     border-top: 2px solid rgb(6, 6, 114);
     border-left: 2px solid rgb(6, 6, 114);
 }
-.job-card-wrapper{
+.job-card-wrapper {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -122,24 +144,24 @@
     box-shadow: 5px 4px 5px grey;
     background-color: rgb(235, 231, 231);
 }
-.job-title{
+.job-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.job-description{
+.job-description {
     margin-top: -15px;
     white-space: pre-line;
 }
-@media only screen and (max-width: 990px){
-.careers-second-layer{
-    display: flex;
-    flex-direction: column;
-}
-.map_and_form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@media only screen and (max-width: 990px) {
+    .careers-second-layer {
+        display: flex;
+        flex-direction: column;
+    }
+    .map_and_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

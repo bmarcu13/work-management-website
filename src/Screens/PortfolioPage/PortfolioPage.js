@@ -12,7 +12,6 @@ export default function PortfolioPage() {
     return (
         <div className="screen-component">
             <div className="portfolio-header">
-                <img src={headerBanner} />
                 <div
                     style={{
                         backgroundColor: "black",
@@ -24,7 +23,7 @@ export default function PortfolioPage() {
                     }}
                 ></div>
                 <h2> Portofoliu Clienți</h2>
-                
+
                 <div class="custom-shape-divider-bottom-1634577933">
                     <svg
                         data-name="Layer 1"
