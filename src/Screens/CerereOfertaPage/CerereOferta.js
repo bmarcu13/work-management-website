@@ -2,20 +2,34 @@ import React from "react";
 import "./CerereOferta.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
-import {MdAlternateEmail} from "react-icons/md";
+import { MdAlternateEmail } from "react-icons/md";
 import cerere_oferta from "../../img/cerere_oferta.jpg";
 export default function CerereOferta() {
     const [checked, setChecked] = React.useState(true);
     return (
         <>
             <div className="cerere-oferta-page">
-            <h2> Solicită o ofertă personalizată și fă primul pas în protejarea echipei tale.</h2>
+                <h2>
+                    {" "}
+                    Solicită o ofertă personalizată și fă primul pas în
+                    protejarea echipei tale.
+                </h2>
                 <div className="form-wrapper">
                     <form className="cerere-oferta-form">
-                    <p className="title"><MdAlternateEmail size={50} color="rgb(255, 147, 6)" style={{marginBottom:'-10px', marginRight:'50px'}}></MdAlternateEmail>Formular Cerere Ofertă </p>
+                        <p className="title">
+                            <MdAlternateEmail
+                                size={50}
+                                color="rgb(255, 147, 6)"
+                                style={{
+                                    marginBottom: "-10px",
+                                    marginRight: "50px",
+                                }}
+                            ></MdAlternateEmail>
+                            Formular Cerere Ofertă{" "}
+                        </p>
 
                         <div className="row">
-                            <p style={{fontWeight:'bold'}}>
+                            <p style={{ fontWeight: "bold" }}>
                                 Nume și Prenume
                                 <CgAsterisk color="red"></CgAsterisk>
                             </p>
@@ -28,7 +42,9 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div>
-                            <p style={{fontWeight:'bold'}}> Companie
+                                <p style={{ fontWeight: "bold" }}>
+                                    {" "}
+                                    Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -39,8 +55,8 @@ export default function CerereOferta() {
                                     autofocus
                                 />
                             </div>
-                            <div >
-                                 <p style={{fontWeight:'bold'}}>Funcție</p>
+                            <div>
+                                <p style={{ fontWeight: "bold" }}>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
@@ -51,7 +67,7 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div>
-                            <p style={{fontWeight:'bold'}}>
+                                <p style={{ fontWeight: "bold" }}>
                                     Email<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -62,7 +78,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                             <div>
-                            <p style={{fontWeight:'bold'}}>
+                                <p style={{ fontWeight: "bold" }}>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -74,22 +90,27 @@ export default function CerereOferta() {
                             </div>
                         </div>
                         <div className="row">
-                                <p style={{fontWeight:'bold'}}>
-                                    Subiect<CgAsterisk color="red"></CgAsterisk>
-                                </p>
-                                <input
-                                    className="cerere-oferta-input"
-                                    type="text"
-                                    placeholder="Subiect"
-                                    autofocus
-                                />
-                            </div>
+                            <p style={{ fontWeight: "bold" }}>
+                                Subiect<CgAsterisk color="red"></CgAsterisk>
+                            </p>
+                            <input
+                                className="cerere-oferta-input"
+                                type="text"
+                                placeholder="Subiect"
+                                autofocus
+                                required
+                            />
+                        </div>
                         <div className="row">
-                        <p style={{fontWeight:'bold'}}>Conținutul E-mailului</p>
+                            <p style={{ fontWeight: "bold" }}>
+                                Conținutul E-mailului
+                                <CgAsterisk color="red"></CgAsterisk>
+                            </p>
                             <textarea
                                 className="cerere-oferta-input mesaj-input"
                                 rows="10"
                                 placeholder="Scrie-ne aici ce ai nevoie."
+                                required
                             />
                         </div>
                         <p>
@@ -107,7 +128,6 @@ export default function CerereOferta() {
                             <CgAsterisk color="red"></CgAsterisk>
                         </p>
                         <button className="cerere-oferta-send-btn">
-                           
                             Trimite
                         </button>
                     </form>

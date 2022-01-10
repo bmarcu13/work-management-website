@@ -152,7 +152,11 @@ export default function CarierePage() {
                                     />
                                 </div>
                                 <div className="row">
-                                    <p style={{ fontWeight: "bold" }}>Mesaj</p>
+                                    <p style={{ fontWeight: "bold" }}>
+                                        Mesaj
+                                        <CgAsterisk color="red"></CgAsterisk>
+                                    </p>
+
                                     <textarea
                                         className="cerere-oferta-input mesaj-input"
                                         rows="10"
@@ -178,6 +182,7 @@ export default function CarierePage() {
                                         type="checkbox"
                                         defaultChecked={!checked}
                                         onChange={() => setChecked(!checked)}
+                                        required
                                     ></input>
                                     Sunt de acord cu{" "}
                                     <span
