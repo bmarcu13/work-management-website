@@ -39,6 +39,20 @@ import risc from '../../../img/risc.png';
 import rsvti from '../../../img/rsvti-sign.png';
 // import  from '../../../img/rsvti-sign.png';
 
+///import-uri icons main
+import { GiElectricalResistance } from "react-icons/gi";
+import { FaUserInjured, FaSignInAlt, FaTools } from "react-icons/fa";
+import { VscMortarBoard, VscHorizontalRule } from "react-icons/vsc";
+import { IoAnalyticsSharp } from "react-icons/io5";
+
+import { AiOutlineAlert } from "react-icons/ai";
+import {
+    MdOutlineHealthAndSafety,
+    MdRecycling,
+    MdWorkOutline,
+} from "react-icons/md";
+import { GiSoundWaves } from "react-icons/gi";
+
 export const servicesInfo = [
     {
         id: "securitate-si-sanatate-in-munca",
@@ -84,6 +98,7 @@ export const servicesInfo = [
         "n. informarea angajatorului, în scris, asupra deficienţelor constatate în timpul controalelor efectuate la locul de muncă şi propunerea de măsuri de prevenire şi protecţie;\n"+ 
         "o. efectuarea cercetării în cazul unui eveniment de muncă.",
         image:ssm,
+        main_icon:<MdOutlineHealthAndSafety></MdOutlineHealthAndSafety>
     },
     {
         id: "situatii-de-urgenta",
@@ -134,6 +149,7 @@ export const servicesInfo = [
         "g. Asistență de specialitate în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;\n"+
         "h. Asistență în cazul controalelor autorităților din Inspectoratul pentru Situații de Urgență;",
         image:SU,
+        main_icon:<AiOutlineAlert></AiOutlineAlert>
     },
     {
         id: "rsvti",
@@ -175,6 +191,7 @@ export const servicesInfo = [
         "Beneficiaţi de costuri mici şi fixe și evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
         "Contract anual şi o singură factură lunară.",
         image:rsvti,
+        main_icon:<GiElectricalResistance></GiElectricalResistance>
     },
     {
         id: "gestiunea-deseurilor",
@@ -215,10 +232,10 @@ export const servicesInfo = [
         '#style{"marginLeft":"25px"}Autorizaţie de mediu;#/\n'+
         '#style{"marginLeft":"25px"} Acord de mediu;#/\n'+
         '#style{"marginLeft":"25px"}Accept de evacuare ape uzate.#/\n'+
-        '#style{"fontWeight":"bold"}+Întocmire studii de mediu#/'
-        ,
+        '#style{"fontWeight":"bold"}+Întocmire studii de mediu#/' ,
         
         image:protectia_mediului,
+        main_icon:<MdRecycling></MdRecycling>
     },
     {
         id: "coordonarea-santierelor",
@@ -246,6 +263,7 @@ export const servicesInfo = [
         "• Întocmire Plan de Securitate și Sănătate în faza de execuție\n"+
         "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului",
         image:santiere,
+        main_icon:<FaTools></FaTools>
     },
     {
         id: "analiza-de-risc-la-securitate-fizica",
@@ -272,6 +290,7 @@ export const servicesInfo = [
         "Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitat fizică, care să realizeze analiza de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră.\n\n"+
         'Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiză de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră. \n\n Societatea noastră, este abilitată, să întocmească astfel de evaluări, fiind înscrisă, în #style{"fontWeight":"bold"}Registrul Național al Evaluatorilor de Risc, la Securitate Fizică#/',
         image:risc,
+        main_icon:<IoAnalyticsSharp></IoAnalyticsSharp>
     },
     {
         id: "formare-profesionala",
@@ -314,6 +333,7 @@ export const servicesInfo = [
         "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distanțe scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemănare, organizare și siguranță."+
         "În acest sens, venim în ajutorul dumneavoastră cu acest curs de specializare/perfecționare stivuitorist. Tematica acestui curs de stivuitorist este în acord cu metodologia în vigoare și respectă cele mai înalte standarde de instruire.",
         image:formare_profesionala,
+        main_icon: <MdWorkOutline></MdWorkOutline>
     },
     {
         id: "masurarea-zgomotului-si-vibratiilor",
@@ -343,6 +363,7 @@ export const servicesInfo = [
         "• Tipul vibraţiei transmise omului (mana-brat sau întregul corp);\n"+
         "• Durata expunerii la vibraţii.        De exemplu: muncitor în construcţii, lucrează la picamer (vibraţie tip mana-brat) timp de 4 ore.",
         image:zgomote,
+        main_icon:<GiSoundWaves></GiSoundWaves>
     },
     {
         id: "e-learning",
@@ -378,6 +399,7 @@ export const servicesInfo = [
         "Mai mult, reprezentanții Work Management pot face verificări/checklist-uri privind respectarea normelor SSM, SU, PC, RSVTI și Mediu în sediile/punctele de lucru ale Beneficiarului.\n\n"+
         '#style{"fontWeight":"bold", "color":"red", "display":"center"}TOATE ACESTE FUNCȚII ALE APLICAȚIEI NU SUNT LIMITATIVE, POT FI ADUSE ACTUALIZĂRI PENTRU A RĂSPUNDE TUTUROR NEVOILOR BENEFICIARULUI.#/',
         image:e_learning,
+        main_icon:<VscMortarBoard></VscMortarBoard>
     },
     {
         id: "audit-si-evaluarea-riscurilor",
@@ -427,6 +449,7 @@ export const servicesInfo = [
         "- Metode și instrumente de evaluare a riscurilor.\n\n"+
         "Evaluarea riscurilor de accidente și îmbolnăviri profesionale se face pentru fiecare loc de muncă (angajați care sunt expuși la același risc având activități similare sau apropiate).",
         image:evaluarea_riscurilor,
+        main_icon:<FaUserInjured></FaUserInjured>
     },
     {
         id: "indicatoare",
@@ -457,6 +480,7 @@ export const servicesInfo = [
         "Afișarea semnalisticii SSM & SU este de o importanță majoră, indiferent de activitatea pe care compania dumneavoastră o desfășoară. (vorbim despre semnalizarea prizelor, stingătoarelor și marcarea ieșirilor de urgență, obligativitatea purtării unui echipament de protecție, etc)\n"+
         'Indicatoarele de semnalizare, sunt o modalitate rapidă de a comunica informații importante angajaților, colaboratorilor și vizitatorilor.\n Odată cu respectarea normelor legale #style{"fontWeight":"bold"} preveniți și accidentele de muncă#/, amplasând indicatoarele corespunzătoare riscurilor din compania dumneavoastră, într-un loc vizibil.',
         image:signs,
+        main_icon:<FaSignInAlt></FaSignInAlt>
     },
     {
         id: "resurse-umane",
@@ -500,5 +524,6 @@ export const servicesInfo = [
         '#style{"marginLeft":"25px"}•Evaluarea procedurilor în domeniul resurselor umane şi investigarea situaţiei de fapt, pregătind argumentele ce pot fi aduse în favoarea poziţiei adoptate de dumneavoastră;#/\n'+
         '#style{"marginLeft":"25px"}•Estimarea punctelor forte şi punctelor slabe în abordarea dumneavoastră faţă de aspectele procedurilor în cauză, cu scopul de a evalua şansele de reuşită în eventualitatea unui proces cu autorităţile fiscale române.#/\n',
         image:hr,
+        main_icon:<VscHorizontalRule></VscHorizontalRule>
     },
 ];

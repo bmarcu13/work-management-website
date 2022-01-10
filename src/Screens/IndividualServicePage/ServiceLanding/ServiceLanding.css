@@ -71,8 +71,8 @@
 }
 .service-page-landing-container .title-container {
     color: rgb(0, 13, 83);
-    border-left: 4px solid rgb(0, 13, 83);
-    padding-left: 20px;
+    /* border-left: 4px solid rgb(0, 13, 83); */
+ 
     position: absolute;
     z-index: 1;
     top: 120px;
@@ -82,8 +82,13 @@
 .service-page-landing-container .title-container h1 {
     letter-spacing: 1px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
     .service-page-landing-container .title-container h1 {
-        font-size: 50px;
+        font-size: 45px;
+
     }
+}
+.service-icon{
+    color: rgb(255, 154, 2);
+    margin-right: 5px;
 }
