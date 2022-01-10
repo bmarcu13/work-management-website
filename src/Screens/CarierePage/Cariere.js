@@ -215,8 +215,8 @@ const jobsData = [
         "- utilizarea echipamentelor de birou (fax, xerox, imprimantă, scanner)\n"
     },
     {
-        position:"INSPECTOR",
-        city:"Bucuresti",
+        position:"Inspector SSM, CTPSI, RSVTI, Responsabil Mediu",
+        city:"Cluj-Napoca",
         expectations:"- responsabil;\n"+
         "- ambițios;\n"+
         "- cu spirit de echipă;\n"+
