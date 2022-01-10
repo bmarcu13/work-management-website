@@ -18,9 +18,8 @@ export default function MainPage() {
             <AboutUs></AboutUs>
             <StrengthsSection></StrengthsSection>
             <ServicesMainPage></ServicesMainPage>
-            <ClientsCarousel></ClientsCarousel>
-            <StatisticsSection></StatisticsSection>
             <ContactSection></ContactSection>
+            <ClientsCarousel></ClientsCarousel>
             <Footer></Footer>
         </div>
     );
