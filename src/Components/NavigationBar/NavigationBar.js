@@ -62,7 +62,7 @@ export default function NavigationBar() {
             <div className="navigation-menu-section">
                 <img
                     className="logo"
-                    src={showLogo ? Logo : LogoSmall}
+                    src={!showLogo || isDrawerOpen ? LogoSmall : Logo}
                     alt="logo"
                     onClick={scrollToTop}
                     // style={{ visibility: showLogo ? "visible" : "hidden" }}
