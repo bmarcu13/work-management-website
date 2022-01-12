@@ -188,7 +188,7 @@ export const servicesInfo = [
         information2:'#style{"fontWeight":"bold"}De ce să apelaţi la serviciile noastre de RSVTI? #/ \n\n'+
         "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n"+
         "Nu sunteţi afectat de fluctuaţia de personal, nu trebuie să asiguraţi pe durata concediului de odihnă său medical înlocuitor cu aceeaşi calificare pentru angajatul responsabil de RSVTI care să preia temporar atribuţiunile acestuia.\n"+
-        "Beneficiaţi de costuri mici şi fixe și evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă Operare simplă:\n"+
+        "Beneficiaţi de costuri mici şi fixe și evitaţi plata taxelor şi asigurărilor sociale aferente contractelor de muncă\n Operare simplă: "+
         "Contract anual şi o singură factură lunară.",
         image:rsvti,
         main_icon:<GiElectricalResistance></GiElectricalResistance>
@@ -367,7 +367,7 @@ export const servicesInfo = [
     },
     {
         id: "e-learning",
-        name: "Platformă E-learning",
+        name: "PLATFORMĂ E-LEARNING",
         highlights: [
             {
                 icon: <IoApps size={40}></IoApps>,
@@ -377,7 +377,7 @@ export const servicesInfo = [
             {
                 icon: <IoIosApps size={40}></IoIosApps>,
                 name: "Ai totul la îndemână",
-                text: "Cursuri, documente, teste toate într-un singur loc.",
+                text: "Cursuri, documente și teste, toate într-un singur loc.",
             },
             {
                 icon: <IoPeople size={40}></IoPeople>,
@@ -413,7 +413,7 @@ export const servicesInfo = [
             {
                 icon: <RiOrganizationChart size={40}></RiOrganizationChart>,
                 name: "Plan de măsuri",
-                text: "Veți primi un plan de măsuri tehnice și organizatorice, pentru a vă desfasura activitatea în deplină siguranță.",
+                text: "Veți primi un plan de măsuri tehnice și organizatorice, pentru a vă desfașura activitatea în deplină siguranță.",
             },
             {
                 icon: <AiOutlineDeliveredProcedure size={40}></AiOutlineDeliveredProcedure>,
@@ -471,7 +471,7 @@ export const servicesInfo = [
                 text: "Normele legale de semnalizare și marcare.",
             },
         ],
-        information: '#style{"fontWeight":"bold"}Producem și comercializam#/, întreaga gamă de indicatoare de securitate, care sunt prevăzute de normele legale în vigoare.\n'+
+        information: '#style{"fontWeight":"bold", "marginTop":"-200px"}Producem și comercializăm#/ întreaga gamă de indicatoare de securitate, care sunt prevăzute de normele legale în vigoare.\n'+
         "- Indicatoare de interzicere,\n"+
         "- Indicatoare de obligativitate,\n"+
         "- Indicatoare de avertizare\n"+

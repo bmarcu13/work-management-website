@@ -15,8 +15,16 @@ export default function ServiceLanding(props) {
     return (
         <div className="service-page-landing-container">
             <div className="title-container">
-                <h1><span className="service-icon">{icon}</span>{title}</h1>
+                <h1>
+                    {/* <span className="service-icon">{icon}</span> */}
+                    {title}
+                </h1>
+                <hr></hr>
+                <button>
+                    Contact
+                </button>
             </div>
+            
            
             <div className="svg-bg">
                 <img className="cercc" src={cercc}></img>
