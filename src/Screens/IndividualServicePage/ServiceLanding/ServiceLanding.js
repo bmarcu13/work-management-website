@@ -10,17 +10,19 @@ import Service3Highlights from "../Service3Highlights/Service3Highlights";
 export default function ServiceLanding(props) {
     const highlights = props.infoHighlights;
     const title = props.titleService;
+    const icon = props.icon;
 
     return (
         <div className="service-page-landing-container">
             <div className="title-container">
-                <h1>{title}</h1>
-                <p>CEVA CEVA CEVA</p>
-
+                <h1>
+                    {/* <span className="service-icon">{icon}</span> */}
+                    {title}
+                </h1>
+                {/*  */}
             </div>
-            <div>s<button>
-                Mai multe 
-            </button></div>
+            
+           
             <div className="svg-bg">
                 <img className="cercc" src={cercc}></img>
             </div>

@@ -106,7 +106,7 @@ export default function StrengthsSection() {
                         color="#8c37b6"
                         style={{ width: "40px" }}
                     ></RiRoadMapLine>
-                    <h3>Puncte de lucru în toata țara</h3>
+                    <h3>Puncte de lucru în toată țara</h3>
                     <p>
                         Dispunem de acoperire națională pentru a fi cât mai
                         aproape de clienții noștri.

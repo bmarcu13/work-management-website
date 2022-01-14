@@ -19,10 +19,10 @@ export default function AboutUs() {
                 <div className="content">
                     <p>
                         Ne-am început activitatea în anul 2007, iar de atunci ne
-                        ocupăm de siguranța clienților din portofoliul nostru și
-                        își desfașoară activitatea în siguranță și în
+                        ocupăm de siguranța clienților din portofoliul nostru și îi ajutăm să 
+                        își desfașoare activitatea în siguranță și în
                         conformitate cu prevederile legale. WORK MANAGEMENT este
-                        abilitată să desfășoare activități specifice de
+                        abilitată să presteze activități specifice de
                         prevenire și protecție. Abordarea aspectelor de
                         securitate și sănătate, la nivelul societății, vă
                         asigură nu numai evitarea costurilor mari cu accidentele
@@ -34,7 +34,7 @@ export default function AboutUs() {
                         size={60}
                     ></RiDoubleQuotesL>
                     <h3>
-                        Celor care spun că securitatea în muncă costă le-am
+                        Celor care spun că securitatea în muncă costă, le-am
                         spune că lipsa acesteia costă și mai mult.
                     </h3>
                 </div>

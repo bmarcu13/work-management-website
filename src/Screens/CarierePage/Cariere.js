@@ -255,26 +255,24 @@ const jobsData = [
             "- utilizarea echipamentelor de birou (fax, xerox, imprimantă, scanner)\n",
     },
     {
-        position: "INSPECTOR",
-        city: "Bucuresti",
-        expectations:
-            "- responsabil;\n" +
-            "- ambițios;\n" +
-            "- cu spirit de echipă;\n" +
-            "- comunicativ;\n" +
-            "- disponibil pentru deplăsari;\n" +
-            "- serios;\n" +
-            "- punctual;\n",
-        job_description:
-            "Deplasarea la sediile clienților, pentru:\n\n" +
-            "- instruirea introductiv generală a angajaților în domeniile securității și sănătății în muncă și al situațiilor de urgență;\n" +
-            "- consultanță pe probleme SSM, SU, RSVTI și MEDIU, privind reglementările legale în domeniu (efectuarea controalelor interne la sediile clienților, diverse evidențe cerute de către clienți; actualizare documentații, etc);\n" +
-            "- planificarea și organizarea activităților de securitate și sănătate în muncă, situații de urgență, RSVTI și mediu;\n" +
-            "- supravegherea și verificarea tehnică a instalațiilor ce intră sub incidența legislației ISCIR;\n" +
-            "- alte activități conexe, ce reies din aceste domenii.\n\n" +
-            "Alte activități:\n\n" +
-            "- planificarea și organizarea portofoliului de clienți, din zona arondată (lunar, trimestrial);\n" +
-            "- disponibilitate pentru situații neprevăzute (controale din partea autorităților, evenimente de muncă, etc);\n" +
-            "- colaborarea cu departamentele interne ale Work Management;",
+        position:"Inspector SSM, CTPSI, RSVTI, Responsabil Mediu",
+        city:"Cluj-Napoca",
+        expectations:"- responsabil;\n"+
+        "- ambițios;\n"+
+        "- cu spirit de echipă;\n"+
+        "- comunicativ;\n"+
+        "- disponibil pentru deplăsari;\n"+
+        "- serios;\n"+
+        "- punctual;\n",
+        job_description:"Deplasarea la sediile clienților, pentru:\n\n"+
+        "- instruirea introductiv generală a angajaților în domeniile securității și sănătății în muncă și al situațiilor de urgență;\n"+
+        "- consultanță pe probleme SSM, SU, RSVTI și MEDIU, privind reglementările legale în domeniu (efectuarea controalelor interne la sediile clienților, diverse evidențe cerute de către clienți; actualizare documentații, etc);\n"+
+        "- planificarea și organizarea activităților de securitate și sănătate în muncă, situații de urgență, RSVTI și mediu;\n"+
+        "- supravegherea și verificarea tehnică a instalațiilor ce intră sub incidența legislației ISCIR;\n"+
+        "- alte activități conexe, ce reies din aceste domenii.\n\n"+
+        "Alte activități:\n\n"+
+        "- planificarea și organizarea portofoliului de clienți, din zona arondată (lunar, trimestrial);\n"+
+        "- disponibilitate pentru situații neprevăzute (controale din partea autorităților, evenimente de muncă, etc);\n"+
+        "- colaborarea cu departamentele interne ale Work Management;",
     },
 ];

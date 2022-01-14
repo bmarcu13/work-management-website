@@ -36,6 +36,7 @@ export default function IndividualServicePage(props) {
             <ServiceLanding
                 infoHighlights={serviceData.highlights}
                 titleService={serviceData.name}
+                icon={serviceData.main_icon}
             ></ServiceLanding>
             <div className="service-first-block">
                 <div className="text-information">
