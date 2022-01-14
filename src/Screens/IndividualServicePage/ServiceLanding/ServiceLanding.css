@@ -1,5 +1,6 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 .service-page-landing-container {
     z-index: 0;
     position: relative;
@@ -84,19 +85,17 @@
 .service-page-landing-container .title-container h1 {
     letter-spacing: 1px;
    text-transform: uppercase;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Poppins', sans-serif;
    font-weight: 900;
+   font-size: max(3vw,3.5vh);
+   
 }
-.service-page-landing-container .title-container hr{
-    width: 50%;
-    height: 3px;
-    background-color: burlywood;
-}
-@media (min-width: 1100px) {
+
+/* @media (max-width: 900px) {
     .service-page-landing-container .title-container h1 {
-        font-size: 45px;
+        font-size: 30px;
     }
-}
+} */
 .service-icon{
     color: rgb(255, 154, 2);
     margin-right: 5px;

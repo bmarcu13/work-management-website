@@ -19,10 +19,7 @@ export default function ServiceLanding(props) {
                     {/* <span className="service-icon">{icon}</span> */}
                     {title}
                 </h1>
-                <hr></hr>
-                <button>
-                    Contact
-                </button>
+                {/*  */}
             </div>
             
            
