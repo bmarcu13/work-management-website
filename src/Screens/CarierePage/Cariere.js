@@ -5,6 +5,7 @@ import { CgAsterisk } from "react-icons/cg";
 import {MdAlternateEmail} from "react-icons/md";
 import {ImAttachment} from "react-icons/im";
 import {FiMapPin} from "react-icons/fi";
+import harta from "../../img/romania_judete.png"
 import Map from "./Map.js"
 
 import careerHeader from "../../img/team-header.png";
@@ -154,7 +155,8 @@ export default function CarierePage() {
                         </button>
                     </form>
                 </div>
-               <Map></Map>
+               {/* <Map></Map> */}
+               <img src={harta} className="country-map"></img>
                 </div>
                 <div className="job-search">
                     <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>
