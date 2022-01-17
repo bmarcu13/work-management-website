@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CerereOferta.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
 import { MdAlternateEmail } from "react-icons/md";
-import cerere_oferta from "../../img/cerere_oferta.jpg";
+
+import axios from "axios";
+
 export default function CerereOferta() {
-    const [checked, setChecked] = React.useState(true);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
+    const [messageBody, setMessageBody] = useState("");
+    const [messageSubject, setMessageSubject] = useState("");
+    const [post, setPost] = useState("");
+    const [companyName, setCompanyName] = useState("");
+    const [checked, setChecked] = useState(true);
+
+    const handleSend = async (event) => {
+        event.preventDefault();
+        try {
+            await axios.post("http://localhost:4000/send_email", {
+                id: "offer-request",
+                content: {
+                    name: name,
+                    companyName: companyName,
+                    post: post,
+                    email: email,
+                    tel: tel,
+                    messageSubject: messageSubject,
+                    messageBody: messageBody,
+                },
+            });
+        } catch (erorr) {
+            console.log(erorr);
+        }
+    };
+
     return (
         <>
             <div className="cerere-oferta-page">
@@ -15,7 +45,7 @@ export default function CerereOferta() {
                     protejarea echipei tale.
                 </h2>
                 <div className="form-wrapper">
-                    <form className="cerere-oferta-form">
+                    <form className="cerere-oferta-form" onSubmit={handleSend}>
                         <p className="title">
                             <MdAlternateEmail
                                 size={50}
@@ -38,6 +68,10 @@ export default function CerereOferta() {
                                 type="text"
                                 placeholder="Nume și Prenume"
                                 autofocus
+                                required
+                                onChange={(e) => {
+                                    setName(e.target.value);
+                                }}
                             />
                         </div>
                         <div className="special-inputs">
@@ -53,6 +87,9 @@ export default function CerereOferta() {
                                     type="text"
                                     placeholder="Companie"
                                     autofocus
+                                    onChange={(e) => {
+                                        setCompanyName(e.target.value);
+                                    }}
                                 />
                             </div>
                             <div>
@@ -62,6 +99,9 @@ export default function CerereOferta() {
                                     type="text"
                                     placeholder="Funcție"
                                     autofocus
+                                    onChange={(e) => {
+                                        setPost(e.target.value);
+                                    }}
                                 />
                             </div>
                         </div>
@@ -75,6 +115,10 @@ export default function CerereOferta() {
                                     type="text"
                                     placeholder="Email"
                                     autofocus
+                                    required
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}
                                 />
                             </div>
                             <div>
@@ -86,6 +130,9 @@ export default function CerereOferta() {
                                     type="text"
                                     placeholder="Telefon"
                                     autofocus
+                                    onChange={(e) => {
+                                        setTel(e.target.value);
+                                    }}
                                 />
                             </div>
                         </div>
@@ -99,6 +146,9 @@ export default function CerereOferta() {
                                 placeholder="Subiect"
                                 autofocus
                                 required
+                                onChange={(e) => {
+                                    setMessageSubject(e.target.value);
+                                }}
                             />
                         </div>
                         <div className="row">
@@ -111,6 +161,9 @@ export default function CerereOferta() {
                                 rows="10"
                                 placeholder="Scrie-ne aici ce ai nevoie."
                                 required
+                                onChange={(e) => {
+                                    setMessageBody(e.target.value);
+                                }}
                             />
                         </div>
                         <p>
