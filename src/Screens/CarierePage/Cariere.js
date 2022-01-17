@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cariere.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
@@ -6,10 +6,35 @@ import { MdAlternateEmail } from "react-icons/md";
 import { ImAttachment } from "react-icons/im";
 import { FiMapPin } from "react-icons/fi";
 import Map from "./Map.js";
-
+import axios from "axios";
 import careerHeader from "../../img/team-header.png";
 
 export default function CarierePage() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
+    const [position, setPosition] = useState("");
+    const [messageBody, setMessageBody] = useState("");
+    const [checked, setChecked] = useState(true);
+
+    const handleSend = async (event) => {
+        event.preventDefault();
+        try {
+            await axios.post("http://localhost:4000/send_email", {
+                id: "job",
+                content: {
+                    name: name,
+                    email: email,
+                    tel: tel,
+                    position: position,
+                    messageBody: messageBody,
+                },
+            });
+        } catch (erorr) {
+            console.log(erorr);
+        }
+    };
+
     return (
         <>
             <div className="cariera-page">
@@ -96,7 +121,10 @@ export default function CarierePage() {
                 <div className="careers-second-layer">
                     <div className="map_and_form">
                         <div className="form-wrapper">
-                            <form className="cariere-form">
+                            <form
+                                className="cariere-form"
+                                onSubmit={handleSend}
+                            >
                                 <p className="cariere-form-title">
                                     Vino în Echipa WORK!
                                 </p>
@@ -110,6 +138,9 @@ export default function CarierePage() {
                                         type="text"
                                         placeholder="Nume și Prenume"
                                         autofocus
+                                        onChange={(e) => {
+                                            setName(e.target.value);
+                                        }}
                                     />
                                 </div>
                                 <div className="special-inputs">
@@ -123,6 +154,9 @@ export default function CarierePage() {
                                             type="text"
                                             placeholder="Email"
                                             autofocus
+                                            onChange={(e) => {
+                                                setEmail(e.target.value);
+                                            }}
                                         />
                                     </div>
                                     <div>
@@ -135,6 +169,9 @@ export default function CarierePage() {
                                             type="text"
                                             placeholder="Telefon"
                                             autofocus
+                                            onChange={(e) => {
+                                                setTel(e.target.value);
+                                            }}
                                         />
                                     </div>
                                 </div>
@@ -148,6 +185,9 @@ export default function CarierePage() {
                                         type="text"
                                         placeholder="Subiect"
                                         autofocus
+                                        onChange={(e) => {
+                                            setPosition(e.target.value);
+                                        }}
                                     />
                                 </div>
                                 <div className="row">
@@ -160,6 +200,10 @@ export default function CarierePage() {
                                         className="cerere-oferta-input mesaj-input"
                                         rows="10"
                                         placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
+                                        required
+                                        onChange={(e) => {
+                                            setMessageBody(e.target.value);
+                                        }}
                                     />
                                 </div>
                                 <p className="attach-text">
