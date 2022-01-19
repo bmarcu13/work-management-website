@@ -14,9 +14,18 @@ export default function CerereOferta() {
     const [messageSubject, setMessageSubject] = useState("");
     const [post, setPost] = useState("");
     const [companyName, setCompanyName] = useState("");
-    const [checked, setChecked] = useState(true);
 
     const handleSend = async (event) => {
+        let formData = new FormData();
+        formData.append("id", "offer-request");
+        formData.append("name", name);
+        formData.append("post", post);
+        formData.append("companyName", companyName);
+        formData.append("messageSubject", messageSubject);
+        formData.append("email", email);
+        formData.append("tel", tel);
+        formData.append("messageBody", messageBody);
+
         event.preventDefault();
         try {
             await axios.post("http://localhost:4000/send_email", {
@@ -168,12 +177,7 @@ export default function CerereOferta() {
                         </div>
                         <p>
                             {" "}
-                            <input
-                                required
-                                type="checkbox"
-                                defaultChecked={!checked}
-                                onChange={() => setChecked(!checked)}
-                            ></input>
+                            <input required type="checkbox"></input>
                             Sunt de acord cu{" "}
                             <span style={{ textDecoration: "underline" }}>
                                 Politica de Confidențialitate.

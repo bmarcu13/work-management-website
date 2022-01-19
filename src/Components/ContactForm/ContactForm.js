@@ -15,17 +15,16 @@ export default function ContactForm() {
     const [messageBody, setMessageBody] = useState("");
 
     const handleSend = async (event) => {
+        let formData = new FormData();
+        formData.append("id", "contact");
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("tel", tel);
+        formData.append("messageBody", messageBody);
+
         event.preventDefault();
         try {
-            await axios.post("http://localhost:4000/send_email", {
-                id: "contact",
-                content: {
-                    name: name,
-                    email: email,
-                    tel: tel,
-                    messageBody: messageBody,
-                },
-            });
+            await axios.post("http://localhost:4000/send_email", formData);
         } catch (erorr) {
             console.log(erorr);
         }

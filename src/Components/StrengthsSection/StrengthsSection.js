@@ -46,13 +46,13 @@ export default function StrengthsSection() {
 
     useEffect(() => {
         observer1.observe(
-            document.getElementsByClassName("strength")[0].children[2]
+            document.getElementsByClassName("strength")[0].children[1]
         );
         observer2.observe(
-            document.getElementsByClassName("strength")[1].children[2]
+            document.getElementsByClassName("strength")[1].children[1]
         );
         observer3.observe(
-            document.getElementsByClassName("strength")[2].children[2]
+            document.getElementsByClassName("strength")[2].children[1]
         );
     });
 

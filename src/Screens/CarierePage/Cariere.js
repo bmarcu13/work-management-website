@@ -15,21 +15,27 @@ export default function CarierePage() {
     const [tel, setTel] = useState("");
     const [position, setPosition] = useState("");
     const [messageBody, setMessageBody] = useState("");
-    const [checked, setChecked] = useState(true);
+    const [attachment, setAttachment] = useState(null);
 
     const handleSend = async (event) => {
+        let formData = new FormData();
+        formData.append("id", "job");
+        formData.append("name", name);
+        formData.append("position", position);
+        formData.append("email", email);
+        formData.append("tel", tel);
+        formData.append("messageBody", messageBody);
+        formData.append("file", attachment);
+        formData.append("fileName", attachment.name);
+
+        console.log(attachment);
+
         event.preventDefault();
         try {
-            await axios.post("http://localhost:4000/send_email", {
-                id: "job",
-                content: {
-                    name: name,
-                    email: email,
-                    tel: tel,
-                    position: position,
-                    messageBody: messageBody,
-                },
-            });
+            const res = await axios.post(
+                "http://localhost:4000/send_email",
+                formData
+            );
         } catch (erorr) {
             console.log(erorr);
         }
@@ -217,6 +223,9 @@ export default function CarierePage() {
                                     id="avatar"
                                     name="avatar"
                                     accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
+                                    onChange={(e) => {
+                                        setAttachment(e.target.files[0]);
+                                    }}
                                 ></input>
                                 <p>
                                     {" "}
