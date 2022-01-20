@@ -159,19 +159,19 @@
     white-space: pre-line;
 }
 @media only screen and (max-width: 990px){
-.careers-second-layer{
-    display: flex;
-    flex-direction: column;
-}
-.country-map{
-    width: 60%;
-    height: auto;
-}
-.map_and_form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .careers-second-layer{
+        display: flex;
+        flex-direction: column;
+    }
+    .country-map{
+        width: 90%;
+        height: auto;
+    }
+    .map_and_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }

@@ -11,6 +11,10 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 export default function SideBarButtons({ buttonData, index, callback }) {
     const [isDropdownExpanded, setIsDropdownExpanded] = useState(false);
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+   };
+
     function renderDropdown(hasDropdown) {
         if (hasDropdown) {
             return (
@@ -58,7 +62,10 @@ export default function SideBarButtons({ buttonData, index, callback }) {
         <Link
             to={buttonData.path}
             style={{ textDecoration: "none" }}
-            onClick={callback}
+            onClick={()=> {callback();
+            scrollToTop();
+        }
+        }
             key={index}
         >
             <div

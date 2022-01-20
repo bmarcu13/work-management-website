@@ -1,3 +1,27 @@
+
+.contact-header {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url("../../img/contact-bckgr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-header h2 {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    font-weight: 1000;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
 .contact-screen-component{
     margin-top: 90px;
 }

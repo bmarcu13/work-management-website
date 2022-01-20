@@ -8,6 +8,7 @@ import { FiMapPin } from "react-icons/fi";
 import Map from "./Map.js";
 import axios from "axios";
 import careerHeader from "../../img/team-header.png";
+import map from "../../img/romania_judete.png";
 
 export default function CarierePage() {
     const [name, setName] = useState("");
@@ -16,8 +17,11 @@ export default function CarierePage() {
     const [position, setPosition] = useState("");
     const [messageBody, setMessageBody] = useState("");
     const [attachment, setAttachment] = useState(null);
+    const [sent,setSent]=useState("");
 
     const handleSend = async (event) => {
+        event.preventDefault();
+
         let formData = new FormData();
         formData.append("id", "job");
         formData.append("name", name);
@@ -28,19 +32,142 @@ export default function CarierePage() {
         formData.append("file", attachment);
         formData.append("fileName", attachment.name);
 
-        console.log(attachment);
 
-        event.preventDefault();
         try {
             const res = await axios.post(
                 "http://localhost:4000/send_email",
                 formData
             );
+            setSent("success");
         } catch (erorr) {
             console.log(erorr);
+            setSent("failed");
         }
     };
 
+    const form = (<form
+        className="cariere-form"
+        onSubmit={handleSend}
+    >
+        <p className="cariere-form-title">
+            Vino în Echipa WORK!
+        </p>
+        <div className="row">
+            <p style={{ fontWeight: "bold" }}>
+                Nume și Prenume
+                <CgAsterisk color="red"></CgAsterisk>
+            </p>
+            <input
+                className="cerere-oferta-input"
+                type="text"
+                placeholder="Nume și Prenume"
+                autofocus
+                required
+                onChange={(e) => {
+                    setName(e.target.value);
+                }}
+            />
+        </div>
+        <div className="special-inputs">
+            <div>
+                <p style={{ fontWeight: "bold" }}>
+                    Email
+                    <CgAsterisk color="red"></CgAsterisk>
+                </p>
+                <input
+                    className="cerere-oferta-input"
+                    type="text"
+                    placeholder="Email"
+                    autofocus
+                    onChange={(e) => {
+                        setEmail(e.target.value);
+                    }}
+                />
+            </div>
+            <div>
+                <p style={{ fontWeight: "bold" }}>
+                    Telefon
+                    <CgAsterisk color="red"></CgAsterisk>
+                </p>
+                <input
+                    className="cerere-oferta-input"
+                    type="text"
+                    placeholder="Telefon"
+                    autofocus
+                    onChange={(e) => {
+                        setTel(e.target.value);
+                    }}
+                />
+            </div>
+        </div>
+        <div className="row">
+            <p style={{ fontWeight: "bold" }}>
+                Poziția pe care doriți să o ocupați
+                <CgAsterisk color="red"></CgAsterisk>
+            </p>
+            <input
+                className="cerere-oferta-input"
+                type="text"
+                placeholder="Subiect"
+                autofocus
+                onChange={(e) => {
+                    setPosition(e.target.value);
+                }}
+            />
+        </div>
+        <div className="row">
+            <p style={{ fontWeight: "bold" }}>
+                Mesaj
+                <CgAsterisk color="red"></CgAsterisk>
+            </p>
+
+            <textarea
+                className="cerere-oferta-input mesaj-input"
+                rows="10"
+                placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
+                required
+                onChange={(e) => {
+                    setMessageBody(e.target.value);
+                }}
+            />
+        </div>
+        <p className="attach-text">
+            <ImAttachment size={25}></ImAttachment>
+            Atașați aici CV-ul dvs:
+        </p>
+
+        <input
+            required
+            type="file"
+            style={{ alignSelf: "center" }}
+            id="avatar"
+            name="avatar"
+            accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
+            onChange={(e) => {
+                setAttachment(e.target.files[0]);
+            }}
+        ></input>
+        <p>
+            {" "}
+            <input
+                required
+                type="checkbox"
+                required
+            ></input>
+            Sunt de acord cu{" "}
+            <span
+                style={{ textDecoration: "underline" }}
+            >
+                Politica de Confidențialitate.
+            </span>
+            <CgAsterisk color="red"></CgAsterisk>
+        </p>
+        <button className="trimite-btn">Trimite</button>
+    </form>);
+
+    const successMessage = ( <h3>Mesajul a fost trimis! Mulțumim!</h3>);
+    const errorMessage = ( <h3>Ne pare rău, mesajul nu a putut fi trimis. Vă rugăm contactați-ne la numărul de telefon (0736) 602 115</h3>);
+   
     return (
         <>
             <div className="cariera-page">
@@ -127,125 +254,12 @@ export default function CarierePage() {
                 <div className="careers-second-layer">
                     <div className="map_and_form">
                         <div className="form-wrapper">
-                            <form
-                                className="cariere-form"
-                                onSubmit={handleSend}
-                            >
-                                <p className="cariere-form-title">
-                                    Vino în Echipa WORK!
-                                </p>
-                                <div className="row">
-                                    <p style={{ fontWeight: "bold" }}>
-                                        Nume și Prenume
-                                        <CgAsterisk color="red"></CgAsterisk>
-                                    </p>
-                                    <input
-                                        className="cerere-oferta-input"
-                                        type="text"
-                                        placeholder="Nume și Prenume"
-                                        autofocus
-                                        onChange={(e) => {
-                                            setName(e.target.value);
-                                        }}
-                                    />
-                                </div>
-                                <div className="special-inputs">
-                                    <div>
-                                        <p style={{ fontWeight: "bold" }}>
-                                            Email
-                                            <CgAsterisk color="red"></CgAsterisk>
-                                        </p>
-                                        <input
-                                            className="cerere-oferta-input"
-                                            type="text"
-                                            placeholder="Email"
-                                            autofocus
-                                            onChange={(e) => {
-                                                setEmail(e.target.value);
-                                            }}
-                                        />
-                                    </div>
-                                    <div>
-                                        <p style={{ fontWeight: "bold" }}>
-                                            Telefon
-                                            <CgAsterisk color="red"></CgAsterisk>
-                                        </p>
-                                        <input
-                                            className="cerere-oferta-input"
-                                            type="text"
-                                            placeholder="Telefon"
-                                            autofocus
-                                            onChange={(e) => {
-                                                setTel(e.target.value);
-                                            }}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <p style={{ fontWeight: "bold" }}>
-                                        Poziția pe care doriți să o ocupați
-                                        <CgAsterisk color="red"></CgAsterisk>
-                                    </p>
-                                    <input
-                                        className="cerere-oferta-input"
-                                        type="text"
-                                        placeholder="Subiect"
-                                        autofocus
-                                        onChange={(e) => {
-                                            setPosition(e.target.value);
-                                        }}
-                                    />
-                                </div>
-                                <div className="row">
-                                    <p style={{ fontWeight: "bold" }}>
-                                        Mesaj
-                                        <CgAsterisk color="red"></CgAsterisk>
-                                    </p>
-
-                                    <textarea
-                                        className="cerere-oferta-input mesaj-input"
-                                        rows="10"
-                                        placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
-                                        required
-                                        onChange={(e) => {
-                                            setMessageBody(e.target.value);
-                                        }}
-                                    />
-                                </div>
-                                <p className="attach-text">
-                                    <ImAttachment size={25}></ImAttachment>
-                                    Atașați aici CV-ul dvs:
-                                </p>
-
-                                <input
-                                    type="file"
-                                    style={{ alignSelf: "center" }}
-                                    id="avatar"
-                                    name="avatar"
-                                    accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
-                                    onChange={(e) => {
-                                        setAttachment(e.target.files[0]);
-                                    }}
-                                ></input>
-                                <p>
-                                    {" "}
-                                    <input
-                                        required
-                                        type="checkbox"
-                                        required
-                                    ></input>
-                                    Sunt de acord cu{" "}
-                                    <span
-                                        style={{ textDecoration: "underline" }}
-                                    >
-                                        Politica de Confidențialitate.
-                                    </span>
-                                    <CgAsterisk color="red"></CgAsterisk>
-                                </p>
-                                <button className="trimite-btn">Trimite</button>
-                            </form>
+                                {
+                                    sent === "" ? form : sent === "success" ? successMessage : errorMessage
+                                }
                         </div>
-                        <Map></Map>
+                        <img src={map} className="country-map">
+                        </img>
                     </div>
                     <div className="job-search">
                         <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>

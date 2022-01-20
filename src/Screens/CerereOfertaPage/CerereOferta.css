@@ -9,13 +9,12 @@
     justify-content: center;
     width: 100%;
     height: fit-content;
-    padding: 20px;
     margin-top: 90px;
     padding-top: 150px;
 }
 .cerere-oferta-page h2 {
     color: white;
-    width: fit-content;
+    width: 80%;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
@@ -78,6 +77,8 @@
 @media (max-width: 600px) {
     .form-wrapper{
         width: 90%;
+        
+        margin:0;
     }
     .special-inputs {
         display: flex;
