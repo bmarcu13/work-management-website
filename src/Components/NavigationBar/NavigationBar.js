@@ -53,6 +53,9 @@ export default function NavigationBar() {
                             return SideBarButton({
                                 buttonData: item,
                                 index: index,
+                                callback: () => {
+                                    setIsDrawerOpen(false);
+                                },
                             });
                         })}
                     </div>

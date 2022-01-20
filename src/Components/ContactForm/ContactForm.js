@@ -9,12 +9,22 @@ import { BsArrowReturnRight } from "react-icons/bs";
 
 export default function ContactForm() {
     const [checked, setChecked] = useState(true);
-    const [text, setText] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
+    const [messageBody, setMessageBody] = useState("");
 
     const handleSend = async (event) => {
+        let formData = new FormData();
+        formData.append("id", "contact");
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("tel", tel);
+        formData.append("messageBody", messageBody);
+
         event.preventDefault();
         try {
-            await axios.post("http://localhost:4000/send_email", { text });
+            await axios.post("http://localhost:4000/send_email", formData);
         } catch (erorr) {
             console.log(erorr);
         }
@@ -24,13 +34,33 @@ export default function ContactForm() {
         <div class="contact__container">
             <form class="contact__form" onSubmit={handleSend}>
                 <p>Nume</p>
-                <input class="contact__form-input" type="name" required />
+                <input
+                    class="contact__form-input"
+                    type="name"
+                    required
+                    onChange={(e) => {
+                        setName(e.target.value);
+                    }}
+                />
 
                 <p>Email</p>
-                <input class="contact__form-input" type="email" required />
+                <input
+                    class="contact__form-input"
+                    type="email"
+                    required
+                    onChange={(e) => {
+                        setEmail(e.target.value);
+                    }}
+                />
 
                 <p>Telefon</p>
-                <input class="contact__form-input" type="phone" />
+                <input
+                    class="contact__form-input"
+                    type="phone"
+                    onChange={(e) => {
+                        setTel(e.target.value);
+                    }}
+                />
 
                 <p>Mesaj</p>
                 <textarea
@@ -38,7 +68,7 @@ export default function ContactForm() {
                     type="text"
                     required
                     onChange={(e) => {
-                        setText(e.target.value);
+                        setMessageBody(e.target.value);
                     }}
                 ></textarea>
 

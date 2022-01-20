@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./MenuButtons.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-export default function SideBarButtons({ buttonData }) {
+export default function SideBarButtons({ buttonData, index, callback }) {
     const [isDropdownExpanded, setIsDropdownExpanded] = useState(false);
 
     function renderDropdown(hasDropdown) {
@@ -23,7 +23,7 @@ export default function SideBarButtons({ buttonData }) {
                 >
                     {dropdownItemsLeft.map((item, index) => {
                         return (
-                            <div className="dropdown-item">
+                            <div className="dropdown-item" key={index}>
                                 <p
                                     style={
                                         index == 0 ? { marginTop: "0px" } : {}
@@ -37,7 +37,7 @@ export default function SideBarButtons({ buttonData }) {
                     })}
                     {dropdownItemsRight.map((item, index) => {
                         return (
-                            <div className="dropdown-item">
+                            <div className="dropdown-item" key={index}>
                                 <p
                                     style={
                                         index == 0 ? { marginTop: "0px" } : {}
@@ -55,7 +55,12 @@ export default function SideBarButtons({ buttonData }) {
     }
 
     return (
-        <Link to={buttonData.path} style={{ textDecoration: "none" }}>
+        <Link
+            to={buttonData.path}
+            style={{ textDecoration: "none" }}
+            onClick={callback}
+            key={index}
+        >
             <div
                 className={
                     isDropdownExpanded && buttonData.hasDropdown

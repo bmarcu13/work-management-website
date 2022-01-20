@@ -10,7 +10,7 @@ export default function ClientsCarousel(props) {
                 <div className="slide-track">
                     {Clients.map((client, index) => {
                         return (
-                            <div className="slide">
+                            <div className="slide" key={index}>
                                 <img
                                     className="client-photo"
                                     src={client.src}
@@ -35,7 +35,7 @@ const TitleBg = () => {
                 style={{
                     border: "2px solid #003d99",
                     borderRadius: "3px",
-                   
+
                     marginBottom: "20px",
                 }}
             ></hr>
