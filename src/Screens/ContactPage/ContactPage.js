@@ -10,7 +10,7 @@ import {
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
-import headerBanner from "../../img/contact-bckgr.jpg";
+
 import ContactSection from "../../Components/ContactSection/ContactSection";
 import Footer from "../../Components/Footer/Footer";
 
@@ -21,14 +21,7 @@ import AlinaMihai from "../../img/alina_mihai.jpg";
 export default function ContactPage() {
     return (
         <div className="contact-screen-component">
-            <div className="portfolio-header">
-                <img
-                    style={{
-                        width: "100%",
-                        objectFit: "cover",
-                    }}
-                    src={headerBanner}
-                />
+            <div className="contact-header">
                 <div
                     style={{
                         backgroundColor: "black",

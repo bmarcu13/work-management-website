@@ -78,7 +78,7 @@
  
     position: absolute;
     z-index: 1;
-    top: 120px;
+    top: 125px;
     width: 50%;
     left: 20px;
 }
@@ -87,15 +87,20 @@
    text-transform: uppercase;
    font-family: 'Poppins', sans-serif;
    font-weight: 900;
-   font-size: max(3vw,3.5vh);
+   font-size: max(3vw,4vh);
    
 }
 
-/* @media (max-width: 900px) {
+@media (min-width: 1100px) {
+    .service-page-landing-container .title-container h1 {
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px) {
     .service-page-landing-container .title-container h1 {
         font-size: 30px;
     }
-} */
+}
 .service-icon{
     color: rgb(255, 154, 2);
     margin-right: 5px;

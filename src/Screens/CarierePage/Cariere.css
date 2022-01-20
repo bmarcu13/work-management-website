@@ -68,7 +68,8 @@
     font-size: 22px;
     font-weight: 700;
 }
-.trimite-btn {
+.trimite-btn{
+    cursor: pointer;
     padding: 10px 15px;
     display: flex;
     justify-self: center;
@@ -78,7 +79,11 @@
     color: rgb(6, 6, 114);
     background-color: white;
 }
-.attach-text {
+.trimite-btn:hover{
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
+.attach-text{
     text-align: center;
 }
 @media (max-width: 800px) {
@@ -153,15 +158,20 @@
     margin-top: -15px;
     white-space: pre-line;
 }
-@media only screen and (max-width: 990px) {
-    .careers-second-layer {
+@media only screen and (max-width: 990px){
+    .careers-second-layer{
         display: flex;
         flex-direction: column;
     }
-    .map_and_form {
+    .country-map{
+        width: 90%;
+        height: auto;
+    }
+    .map_and_form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
 }
