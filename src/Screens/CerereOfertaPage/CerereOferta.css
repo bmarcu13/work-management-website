@@ -15,7 +15,7 @@
 }
 .cerere-oferta-page h2 {
     color: white;
-    width: 470px;
+    width: fit-content;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
@@ -76,10 +76,21 @@
     justify-content: left;
 }
 @media (max-width: 600px) {
+    .form-wrapper{
+        width: 90%;
+    }
     .special-inputs {
         display: flex;
         flex-direction: column;
+        resize: vertical;
+        background: transparent;
+        margin: auto;
+        width: 100%;
     }
+    .cerere-oferta-page .title{
+        text-align: center;
+    }
+
 }
 .cerere-oferta-send-btn {
     color: #100164 !important;
@@ -101,6 +112,5 @@
 }
 .cerere-oferta-send-btn:hover {
     cursor: pointer;
-    transform: scale3d(1.1, 1.2, 0.3);
     border: 2px solid rgb(255, 147, 6);
 }

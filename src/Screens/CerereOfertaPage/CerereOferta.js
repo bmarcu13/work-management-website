@@ -27,7 +27,7 @@ export default function CerereOferta() {
                             />
                         </div>
                         <div className="special-inputs">
-                            <div>
+                            <div className="row">
                             <p style={{fontWeight:'bold'}}> Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
@@ -39,7 +39,7 @@ export default function CerereOferta() {
                                     autofocus
                                 />
                             </div>
-                            <div >
+                            <div className="row">
                                  <p style={{fontWeight:'bold'}}>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
@@ -50,7 +50,7 @@ export default function CerereOferta() {
                             </div>
                         </div>
                         <div className="special-inputs">
-                            <div>
+                            <div className="row">
                             <p style={{fontWeight:'bold'}}>
                                     Email<CgAsterisk color="red"></CgAsterisk>
                                 </p>
@@ -61,7 +61,7 @@ export default function CerereOferta() {
                                     autofocus
                                 />
                             </div>
-                            <div>
+                            <div className="row">
                             <p style={{fontWeight:'bold'}}>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>

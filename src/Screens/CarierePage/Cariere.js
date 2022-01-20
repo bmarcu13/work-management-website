@@ -117,7 +117,7 @@ export default function CarierePage() {
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
-                                    placeholder="Subiect"
+                                    placeholder="Poziția (*mai jos găsiți o lista a posturilor libere)"
                                     autofocus
                                 />
                         </div>
