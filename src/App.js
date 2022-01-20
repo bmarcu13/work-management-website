@@ -1,7 +1,6 @@
-// import logo from './logo.svg';
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+//import { useState } from "react";
 
 import "./App.css";
 import NavigationBar from "./Components/NavigationBar/NavigationBar";
@@ -18,7 +17,7 @@ import IndividualServicePage from "./Screens/IndividualServicePage/IndividualSer
 
 function App() {
     // The back-to-top button is hidden at the beginning
-    const [showButton, setShowButton] = useState(false);
+    //const [showButton, setShowButton] = useState(false);
 
     // useEffect(() => {
     //     window.addEventListener("scroll", () => {

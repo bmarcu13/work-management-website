@@ -28,18 +28,7 @@ export default function CerereOferta() {
 
         event.preventDefault();
         try {
-            await axios.post("http://localhost:4000/send_email", {
-                id: "offer-request",
-                content: {
-                    name: name,
-                    companyName: companyName,
-                    post: post,
-                    email: email,
-                    tel: tel,
-                    messageSubject: messageSubject,
-                    messageBody: messageBody,
-                },
-            });
+            await axios.post("http://localhost:4000/send_email", formData);
         } catch (erorr) {
             console.log(erorr);
         }

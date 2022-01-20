@@ -15,7 +15,6 @@ export default function StrengthsSection() {
         useState("invisible strength");
 
     let observer1 = new IntersectionObserver((entries) => {
-        console.log(entries[0].intersectionRatio);
         if (entries[0].isIntersecting) {
             setAnimationClassLeft(
                 "strength strength1 animate__animated animate__fadeInLeft"
@@ -25,7 +24,6 @@ export default function StrengthsSection() {
     });
 
     let observer2 = new IntersectionObserver((entries) => {
-        console.log(entries[0].intersectionRatio);
         if (entries[0].isIntersecting) {
             setAnimationClassMiddle(
                 "strength strength1 animate__animated animate__fadeInUp"
@@ -35,7 +33,6 @@ export default function StrengthsSection() {
     });
 
     let observer3 = new IntersectionObserver((entries) => {
-        console.log(entries[0].intersectionRatio);
         if (entries[0].isIntersecting) {
             setAnimationClassRight(
                 "strength strength1 animate__animated animate__fadeInRight"
