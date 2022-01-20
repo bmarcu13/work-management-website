@@ -102,6 +102,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.our-team .team-content .post{
+    font-weight: bold;
+}
 .our-team .name {
     font-size: 22px;
     font-weight: 900;

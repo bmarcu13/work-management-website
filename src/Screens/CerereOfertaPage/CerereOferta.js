@@ -73,10 +73,8 @@ export default function CerereOferta() {
                             />
                         </div>
                         <div className="special-inputs">
-                            <div>
-                                <p style={{ fontWeight: "bold" }}>
-                                    {" "}
-                                    Companie
+                            <div className="row">
+                            <p style={{fontWeight:'bold'}}> Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -90,8 +88,8 @@ export default function CerereOferta() {
                                     }}
                                 />
                             </div>
-                            <div>
-                                <p style={{ fontWeight: "bold" }}>Funcție</p>
+                            <div className="row">
+                                 <p style={{fontWeight:'bold'}}>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
@@ -104,8 +102,8 @@ export default function CerereOferta() {
                             </div>
                         </div>
                         <div className="special-inputs">
-                            <div>
-                                <p style={{ fontWeight: "bold" }}>
+                            <div className="row">
+                            <p style={{fontWeight:'bold'}}>
                                     Email<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -119,8 +117,8 @@ export default function CerereOferta() {
                                     }}
                                 />
                             </div>
-                            <div>
-                                <p style={{ fontWeight: "bold" }}>
+                            <div className="row">
+                            <p style={{fontWeight:'bold'}}>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
