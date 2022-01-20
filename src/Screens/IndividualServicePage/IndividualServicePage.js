@@ -14,7 +14,7 @@ import { formatText } from "../../Modules/Formatter";
 export default function IndividualServicePage(props) {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-   };
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);

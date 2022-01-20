@@ -19,10 +19,10 @@ export default function AboutUs() {
                 <div className="content">
                     <p>
                         Ne-am început activitatea în anul 2007, iar de atunci ne
-                        ocupăm de siguranța clienților din portofoliul nostru și îi ajutăm să 
-                        își desfașoare activitatea în siguranță și în
-                        conformitate cu prevederile legale. WORK MANAGEMENT este
-                        abilitată să presteze activități specifice de
+                        ocupăm de siguranța clienților din portofoliul nostru și
+                        îi ajutăm să își desfașoare activitatea în siguranță și
+                        în conformitate cu prevederile legale. WORK MANAGEMENT
+                        este abilitată să presteze activități specifice de
                         prevenire și protecție. Abordarea aspectelor de
                         securitate și sănătate, la nivelul societății, vă
                         asigură nu numai evitarea costurilor mari cu accidentele

@@ -7,25 +7,23 @@
     margin-bottom: 40px;
 }
 
-.policy-header img{
+.policy-header img {
     width: 100%;
 }
-.policy-styled-section{
-    display:flex;
-    flex-direction:row;
+.policy-styled-section {
+    display: flex;
+    flex-direction: row;
 }
-@media (max-width: 1000px)
-{
-    .policy-styled-section{
+@media (max-width: 1000px) {
+    .policy-styled-section {
         flex-direction: column;
     }
 }
 .protectia-date-page h1 {
-
     font-weight: 900;
     letter-spacing: 2px;
 }
-.policy-content{
+.policy-content {
     margin-left: 50px;
     margin-right: 50px;
 }

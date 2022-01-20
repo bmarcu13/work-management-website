@@ -14,7 +14,6 @@
 .navigation-bar-button:hover {
     cursor: pointer;
     background-color: #ff9c2b;
-   
 }
 
 .navigation-bar-button .dropdown-wrapper {
@@ -27,7 +26,7 @@
     border-bottom-right-radius: 10px;
     position: absolute;
     visibility: hidden;
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -130,7 +129,7 @@
 
 .sidebar-button:hover {
     cursor: pointer;
-    background-color: rgba(255, 162, 56, 0.719)
+    background-color: rgba(255, 162, 56, 0.719);
 }
 
 /* Dropdown active styles */

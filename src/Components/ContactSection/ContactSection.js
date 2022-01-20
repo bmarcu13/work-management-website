@@ -6,7 +6,6 @@ import "./ContactSection.css";
 import { SiTheconversation } from "react-icons/si";
 import car from "../../img/blob_car.png";
 
-
 export default function ContactSection() {
     return (
         <div className="contact-section">
@@ -44,7 +43,7 @@ export default function ContactSection() {
                     </div>
                     <ContactForm></ContactForm>
                 </div>
-           </div>
+            </div>
             <div class="custom-shape-divider-bottom-1635751933">
                 <svg
                     data-name="Layer 1"

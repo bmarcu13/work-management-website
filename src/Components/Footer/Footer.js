@@ -13,7 +13,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export default function Footer() {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-   };
+    };
     return (
         <>
             <div className="footer-with-copyrights">
@@ -64,7 +64,10 @@ export default function Footer() {
                     <div className="footer footer-center-container">
                         <h2
                             className="footer-title"
-                            style={{ alignContent: "center", fontWeight: '900' }}
+                            style={{
+                                alignContent: "center",
+                                fontWeight: "900",
+                            }}
                         >
                             Navighează
                         </h2>
@@ -78,7 +81,7 @@ export default function Footer() {
                         ></hr>
                         <ul className="links-list">
                             <Link to={"/"} style={{ textDecoration: "none" }}>
-                                <li onClick={scrollToTop}> 
+                                <li onClick={scrollToTop}>
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Acasă
                                 </li>
@@ -131,7 +134,12 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="footer footer-right-container">
-                        <h2 className="footer-title" style={{fontWeight: '900'}}>Contact</h2>
+                        <h2
+                            className="footer-title"
+                            style={{ fontWeight: "900" }}
+                        >
+                            Contact
+                        </h2>
                         <hr
                             style={{
                                 width: "200px",
@@ -174,7 +182,7 @@ export default function Footer() {
                             <br></br>
                             <a href="tel: 0728138235">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
-                               0728138235
+                                0728138235
                             </a>
                             <br></br>
                             <br></br>
@@ -220,17 +228,23 @@ export default function Footer() {
                     }}
                 ></hr>
                 <div className="footer-down">
-                <Link to={"/securiatea-datelor"}
-                        style={{ textDecoration: "none" }}>
-                    <div className="policy-button" onClick={scrollToTop}>
-                        Politica de Securitate a Datelor cu caracter personal
-                    </div>
+                    <Link
+                        to={"/securiatea-datelor"}
+                        style={{ textDecoration: "none" }}
+                    >
+                        <div className="policy-button" onClick={scrollToTop}>
+                            Politica de Securitate a Datelor cu caracter
+                            personal
+                        </div>
                     </Link>
-                    <Link to={"/protectia-datelor"}
-                        style={{ textDecoration: "none" }}>
-                    <div className="policy-button" onClick={scrollToTop}>
-                        Politica privind Protecția Datelor cu caracter personal
-                    </div>
+                    <Link
+                        to={"/protectia-datelor"}
+                        style={{ textDecoration: "none" }}
+                    >
+                        <div className="policy-button" onClick={scrollToTop}>
+                            Politica privind Protecția Datelor cu caracter
+                            personal
+                        </div>
                     </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
                         Website created by ?
