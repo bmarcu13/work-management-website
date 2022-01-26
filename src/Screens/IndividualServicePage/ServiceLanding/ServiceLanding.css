@@ -1,6 +1,5 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 .service-page-landing-container {
     z-index: 0;
     position: relative;
@@ -47,7 +46,7 @@
         url(../../../img/oras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right -7px;
+    background-position: right -8px;
     margin-top: -50px;
 
     /* webkit */
@@ -75,7 +74,7 @@
 .service-page-landing-container .title-container {
     color: rgb(0, 13, 83);
     /* border-left: 4px solid rgb(0, 13, 83); */
- 
+
     position: absolute;
     z-index: 1;
     top: 125px;
@@ -84,11 +83,10 @@
 }
 .service-page-landing-container .title-container h1 {
     letter-spacing: 1px;
-   text-transform: uppercase;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 900;
-   font-size: max(3vw,4vh);
-   
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: max(3vw, 4vh);
 }
 
 @media (min-width: 1100px) {
@@ -101,11 +99,11 @@
         font-size: 30px;
     }
 }
-.service-icon{
+.service-icon {
     color: rgb(255, 154, 2);
     margin-right: 5px;
 }
-.service-page-landing-container .title-container button{
+.service-page-landing-container .title-container button {
     min-height: 40px;
     width: fit-content;
     padding: 5px 20px;

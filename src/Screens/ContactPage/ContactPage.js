@@ -10,7 +10,6 @@ import {
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
-
 import ContactSection from "../../Components/ContactSection/ContactSection";
 import Footer from "../../Components/Footer/Footer";
 
@@ -90,7 +89,8 @@ export default function ContactPage() {
                                 color: "rgb(0, 61, 153)",
                             }}
                         ></BsPinMapFill>
-                        Sediul social: B-dul Regina Maria, Nr. 25, Sector 4, București
+                        Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
+                        București
                     </p>
                     <p>
                         <AiOutlineFieldNumber
