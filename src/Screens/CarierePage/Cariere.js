@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import "./Cariere.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
-import { MdAlternateEmail } from "react-icons/md";
 import { ImAttachment } from "react-icons/im";
 import { FiMapPin } from "react-icons/fi";
-import Map from "./Map.js";
 import axios from "axios";
-import careerHeader from "../../img/team-header.png";
 import map from "../../img/romania_judete.png";
 
 export default function CarierePage() {
@@ -61,7 +58,6 @@ export default function CarierePage() {
                 className="cerere-oferta-input"
                 type="text"
                 placeholder="Nume și Prenume"
-                autofocus
                 required
                 onChange={(e) => {
                     setName(e.target.value);
@@ -78,7 +74,6 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Email"
-                    autofocus
                     onChange={(e) => {
                         setEmail(e.target.value);
                     }}
@@ -93,7 +88,6 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Telefon"
-                    autofocus
                     onChange={(e) => {
                         setTel(e.target.value);
                     }}
@@ -109,7 +103,6 @@ export default function CarierePage() {
                 className="cerere-oferta-input"
                 type="text"
                 placeholder="Subiect"
-                autofocus
                 onChange={(e) => {
                     setPosition(e.target.value);
                 }}
@@ -258,7 +251,7 @@ export default function CarierePage() {
                                     sent === "" ? form : sent === "success" ? successMessage : errorMessage
                                 }
                         </div>
-                        <img src={map} className="country-map">
+                        <img src={map} className="country-map" alt="harta-judete">
                         </img>
                     </div>
                     <div className="job-search">

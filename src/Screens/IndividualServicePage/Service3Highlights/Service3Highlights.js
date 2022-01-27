@@ -1,5 +1,4 @@
 import React from "react";
-import { GrArchlinux } from "react-icons/gr";
 import "./Service3Highlights.css";
 
 export default function Service3Highlights(props) {

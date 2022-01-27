@@ -6,7 +6,7 @@ export default function ProtectiaDate() {
     return (
         <div className="protectia-date-page">
             <div className="policy-header">
-                <img src={HeaderPolitici} />
+                <img src={HeaderPolitici} alt="header-politici-protectia-datelor-cu-caracter-personal" />
                 <div
                     style={{
                         backgroundColor: "white",
@@ -56,7 +56,7 @@ Oferind datele cu caracter personal către "Work", consimțiți în mod expres �
                         <li>perioadele de concediu de odihna/medicale.</li>
                     </ul>
                 </div>
-                <div style={{flex:'1'}}><img src={GDPRGraphics} style={{width:'80%', height:'auto'}}></img>
+                <div style={{flex:'1'}}><img src={GDPRGraphics} alt="poza-gdpr-sign" style={{width:'80%', height:'auto'}}></img>
                 </div>
             </div>
         <p>De asemenea, ”Work” efectuează monitorizare video, GPS, exclusiv pentru asigurarea securității împotriva furtului/efracției. Monitorizarea video este efectuată printr-o cameră video amplasată langă ușa de la intrare în birou și are vedere către curtea sediului ”Work Management”. Monitorizarea GPS este efectuată prin instalarea dispozitivelor GPS asupra parcului auto deținut de entitate.</p>

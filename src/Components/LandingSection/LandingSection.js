@@ -8,7 +8,6 @@ import "animate.css";
 
 import lpArrow2 from "../../img/arrow2Rounded.png";
 import lpArrowR from "../../img/arrow1Rounded.png";
-import logo from "../../img/logo.png";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -82,15 +81,6 @@ export default function LandingSection() {
                     }}
                 ></div>
                 <div id="left-panel" className="left-panel">
-                    {/* <img
-                        src={logo}
-                        style={{
-                            top: 30,
-                            width: "60%",
-                            height: "auto",
-                            marginBottom: "20px",
-                        }}
-                    /> */}
                     <h1>
                         Misiunea noastră e sănătatea și siguranța companiei și a
                         angajaților tăi.
@@ -108,9 +98,10 @@ export default function LandingSection() {
                 </div>
 
                 <div className="right-panel">
-                    <img src={lpArrowR} style={{}} />
+                    <img src={lpArrowR} alt="sageata-graphics-1" style={{}} />
                     <img
                         src={lpArrow2}
+                        alt="sageata-graphics-2"
                         style={{
                             marginLeft: "-50px",
                         }}

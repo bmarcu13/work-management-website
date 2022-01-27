@@ -6,7 +6,7 @@ export default function SecuritateDate() {
     return (
         <div className="protectia-date-page">
             <div className="policy-header">
-                <img src={HeaderPolitici} />
+                <img src={HeaderPolitici} alt="header-politici-securitate-date-cu-caracter-personal" />
                 <div
                     style={{
                         backgroundColor: "white",
