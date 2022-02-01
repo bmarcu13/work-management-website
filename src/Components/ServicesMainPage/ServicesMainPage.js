@@ -133,7 +133,7 @@ const Card = ({ cardData }) => {
                     <img
                         src={cardData.card_icon}
                         style={{
-                            position: "absolute",
+                            // position: "absolute",
                             width: "100%",
                             height: "auto",
                             margin: "auto",

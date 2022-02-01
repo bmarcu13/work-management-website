@@ -134,6 +134,21 @@
         padding-top: 100px;
     }
 
+    .about-section .first .bg {
+        bottom: 0px;
+    }
+
+    .about-section .first {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .about-section .second {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
     .about-section .second .circle-container {
         position: absolute;
         height: calc(100vw - 150px);
@@ -147,18 +162,5 @@
     .about-section .second .circle-container:hover {
         height: calc(100vw - 150px);
         width: calc(100vw - 150px);
-    }
-
-    .about-section .first .bg {
-        bottom: 0px;
-    }
-
-    .about-section .first {
-        width: 100%;
-        margin-bottom: 100px;
-    }
-    .about-section .second {
-        width: 100%;
-        display: flex;
     }
 }

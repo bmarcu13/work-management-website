@@ -18,13 +18,13 @@
 }
 
 .portfolio-header h2 {
-    position: absolute;
+    position: relative;
     font-size: 50px;
     color: white;
-    font-family: "Raleway", sans-serif;
     letter-spacing: 4px;
     font-weight: 1000;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 .portofolio-list-outside {

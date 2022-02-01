@@ -47,6 +47,7 @@ export default function PortfolioPage() {
                             <ClientCard
                                 className="client_div"
                                 img={client.src}
+                                key={index}
                             ></ClientCard>
                         );
                     })}
