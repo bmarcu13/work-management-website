@@ -5,7 +5,6 @@ import { useRouteMatch } from "react-router";
 
 import "./ServiceLanding.css";
 
-import { servicesInfo } from "../Information/InfoService";
 import Service3Highlights from "../Service3Highlights/Service3Highlights";
 export default function ServiceLanding(props) {
     const highlights = props.infoHighlights;
@@ -24,7 +23,7 @@ export default function ServiceLanding(props) {
             
            
             <div className="svg-bg">
-                <img className="cercc" src={cercc}></img>
+                <img className="cercc" src={cercc} alt="cerc-graphics"></img>
             </div>
             <div
                 style={{

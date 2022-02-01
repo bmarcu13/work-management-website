@@ -21,9 +21,7 @@ import ResurseUmane from "../../img/services/resurse-umane.jpg";
 import Audit from "../../img/services/audit.jpg";
 import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
-import DividerPhoto from "../../img/landing-page-services-divider-photo.jpg";
 import Footer from "../../Components/Footer/Footer";
-import IndividualServicePage from "../IndividualServicePage/IndividualServicePage";
 
 let scrolled = false;
 
@@ -59,7 +57,7 @@ export default function ServicesPage() {
                 }}
             >
                 <div className="img-container">
-                    <img src={item.img}></img>
+                    <img src={item.img} alt={item.url}></img>
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>

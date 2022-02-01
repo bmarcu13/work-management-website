@@ -127,7 +127,7 @@ export default function ContactPage() {
                 <div className="team-member">
                     <div className="our-team">
                         <div className="pic">
-                            <img src={StefanaTanase}></img>
+                            <img src={StefanaTanase} alt="angajat-departament-ofertare"></img>
                         </div>
                         <div class="team-content">
                             <h3 className="name">Ștefana Tănase</h3>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                 <div className="team-member">
                     <div className="our-team">
                         <div className="pic">
-                            <img src={NicoletaRosu}></img>
+                            <img src={NicoletaRosu} alt="angajat-departament-consultanta-tehnica"></img>
                         </div>
                         <div className="team-content">
                             <h3 className="name">Roșu Nicoleta </h3>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                 <div className="team-member">
                     <div className="our-team">
                         <div className="pic">
-                            <img src={AlinaMihai}></img>
+                            <img src={AlinaMihai} alt="angajat-departament-ofertare"></img>
                         </div>
                         <div className="team-content">
                             <h3 className="name">Mihai Alina</h3>
@@ -200,11 +200,3 @@ export default function ContactPage() {
         </div>
     );
 }
-const TeamArray = [
-    {
-        name: "",
-        photo: "",
-        description: "",
-        phone: "",
-    },
-];

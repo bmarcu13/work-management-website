@@ -132,6 +132,7 @@ const Card = ({ cardData }) => {
                 >
                     <img
                         src={cardData.card_icon}
+                        alt="icon-serviciu-pagina-principala"
                         style={{
                             // position: "absolute",
                             width: "100%",

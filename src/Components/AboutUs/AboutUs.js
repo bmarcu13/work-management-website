@@ -41,6 +41,7 @@ export default function AboutUs() {
                 <img
                     class="bg"
                     src={bg}
+                    alt="fundal-despre-noi"
                     style={{
                         maxWidth: "75%",
                         position: "absolute",
@@ -58,13 +59,13 @@ export default function AboutUs() {
                     }}
                 >
                     <div class="circle-container">
-                        <img src={iso_blue} class="circle circle1"></img>
-                        <img src={iso_orange} class="circle circle2"></img>
-                        <img src={iso_purple} class="circle circle3"></img>
-                        <img src={iso_green} class="circle circle4"></img>
+                        <img src={iso_blue} className="circle circle1" alt="sigla-iso-blue"></img>
+                        <img src={iso_orange} class="circle circle2" alt="sigla-iso-orange"></img>
+                        <img src={iso_purple} class="circle circle3" alt="sigla-iso-purple"></img>
+                        <img src={iso_green} class="circle circle4"alt="sigla-iso-green"></img>
                     </div>
                     <div class="center">
-                        <img src={logo} style={{ width: "150px" }} />
+                        <img src={logo} alt="logo-without-writing" style={{ width: "150px" }} />
                     </div>
                 </div>
             </div>

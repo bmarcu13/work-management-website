@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import "./Cariere.css";
 import Footer from "../../Components/Footer/Footer";
 import { CgAsterisk } from "react-icons/cg";
-import { MdAlternateEmail } from "react-icons/md";
 import { ImAttachment } from "react-icons/im";
 import { FiMapPin } from "react-icons/fi";
-import Map from "./Map.js";
 import axios from "axios";
-import careerHeader from "../../img/team-header.png";
 import map from "../../img/romania_judete.png";
 
 export default function CarierePage() {
@@ -56,7 +53,6 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Nume și Prenume"
-                    autoFocus
                     required
                     onChange={(e) => {
                         setName(e.target.value);
@@ -73,7 +69,6 @@ export default function CarierePage() {
                         className="cerere-oferta-input"
                         type="text"
                         placeholder="Email"
-                        autoFocus
                         onChange={(e) => {
                             setEmail(e.target.value);
                         }}
@@ -88,7 +83,6 @@ export default function CarierePage() {
                         className="cerere-oferta-input"
                         type="text"
                         placeholder="Telefon"
-                        autoFocus
                         onChange={(e) => {
                             setTel(e.target.value);
                         }}
@@ -104,7 +98,6 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Subiect"
-                    autoFocus
                     onChange={(e) => {
                         setPosition(e.target.value);
                     }}

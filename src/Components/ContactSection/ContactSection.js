@@ -24,7 +24,7 @@ export default function ContactSection() {
             </div>
             <div className="form-contact-section">
                 <div className="car-image">
-                    <img src={car}></img>
+                    <img src={car} alt="masina-work-management"></img>
                 </div>
                 <div className="wrapper">
                     <div className="title">
