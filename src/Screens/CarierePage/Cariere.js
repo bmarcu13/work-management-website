@@ -248,7 +248,11 @@ export default function CarierePage() {
                                 ? successMessage
                                 : errorMessage}
                         </div>
-                        <img src={map} className="country-map"></img>
+                        <img
+                            src={map}
+                            className="country-map"
+                            alt="harta-ro"
+                        ></img>
                     </div>
                     <div className="job-search">
                         <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>
