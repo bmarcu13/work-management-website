@@ -205,10 +205,7 @@ export default function CarierePage() {
                             </div>
                             <div class="belief-content">
                                 Work Management oferă mediul ideal de dezvoltare
-                                persoanelor interesate să facă carieră în
-                                domeniul protecției muncii, prevenirea și
-                                stingerea incendiilor (p.s.i.) evaluarea
-                                riscurilor sau RSVTI.
+                                persoanelor interesate să facă carieră in domeniile SSM, SU, RSVTI si MEDIU.
                             </div>
                         </div>
                         <div class="single-belief">
@@ -231,9 +228,8 @@ export default function CarierePage() {
                             </div>
                             <div class="belief-content">
                                 Te potrivești într-un astfel de mediu? Mai avem
-                                câteva cerințe: Abilitare S.S.M., autorizare pe
-                                linie de P.S.I., autorizaţie RSVTI, experienţă
-                                în domeniu, permis auto (opţional), cunoştinţe
+                                câteva cerințe: <span style={{fontWeight:"bold"}}>Curs Inspector S.S.M., Curs Cadru tehnic P.S.I., Autorizaţie Operator RSVTI.</span>
+                                permis auto (opţional), cunoştinţe
                                 de operare pe calculator (opţional).
                                 <br></br>
                                 <span style={{ fontWeight: "bold" }}>

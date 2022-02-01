@@ -82,15 +82,14 @@ export default function LandingSection() {
                 ></div>
                 <div id="left-panel" className="left-panel">
                     <h1>
-                        Misiunea noastră e sănătatea și siguranța companiei și a
+                        Misiunea noastră este sănătatea și siguranța companiei și a
                         angajaților tăi.
                     </h1>
                     <h3>
-                        Servicii de securitate și sănătate în muncă și de
-                        protecție a mediului.
+                        Asigurăm toată gama de servicii din domniile: SSM, SU, RSVTI și MEDIU, la nivel național, fără sucontractori!
                     </h3>
                     <h3>
-                        Lasă totul pe mâna experților noștri care te vor asista
+                        Lasă totul pe mâna experților noștri, care te vor asista
                         pe toată durata colaborării și vor avea grijă ca
                         afacerea ta să ramână în siguranță !
                     </h3>

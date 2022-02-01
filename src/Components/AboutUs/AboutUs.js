@@ -37,6 +37,11 @@ export default function AboutUs() {
                         Celor care spun că securitatea în muncă costă, le-am
                         spune că lipsa acesteia costă și mai mult.
                     </h3>
+                    <RiDoubleQuotesL
+                        className="icon"
+                        size={60}
+                        style={{marginTop:"-10px", transform:"rotate(180deg"}}
+                    ></RiDoubleQuotesL>
                 </div>
                 <img
                     class="bg"

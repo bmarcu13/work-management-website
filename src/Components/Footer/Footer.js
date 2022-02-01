@@ -178,14 +178,14 @@ export default function Footer() {
                                 size={20}
                             ></BsPersonCircle>
                             Alina Mihai<br></br>
-                            <a href="mailto:alina.mihai@workmanagement.ro">
-                                <FiMail className="footer-icon"></FiMail>{" "}
-                                alina.mihai@workmanagement.ro
-                            </a>
-                            <br></br>
                             <a href="tel: 0728138235">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 0728138235
+                            </a>
+                            <br></br>
+                            <a href="mailto:alina.mihai@workmanagement.ro">
+                                <FiMail className="footer-icon"></FiMail>{" "}
+                                alina.mihai@workmanagement.ro
                             </a>
                             <br></br>
                             <br></br>
@@ -198,6 +198,11 @@ export default function Footer() {
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 (0736) 602 115
                             </a>
+                            <br></br><a href="mailto:nicoleta.rosu@workmanagement.ro">
+                                <FiMail className="footer-icon"></FiMail>{" "}
+                                nicoleta.rosu@workmanagement.ro
+                            </a>
+
                         </p>
                         <div
                             style={{
@@ -250,7 +255,7 @@ export default function Footer() {
                         </div>
                     </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
-                        Website created by Marcu Bogdan / Petruș Cătălina
+                        Website created by Marcu Bogdan &amp; Petruș Cătălina
                     </div>
                 </div>
             </div>

@@ -166,9 +166,11 @@ export default function ContactPage() {
                                     <FiPhoneCall></FiPhoneCall>
                                 </a>
                             </li>
-                            {/* <li>
-                                <a href="#" ><FiMail></FiMail></a>
-                            </li> */}
+                            <li>
+                                <a href="mailto:nicoleta.rosu@workmanagement.ro">
+                                    <FiMail></FiMail>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -183,9 +185,11 @@ export default function ContactPage() {
                             <span className="post"></span>
                         </div>
                         <ul className="social">
-                            {/* <li>
-                                <a href="#" ><FiPhoneCall></FiPhoneCall></a>
-                            </li> */}
+                            <li>
+                                <a href="tel: 0728138235">
+                                    <FiPhoneCall></FiPhoneCall>
+                                </a>
+                            </li>
                             <li>
                                 <a href="mailto:alina.mihai@workmanagement.ro">
                                     <FiMail></FiMail>
