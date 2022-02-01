@@ -13,7 +13,7 @@ export default function SideBarButtons({ buttonData, index, callback }) {
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-   };
+    };
 
     function renderDropdown(hasDropdown) {
         if (hasDropdown) {
@@ -62,10 +62,10 @@ export default function SideBarButtons({ buttonData, index, callback }) {
         <Link
             to={buttonData.path}
             style={{ textDecoration: "none" }}
-            onClick={()=> {callback();
-            scrollToTop();
-        }
-        }
+            onClick={() => {
+                callback();
+                scrollToTop();
+            }}
             key={index}
         >
             <div

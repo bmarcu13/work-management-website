@@ -14,7 +14,7 @@ export default function CarierePage() {
     const [position, setPosition] = useState("");
     const [messageBody, setMessageBody] = useState("");
     const [attachment, setAttachment] = useState(null);
-    const [sent,setSent]=useState("");
+    const [sent, setSent] = useState("");
 
     const handleSend = async (event) => {
         event.preventDefault();
@@ -29,7 +29,6 @@ export default function CarierePage() {
         formData.append("file", attachment);
         formData.append("fileName", attachment.name);
 
-
         try {
             const res = await axios.post(
                 "http://localhost:4000/send_email",
@@ -42,125 +41,121 @@ export default function CarierePage() {
         }
     };
 
-    const form = (<form
-        className="cariere-form"
-        onSubmit={handleSend}
-    >
-        <p className="cariere-form-title">
-            Vino în Echipa WORK!
-        </p>
-        <div className="row">
-            <p style={{ fontWeight: "bold" }}>
-                Nume și Prenume
-                <CgAsterisk color="red"></CgAsterisk>
-            </p>
-            <input
-                className="cerere-oferta-input"
-                type="text"
-                placeholder="Nume și Prenume"
-                required
-                onChange={(e) => {
-                    setName(e.target.value);
-                }}
-            />
-        </div>
-        <div className="special-inputs">
-            <div>
+    const form = (
+        <form className="cariere-form" onSubmit={handleSend}>
+            <p className="cariere-form-title">Vino în Echipa WORK!</p>
+            <div className="row">
                 <p style={{ fontWeight: "bold" }}>
-                    Email
+                    Nume și Prenume
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
                 <input
                     className="cerere-oferta-input"
                     type="text"
-                    placeholder="Email"
+                    placeholder="Nume și Prenume"
+                    required
                     onChange={(e) => {
-                        setEmail(e.target.value);
+                        setName(e.target.value);
                     }}
                 />
             </div>
-            <div>
+            <div className="special-inputs">
+                <div>
+                    <p style={{ fontWeight: "bold" }}>
+                        Email
+                        <CgAsterisk color="red"></CgAsterisk>
+                    </p>
+                    <input
+                        className="cerere-oferta-input"
+                        type="text"
+                        placeholder="Email"
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                        }}
+                    />
+                </div>
+                <div>
+                    <p style={{ fontWeight: "bold" }}>
+                        Telefon
+                        <CgAsterisk color="red"></CgAsterisk>
+                    </p>
+                    <input
+                        className="cerere-oferta-input"
+                        type="text"
+                        placeholder="Telefon"
+                        onChange={(e) => {
+                            setTel(e.target.value);
+                        }}
+                    />
+                </div>
+            </div>
+            <div className="row">
                 <p style={{ fontWeight: "bold" }}>
-                    Telefon
+                    Poziția pe care doriți să o ocupați
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
                 <input
                     className="cerere-oferta-input"
                     type="text"
-                    placeholder="Telefon"
+                    placeholder="Subiect"
                     onChange={(e) => {
-                        setTel(e.target.value);
+                        setPosition(e.target.value);
                     }}
                 />
             </div>
-        </div>
-        <div className="row">
-            <p style={{ fontWeight: "bold" }}>
-                Poziția pe care doriți să o ocupați
-                <CgAsterisk color="red"></CgAsterisk>
-            </p>
-            <input
-                className="cerere-oferta-input"
-                type="text"
-                placeholder="Subiect"
-                onChange={(e) => {
-                    setPosition(e.target.value);
-                }}
-            />
-        </div>
-        <div className="row">
-            <p style={{ fontWeight: "bold" }}>
-                Mesaj
-                <CgAsterisk color="red"></CgAsterisk>
+            <div className="row">
+                <p style={{ fontWeight: "bold" }}>
+                    Mesaj
+                    <CgAsterisk color="red"></CgAsterisk>
+                </p>
+
+                <textarea
+                    className="cerere-oferta-input mesaj-input"
+                    rows="10"
+                    placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
+                    required
+                    onChange={(e) => {
+                        setMessageBody(e.target.value);
+                    }}
+                />
+            </div>
+            <p className="attach-text">
+                <ImAttachment size={25}></ImAttachment>
+                Atașați aici CV-ul dvs:
             </p>
 
-            <textarea
-                className="cerere-oferta-input mesaj-input"
-                rows="10"
-                placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
-                required
-                onChange={(e) => {
-                    setMessageBody(e.target.value);
-                }}
-            />
-        </div>
-        <p className="attach-text">
-            <ImAttachment size={25}></ImAttachment>
-            Atașați aici CV-ul dvs:
-        </p>
-
-        <input
-            required
-            type="file"
-            style={{ alignSelf: "center" }}
-            id="avatar"
-            name="avatar"
-            accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
-            onChange={(e) => {
-                setAttachment(e.target.files[0]);
-            }}
-        ></input>
-        <p>
-            {" "}
             <input
                 required
-                type="checkbox"
-                required
+                type="file"
+                style={{ alignSelf: "center" }}
+                id="avatar"
+                name="avatar"
+                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
+                onChange={(e) => {
+                    setAttachment(e.target.files[0]);
+                }}
             ></input>
-            Sunt de acord cu{" "}
-            <span
-                style={{ textDecoration: "underline" }}
-            >
-                Politica de Confidențialitate.
-            </span>
-            <CgAsterisk color="red"></CgAsterisk>
-        </p>
-        <button className="trimite-btn">Trimite</button>
-    </form>);
+            <p>
+                {" "}
+                <input required type="checkbox" required></input>
+                Sunt de acord cu{" "}
+                <span style={{ textDecoration: "underline" }}>
+                    Politica de Confidențialitate.
+                </span>
+                <CgAsterisk color="red"></CgAsterisk>
+            </p>
+            <button className="trimite-btn">Trimite</button>
+        </form>
+    );
 
-    const successMessage = ( <h3>Mesajul a fost trimis! Mulțumim!</h3>);
-    const errorMessage = ( <h3>Ne pare rău, mesajul nu a putut fi trimis. Vă rugăm contactați-ne la numărul de telefon (0736) 602 115</h3>);
-   
+    const successMessage = <h3>Mesajul a fost trimis! Mulțumim!</h3>;
+    const errorMessage = (
+        <h3>
+            Ne pare rău, mesajul nu a putut fi trimis. Vă rugăm contactați-ne la
+            numărul de telefon (0736) 602 115
+        </h3>
+    );
+
     return (
         <>
             <div className="cariera-page">
@@ -179,7 +174,7 @@ export default function CarierePage() {
                         {" "}
                         Alătură-te echipei "WORK Management"
                     </h2>
-                    <div class="custom-shape-divider-bottom-1634577933">
+                    <div className="custom-shape-divider-bottom-1634577933">
                         <svg
                             data-name="Layer 1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -188,31 +183,31 @@ export default function CarierePage() {
                         >
                             <path
                                 d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-                                class="shape-fill"
+                                className="shape-fill"
                             ></path>
                         </svg>
                     </div>
                 </div>
-                <div class="team-beliefs">
-                    <div class="item-title">
+                <div className="team-beliefs">
+                    <div className="item-title">
                         Câteva lucruri despre echipa noastră.
                     </div>
 
-                    <div class="item-content">
-                        <div class="single-belief">
-                            <div class="belief-title">
+                    <div className="item-content">
+                        <div className="single-belief">
+                            <div className="belief-title">
                                 Ce vei găsi în echipa "Work"
                             </div>
-                            <div class="belief-content">
+                            <div className="belief-content">
                                 Work Management oferă mediul ideal de dezvoltare
                                 persoanelor interesate să facă carieră in domeniile SSM, SU, RSVTI si MEDIU.
                             </div>
                         </div>
-                        <div class="single-belief">
-                            <div class="belief-title">
+                        <div className="single-belief">
+                            <div className="belief-title">
                                 Puțin despre viitorul tău job
                             </div>
-                            <div class="belief-content">
+                            <div className="belief-content">
                                 Vei beneficia de un program flexibil: part time
                                 sau full time. Oferim, de asemenea, recompensare
                                 satisfăcătoare a muncii. Suntem un colectiv
@@ -222,11 +217,11 @@ export default function CarierePage() {
                             </div>
                         </div>
 
-                        <div class="single-belief">
-                            <div class="belief-title">
+                        <div className="single-belief">
+                            <div className="belief-title">
                                 Condițiile care trebuie îndeplinite
                             </div>
-                            <div class="belief-content">
+                            <div className="belief-content">
                                 Te potrivești într-un astfel de mediu? Mai avem
                                 câteva cerințe: <span style={{fontWeight:"bold"}}>Curs Inspector S.S.M., Curs Cadru tehnic P.S.I., Autorizaţie Operator RSVTI.</span>
                                 permis auto (opţional), cunoştinţe
@@ -243,12 +238,17 @@ export default function CarierePage() {
                 <div className="careers-second-layer">
                     <div className="map_and_form">
                         <div className="form-wrapper">
-                                {
-                                    sent === "" ? form : sent === "success" ? successMessage : errorMessage
-                                }
+                            {sent === ""
+                                ? form
+                                : sent === "success"
+                                ? successMessage
+                                : errorMessage}
                         </div>
-                        <img src={map} className="country-map" alt="harta-judete">
-                        </img>
+                        <img
+                            src={map}
+                            className="country-map"
+                            alt="harta-ro"
+                        ></img>
                     </div>
                     <div className="job-search">
                         <h2>VEZI POSTURILE DISPONIBILE DIN TOATĂ ȚARA!</h2>
@@ -265,7 +265,7 @@ const JobsGrid = () => {
         return <h3>Momentan nu exista posturi libere.</h3>;
     else
         return jobsData.map((data, index) => {
-            return <JobCard JobCardData={data}></JobCard>;
+            return <JobCard JobCardData={data} key={index}></JobCard>;
         });
 };
 

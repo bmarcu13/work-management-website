@@ -26,13 +26,13 @@
 }
 
 .cariera-page .careers-header h2 {
-    position: absolute;
+    position: relative;
     font-size: 50px;
     color: white;
-    font-family: "Raleway", sans-serif;
     letter-spacing: 4px;
     font-weight: 1000;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 .item-title {
@@ -68,7 +68,7 @@
     font-size: 22px;
     font-weight: 700;
 }
-.trimite-btn{
+.trimite-btn {
     cursor: pointer;
     padding: 10px 15px;
     display: flex;
@@ -79,14 +79,17 @@
     color: rgb(6, 6, 114);
     background-color: white;
 }
-.trimite-btn:hover{
+.trimite-btn:hover {
     color: black;
     border: 2px solid rgb(0, 0, 0);
 }
-.attach-text{
+.attach-text {
     text-align: center;
 }
 @media (max-width: 800px) {
+    .cariera-page .careers-header h2 {
+        font-size: 34px;
+    }
     .title-cariere {
         font-size: 20px;
         width: 100%;
@@ -158,20 +161,19 @@
     margin-top: -15px;
     white-space: pre-line;
 }
-@media only screen and (max-width: 990px){
-    .careers-second-layer{
+@media only screen and (max-width: 990px) {
+    .careers-second-layer {
         display: flex;
         flex-direction: column;
     }
-    .country-map{
+    .country-map {
         width: 90%;
         height: auto;
     }
-    .map_and_form{
+    .map_and_form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
 }
