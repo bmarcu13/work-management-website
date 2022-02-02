@@ -13,7 +13,7 @@ import { formatText } from "../../Modules/Formatter";
 export default function IndividualServicePage(props) {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-   };
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,7 +21,7 @@ export default function IndividualServicePage(props) {
 
     let { serviciu } = useParams();
     let serviceData;
-    for (let i = 0; i <= 11; i++) {
+    for (let i = 0; i < servicesInfo.length; i++) {
         if (serviciu == servicesInfo[i].id) serviceData = servicesInfo[i];
     }
     const information = serviceData.information;
@@ -42,7 +42,11 @@ export default function IndividualServicePage(props) {
                     {formatText(information)}
                 </div>
                 <div>
-                    <img className="service_image" src={service_image} alt="poza-specifica-serviciului-cautat"></img>
+                    <img
+                        className="service_image"
+                        src={service_image}
+                        alt="poza-specifica-serviciului-cautat"
+                    ></img>
                 </div>
             </div>
             {information2 && (

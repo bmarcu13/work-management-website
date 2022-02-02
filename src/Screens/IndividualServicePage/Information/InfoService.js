@@ -566,4 +566,38 @@ export const servicesInfo = [
         image: hr,
         main_icon: <VscHorizontalRule></VscHorizontalRule>,
     },
+    {
+        id: "medicina-muncii",
+        name: "Medicina Muncii",
+        highlights: [
+            {
+                icon: (
+                    <RiOrganizationChart
+                        color={"#ffffff"}
+                        size={40}
+                    ></RiOrganizationChart>
+                ),
+                name: "Armonizăm",
+                text: "Planurile proprii de securitate şi sănătate ale antreprenorilor cu planul de securitate şi sănătate al şantierului.",
+            },
+            {
+                icon: <GiCustodianHelmet size={40}></GiCustodianHelmet>,
+                name: "Oferim",
+                text: "Serviciu extern de prevenire și protecție ",
+            },
+            {
+                icon: <AiOutlineComment size={40}></AiOutlineComment>,
+                name: "Asigurăm",
+                text: "Comunicare permanentă între beneficiar și coordonatorul în materie de securitate şi sănătate.",
+            },
+        ],
+        information:
+            '#style{"fontWeight":"bold", "fontSize": 21}Vă oferim:#/\n\n' +
+            "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează că obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n" +
+            "• Întocmire Plan de Securitate și Sănătate în faza de proiectare\n" +
+            "• Întocmire Plan de Securitate și Sănătate în faza de execuție\n" +
+            "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului",
+        image: santiere,
+        main_icon: <FaTools></FaTools>,
+    },
 ];
