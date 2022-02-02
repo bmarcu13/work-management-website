@@ -18,7 +18,6 @@ export default function CarierePage() {
 
     const handleSend = async (event) => {
         event.preventDefault();
-
         let formData = new FormData();
         formData.append("id", "job");
         formData.append("name", name);
@@ -30,11 +29,17 @@ export default function CarierePage() {
         formData.append("fileName", attachment.name);
 
         try {
-            const res = await axios.post(
-                "http://localhost:4000/send_email",
-                formData
-            );
-            setSent("success");
+            // const res = await axios
+            //     .post(process.env.REACT_APP_API, formData, {
+            //         headers: {
+            //             "content-type": "multipart/form-data",
+            //         },
+            //     })
+            //     .then(() => {
+            //         console.log(formData);
+            //     });
+            // setSent("success");
+            setSent("failed");
         } catch (erorr) {
             console.log(erorr);
             setSent("failed");
@@ -200,7 +205,8 @@ export default function CarierePage() {
                             </div>
                             <div className="belief-content">
                                 Work Management oferă mediul ideal de dezvoltare
-                                persoanelor interesate să facă carieră in domeniile SSM, SU, RSVTI si MEDIU.
+                                persoanelor interesate să facă carieră in
+                                domeniile SSM, SU, RSVTI si MEDIU.
                             </div>
                         </div>
                         <div className="single-belief">
@@ -223,9 +229,13 @@ export default function CarierePage() {
                             </div>
                             <div className="belief-content">
                                 Te potrivești într-un astfel de mediu? Mai avem
-                                câteva cerințe: <span style={{fontWeight:"bold"}}>Curs Inspector S.S.M., Curs Cadru tehnic P.S.I., Autorizaţie Operator RSVTI.</span>
-                                permis auto (opţional), cunoştinţe
-                                de operare pe calculator (opţional).
+                                câteva cerințe:{" "}
+                                <span style={{ fontWeight: "bold" }}>
+                                    Curs Inspector S.S.M., Curs Cadru tehnic
+                                    P.S.I., Autorizaţie Operator RSVTI.
+                                </span>
+                                permis auto (opţional), cunoştinţe de operare pe
+                                calculator (opţional).
                                 <br></br>
                                 <span style={{ fontWeight: "bold" }}>
                                     Așteptăm CV-ul tău pe email sau completează

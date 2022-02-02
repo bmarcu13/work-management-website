@@ -16,21 +16,31 @@ export default function CerereOferta() {
     const [companyName, setCompanyName] = useState("");
 
     const handleSend = async (event) => {
-        let formData = new FormData();
-        formData.append("id", "offer-request");
-        formData.append("name", name);
-        formData.append("post", post);
-        formData.append("companyName", companyName);
-        formData.append("messageSubject", messageSubject);
-        formData.append("email", email);
-        formData.append("tel", tel);
-        formData.append("messageBody", messageBody);
+        const formData = {
+            type: "offerRequest",
+            name: name,
+            email: email,
+            tel: tel,
+            position: post,
+            companyName: companyName,
+            messageSubject: messageSubject,
+            messageBody: messageBody,
+        };
 
         event.preventDefault();
         try {
-            await axios.post("http://localhost:4000/send_email", formData);
+            // axios({
+            //     method: "post",
+            //     url: `${process.env.REACT_APP_API}`,
+            //     headers: { "content-type": "application/json" },
+            //     data: formData,
+            // }).then((res) => {
+            //     console.log(res);
+            //     setSent("success");
+            // });
         } catch (erorr) {
             console.log(erorr);
+            // setSent("failed");
         }
     };
 
@@ -74,7 +84,9 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div className="row">
-                            <p style={{fontWeight:'bold'}}> Companie
+                                <p style={{ fontWeight: "bold" }}>
+                                    {" "}
+                                    Companie
                                     <CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -89,7 +101,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                             <div className="row">
-                                 <p style={{fontWeight:'bold'}}>Funcție</p>
+                                <p style={{ fontWeight: "bold" }}>Funcție</p>
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
@@ -103,7 +115,7 @@ export default function CerereOferta() {
                         </div>
                         <div className="special-inputs">
                             <div className="row">
-                            <p style={{fontWeight:'bold'}}>
+                                <p style={{ fontWeight: "bold" }}>
                                     Email<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input
@@ -118,7 +130,7 @@ export default function CerereOferta() {
                                 />
                             </div>
                             <div className="row">
-                            <p style={{fontWeight:'bold'}}>
+                                <p style={{ fontWeight: "bold" }}>
                                     Telefon<CgAsterisk color="red"></CgAsterisk>
                                 </p>
                                 <input

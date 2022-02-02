@@ -16,22 +16,6 @@ import SecuritateDate from "./Screens/PoliticiPage/SecuritateDate";
 import IndividualServicePage from "./Screens/IndividualServicePage/IndividualServicePage";
 
 function App() {
-    // The back-to-top button is hidden at the beginning
-    //const [showButton, setShowButton] = useState(false);
-
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-    //         if (window.pageYOffset > 300) {
-    //             setShowButton(true);
-    //         } else {
-    //             setShowButton(false);
-    //         }
-    //     });
-    // }, []);
-    // const scrollToTop = () => {
-    //     window.scrollTo(0, 0);
-    // };
-
     return (
         <>
             <BrowserRouter>
@@ -57,11 +41,6 @@ function App() {
                 ></Route>
                 <NavigationBar></NavigationBar>
             </BrowserRouter>
-            {/* {showButton && (
-                <button onClick={scrollToTop} className="back-to-top">
-                    &#8679;
-                </button>
-            )} */}
         </>
     );
 }
