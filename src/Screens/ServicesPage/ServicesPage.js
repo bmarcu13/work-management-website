@@ -231,6 +231,5 @@ export const servicesList = [
         description:
             "Asistență lunară prin intermediul Work Management Medical. Ne ocupăm de consilierea angajatorului privind adaptarea muncii la caracteristicile psiho-fiziologice ale angajatului și consultăm cu privire la fundamentarea strategiei de sănătate și securitate la locul de muncă.",
         img: MedicinaMuncii,
-        disableButton: true,
     },
 ];

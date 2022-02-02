@@ -124,6 +124,18 @@ export const dropdownItemsLeft = [
             backgroundColor: "#B0C4DE",
         },
     },
+    {
+        id: "medicina-muncii",
+        name: "Medicina Muncii",
+        icon: <MdOutlineHealthAndSafety className="icon" />,
+        card_icon: cascuta,
+        keyword1: "Consultanță",
+        keyword2: "Documentație",
+        keyword3: "Echipament de Protecție",
+        style: {
+            backgroundColor: "#cce0db",
+        },
+    },
 ];
 
 export const dropdownItemsRight = [

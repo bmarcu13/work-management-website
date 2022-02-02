@@ -106,7 +106,7 @@ export default function ServicesMainPage() {
 
 const CardGrid = () => {
     return dropdownItemsLeft.map((data, index) => {
-        return <Card cardData={data} key={index}></Card>;
+        return index < 6 && <Card cardData={data} key={index}></Card>;
     });
 };
 

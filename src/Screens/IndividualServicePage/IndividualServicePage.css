@@ -3,12 +3,12 @@
     display: flex;
     align-content: flex-start;
     width: 80%;
-    margin: auto;
     margin-left: 30px;
     border-radius: 30px;
-    margin-bottom: 30px;
     line-height: 23px;
+    justify-content: flex-start;
 }
+
 .service_image {
     display: flex;
     flex: 1;
@@ -16,9 +16,13 @@
     height: auto;
 }
 .service-first-block {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: calc(min(-2vh, -6vw) - 10px);
+    background: white;
 }
 .service-first-block div {
     padding: 20px;
