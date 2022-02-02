@@ -10,15 +10,15 @@ import {
     MdManageAccounts,
 } from "react-icons/md";
 import { IoPeople, IoApps, IoSchool, IoTrailSignSharp } from "react-icons/io5";
-import { IoIosApps } from "react-icons/io";
+import { IoIosApps, IoMdMedical } from "react-icons/io";
 import {
     BsPatchCheckFill,
     BsSignpostSplitFill,
     BsFillFileEarmarkTextFill,
 } from "react-icons/bs";
-import { GiCustodianHelmet, GiToolbox } from "react-icons/gi";
+import { GiCustodianHelmet, GiToolbox, GiHealing } from "react-icons/gi";
 import {
-    AiFillGift,
+    AiFillGift,AiFillMedicineBox, 
     AiOutlineFileProtect,
     AiFillSafetyCertificate,
     AiOutlineComment,
@@ -34,6 +34,7 @@ import {
 import { GrUserWorker, GrPlan } from "react-icons/gr";
 
 import evaluarea_riscurilor from "../../../img/evaluarea-riscurilor.png";
+import medicina_muncii from "../../../img/medicina_muncii.png";
 import formare_profesionala from "../../../img/formare-profesionala.png";
 import zgomote from "../../../img/zgomote.png";
 import santiere from "../../../img/santiere.png";
@@ -122,7 +123,7 @@ export const servicesInfo = [
             },
             {
                 icon: <HiInformationCircle size={40}></HiInformationCircle>,
-                name: "Ramâi informat",
+                name: "Rămâi informat",
                 text: "Te informam cu privire la modificările legislative, apărute în domeniul S.U.",
             },
             {
@@ -279,7 +280,7 @@ export const servicesInfo = [
         ],
         information:
             '#style{"fontWeight":"bold", "fontSize": 21}Vă oferim:#/\n\n' +
-            "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează că obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n" +
+            "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează ca obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n" +
             '• Întocmire #style{"fontWeight":"bold"}Plan de Securitate și Sănătate#/ în faza de proiectare;\n' +
             "• Întocmire Plan de Securitate și Sănătate în faza de execuție;\n" +
             "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului"+
@@ -311,8 +312,8 @@ export const servicesInfo = [
         ],
         information:
             '#style{"fontWeight":"bold", "color":"red"}Obligativitatea analizei de risc#/, este prevazută, de Legea 333/2003 privind paza obiectivelor, bunurilor, valorilor și protecția persoanelor, pentru care s-au emis în anul 2012 normele de aplicare, prin Hotărârea de Guvern 301/2012.\n' +
-            "Evaluarea de risc, la securitatea fizică, este documentul, prin care, un specialist analizează și stabilește, de ce anume este nevoie, pentru ca paza obiectivelor dumneavoastră, să acopere toate vulnerabilitatile acestuia, în fața hoților.\n" +
-            "Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiza de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră.\n\n" +
+            "Evaluarea de risc, la securitatea fizică, este documentul, prin care, un specialist analizează și stabilește, de ce anume este nevoie, pentru ca paza obiectivelor dumneavoastră, să acopere toate vulnerabilitățile acestuia, în fața hoților.\n" +
+            
             'Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiză de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră. \n\n Societatea noastră, este abilitată, să întocmească astfel de evaluări, fiind înscrisă, în #style{"fontWeight":"bold"}Registrul Național al Evaluatorilor de Risc, la Securitate Fizică#/',
         image: risc,
         main_icon: <IoAnalyticsSharp></IoAnalyticsSharp>,
@@ -362,7 +363,7 @@ export const servicesInfo = [
 
         information2:
             'Organizăm #style{"fontWeight":"bold"}cursuri de specializare/perfecționare stivuitorist #/(COD COR 834403) în conformitate cu cerințele ANC și ISCIR.\n\n' +
-            "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distanțe scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemănare, organizare și siguranță." +
+            "Toate sarcinile dedicate încărcării, descărcării sau deplasării pe distanțe scurte a unor elemente de dimensiuni și greutăți apreciabile au nevoie de îndemânare, organizare și siguranță." +
             "În acest sens, venim în ajutorul dumneavoastră cu acest curs de specializare/perfecționare stivuitorist. Tematica acestui curs de stivuitorist este în acord cu metodologia în vigoare și respectă cele mai înalte standarde de instruire.",
         image: formare_profesionala,
         main_icon: <MdWorkOutline></MdWorkOutline>,
@@ -552,7 +553,6 @@ export const servicesInfo = [
             '#style{"marginLeft":"25px"}•Întocmire decizii de încetare, suspendare;#/\n' +
             '#style{"marginLeft":"25px"}•Întocmire dosare de personal( Conţinutul acestui dosar se poate modifica în funcţie de noile reglementări legislative);#/\n' +
             '#style{"marginLeft":"25px"}•Întocmire fişe de post;#/\n' +
-            '#style{"marginLeft":"25px"}•Întocmire Registrul de Evidenţă al salariaţilor;#/\n' +
             '#style{"marginLeft":"25px"}•Gestionarea relaţiei cu autorităţile;#/\n' +
             '#style{"marginLeft":"25px"}•Întocmire Regulament Intern.#/\n' +
             '#style{"marginLeft":"25px"}•Întocmire Registrul de Evidenţă al salariaţilor (ReGES);#/\n\n' +
@@ -576,32 +576,38 @@ export const servicesInfo = [
         highlights: [
             {
                 icon: (
-                    <RiOrganizationChart
+                    <AiFillMedicineBox
                         color={"#ffffff"}
                         size={40}
-                    ></RiOrganizationChart>
+                    ></AiFillMedicineBox>
                 ),
-                name: "Armonizăm",
+                name: "Asistență",
                 text: "Planurile proprii de securitate şi sănătate ale antreprenorilor cu planul de securitate şi sănătate al şantierului.",
             },
             {
-                icon: <GiCustodianHelmet size={40}></GiCustodianHelmet>,
-                name: "Oferim",
-                text: "Serviciu extern de prevenire și protecție ",
+                icon: <GiHealing size={40}></GiHealing>,
+                name: "Strategie",
+                text: "de sănătate și securitate la locul de muncă.",
             },
             {
-                icon: <AiOutlineComment size={40}></AiOutlineComment>,
-                name: "Asigurăm",
-                text: "Comunicare permanentă între beneficiar și coordonatorul în materie de securitate şi sănătate.",
+                icon: <IoMdMedical size={40}></IoMdMedical>,
+                name: "Controale",
+                text: "medicale obligatorii și periodice",
             },
         ],
         information:
-            '#style{"fontWeight":"bold", "fontSize": 21}Vă oferim:#/\n\n' +
-            "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează că obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n" +
-            "• Întocmire Plan de Securitate și Sănătate în faza de proiectare\n" +
-            "• Întocmire Plan de Securitate și Sănătate în faza de execuție\n" +
-            "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului",
-        image: santiere,
+            '#style{"fontWeight":"bold"}WORK MANAGEMENT MEDICAL#/ vă oferă servicii de medicina muncii, realizate de personal specializat, cu înaltă experiență.\n\n'+
+            '#style{"fontWeight":"bold"}Examenele medicale#/ de medicina muncii, cuprind:\n'+
+            "-	Control medical obligatoriu la angajare;\n"+
+            "-	Control medical de adaptare în muncă;\n"+
+            "-	Control medical periodic;\n"+
+            "-	Control medical la reluarea activității.\n\n"+
+            "În funcție de particularitățile pe care specialiștii în medicina muncii ai WORK MANAGEMENT MEDICAL le identifică în fiecare caz în parte, pot fi efectuate activități de:\n"+
+            "-	Supraveghere specială;\n"+
+            "-	Monitorizarea locului de muncă;\n"+
+            "-	Consilierea companiei pentru adaptarea condițiilor de muncă în funcție de persoana angajată.\n"
+           , 
+        image: medicina_muncii,
         main_icon: <FaTools></FaTools>,
     },
 ];

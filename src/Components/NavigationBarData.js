@@ -8,6 +8,7 @@ import {
     MdOutlineHealthAndSafety,
     MdRecycling,
     MdWorkOutline,
+    MdHealing
 } from "react-icons/md";
 import { GiSoundWaves } from "react-icons/gi";
 
@@ -127,7 +128,7 @@ export const dropdownItemsLeft = [
     {
         id: "medicina-muncii",
         name: "Medicina Muncii",
-        icon: <MdOutlineHealthAndSafety className="icon" />,
+        icon: <MdHealing className="icon" />,
         card_icon: cascuta,
         keyword1: "Consultanță",
         keyword2: "Documentație",
