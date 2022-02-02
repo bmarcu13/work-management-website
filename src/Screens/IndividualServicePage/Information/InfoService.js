@@ -187,17 +187,18 @@ export const servicesInfo = [
                 text: "Te protejăm de răspunderea penală în cazul producerii unor evenimente.",
             },
         ],
-        information:
-            '#style{"fontWeight":"bold"}WORK MANAGEMENT#/ deține personal autorizat pentru întocmirea:\n' +
-            " - proiectelor de montaj, reparații, modernizare instalații sub prescripția ISCIR(inclusiv RADTP)\n" +
-            " - expertizelor tehnice, pentru evaluarea și determinarea perioadei remanente de viață(inclusiv RADTE)\n\n" +
+        information:'Compania noastră este #style{"fontWeight":"bold"}autorizată de către ISCIR#/, să desfășoare activități de supraveghere și verificare tehnică a echipamentelor/instalațiilor de ridicat și sub presiune.\n\n'+
+        "Orice societate care deţine/utilizează instalaţii/ echipamente: instalații mecanice sub presiune -  IMSP (centrale termice sub presiune, centrale cu aburi, etc.) și instalații de ridicat - IR (stivuitoare, tranpalete, elevatoare auto, platforme autoridicatoare, macarale, nacele, etc) are obligaţia să aibă propriul angajat sau să externlizeze serviciile de RSVTI. \n\n"+
             '#style{"fontWeight":"bold"}AVANTAJELE PRESTĂRII SERVICIULUI OPERATOR RSVTI DE CĂTRE O SOCIETATE EXTERNĂ, AUTORIZATĂ ISCIR, SUNT: #/\n\n' +
             "•eliminarea răspunderii directe a beneficiarului în faţa organelor statului;\n" +
             "•asigurarea beneficiarului de respectarea în totalitate a legalităţii şi a prescripţiilor tehnice în vigoare;\n" +
             "•protejarea beneficiarului de răspunderea penală în cazul producerii unor evenimente;\n" +
             "•asigurarea verificării funcţionării în condiţii de maximă siguranţă a instalaţiilor;\n" +
             "•eliminarea unui număr mare de documente ce trebuie transmise la diverse instituţii ale statului.\n\n" +
-            '#style{"fontWeight":"bold"}INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI#/: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune.',
+            '#style{"fontWeight":"bold"}INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI#/: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune.\n\n'+
+            '#style{"fontWeight":"bold", "color":"red"}WORK MANAGEMENT#/ deține personal autorizat pentru întocmirea:\n' +
+            " - proiectelor de montaj, reparații, modernizare instalații sub prescripția ISCIR(inclusiv RADTP)\n" +
+            " - expertizelor tehnice, pentru evaluarea și determinarea perioadei remanente de viață(inclusiv RADTE)\n\n" ,
         information2:
             '#style{"fontWeight":"bold"}De ce să apelaţi la serviciile noastre de RSVTI? #/ \n\n' +
             "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n" +
