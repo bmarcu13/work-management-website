@@ -7,45 +7,22 @@ import { MdAlternateEmail } from "react-icons/md";
 import axios from "axios";
 
 export default function CerereOferta() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [tel, setTel] = useState("");
-    const [messageBody, setMessageBody] = useState("");
-    const [messageSubject, setMessageSubject] = useState("");
-    const [post, setPost] = useState("");
-    const [companyName, setCompanyName] = useState("");
-
     const handleSend = async (event) => {
         event.preventDefault();
-        // const formData = {
-        //     type: "offerRequest",
-        //     name: name,
-        //     email: email,
-        //     tel: tel,
-        //     position: post,
-        //     companyName: companyName,
-        //     messageSubject: messageSubject,
-        //     messageBody: messageBody,
-        // };
 
-        // const target = event.target;
-        // let formData = new FormData(event.target);
-        // formData.append("name", "John");
-
-        // for (let [key, value] of formData.entries()) {
-        //     console.log(key, value);
-        // }
+        let formData = new FormData(event.target);
+        formData.append("type", "offerRequest");
 
         try {
-            // axios({
-            //     method: "post",
-            //     url: `${process.env.REACT_APP_API}`,
-            //     headers: { "content-type": "application/json" },
-            //     data: formData,
-            // }).then((res) => {
-            //     console.log(res);
-            //     setSent("success");
-            // });
+            axios({
+                method: "post",
+                url: `${process.env.REACT_APP_API}`,
+                headers: { "content-type": "application/json" },
+                data: formData,
+            }).then((res) => {
+                console.log(res);
+                // setSent("success");
+            });
         } catch (erorr) {
             console.log(erorr);
             // setSent("failed");
@@ -81,13 +58,11 @@ export default function CerereOferta() {
                             </p>
                             <input
                                 className="cerere-oferta-input"
-                                type="text"
+                                type="name"
                                 placeholder="Nume și Prenume"
+                                name="name"
                                 autofocus
                                 required
-                                onChange={(e) => {
-                                    setName(e.target.value);
-                                }}
                             />
                         </div>
                         <div className="special-inputs">
@@ -101,11 +76,8 @@ export default function CerereOferta() {
                                     required
                                     className="cerere-oferta-input"
                                     type="text"
+                                    name="companyName"
                                     placeholder="Companie"
-                                    autofocus
-                                    onChange={(e) => {
-                                        setCompanyName(e.target.value);
-                                    }}
                                 />
                             </div>
                             <div className="row">
@@ -113,11 +85,8 @@ export default function CerereOferta() {
                                 <input
                                     className="cerere-oferta-input"
                                     type="text"
+                                    name="position"
                                     placeholder="Funcție"
-                                    autofocus
-                                    onChange={(e) => {
-                                        setPost(e.target.value);
-                                    }}
                                 />
                             </div>
                         </div>
@@ -128,13 +97,10 @@ export default function CerereOferta() {
                                 </p>
                                 <input
                                     className="cerere-oferta-input"
-                                    type="text"
+                                    type="email"
                                     placeholder="Email"
-                                    autofocus
+                                    name="email"
                                     required
-                                    onChange={(e) => {
-                                        setEmail(e.target.value);
-                                    }}
                                 />
                             </div>
                             <div className="row">
@@ -143,12 +109,9 @@ export default function CerereOferta() {
                                 </p>
                                 <input
                                     className="cerere-oferta-input"
-                                    type="text"
+                                    type="phone"
                                     placeholder="Telefon"
-                                    autofocus
-                                    onChange={(e) => {
-                                        setTel(e.target.value);
-                                    }}
+                                    name="phone"
                                 />
                             </div>
                         </div>
@@ -160,11 +123,8 @@ export default function CerereOferta() {
                                 className="cerere-oferta-input"
                                 type="text"
                                 placeholder="Subiect"
-                                autofocus
+                                name="messageSubject"
                                 required
-                                onChange={(e) => {
-                                    setMessageSubject(e.target.value);
-                                }}
                             />
                         </div>
                         <div className="row">
@@ -177,9 +137,7 @@ export default function CerereOferta() {
                                 rows="10"
                                 placeholder="Scrie-ne aici ce ai nevoie."
                                 required
-                                onChange={(e) => {
-                                    setMessageBody(e.target.value);
-                                }}
+                                name="messageBody"
                             />
                         </div>
                         <p>

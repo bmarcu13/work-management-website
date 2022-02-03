@@ -91,7 +91,7 @@ $offerRequestMessage = "
             <p class=\"info\">    <span>Companie: </span> $companyName </p>
             <p class=\"info\">    <span>Funcție: </span> $position</p>
             <p class=\"info\">    <span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
-            <p class=\"info\">    <span>Telefon: </span><a href=\"phone: $phone\">$phone</a> </p>
+            <p class=\"info\">    <span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
         </div>
         <h4 class=\"info\"> <span>Subiect: $messageSubject</span></h4>
         <p class=\"info\"> <span>Conținutul mail-ului: </span> $messageBody </p><br>

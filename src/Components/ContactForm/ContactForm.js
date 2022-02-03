@@ -36,9 +36,6 @@ export default function ContactForm() {
                 type="name"
                 name="name"
                 required
-                onChange={(e) => {
-                    setName(e.target.value);
-                }}
             />
 
             <p>Email</p>
@@ -47,20 +44,10 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 required
-                onChange={(e) => {
-                    setEmail(e.target.value);
-                }}
             />
 
             <p>Telefon</p>
-            <input
-                class="contact__form-input"
-                type="phone"
-                name="phone"
-                onChange={(e) => {
-                    setTel(e.target.value);
-                }}
-            />
+            <input class="contact__form-input" type="phone" name="phone" />
 
             <p>Mesaj</p>
             <textarea
@@ -68,9 +55,6 @@ export default function ContactForm() {
                 type="text"
                 name="messageBody"
                 required
-                onChange={(e) => {
-                    setMessageBody(e.target.value);
-                }}
             ></textarea>
 
             <button type="submit">
