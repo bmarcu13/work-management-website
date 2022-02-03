@@ -16,18 +16,26 @@ export default function CerereOferta() {
     const [companyName, setCompanyName] = useState("");
 
     const handleSend = async (event) => {
-        const formData = {
-            type: "offerRequest",
-            name: name,
-            email: email,
-            tel: tel,
-            position: post,
-            companyName: companyName,
-            messageSubject: messageSubject,
-            messageBody: messageBody,
-        };
-
         event.preventDefault();
+        // const formData = {
+        //     type: "offerRequest",
+        //     name: name,
+        //     email: email,
+        //     tel: tel,
+        //     position: post,
+        //     companyName: companyName,
+        //     messageSubject: messageSubject,
+        //     messageBody: messageBody,
+        // };
+
+        // const target = event.target;
+        // let formData = new FormData(event.target);
+        // formData.append("name", "John");
+
+        // for (let [key, value] of formData.entries()) {
+        //     console.log(key, value);
+        // }
+
         try {
             // axios({
             //     method: "post",

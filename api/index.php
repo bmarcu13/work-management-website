@@ -4,8 +4,8 @@ include_once('config.php');
 
 header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Headers: Content-Type');
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
+// $rest_json = file_get_contents("php://input");
+// $_POST = json_decode($rest_json, true);
 
 $emailType = $_POST['type'];
 $messageHTML = "";
@@ -13,13 +13,13 @@ $messageHTML = "";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $messageBody = $_POST['messageBody'];
-$tel = "";
+$phone = "";
 $position = "";
 $companyName = "";
 $messageSubject = "";
 
-if (isset($_POST['tel'])) {
-    $tel = $_POST['tel'];
+if (isset($_POST['phone'])) {
+    $phone = $_POST['phone'];
 }
 
 if (isset($_POST['position'])) {
@@ -56,7 +56,7 @@ $contactMessage = "<html>
         <div class=\"general-info\">
             <p><span>Nume: </span> $name </p>
             <p><span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
-            <p><span>Telefon: </span><a href=\"tel: $tel\">$tel</a> </p>
+            <p><span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
         </div>
         <p> <span>Continuțul mail-ului:</span></p><br>
         <p>$messageBody</p>
@@ -91,7 +91,7 @@ $offerRequestMessage = "
             <p class=\"info\">    <span>Companie: </span> $companyName </p>
             <p class=\"info\">    <span>Funcție: </span> $position</p>
             <p class=\"info\">    <span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
-            <p class=\"info\">    <span>Telefon: </span><a href=\"tel: $tel\">$tel</a> </p>
+            <p class=\"info\">    <span>Telefon: </span><a href=\"phone: $phone\">$phone</a> </p>
         </div>
         <h4 class=\"info\"> <span>Subiect: $messageSubject</span></h4>
         <p class=\"info\"> <span>Conținutul mail-ului: </span> $messageBody </p><br>

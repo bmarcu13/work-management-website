@@ -13,26 +13,20 @@ export default function ContactForm() {
     const [sent, setSent] = useState("");
 
     const handleSend = async (event) => {
-        const formData = {
-            type: "contact",
-            name: name,
-            email: email,
-            tel: tel,
-            messageBody: messageBody,
-        };
+        let formData = new FormData(event.target);
+        formData.append("type", "contact");
 
         event.preventDefault();
         try {
-            // axios({
-            //     method: "post",
-            //     url: `${process.env.REACT_APP_API}`,
-            //     headers: { "content-type": "application/json" },
-            //     data: formData,
-            // }).then((res) => {
-            //     console.log(res);
-            //     setSent("success");
-            // });
-            setSent("failed");
+            axios({
+                method: "post",
+                url: `${process.env.REACT_APP_API}`,
+                headers: { "content-type": "application/json" },
+                data: formData,
+            }).then((res) => {
+                console.log(res);
+                setSent("success");
+            });
         } catch (erorr) {
             console.log(erorr);
             setSent("failed");
@@ -45,6 +39,7 @@ export default function ContactForm() {
             <input
                 class="contact__form-input"
                 type="name"
+                name="name"
                 required
                 onChange={(e) => {
                     setName(e.target.value);
@@ -55,6 +50,7 @@ export default function ContactForm() {
             <input
                 class="contact__form-input"
                 type="email"
+                name="email"
                 required
                 onChange={(e) => {
                     setEmail(e.target.value);
@@ -65,6 +61,7 @@ export default function ContactForm() {
             <input
                 class="contact__form-input"
                 type="phone"
+                name="phone"
                 onChange={(e) => {
                     setTel(e.target.value);
                 }}
@@ -74,6 +71,7 @@ export default function ContactForm() {
             <textarea
                 class="contact__form-textarea"
                 type="text"
+                name="messageBody"
                 required
                 onChange={(e) => {
                     setMessageBody(e.target.value);
