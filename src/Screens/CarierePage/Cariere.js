@@ -15,7 +15,6 @@ export default function CarierePage() {
 
         let formData = new FormData(event.target);
         formData.append("type", "job");
-        formData.append("type", "contact");
 
         for (let [a, b] of formData.entries()) {
             console.log(a, b);

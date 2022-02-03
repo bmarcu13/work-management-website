@@ -7,6 +7,9 @@ header('Access-Control-Allow-Headers: Content-Type');
 // $rest_json = file_get_contents("php://input");
 // $_POST = json_decode($rest_json, true);
 
+$semi_rand = md5(time()); 
+$mime_boundary = "Multipart_Boundary_x{$semi_rand}x";
+
 $emailType = $_POST['type'];
 $messageHTML = "";
 
@@ -137,33 +140,9 @@ if ($emailType == 'contact') {
 else if ($emailType == 'offerRequest') {
     $messageHTML = $offerRequestMessage;
 }
-else if($emailType == 'job') {
-    $messageHTML = $jobMessage;
-
-    //Checking attachment
-    if(!empty($_FILES["cv"]["name"])){
-                
-        // File path config
-        $targetDir = "uploads/";
-        $fileName = basename($_FILES["attachment"]["name"]);
-        $targetFilePath = $targetDir . $fileName;
-        $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-        
-        // Allow certain file formats
-        $allowTypes = array('pdf', 'doc', 'docx');
-        if(in_array($fileType, $allowTypes)){
-            // Upload file to the server
-            if(move_uploaded_file($_FILES["attachment"]["tmp_name"], $targetFilePath)){
-                $uploadedFile = $targetFilePath;
-            }else{
-                $uploadStatus = 0;
-                $statusMsg = "Sorry, there was an error uploading your file.";
-            }
-        }else{
-            $uploadStatus = 0;
-            $statusMsg = 'Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.';
-        }
-    }
+else if($emailType == 'job') { 
+    $messageHTML = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                        "Content-Transfer-Encoding: 7bit\n\n" . $jobMessage . "\n\n";
 }
 
 if( empty($_POST['name']) && empty($_POST['email']) ) {
@@ -180,10 +159,75 @@ if ($_POST){
     //@important: Please change this before using
     http_response_code(200);
     $subject = 'Contact from: ' . $_POST['name'];
-    $from = $_POST['email'];       
-
+    $from = $_POST['email']; 
     $sendEmail = new Sender($adminEmail, $from, $subject, $messageHTML);
-    $sendEmail->send();
+    
+
+    if ($emailType == 'job') {
+        $uploadStatus = 1;
+        $uploadedFile = '';
+        //Checking attachment
+        if(!empty($_FILES["cv"]["name"])){
+                    
+            // File path config
+            $targetDir = "uploads/";
+            $fileName = basename($_FILES["cv"]["name"]);
+            $targetFilePath = $targetDir . $fileName;
+            $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+            $sendEmail->setMessage($fileType);
+            
+            // Allow certain file formats
+            $allowTypes = array('pdf', 'doc', 'docx');
+            if(in_array($fileType, $allowTypes)){
+                // Upload file to the server
+                if(move_uploaded_file($_FILES["cv"]["tmp_name"], $targetFilePath)){
+                    $uploadedFile = $targetFilePath;
+                }else{
+                    $uploadStatus = 0;
+                    $statusMsg = "Sorry, there was an error uploading your file.";
+                }
+            }else{
+                $uploadStatus = 0;
+                $statusMsg = 'Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.';
+            }
+            if(!empty($uploadedFile) && file_exists($uploadedFile)){
+                        // Headers for attachment 
+                        $headers = 'From: ' . $email . "\r\n" .
+                        'Reply-To: ' . $email . "\r\n" .
+                        'MIME-Version: 1.0' . "\r\n" .
+                        "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
+                        
+                        // Preparing attachment
+                        if(is_file($uploadedFile)){
+                            $messageHTML .= "--{$mime_boundary}\n";
+                            $fp =    @fopen($uploadedFile,"rb");
+                            $data =  @fread($fp,filesize($uploadedFile));
+                            @fclose($fp);
+                            $data = chunk_split(base64_encode($data));
+                            $messageHTML .= "Content-Type: application/octet-stream; name=\"".basename($uploadedFile)."\"\n" . 
+                            "Content-Description: ".basename($uploadedFile)."\n" .
+                            "Content-Disposition: attachment;\n" . " filename=\"".basename($uploadedFile)."\"; size=".filesize($uploadedFile).";\n" . 
+                            "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+                        }
+                        
+                        $messageHTML .= "--{$mime_boundary}--";
+                        
+                        // Send email
+                        $sendEmail->setHeaderForAttachment($headers);
+                        $sendEmail->setMessage($messageHTML);
+                        $sendEmail->send();
+
+                        // Delete attachment file from the server
+                        @unlink($uploadedFile);
+            }   
+        }
+    }
+    else {
+        $sendEmail->send();
+    }
+    
+    
 } 
 else {
  // tell the user about error
