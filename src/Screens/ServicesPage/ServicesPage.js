@@ -229,7 +229,7 @@ export const servicesList = [
         url: "medicina-muncii",
         title: "Medicina Muncii",
         description:
-            "Asistență lunară prin intermediul Work Management Medical. Ne ocupăm de consilierea angajatorului privind adaptarea muncii la caracteristicile psiho-fiziologice ale angajatului și consultăm cu privire la fundamentarea strategiei de sănătate și securitate la locul de muncă.",
+            "Asistență prin intermediul Work Management Medical. Ne ocupăm de consilierea angajatorului privind adaptarea muncii la caracteristicile psiho-fiziologice ale angajatului și consultăm cu privire la fundamentarea strategiei de sănătate și securitate la locul de muncă.",
         img: MedicinaMuncii,
     },
 ];
