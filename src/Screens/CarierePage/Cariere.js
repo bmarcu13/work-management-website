@@ -28,10 +28,8 @@ export default function CarierePage() {
                 data: formData,
             }).then((res) => {
                 console.log(res);
-                // setSent("success");
+                setSent("success");
             });
-            // setSent("success");
-            // setSent("failed");
         } catch (erorr) {
             console.log(erorr);
             setSent("failed");
@@ -89,7 +87,7 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Subiect"
-                    name="messageSubject"
+                    name="position"
                 />
             </div>
             <div className="row">

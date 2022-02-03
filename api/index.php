@@ -12,6 +12,7 @@ $mime_boundary = "Multipart_Boundary_x{$semi_rand}x";
 
 $emailType = $_POST['type'];
 $messageHTML = "";
+$emailSubject = "";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -110,7 +111,7 @@ $offerRequestMessage = "
             <p class=\"info\">    <span>Companie: </span> $companyName </p>
             <p class=\"info\">    <span>Funcție: </span> $position</p>
         </div>
-        <h4 class=\"info important-info\"> <span>Subiect: $messageSubject</span></h4>
+        <p class=\"info important-info\"> <span>Subiect: </span>$messageSubject</h4>
         <p class=\"info important-info\"> <span>Conținutul mail-ului: </span><br><br> $messageBody </p>
     </body>
     </html>
@@ -156,17 +157,6 @@ $jobMessage = "
 </html>
 ";
 
-if ($emailType == 'contact') {
-    $messageHTML = $contactMessage;
-}
-else if ($emailType == 'offerRequest') {
-    $messageHTML = $offerRequestMessage;
-}
-else if($emailType == 'job') { 
-    $messageHTML = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
-                        "Content-Transfer-Encoding: 7bit\n\n" . $jobMessage . "\n\n";
-}
-
 if( empty($_POST['name']) && empty($_POST['email']) ) {
     echo json_encode(
         [
@@ -178,11 +168,24 @@ if( empty($_POST['name']) && empty($_POST['email']) ) {
 }
 
 if ($_POST){
-    //@important: Please change this before using
     http_response_code(200);
-    $subject = 'Contact from: ' . $_POST['name'];
+
+    if ($emailType == 'contact') {
+        $messageHTML = $contactMessage;
+        $emailSubject = "[SESIZARE]" . $name;
+    }
+    else if ($emailType == 'offerRequest') {
+        $messageHTML = $offerRequestMessage;
+        $emailSubject = "[CERERE OFERTĂ]" . $name;
+    }
+    else if($emailType == 'job') { 
+        $messageHTML = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                            "Content-Transfer-Encoding: 7bit\n\n" . $jobMessage . "\n\n";
+        $emailSubject = "[JOB]" . $name;
+    }
+
     $from = $_POST['email']; 
-    $sendEmail = new Sender($adminEmail, $from, $subject, $messageHTML);
+    $sendEmail = new Sender($adminEmail, $from, $emailSubject, $messageHTML);
     
 
     if ($emailType == 'job') {
@@ -252,7 +255,7 @@ if ($_POST){
     
 } 
 else {
- // tell the user about error
+ // Tell the user about error
  echo json_encode(
      [
         "sent" => false,
