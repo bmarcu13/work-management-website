@@ -6,7 +6,6 @@
     background-color: rgb(255, 255, 255);
     width: 100vw;
     min-width: 100%;
-    /* height: 100vh; */
 }
 
 .service-page-landing-container .svg-bg .cercc {
@@ -15,7 +14,6 @@
     min-height: 110vh;
     overflow-x: hidden;
     object-fit: cover;
-    object-position: 0px min(-2vh, -6vw);
 }
 
 .service-page-landing-container .svg-bg .cerct {
@@ -62,17 +60,9 @@
 
 .service-page-landing-container .hightlights-container {
     position: absolute;
-    bottom: calc(min(1vh, 1vw) * 15);
+    bottom: 20px;
     left: 0;
-    width: 80%;
-}
-
-.service-page-landing-container .title-container h1 {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-size: max(3vw, 4vh);
+    width: 90%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -99,13 +89,17 @@
     font-size: max(3vw, 4vh);
 }
 
-@media (max-width: 1100px) {
-    .service-page-landing-container .title-container {
-        width: 100%;
+@media (min-width: 1100px) {
+    .service-page-landing-container .title-container h1 {
+        font-size: 45px;
     }
 }
-
-/* .service-icon {
+@media (max-width: 600px) {
+    .service-page-landing-container .title-container h1 {
+        font-size: 30px;
+    }
+}
+.service-icon {
     color: rgb(255, 154, 2);
     margin-right: 5px;
 }
@@ -126,4 +120,4 @@
     border: 2px solid rgb(255, 197, 5);
     box-shadow: rgb(65, 60, 51) 2px 3px 5px;
     background-color: rgb(255, 197, 5);
-} */
+}

@@ -5,6 +5,7 @@ import ServiceLanding from "./ServiceLanding/ServiceLanding";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
 import "./IndividualServicePage.css";
+import Service3Highlights from "./Service3Highlights/Service3Highlights";
 
 import { servicesInfo } from "./Information/InfoService";
 
@@ -42,11 +43,7 @@ export default function IndividualServicePage(props) {
                     {formatText(information)}
                 </div>
                 <div>
-                    <img
-                        className="service_image"
-                        src={service_image}
-                        alt="poza-specifica-serviciului-cautat"
-                    ></img>
+                    <img className="service_image" src={service_image}></img>
                 </div>
             </div>
             {information2 && (
