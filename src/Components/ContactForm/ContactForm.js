@@ -5,11 +5,6 @@ import "./ContactForm.css";
 import { BsArrowReturnRight } from "react-icons/bs";
 
 export default function ContactForm() {
-    const [checked, setChecked] = useState(true);
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [tel, setTel] = useState("");
-    const [messageBody, setMessageBody] = useState("");
     const [sent, setSent] = useState("");
 
     const handleSend = async (event) => {
