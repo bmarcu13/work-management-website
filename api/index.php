@@ -40,15 +40,23 @@ if (isset($_POST['messageSubject'])) {
 $contactMessage = "<html>
     <head>
     <style>
-        .general-info{
-        width: auto;
-        height: auto;
-        background-color: rgb(202, 200, 200);
-        padding: 6px 10px;
-        width: 300px;
-        border-radius: 10px;
-        height: auto;
-        }   
+        .general-info {
+            width: auto;
+            height: auto;
+            margin-bottom: 10px;
+            width: 300px;
+            border: 1px solid rgb(214,214,214);
+            border-radius: 5px;
+            padding: 5px;
+            height: auto;
+            font-size: 14px;
+        }
+        .important-info {
+            font-size: 16px;
+        }
+        .general-info p {
+            margin: 5px;
+        }
         .info span{
             font-weight: bold;
         }
@@ -57,12 +65,11 @@ $contactMessage = "<html>
     <!-- form-ul de sesizari -->
     <body>
         <div class=\"general-info\">
-            <p><span>Nume: </span> $name </p>
-            <p><span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
-            <p><span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
+            <p class=\"info\"><span>Nume: </span> $name </p>
+            <p class=\"info\"><span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
+            <p class=\"info\"><span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
         </div>
-        <p> <span>Continuțul mail-ului:</span></p><br>
-        <p>$messageBody</p>
+        <p class=\"info important-info\"important-info> <span>Continuțul mail-ului:</span><br><br>$messageBody</p>
 
     </body>
     </html>";
@@ -72,32 +79,39 @@ $offerRequestMessage = "
     <head>
         <title>Mail de cerere oferta </title>
         <style>
-        .general-info{
+        .general-info {
             width: auto;
             height: auto;
-            background-color: rgb(202, 200, 200);
-            padding: 6px 10px;
+            margin-bottom: 10px;
             width: 300px;
-            border-radius: 10px;
-            height: auto; 
-        }
-        .info span{
-            font-weight: bold;
-
-        }
+            border: 1px solid rgb(214,214,214);
+            border-radius: 5px;
+            padding: 5px;
+            height: auto;
+            font-size: 14px;
+          }
+          .important-info {
+              font-size: 16px;
+          }
+          .general-info p {
+              margin: 5px;
+          }
+          .info span{
+              font-weight: bold;
+          }
         </style>
     </head>
     <!-- form-ul de sesizari -->
     <body>
         <div class=\"general-info\">
             <p class=\"info\">    <span>Nume: </span> $name </p>
-            <p class=\"info\">    <span>Companie: </span> $companyName </p>
-            <p class=\"info\">    <span>Funcție: </span> $position</p>
             <p class=\"info\">    <span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
             <p class=\"info\">    <span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
+            <p class=\"info\">    <span>Companie: </span> $companyName </p>
+            <p class=\"info\">    <span>Funcție: </span> $position</p>
         </div>
-        <h4 class=\"info\"> <span>Subiect: $messageSubject</span></h4>
-        <p class=\"info\"> <span>Conținutul mail-ului: </span> $messageBody </p><br>
+        <h4 class=\"info important-info\"> <span>Subiect: $messageSubject</span></h4>
+        <p class=\"info important-info\"> <span>Conținutul mail-ului: </span><br><br> $messageBody </p>
     </body>
     </html>
 ";
@@ -107,18 +121,25 @@ $jobMessage = "
 <head>
     <title>Mail pt aplicatie job </title>
     <style>
-    .general-info{
+    .general-info {
       width: auto;
       height: auto;
-      background-color: rgb(202, 200, 200);
-      padding: 6px 10px;
+      margin-bottom: 10px;
       width: 300px;
-      border-radius: 10px;
+      border: 1px solid rgb(214,214,214);
+      border-radius: 5px;
+      padding: 5px;
       height: auto;
+      font-size: 14px;
+    }
+    .important-info {
+        font-size: 16px;
+    }
+    .general-info p {
+        margin: 5px;
     }
     .info span{
         font-weight: bold;
-
     }
     </style>
 </head>
@@ -126,10 +147,11 @@ $jobMessage = "
     <div class=\"general-info\">
         <p class=\"info\">    <span>Nume: </span> $name </p>
         <p class=\"info\">    <span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
-        <p class=\"info\">    <span>Telefon: </span><a href=\"phone:$tel\">$tel</a> </p>
+        <p class=\"info\">    <span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
     </div>
-    <h4 class=\"info\"> <span>Poziția pentru care se aplică: </span>$position</h4>
-    <p class=\"info\"> <span>Conținutul mail-ului: </span> $messageBody </p><br>
+    <div style=\"padding: 5px;\">
+    <p class=\"info important-info\"> <span>Poziția pentru care se aplică: </span>$position</p>
+    <p class=\"info important-info\"> <span>Conținutul mail-ului:</span><br><br>$messageBody </p>
 </body>
 </html>
 ";
