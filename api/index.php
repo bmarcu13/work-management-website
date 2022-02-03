@@ -99,13 +99,71 @@ $offerRequestMessage = "
     </html>
 ";
 
+$jobMessage = "
+<html>
+<head>
+    <title>Mail pt aplicatie job </title>
+    <style>
+    .general-info{
+      width: auto;
+      height: auto;
+      background-color: rgb(202, 200, 200);
+      padding: 6px 10px;
+      width: 300px;
+      border-radius: 10px;
+      height: auto;
+    }
+    .info span{
+        font-weight: bold;
+
+    }
+    </style>
+</head>
+<body>
+    <div class=\"general-info\">
+        <p class=\"info\">    <span>Nume: </span> $name </p>
+        <p class=\"info\">    <span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
+        <p class=\"info\">    <span>Telefon: </span><a href=\"phone:$tel\">$tel</a> </p>
+    </div>
+    <h4 class=\"info\"> <span>Poziția pentru care se aplică: </span>$position</h4>
+    <p class=\"info\"> <span>Conținutul mail-ului: </span> $messageBody </p><br>
+</body>
+</html>
+";
+
 if ($emailType == 'contact') {
     $messageHTML = $contactMessage;
 }
 else if ($emailType == 'offerRequest') {
     $messageHTML = $offerRequestMessage;
 }
-else {
+else if($emailType == 'job') {
+    $messageHTML = $jobMessage;
+
+    //Checking attachment
+    if(!empty($_FILES["cv"]["name"])){
+                
+        // File path config
+        $targetDir = "uploads/";
+        $fileName = basename($_FILES["attachment"]["name"]);
+        $targetFilePath = $targetDir . $fileName;
+        $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+        
+        // Allow certain file formats
+        $allowTypes = array('pdf', 'doc', 'docx');
+        if(in_array($fileType, $allowTypes)){
+            // Upload file to the server
+            if(move_uploaded_file($_FILES["attachment"]["tmp_name"], $targetFilePath)){
+                $uploadedFile = $targetFilePath;
+            }else{
+                $uploadStatus = 0;
+                $statusMsg = "Sorry, there was an error uploading your file.";
+            }
+        }else{
+            $uploadStatus = 0;
+            $statusMsg = 'Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.';
+        }
+    }
 }
 
 if( empty($_POST['name']) && empty($_POST['email']) ) {
@@ -126,7 +184,8 @@ if ($_POST){
 
     $sendEmail = new Sender($adminEmail, $from, $subject, $messageHTML);
     $sendEmail->send();
-} else {
+} 
+else {
  // tell the user about error
  echo json_encode(
      [

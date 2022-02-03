@@ -8,38 +8,31 @@ import axios from "axios";
 import map from "../../img/romania_judete.png";
 
 export default function CarierePage() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [tel, setTel] = useState("");
-    const [position, setPosition] = useState("");
-    const [messageBody, setMessageBody] = useState("");
-    const [attachment, setAttachment] = useState(null);
     const [sent, setSent] = useState("");
 
     const handleSend = async (event) => {
         event.preventDefault();
-        let formData = new FormData();
-        formData.append("id", "job");
-        formData.append("name", name);
-        formData.append("position", position);
-        formData.append("email", email);
-        formData.append("tel", tel);
-        formData.append("messageBody", messageBody);
-        formData.append("file", attachment);
-        formData.append("fileName", attachment.name);
+
+        let formData = new FormData(event.target);
+        formData.append("type", "job");
+        formData.append("type", "contact");
+
+        for (let [a, b] of formData.entries()) {
+            console.log(a, b);
+        }
 
         try {
-            // const res = await axios
-            //     .post(process.env.REACT_APP_API, formData, {
-            //         headers: {
-            //             "content-type": "multipart/form-data",
-            //         },
-            //     })
-            //     .then(() => {
-            //         console.log(formData);
-            //     });
+            axios({
+                method: "post",
+                url: `${process.env.REACT_APP_API}`,
+                headers: { "content-type": "multipart/form-data" },
+                data: formData,
+            }).then((res) => {
+                console.log(res);
+                // setSent("success");
+            });
             // setSent("success");
-            setSent("failed");
+            // setSent("failed");
         } catch (erorr) {
             console.log(erorr);
             setSent("failed");
@@ -56,12 +49,10 @@ export default function CarierePage() {
                 </p>
                 <input
                     className="cerere-oferta-input"
-                    type="text"
+                    type="name"
                     placeholder="Nume și Prenume"
                     required
-                    onChange={(e) => {
-                        setName(e.target.value);
-                    }}
+                    name="name"
                 />
             </div>
             <div className="special-inputs">
@@ -72,11 +63,9 @@ export default function CarierePage() {
                     </p>
                     <input
                         className="cerere-oferta-input"
-                        type="text"
+                        type="email"
                         placeholder="Email"
-                        onChange={(e) => {
-                            setEmail(e.target.value);
-                        }}
+                        name="email"
                     />
                 </div>
                 <div>
@@ -86,11 +75,9 @@ export default function CarierePage() {
                     </p>
                     <input
                         className="cerere-oferta-input"
-                        type="text"
+                        type="phone"
                         placeholder="Telefon"
-                        onChange={(e) => {
-                            setTel(e.target.value);
-                        }}
+                        name="phone"
                     />
                 </div>
             </div>
@@ -103,9 +90,7 @@ export default function CarierePage() {
                     className="cerere-oferta-input"
                     type="text"
                     placeholder="Subiect"
-                    onChange={(e) => {
-                        setPosition(e.target.value);
-                    }}
+                    name="messageSubject"
                 />
             </div>
             <div className="row">
@@ -119,9 +104,7 @@ export default function CarierePage() {
                     rows="10"
                     placeholder="Scrie aici motivele pentru care te potrivesti echipei noastre."
                     required
-                    onChange={(e) => {
-                        setMessageBody(e.target.value);
-                    }}
+                    name="messageBody"
                 />
             </div>
             <p className="attach-text">
@@ -133,12 +116,8 @@ export default function CarierePage() {
                 required
                 type="file"
                 style={{ alignSelf: "center" }}
-                id="avatar"
-                name="avatar"
+                name="cv"
                 accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
-                onChange={(e) => {
-                    setAttachment(e.target.files[0]);
-                }}
             ></input>
             <p>
                 {" "}
