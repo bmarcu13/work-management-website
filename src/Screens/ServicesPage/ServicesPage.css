@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap"); */
+
 .services {
     width: 100%;
     padding-bottom: 40px;
@@ -16,6 +18,9 @@
     border-bottom-right-radius: 15px;
     top: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .services .header img {
@@ -23,6 +28,15 @@
     left: -150px;
     bottom: -230px;
     transform: rotate(30deg);
+}
+
+.services .header h1 {
+    position: relative;
+    color: white;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
 }
 
 .scrollDownAnim {

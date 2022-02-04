@@ -143,6 +143,7 @@ export default function ServicesPage() {
             <div className="services">
                 <div className={headerClasses}>
                     <img src={headerWaves}></img>
+                    <h1>Servicii prestate</h1>
                 </div>
                 <div className="grid-container">
                     {servicesList.map((item, index) => {
