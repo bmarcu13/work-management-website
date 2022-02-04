@@ -14,7 +14,7 @@ class Sender
 
     public function __construct($sendTo, $sendFrom = null, $subject, $message)
     {
-        $this->sendTo = "bogdanmarcu2003@gmail.com";
+        $this->sendTo = $sendTo;
         $this->sendFrom = ($sendFrom) ? $sendFrom : 'hey@test.com';
         $this->subject = $subject;
         $this->message = $message;
@@ -22,10 +22,10 @@ class Sender
             'Reply-To: '.$this->getFrom() . "\r\n" .
             'X-Mailer: PHP/' . phpversion() . "\r\n" .
             'MIME-Version: 1.0' . "\r\n" .
-            'Content-type: text/html; charset=iso-8859-1';
+            'Content-type: text/html; charset=utf-8';
     }
 
-    public function setTo($email, $name) {
+    public function setTo($email) {
         return $this->sendTo = $email;
     }
 

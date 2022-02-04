@@ -13,6 +13,7 @@ $mime_boundary = "Multipart_Boundary_x{$semi_rand}x";
 $emailType = $_POST['type'];
 $messageHTML = "";
 $emailSubject = "";
+$emailDestination = "";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -70,7 +71,7 @@ $contactMessage = "<html>
             <p class=\"info\"><span> E-mail: </span><a href=\"mailto: $email\"> $email</a> </p>
             <p class=\"info\"><span>Telefon: </span><a href=\"tel:$phone\">$phone</a> </p>
         </div>
-        <p class=\"info important-info\"important-info> <span>Continuțul mail-ului:</span><br><br>$messageBody</p>
+        <p class=\"info important-info\"important-info> <span>Conținutul mail-ului:</span><br><br>$messageBody</p>
 
     </body>
     </html>";
@@ -173,19 +174,23 @@ if ($_POST){
     if ($emailType == 'contact') {
         $messageHTML = $contactMessage;
         $emailSubject = "[SESIZARE]" . $name;
+        $emailDestination = $contactEmailDestination;
     }
     else if ($emailType == 'offerRequest') {
         $messageHTML = $offerRequestMessage;
         $emailSubject = "[CERERE OFERTĂ]" . $name;
+        $emailDestination = $offerRequestEmailDestination;
     }
     else if($emailType == 'job') { 
         $messageHTML = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
                             "Content-Transfer-Encoding: 7bit\n\n" . $jobMessage . "\n\n";
         $emailSubject = "[JOB]" . $name;
+        $emailDestination = $jobEmailDestination;
     }
+    // $emailDestination = $testMailDest;
 
     $from = $_POST['email']; 
-    $sendEmail = new Sender($adminEmail, $from, $emailSubject, $messageHTML);
+    $sendEmail = new Sender($emailDestination, $from, $emailSubject, $messageHTML);
     
 
     if ($emailType == 'job') {
