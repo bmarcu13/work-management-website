@@ -21,10 +21,18 @@ import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import Footer from "../../Components/Footer/Footer";
 
+let prevY = 0;
+let headerState = null;
+let cardsState = null;
+
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
-    let prevY = 0;
-    let triggerZone = null;
+
+    const HEADER_STATE_HIDDEN = "HEADER_STATE_HIDDEN";
+    const HEADER_STATE_SHOWN = "HEADER_STATE_SHOWN";
+    const CARDS_STATE_FLOATING = "CARDS_STATE_FLOATING";
+    const CARDS_STATE_FLAT = "CARDS_STATE_FLAT";
+
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -39,20 +47,26 @@ export default function ServicesPage() {
     function handleScrollAnimation() {
         if (prevY < window.scrollY) {
             //Scrolling down
-            prevY = window.scrollY;
-            if (window.scrollY >= 100) {
+
+            if (window.scrollY >= 100 && headerState == HEADER_STATE_SHOWN) {
                 animateHeader("down");
+                headerState = HEADER_STATE_HIDDEN;
             }
-            if (window.scrollY >= 20) {
+            if (window.scrollY >= 20 && cardsState == CARDS_STATE_FLAT) {
                 animateCards("down");
+                cardsState = CARDS_STATE_FLOATING;
             }
+            prevY = window.scrollY;
         } else if (prevY > window.scrollY) {
             //Scrolling up
-            if (window.scrollY < 100) {
+
+            if (window.scrollY < 100 && headerState == HEADER_STATE_HIDDEN) {
                 animateHeader("up");
+                headerState = HEADER_STATE_SHOWN;
             }
-            if (window.scrollY < 20) {
+            if (window.scrollY < 20 && cardsState == CARDS_STATE_FLOATING) {
                 animateCards("up");
+                cardsState = CARDS_STATE_FLAT;
             }
             prevY = window.scrollY;
         }
@@ -87,9 +101,19 @@ export default function ServicesPage() {
         }
     }
 
+    function calibrateAnimTriggers() {
+        if (window.scrollY >= 150) {
+            headerState = HEADER_STATE_HIDDEN;
+            cardsState = CARDS_STATE_FLOATING;
+        } else {
+            headerState = HEADER_STATE_SHOWN;
+            cardsState = CARDS_STATE_FLAT;
+        }
+    }
+
     useEffect(() => {
-        triggerZone = document.getElementsByClassName("grid-container")[0];
-        observer.observe(document.querySelector(".grid-item-container"));
+        // observer.observe(document.querySelector(".grid-item-container"));
+        calibrateAnimTriggers();
         window.onscroll = handleScrollAnimation;
     });
 
