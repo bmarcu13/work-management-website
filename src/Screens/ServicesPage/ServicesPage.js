@@ -1,6 +1,4 @@
-import React from "react";
-
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link, useRouteMatch } from "react-router-dom";
 
@@ -23,26 +21,76 @@ import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import Footer from "../../Components/Footer/Footer";
 
-let scrolled = false;
-
 export default function ServicesPage() {
     const [animationClass, setAnimationClass] = useState("grid-item-container");
-
+    let prevY = 0;
+    let triggerZone = null;
     useEffect(() => {
         window.scrollTo(0, 0);
     });
 
     let observer = new IntersectionObserver((entries) => {
-        console.log(entries);
         if (entries[0].isIntersecting) {
-            setAnimationClass("grid-item-container fadeInDownCustom");
+            // setAnimationClass("grid-item-container fadeInDownCustom");
         } else {
         }
     });
 
+    function handleScrollAnimation() {
+        if (prevY < window.scrollY) {
+            //Scrolling down
+            prevY = window.scrollY;
+            if (window.scrollY >= 100) {
+                animateHeader("down");
+            }
+            if (window.scrollY >= 20) {
+                animateCards("down");
+            }
+        } else if (prevY > window.scrollY) {
+            //Scrolling up
+            if (window.scrollY < 100) {
+                animateHeader("up");
+            }
+            if (window.scrollY < 20) {
+                animateCards("up");
+            }
+            prevY = window.scrollY;
+        }
+    }
+
+    function animateCards(type) {
+        const gridElements = document.getElementsByClassName(
+            "grid-item-container"
+        );
+        if (type == "down") {
+            for (let element of gridElements) {
+                element.classList.remove("removeCardPerspective");
+                element.classList.add("addCardPerspective");
+            }
+        } else {
+            for (let element of gridElements) {
+                element.classList.remove("addCardPerspective");
+                element.classList.add("removeCardPerspective");
+            }
+        }
+    }
+
+    function animateHeader(type) {
+        const header = document.getElementsByClassName("header")[0];
+
+        if (type == "down") {
+            header.classList.remove("scrollUpAnim");
+            header.classList.add("scrollDownAnim");
+        } else {
+            header.classList.remove("scrollDownAnim");
+            header.classList.add("scrollUpAnim");
+        }
+    }
+
     useEffect(() => {
+        triggerZone = document.getElementsByClassName("grid-container")[0];
         observer.observe(document.querySelector(".grid-item-container"));
-        // window.scrollTo(0, 0);
+        window.onscroll = handleScrollAnimation;
     });
 
     let { path, url } = useRouteMatch();
@@ -51,10 +99,10 @@ export default function ServicesPage() {
         return (
             <div
                 className={animationClass}
-                style={{
-                    animationDelay: 0.3 * index + "s",
-                    animationDuration: "3s",
-                }}
+                // style={{
+                //     animationDelay: 0.3 * index + "s",
+                //     animationDuration: "3s",
+                // }}
             >
                 <div className="img-container">
                     <img src={item.img} alt={item.url}></img>
@@ -88,33 +136,7 @@ export default function ServicesPage() {
     return (
         <>
             <div className="services">
-                <div
-                    className="bg"
-                    style={{
-                        position: "absolute",
-                        width: "100%",
-                        height: "calc(100% - 300px)",
-                        top: "300px",
-                        left: 0,
-                        filter: "blur(1px)",
-                    }}
-                ></div>
-                <div className="divider">
-                    <div
-                        style={{
-                            backgroundColor: "black",
-                            position: "absolute",
-                            opacity: ".4",
-                            height: "300px",
-                            width: "100%",
-                        }}
-                    ></div>
-                    <h1 style={{ position: "absolute" }}>
-                        Serviciile Noastre
-                        <hr></hr>
-                    </h1>
-                </div>
-
+                <div className="header"></div>
                 <div className="grid-container">
                     {servicesList.map((item, index) => {
                         return gridItemComponent(item, index);
