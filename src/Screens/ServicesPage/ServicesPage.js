@@ -21,21 +21,17 @@ import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
 import Footer from "../../Components/Footer/Footer";
 
-let prevY = 0;
-let headerState = null;
-let cardsState = null;
-
 export default function ServicesPage() {
-    const [animationClass, setAnimationClass] = useState("grid-item-container");
+    const [headerClasses, setHeaderClasses] = useState("header");
+    const [cardClasses, setCardClasses] = useState("grid-item-container");
+
+    let headerState = null;
+    let cardsState = null;
 
     const HEADER_STATE_HIDDEN = "HEADER_STATE_HIDDEN";
     const HEADER_STATE_SHOWN = "HEADER_STATE_SHOWN";
     const CARDS_STATE_FLOATING = "CARDS_STATE_FLOATING";
     const CARDS_STATE_FLAT = "CARDS_STATE_FLAT";
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
 
     let observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
@@ -45,6 +41,7 @@ export default function ServicesPage() {
     });
 
     function handleScrollAnimation() {
+        console.log(prevY);
         if (prevY < window.scrollY) {
             //Scrolling down
 
@@ -73,31 +70,18 @@ export default function ServicesPage() {
     }
 
     function animateCards(type) {
-        const gridElements = document.getElementsByClassName(
-            "grid-item-container"
-        );
         if (type == "down") {
-            for (let element of gridElements) {
-                element.classList.remove("removeCardPerspective");
-                element.classList.add("addCardPerspective");
-            }
+            setCardClasses("grid-item-container addCardPerspective");
         } else {
-            for (let element of gridElements) {
-                element.classList.remove("addCardPerspective");
-                element.classList.add("removeCardPerspective");
-            }
+            setCardClasses("grid-item-container removeCardPerspective");
         }
     }
 
     function animateHeader(type) {
-        const header = document.getElementsByClassName("header")[0];
-
         if (type == "down") {
-            header.classList.remove("scrollUpAnim");
-            header.classList.add("scrollDownAnim");
+            setHeaderClasses("header scrollDownAnim");
         } else {
-            header.classList.remove("scrollDownAnim");
-            header.classList.add("scrollUpAnim");
+            setHeaderClasses("header scrollUpAnim");
         }
     }
 
@@ -121,13 +105,7 @@ export default function ServicesPage() {
 
     const gridItemComponent = (item, index) => {
         return (
-            <div
-                className={animationClass}
-                // style={{
-                //     animationDelay: 0.3 * index + "s",
-                //     animationDuration: "3s",
-                // }}
-            >
+            <div className={cardClasses}>
                 <div className="img-container">
                     <img src={item.img} alt={item.url}></img>
                 </div>
@@ -160,7 +138,7 @@ export default function ServicesPage() {
     return (
         <>
             <div className="services">
-                <div className="header"></div>
+                <div className={headerClasses}></div>
                 <div className="grid-container">
                     {servicesList.map((item, index) => {
                         return gridItemComponent(item, index);
