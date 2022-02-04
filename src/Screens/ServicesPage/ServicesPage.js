@@ -25,6 +25,7 @@ export default function ServicesPage() {
     const [headerClasses, setHeaderClasses] = useState("header");
     const [cardClasses, setCardClasses] = useState("grid-item-container");
 
+    let prevY = 0;
     let headerState = null;
     let cardsState = null;
 
