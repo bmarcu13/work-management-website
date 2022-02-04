@@ -35,33 +35,33 @@
         right: 0;
     }
     50% {
-        width: calc(100% - 60px);
-        left: 30px;
-        right: 30px;
+        transform: scale(0.9);
+        left: auto;
+        right: auto;
         top: 20px;
         border-radius: 10px;
         box-shadow: -1px 1px 28px -4px rgba(0, 0, 0, 0.51);
     }
     100% {
+        transform: scale(0.9);
         top: -20%;
-        width: calc(100% - 60px);
-        left: 30px;
-        right: 30px;
+        left: auto;
+        right: auto;
         box-shadow: -1px 1px 28px -4px rgba(0, 0, 0, 0.51);
     }
 }
 
 @keyframes onScrollUpHeaderAnimation {
     0% {
+        transform: scale(0.9);
         top: -20%;
-        width: calc(100% - 60px);
-        left: 30px;
-        right: 30px;
+        left: auto;
+        right: auto;
     }
     50% {
-        width: calc(100% - 60px);
-        left: 30px;
-        right: 30px;
+        transform: scale(0.9);
+        left: auto;
+        right: auto;
         top: 20px;
         border-radius: 10px;
     }
