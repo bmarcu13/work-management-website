@@ -4,7 +4,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import "./ContactSection.css";
 
 import { SiTheconversation } from "react-icons/si";
-import car from "../../img/blob_car.png";
+import map from "../../img/romania_judete_tr.png";
 
 export default function ContactSection() {
     return (
@@ -24,7 +24,7 @@ export default function ContactSection() {
             </div>
             <div className="form-contact-section">
                 <div className="car-image">
-                    <img src={car} alt="masina-work-management"></img>
+                    <img src={map} alt="masina-work-management"></img>
                 </div>
                 <div className="wrapper">
                     <div className="title">
