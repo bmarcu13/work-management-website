@@ -34,9 +34,10 @@
     position: relative;
     color: white;
     vertical-align: middle;
-    font-weight: bolder;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 44px;
     font-family: "Raleway", sans-serif;
+    text-shadow: 2px 2px 8px rgb(0 0 0);
 }
 
 .scrollDownAnim {

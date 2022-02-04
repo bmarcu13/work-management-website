@@ -30,8 +30,7 @@ export default function Footer() {
                         ></img>
                         <br></br>
                         <p style={{ color: "white", fontSize: "18px" }}>
-                            Servicii de securitate și sănătate în muncă și de
-                            protecție a mediului.
+                            Servicii de securitate și sănătate în muncă (SSM), SU, RSVTI și MEDIU.
                         </p>
                         <hr
                             style={{
@@ -159,12 +158,12 @@ export default function Footer() {
                             Ștefana Tănase<br></br>
                             <a href="tel: 0730.709.723">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
-                                0730.709.723
+                                (0730) 709 723
                             </a>
                             <br></br>
                             <a href="tel: 021/335.01.02">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
-                                021/335.01.02
+                                (0213) 350 102
                             </a>
                             <br></br>
                             <a href="mailto:stefana.tanase@workmanagement.ro">
@@ -180,7 +179,7 @@ export default function Footer() {
                             Alina Mihai<br></br>
                             <a href="tel: 0728138235">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
-                                0728138235
+                                (0728) 138 235
                             </a>
                             <br></br>
                             <a href="mailto:alina.mihai@workmanagement.ro">
@@ -193,7 +192,7 @@ export default function Footer() {
                                 className="footer-icon"
                                 size={20}
                             ></BsPersonCircle>{" "}
-                            Roșu Nicoleta<br></br>
+                            Nicoleta Roșu<br></br>
                             <a href="tel: 0736602115">
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 (0736) 602 115

@@ -21,6 +21,7 @@ import ResurseUmane from "../../img/services/resurse-umane.jpg";
 import Audit from "../../img/services/audit.jpg";
 import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
+import safety from "../../img/safety-first.png";
 import Footer from "../../Components/Footer/Footer";
 
 export default function ServicesPage() {
@@ -143,7 +144,7 @@ export default function ServicesPage() {
             <div className="services">
                 <div className={headerClasses}>
                     <img src={headerWaves}></img>
-                    <h1>Servicii prestate</h1>
+                    <h1>Servicii prestate </h1>
                 </div>
                 <div className="grid-container">
                     {servicesList.map((item, index) => {
