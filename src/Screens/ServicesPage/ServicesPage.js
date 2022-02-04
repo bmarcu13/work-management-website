@@ -6,6 +6,8 @@ import "./ServicesPage.css";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
+import headerWaves from "../../../src/img/layered-waves-services.svg";
+
 import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
 import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
 import SituatiiUrgenta from "../../img/services/situatii-urgenta.jpg";
@@ -139,7 +141,9 @@ export default function ServicesPage() {
     return (
         <>
             <div className="services">
-                <div className={headerClasses}></div>
+                <div className={headerClasses}>
+                    <img src={headerWaves}></img>
+                </div>
                 <div className="grid-container">
                     {servicesList.map((item, index) => {
                         return gridItemComponent(item, index);
