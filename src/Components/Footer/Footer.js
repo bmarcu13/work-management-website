@@ -80,60 +80,64 @@ export default function Footer() {
                             }}
                         ></hr>
                         <ul className="links-list">
-                            
-                                <li onClick={scrollToTop}><Link to={"/"} style={{ textDecoration: "none" }}>
+                            <li onClick={scrollToTop}>
+                                <Link
+                                    to={"/"}
+                                    style={{ textDecoration: "none" }}
+                                >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
-                                    Acasă</Link>
-                                </li>
-                                <li onClick={scrollToTop}>
-                                    <Link
+                                    Acasă
+                                </Link>
+                            </li>
+                            <li onClick={scrollToTop}>
+                                <Link
                                     to={"/servicii"}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Toate Serviciile
-                                    </Link>
-                                </li>
-                    
-                                <li onClick={scrollToTop}>
-                                    <Link
+                                </Link>
+                            </li>
+
+                            <li onClick={scrollToTop}>
+                                <Link
                                     to={"/portofoliu"}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Portofoliu Clienți
-                                    </Link>
-                                </li>
-                         
-                                <li onClick={scrollToTop}> 
-                                    <Link
+                                </Link>
+                            </li>
+
+                            <li onClick={scrollToTop}>
+                                <Link
                                     to={"/cerere-oferta"}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cerere Ofertă
-                                    </Link>
-                                </li>
-                           
-                                <li onClick={scrollToTop}>
-                                    <Link
+                                </Link>
+                            </li>
+
+                            <li onClick={scrollToTop}>
+                                <Link
                                     to={"/cariere"}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cariere
-                                    </Link>
-                                </li>
-                        
-                                <li onClick={scrollToTop}>
-                                    <Link
+                                </Link>
+                            </li>
+
+                            <li onClick={scrollToTop}>
+                                <Link
                                     to={"/contact"}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Contact
-                                    </Link>
-                                </li>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="footer footer-right-container">
@@ -198,11 +202,11 @@ export default function Footer() {
                                 <FiPhoneCall className="footer-icon"></FiPhoneCall>{" "}
                                 (0736) 602 115
                             </a>
-                            <br></br><a href="mailto:nicoleta.rosu@workmanagement.ro">
+                            <br></br>
+                            <a href="mailto:nicoleta.rosu@workmanagement.ro">
                                 <FiMail className="footer-icon"></FiMail>{" "}
                                 nicoleta.rosu@workmanagement.ro
                             </a>
-
                         </p>
                         <div
                             style={{
@@ -255,7 +259,7 @@ export default function Footer() {
                         </div>
                     </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
-                        Website created by Marcu Bogdan &amp; Petruș Cătălina
+                        Website created by Bogdan Marcu &amp;Cătălina Petruș
                     </div>
                 </div>
             </div>
