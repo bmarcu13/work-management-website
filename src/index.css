@@ -27,6 +27,8 @@ h4,
 h2,
 h1,
 li,
-p {
+p,
+input,
+textarea {
     font-family: "Raleway", sans-serif;
 }

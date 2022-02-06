@@ -21,7 +21,6 @@ import ResurseUmane from "../../img/services/resurse-umane.jpg";
 import Audit from "../../img/services/audit.jpg";
 import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
 import FormareProfesionala from "../../img/services/formare-profesionala.png";
-import safety from "../../img/safety-first.png";
 import Footer from "../../Components/Footer/Footer";
 
 export default function ServicesPage() {
