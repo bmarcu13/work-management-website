@@ -174,20 +174,20 @@ if ($_POST){
     if ($emailType == 'contact') {
         $messageHTML = $contactMessage;
         $emailSubject = "[SESIZARE]" . $name;
-        // $emailDestination = $contactEmailDestination;
+        $emailDestination = $contactEmailDestination;
     }
     else if ($emailType == 'offerRequest') {
         $messageHTML = $offerRequestMessage;
         $emailSubject = "[CERERE OFERTĂ]" . $name;
-        // $emailDestination = $offerRequestEmailDestination;
+        $emailDestination = $offerRequestEmailDestination;
     }
     else if($emailType == 'job') { 
         $messageHTML = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
                             "Content-Transfer-Encoding: 7bit\n\n" . $jobMessage . "\n\n";
         $emailSubject = "[JOB]" . $name;
-        // $emailDestination = $jobEmailDestination;
+        $emailDestination = $jobEmailDestination;
     }
-    $emailDestination = $testMailDest;
+    // $emailDestination = $testMailDest;
 
     $from = $_POST['email']; 
     $sendEmail = new Sender($emailDestination, $from, $emailSubject, $messageHTML);
