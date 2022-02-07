@@ -167,6 +167,7 @@ export default function ContactPage() {
                 </p>
             </div>
             <div className="map-conatier">{mapComponent()}</div>
+            <Footer></Footer>
         </div>
     );
 }

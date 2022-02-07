@@ -258,7 +258,7 @@ export default function Footer() {
                         </div>
                     </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
-                        Website created by Bogdan Marcu &amp; Cătălina Petruș
+                        Website created by <a href="https://www.linkedin.com/in/bogdan-marcu-0799131a7/">Bogdan Marcu</a> &amp; Cătălina Petruș
                     </div>
                 </div>
             </div>
