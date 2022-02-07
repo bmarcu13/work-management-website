@@ -91,7 +91,7 @@ export default function LandingSection() {
                     <h3>
                         Lasă totul pe mâna experților noștri, care te vor asista
                         pe toată durata colaborării și vor avea grijă ca
-                        afacerea ta să ramână în siguranță !
+                        afacerea ta să rămână în siguranță !
                     </h3>
                     {!mobileViewEnabled && buttonsJsx}
                 </div>

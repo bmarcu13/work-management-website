@@ -37,7 +37,7 @@ export default function ContactSection() {
                             ></SiTheconversation>
                         </h1>
                         <p style={{ fontSize: "20px" }}>
-                            Vrei să afli mai multe, să ne cunoști sau să faci o
+                            Vrei să aflii mai multe, să ne cunoști sau să faci o
                             sesizare? Suntem la un mail distanță.
                         </p>
                     </div>
