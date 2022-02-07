@@ -29,6 +29,7 @@ export default function ContactForm(params) {
                     );
                 })}
             </div>
+            <input type="submit" className="submit-btn" value="Trimite"></input>
         </form>
     );
 }

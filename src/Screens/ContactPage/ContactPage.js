@@ -124,6 +124,7 @@ export default function ContactPage() {
                 </div>
             </div>
             <div className="map-conatier">{mapComponent()}</div>
+            <div className="aditional-info"></div>
         </div>
     );
 }
