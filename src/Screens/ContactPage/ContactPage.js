@@ -7,7 +7,6 @@ import {
     BsPinMapFill,
     BsFillFileEarmarkCodeFill,
 } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
 import ContactSection from "../../Components/ContactSection/ContactSection";
@@ -16,191 +15,158 @@ import Footer from "../../Components/Footer/Footer";
 import StefanaTanase from "../../img/stefana_tanase.jpg";
 import NicoletaRosu from "../../img/nicoleta_rosu.jpg";
 import AlinaMihai from "../../img/alina_mihai.jpg";
+import ContactForm from "../../Components/v2/ContactForm/ContactForm";
+import TeamMemberCard from "../../Components/v2/TeamMemberCard/TeamMemberCard";
+import { CgSmileNone } from "react-icons/cg";
 
 export default function ContactPage() {
-    return (
-        <div className="contact-screen-component">
-            <div className="contact-header">
-                <div
-                    style={{
-                        backgroundColor: "black",
-                        top: "0",
-                        position: "absolute",
-                        opacity: ".4",
-                        height: "350px",
-                        width: "100%",
-                    }}
-                ></div>
-                <h2> Contact</h2>
-                <div class="custom-shape-divider-bottom-1634577933">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-                            class="shape-fill"
-                        ></path>
-                    </svg>
-                </div>
-            </div>
-            <div className="contact-first-container">
-                <div className="mapouter">
-                    <div
-                        class="gmap_canvas"
-                        style={{
-                            background: "none!important",
-                            height: "100%",
-                            width: "70%",
-                            marginRight: "auto",
-                            marginLeft: "auto",
-                        }}
-                    >
-                        <iframe
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                frameborder: "0",
-                                scrolling: "no",
-                            }}
-                            id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Bdul%20Regina%20Maria,nr%2025,%20%20Sector%204,%20Bucuresti&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        ></iframe>
-                    </div>
-                </div>
-                <div className="contact-infos">
-                    <p>
-                        <BsFillHouseFill
-                            size={25}
-                            style={{
-                                margin: "0px 7px ",
-                                color: "rgb(0, 61, 153)",
-                            }}
-                        ></BsFillHouseFill>
-                        Denumire: S.C. WORK MANAGEMENT S.R.L.
-                    </p>
-                    <p>
-                        <BsPinMapFill
-                            size={25}
-                            style={{
-                                margin: "0px 7px ",
-                                color: "rgb(0, 61, 153)",
-                            }}
-                        ></BsPinMapFill>
-                        Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
-                        București
-                    </p>
-                    <p>
-                        <AiOutlineFieldNumber
-                            size={25}
-                            style={{
-                                margin: "0px 7px ",
-                                color: "rgb(0, 61, 153)",
-                            }}
-                        ></AiOutlineFieldNumber>
-                        Nr. Reg. Com: J40 / 127 / 2007
-                    </p>
-                    <p>
-                        <BsFillFileEarmarkCodeFill
-                            size={25}
-                            style={{
-                                margin: "0px 7px ",
-                                color: "rgb(0, 90, 153)",
-                            }}
-                        ></BsFillFileEarmarkCodeFill>
-                        Cod fiscal: RO20363205
-                    </p>
-                </div>
-            </div>
-            <h1
+    const teamMembers = [
+        {
+            name: "Ștefana Tănase",
+            alt: "angajat-departament-ofertare",
+            photo: StefanaTanase,
+            position: "Departament ofertare",
+            tel: "+40730709723",
+            email: "stefana.tanase@workmanagement.ro",
+        },
+        {
+            name: "Alina Mihai",
+            alt: "angajat-departament-ofertare",
+            photo: AlinaMihai,
+            position: "Departament ofertare",
+            tel: "+40728138235",
+            email: "alina.mihai@workmanagement.ro",
+        },
+        {
+            name: "Nicoleta Roșu",
+            alt: "angajat-departament-consultanta-tehnica",
+            photo: NicoletaRosu,
+            position: "Departament consultanță",
+            tel: "0730.709.723",
+            email: "nicoleta.rosu@workmanagement.ro",
+        },
+    ];
+
+    const mapComponent = () => {
+        return (
+            <div
+                class="gmap_canvas"
                 style={{
-                    textAlign: "center",
-                    marginTop: "90px",
-                    marginBottom: "40px",
+                    background: "none!important",
+                    height: "350px",
+                    width: "100%",
+                    marginRight: "auto",
+                    marginLeft: "auto",
+                    border: "none",
+                    overflow: "hidden",
                 }}
             >
-                Colegii noștri sunt aici să raspundă întrebărilor tale!
-            </h1>
-            <div className="team-section">
-                <div className="team-member">
-                    <div className="our-team">
-                        <div className="pic">
-                            <img src={StefanaTanase} alt="angajat-departament-ofertare"></img>
-                        </div>
-                        <div class="team-content">
-                            <h3 className="name">Ștefana Tănase</h3>
-                            <h4 className="post">Departament Ofertare</h4>
-                            <span className="post"></span>
-                        </div>
-                        <ul className="social">
-                            <li>
-                                <a href="tel: 0730.709.723">
-                                    <FiPhoneCall></FiPhoneCall>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:stefana.tanase@workmanagement.ro">
-                                    <FiMail></FiMail>
-                                </a>
-                            </li>
-                        </ul>
+                <iframe
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        frameborder: "0",
+                        scrolling: "no",
+                    }}
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Bdul%20Regina%20Maria,nr%2025,%20%20Sector%204,%20Bucuresti&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+            </div>
+        );
+    };
+
+    return (
+        <div className="contact-page">
+            <div className="header">
+                <div className="first">
+                    <div className="title">
+                        <h1>
+                            Colegele noastre sunt aici să raspundă întrebărilor
+                            tale!
+                        </h1>
+                    </div>
+                    <div className="team">
+                        {teamMembers.map((info) => {
+                            return (
+                                <TeamMemberCard
+                                    name={info.name}
+                                    alt={info.alt}
+                                    photo={info.photo}
+                                    position={info.position}
+                                    tel={info.tel}
+                                    email={info.email}
+                                ></TeamMemberCard>
+                            );
+                        })}
                     </div>
                 </div>
-                <div className="team-member">
-                    <div className="our-team">
-                        <div className="pic">
-                            <img src={NicoletaRosu} alt="angajat-departament-consultanta-tehnica"></img>
-                        </div>
-                        <div className="team-content">
-                            <h3 className="name">Roșu Nicoleta </h3>
-                            <h4 className="post">
-                                Contactează-mă în cazul în care ai nevoie de
-                                consultanță tehnică!
-                            </h4>
-                        </div>
-                        <ul class="social">
-                            <li>
-                                <a href="tel: 0736602115">
-                                    <FiPhoneCall></FiPhoneCall>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:nicoleta.rosu@workmanagement.ro">
-                                    <FiMail></FiMail>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="team-member">
-                    <div className="our-team">
-                        <div className="pic">
-                            <img src={AlinaMihai} alt="angajat-departament-ofertare"></img>
-                        </div>
-                        <div className="team-content">
-                            <h3 className="name">Mihai Alina</h3>
-                            <h4 className="post">Departament Ofertare</h4>
-                            <span className="post"></span>
-                        </div>
-                        <ul className="social">
-                            <li>
-                                <a href="tel: 0728138235">
-                                    <FiPhoneCall></FiPhoneCall>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:alina.mihai@workmanagement.ro">
-                                    <FiMail></FiMail>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div className="second">
+                    <ContactForm
+                        fields={[
+                            { description: "Nume", name: "name", type: "text" },
+                            {
+                                description: "Email",
+                                name: "email",
+                                type: "email",
+                            },
+                            {
+                                description: "Telefon",
+                                name: "phone",
+                                type: "tel",
+                            },
+                            {
+                                description: "Mesaj",
+                                name: "messageBody",
+                                type: "messageField",
+                            },
+                        ]}
+                    ></ContactForm>
                 </div>
             </div>
-            <ContactSection></ContactSection>
-            <Footer></Footer>
+            <div className="aditional-info">
+                <p>
+                    <BsFillHouseFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></BsFillHouseFill>
+                    Denumire: S.C. WORK MANAGEMENT S.R.L.
+                </p>
+                <p>
+                    <BsPinMapFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></BsPinMapFill>
+                    Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
+                    București
+                </p>
+                <p>
+                    <AiOutlineFieldNumber
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></AiOutlineFieldNumber>
+                    Nr. Reg. Com: J40 / 127 / 2007
+                </p>
+                <p>
+                    <BsFillFileEarmarkCodeFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 90, 153)",
+                        }}
+                    ></BsFillFileEarmarkCodeFill>
+                    Cod fiscal: RO20363205
+                </p>
+            </div>
+            <div className="map-conatier">{mapComponent()}</div>
         </div>
     );
 }

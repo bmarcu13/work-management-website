@@ -1,9 +1,5 @@
 .contact__container {
-    display: block;
-    border-radius: 20px;
-    /* max-width: 330px; */
     background-color: rgba(255, 255, 255, 0);
-    height: fit-content;
 }
 
 .contact__container p {
