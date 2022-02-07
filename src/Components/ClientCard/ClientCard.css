@@ -1,29 +1,23 @@
-
-.client_card{
+.client-card {
     margin: 5px 5px;
     display: flex;
     align-content: center;
     align-self: center;
     padding: 4 4px;
     margin: auto;
-    width: 200px;
-    height: min-content;
-    /* border-style: groove;
+    width: 300px;
+    height: 150px;
+    background: white;
     border-radius: 10px;
-    box-shadow: grey 5px 3px; */
-    transition: width 1s;
-    
 }
-.client_card:hover{
-    cursor: pointer;
-    width: 220px;
-}
-.client_image{
+
+.client_image {
     padding-left: 10px;
     margin: auto;
     vertical-align: middle;
     width: 75%;
-   max-height: 75%;
+    max-height: 75%;
     align-self: center;
     object-fit: cover;
+    object-fit: contain;
 }

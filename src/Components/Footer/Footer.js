@@ -30,7 +30,8 @@ export default function Footer() {
                         ></img>
                         <br></br>
                         <p style={{ color: "white", fontSize: "18px" }}>
-                            Servicii de securitate și sănătate în muncă (SSM), SU, RSVTI și MEDIU.
+                            Servicii de securitate și sănătate în muncă (SSM),
+                            SU, RSVTI și MEDIU.
                         </p>
                         <hr
                             style={{
@@ -258,7 +259,15 @@ export default function Footer() {
                         </div>
                     </Link>
                     <div style={{ color: " rgb(168, 162, 162)" }}>
-                        Website created by <a href="https://www.linkedin.com/in/bogdan-marcu-0799131a7/">Bogdan Marcu</a> &amp; Cătălina Petruș
+                        Website created by{" "}
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/bogdan-marcu-0799131a7/"
+                        >
+                            Bogdan Marcu
+                        </a>{" "}
+                        &amp; Cătălina Petruș
                     </div>
                 </div>
             </div>
