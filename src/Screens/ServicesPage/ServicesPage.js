@@ -44,7 +44,6 @@ export default function ServicesPage() {
     });
 
     function handleScrollAnimation() {
-        console.log(prevY);
         if (prevY < window.scrollY) {
             //Scrolling down
 

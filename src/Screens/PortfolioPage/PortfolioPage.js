@@ -24,7 +24,6 @@ export default function PortfolioPage() {
     const CARDS_STATE_FLAT = "CARDS_STATE_FLAT";
 
     function handleScrollAnimation() {
-        console.log(prevY);
         if (prevY < window.scrollY) {
             //Scrolling down
 
