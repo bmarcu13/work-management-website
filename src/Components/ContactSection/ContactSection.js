@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../v2/ContactForm/ContactForm";
 
 import "./ContactSection.css";
 
@@ -22,28 +22,40 @@ export default function ContactSection() {
                     ></path>
                 </svg>
             </div>
-            <div className="form-contact-section">
+            <div className="form-contact-section" style={{ width: "100%" }}>
                 <div className="car-image">
                     <img src={map} alt="masina-work-management"></img>
                 </div>
-                <div className="wrapper">
-                    <div className="title">
-                        <h1 id="contact-form-title">
-                            {" "}
-                            SCRIE-NE!{" "}
-                            <SiTheconversation
-                                size={36}
-                                style={{ verticalAlign: "top" }}
-                            ></SiTheconversation>
-                        </h1>
-                        <p style={{ fontSize: "20px" }}>
-                            Vrei să afli mai multe, să ne cunoști sau să faci o
-                            sesizare? Suntem la un mail distanță.
-                        </p>
-                    </div>
-                    <ContactForm></ContactForm>
+                <div
+                    style={{
+                        flex: "1",
+                        display: "flex",
+                        justifyContent: "center",
+                    }}
+                >
+                    <ContactForm
+                        fields={[
+                            { description: "Nume", name: "name", type: "text" },
+                            {
+                                description: "Email",
+                                name: "email",
+                                type: "email",
+                            },
+                            {
+                                description: "Telefon",
+                                name: "phone",
+                                type: "tel",
+                            },
+                            {
+                                description: "Mesaj",
+                                name: "messageBody",
+                                type: "messageField",
+                            },
+                        ]}
+                    ></ContactForm>
                 </div>
             </div>
+
             <div class="custom-shape-divider-bottom-1635751933">
                 <svg
                     data-name="Layer 1"

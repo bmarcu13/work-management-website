@@ -1,4 +1,4 @@
-.formv2 {
+.formv2-container {
     position: relative;
     max-width: 500px;
     background-color: white;
@@ -7,6 +7,10 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px -5px black;
+}
+
+.formv2 {
+    max-width: 500px;
 }
 
 .formv2 .field {
@@ -50,6 +54,7 @@
     background-color: #e4e4e4;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
     padding: 0 10px;
     color: rgb(0, 54, 105);
     font-weight: 600;
@@ -57,10 +62,15 @@
 
 .formv2 .field .messageField {
     height: 150px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
     background-color: #e4e4e4;
     padding: 10px;
     font-weight: 600;
     color: rgb(0, 54, 105);
+    font-size: 16px;
 }
 
 .formv2 .submit-btn {

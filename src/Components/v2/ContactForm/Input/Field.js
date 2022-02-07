@@ -17,7 +17,7 @@ export default function Field(params) {
                 <textarea
                     className={params.type && "messageField"}
                     required
-                    name="name"
+                    name={params.identifier}
                 ></textarea>
             </div>
         );
@@ -31,7 +31,7 @@ export default function Field(params) {
                     style={{ marginLeft: "-3px", marginBottom: "3px" }}
                 ></CgAsterisk>
             </p>
-            <input required name="name"></input>
+            <input required name={params.identifier}></input>
         </div>
     );
 }

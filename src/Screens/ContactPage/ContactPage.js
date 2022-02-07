@@ -123,8 +123,50 @@ export default function ContactPage() {
                     ></ContactForm>
                 </div>
             </div>
+            <div className="aditional-info">
+                <p>
+                    <BsFillHouseFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></BsFillHouseFill>
+                    Denumire: S.C. WORK MANAGEMENT S.R.L.
+                </p>
+                <p>
+                    <BsPinMapFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></BsPinMapFill>
+                    Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
+                    București
+                </p>
+                <p>
+                    <AiOutlineFieldNumber
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 61, 153)",
+                        }}
+                    ></AiOutlineFieldNumber>
+                    Nr. Reg. Com: J40 / 127 / 2007
+                </p>
+                <p>
+                    <BsFillFileEarmarkCodeFill
+                        size={25}
+                        style={{
+                            margin: "0px 7px ",
+                            color: "rgb(0, 90, 153)",
+                        }}
+                    ></BsFillFileEarmarkCodeFill>
+                    Cod fiscal: RO20363205
+                </p>
+            </div>
             <div className="map-conatier">{mapComponent()}</div>
-            <div className="aditional-info"></div>
         </div>
     );
 }

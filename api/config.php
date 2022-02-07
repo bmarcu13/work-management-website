@@ -6,4 +6,4 @@ $jobEmailDestination = "george.chisiu@workmanagement.ro";
 $contactEmailDestination = "george.chisiu@workmanagement.ro,stefana.tanase@workmanagement.ro";
 $offerRequestEmailDestination = "stefana.tanase@workmanagement.ro,alina.mihai@workmanagement.ro";
 
-$testMailDest = "siteweb@workmanagement.ro,bogdanmarcu2003@gmail.com";
+$testMailDest = "bogdanmarcu2003@gmail.com";
