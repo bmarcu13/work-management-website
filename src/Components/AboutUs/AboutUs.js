@@ -35,7 +35,7 @@ export default function AboutUs() {
                     ></RiDoubleQuotesL>
                     <h3>
                         Celor care spun că securitatea în muncă costă, le-am
-                        spune că lipsa acesteia este si mai costisitoare.
+                        spune că lipsa acesteia este și mai costisitoare.
                     </h3>
                     <RiDoubleQuotesL
                         className="icon"

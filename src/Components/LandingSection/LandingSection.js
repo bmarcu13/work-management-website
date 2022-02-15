@@ -86,7 +86,7 @@ export default function LandingSection() {
                         angajaților tăi.
                     </h1>
                     <h3>
-                        Asigurăm toată gama de servicii din domeniile: SSM, SU, RSVTI și MEDIU, la nivel național, fără sucontractori!
+                        Asigurăm toată gama de servicii din domeniile: SSM, SU, RSVTI și MEDIU, la nivel național, fără subcontractori!
                     </h3>
                     <h3>
                         Lasă totul pe mâna experților noștri, care te vor asista
