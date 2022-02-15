@@ -180,7 +180,7 @@ export const servicesInfo = [
             {
                 icon: <MdAttachMoney size={40}></MdAttachMoney>,
                 name: "Atenție!",
-                text: "Nerespectarea prevederilor art. 15 se sancționează cu amendă de la 30.000 lei la 40.000 lei",
+                text: "Nerespectarea prevederilor Art. 15 din Legea 64/2008 se sancționează cu amendă de la 30.000 lei la 40.000 lei",
             },
             {
                 icon: <AiOutlineFileProtect size={40}></AiOutlineFileProtect>,
