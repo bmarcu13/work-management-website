@@ -267,7 +267,13 @@ export default function Footer() {
                         >
                             Bogdan Marcu
                         </a>{" "}
-                        &amp; Cătălina Petruș
+                        &amp;
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/c%C4%83t%C4%83lina-petru%C8%99-4826a2232/"
+                        > Cătălina Petruș
+                        </a>
                     </div>
                 </div>
             </div>

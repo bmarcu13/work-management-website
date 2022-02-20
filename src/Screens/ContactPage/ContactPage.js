@@ -26,7 +26,7 @@ export default function ContactPage() {
             alt: "angajat-departament-ofertare",
             photo: StefanaTanase,
             position: "Departament ofertare",
-            tel: "+40730709723",
+            tel: "+40736602115",
             email: "stefana.tanase@workmanagement.ro",
         },
         {
