@@ -37,24 +37,18 @@ export default function LandingSection() {
     const buttonsJsx = (
         <div id="landing-page-buttons" className="landing-page-buttons">
             <Link to={"/servicii"} style={{ textDecoration: "none" }}>
-                <button>
+                <button >
                     Servicii
-                    <RiArrowDropDownLine
+                    <RiArrowDropDownLine className="landing-button-icon"
                         size={30}
-                        style={{
-                            transform: "rotate(-90deg)",
-                        }}
                     />
                 </button>
             </Link>
             <Link to={"/cerere-oferta"} style={{ textDecoration: "none" }}>
-                <button>
+                <button >
                     Cerere Ofertă
-                    <RiArrowDropDownLine
+                    <RiArrowDropDownLine className="landing-button-icon"
                         size={30}
-                        style={{
-                            transform: "rotate(-90deg)",
-                        }}
                     />
                 </button>
             </Link>
@@ -67,18 +61,7 @@ export default function LandingSection() {
                 id="landing-section-container"
                 className="landing-section-container"
             >
-                <div
-                    style={{
-                        position: "absolute",
-                        width: "100%",
-                        height: "100%",
-                        background: "rgb(29, 0, 255)",
-                        background:
-                            "linear-gradient( 40deg, rgba(29, 0, 255, 1) 0%, rgba(111, 0, 255, 1) 90%)",
-                        opacity: ".4",
-                        top: 0,
-                        left: 0,
-                    }}
+                <div className="landing-background"
                 ></div>
                 <div id="left-panel" className="left-panel">
                     <h1>
@@ -97,13 +80,12 @@ export default function LandingSection() {
                 </div>
 
                 <div className="right-panel">
-                    <img src={lpArrowR} alt="sageata-graphics-1" style={{}} />
+                    <img src={lpArrowR} alt="sageata-graphics-1"  />
                     <img
+                        className="lpArrow2"
                         src={lpArrow2}
                         alt="sageata-graphics-2"
-                        style={{
-                            marginLeft: "-50px",
-                        }}
+                        
                     />
                 </div>
                 <div className="custom-shape-divider-bottom-1633974734">

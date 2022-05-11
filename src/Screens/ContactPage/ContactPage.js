@@ -49,19 +49,8 @@ export default function ContactPage() {
 
     const mapComponent = () => {
         return (
-            <div
-                class="gmap_canvas"
-                style={{
-                    background: "none!important",
-                    height: "350px",
-                    width: "100%",
-                    marginRight: "auto",
-                    marginLeft: "auto",
-                    border: "none",
-                    overflow: "hidden",
-                }}
-            >
-                <iframe
+            <div classname="gmap_canvas">
+                <iframe classname="map-iframe"
                     style={{
                         width: "100%",
                         height: "100%",
@@ -125,43 +114,27 @@ export default function ContactPage() {
             </div>
             <div className="aditional-info">
                 <p>
-                    <BsFillHouseFill
-                        size={25}
-                        style={{
-                            margin: "0px 7px ",
-                            color: "rgb(0, 61, 153)",
-                        }}
-                    ></BsFillHouseFill>
+                    <BsFillHouseFill className="aditional-info-icon"
+                        size={25}                    
+                    ></BsFillHouseFill >
                     Denumire: S.C. WORK MANAGEMENT S.R.L.
                 </p>
                 <p>
-                    <BsPinMapFill
-                        size={25}
-                        style={{
-                            margin: "0px 7px ",
-                            color: "rgb(0, 61, 153)",
-                        }}
+                    <BsPinMapFill className="aditional-info-icon"
+                        size={25}                        
                     ></BsPinMapFill>
                     Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
                     București
                 </p>
                 <p>
-                    <AiOutlineFieldNumber
-                        size={25}
-                        style={{
-                            margin: "0px 7px ",
-                            color: "rgb(0, 61, 153)",
-                        }}
+                    <AiOutlineFieldNumber className="aditional-info-icon"
+                        size={25}                        
                     ></AiOutlineFieldNumber>
                     Nr. Reg. Com: J40 / 127 / 2007
                 </p>
                 <p>
-                    <BsFillFileEarmarkCodeFill
-                        size={25}
-                        style={{
-                            margin: "0px 7px ",
-                            color: "rgb(0, 90, 153)",
-                        }}
+                    <BsFillFileEarmarkCodeFill className="aditional-info-icon"
+                        size={25}                       
                     ></BsFillFileEarmarkCodeFill>
                     Cod fiscal: RO20363205
                 </p>

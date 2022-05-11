@@ -35,6 +35,9 @@
     flex-direction: column;
     height: auto;
 }
+.form-wrapper .row p{
+    font-weight: bold;
+}
 
 .cerere-oferta-form {
     border-radius: 7px 7px;
@@ -43,6 +46,12 @@
     background: #ffffff;
     position: relative;
     padding-bottom: 50px;
+}
+.cerere-oferta-form-icon{
+    margin-bottom: -10px;
+    margin-right: 50px;
+    color: rgb(255, 147, 6);
+ 
 }
 .cerere-oferta-page .title {
     color: #100164;

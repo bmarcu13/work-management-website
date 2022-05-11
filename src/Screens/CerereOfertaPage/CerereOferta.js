@@ -41,19 +41,14 @@ export default function CerereOferta() {
     const form = (
         <form className="cerere-oferta-form" onSubmit={handleSend}>
             <p className="title">
-                <MdAlternateEmail
-                    size={50}
-                    color="rgb(255, 147, 6)"
-                    style={{
-                        marginBottom: "-10px",
-                        marginRight: "50px",
-                    }}
+                <MdAlternateEmail className="cerere-oferta-form-icon"
+                    size={50}                   
                 ></MdAlternateEmail>
                 Formular Cerere Ofertă{" "}
             </p>
 
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
+                <p >
                     Nume și Prenume
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
@@ -68,7 +63,7 @@ export default function CerereOferta() {
             </div>
             <div className="special-inputs">
                 <div className="row">
-                    <p style={{ fontWeight: "bold" }}>
+                    <p >
                         {" "}
                         Companie
                         <CgAsterisk color="red"></CgAsterisk>
@@ -82,7 +77,7 @@ export default function CerereOferta() {
                     />
                 </div>
                 <div className="row">
-                    <p style={{ fontWeight: "bold" }}>Funcție</p>
+                    <p >Funcție</p>
                     <input
                         className="cerere-oferta-input"
                         type="text"
@@ -93,7 +88,7 @@ export default function CerereOferta() {
             </div>
             <div className="special-inputs">
                 <div className="row">
-                    <p style={{ fontWeight: "bold" }}>
+                    <p >
                         Email<CgAsterisk color="red"></CgAsterisk>
                     </p>
                     <input
@@ -105,7 +100,7 @@ export default function CerereOferta() {
                     />
                 </div>
                 <div className="row">
-                    <p style={{ fontWeight: "bold" }}>
+                    <p >
                         Telefon<CgAsterisk color="red"></CgAsterisk>
                     </p>
                     <input
@@ -117,7 +112,7 @@ export default function CerereOferta() {
                 </div>
             </div>
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
+                <p >
                     Subiect<CgAsterisk color="red"></CgAsterisk>
                 </p>
                 <input
@@ -129,7 +124,7 @@ export default function CerereOferta() {
                 />
             </div>
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
+                <p >
                     Conținutul E-mailului
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
@@ -141,12 +136,11 @@ export default function CerereOferta() {
                     name="messageBody"
                 />
             </div>
-            <p>
+            <p >
                 {" "}
                 <input required type="checkbox"></input>
                 Sunt de acord cu{" "}
-                <span style={{ textDecoration: "underline" }}>
-                    Politica de Confidențialitate.
+                <span><u> Politica de Confidențialitate.</u>
                 </span>
                 <CgAsterisk color="red"></CgAsterisk>
             </p>

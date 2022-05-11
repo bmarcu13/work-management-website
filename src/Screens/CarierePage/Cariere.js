@@ -40,8 +40,8 @@ export default function CarierePage() {
         <form className="cariere-form" onSubmit={handleSend}>
             <p className="cariere-form-title">Vino în Echipa WORK!</p>
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
-                    Nume și Prenume
+                <p ><b>
+                    Nume și Prenume</b>
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
                 <input
@@ -54,9 +54,9 @@ export default function CarierePage() {
             </div>
             <div className="special-inputs">
                 <div>
-                    <p style={{ fontWeight: "bold" }}>
+                    <p ><b>
                         Email
-                        <CgAsterisk color="red"></CgAsterisk>
+                        </b><CgAsterisk color="red"></CgAsterisk>
                     </p>
                     <input
                         className="cerere-oferta-input"
@@ -66,8 +66,8 @@ export default function CarierePage() {
                     />
                 </div>
                 <div>
-                    <p style={{ fontWeight: "bold" }}>
-                        Telefon
+                    <p ><b>
+                        Telefon</b>
                         <CgAsterisk color="red"></CgAsterisk>
                     </p>
                     <input
@@ -79,8 +79,8 @@ export default function CarierePage() {
                 </div>
             </div>
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
-                    Poziția pe care doriți să o ocupați
+                <p><b>
+                    Poziția pe care doriți să o ocupați </b>
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
                 <input
@@ -91,8 +91,8 @@ export default function CarierePage() {
                 />
             </div>
             <div className="row">
-                <p style={{ fontWeight: "bold" }}>
-                    Mesaj
+                <p><b>
+                    Mesaj</b>
                     <CgAsterisk color="red"></CgAsterisk>
                 </p>
 
@@ -112,16 +112,16 @@ export default function CarierePage() {
             <input
                 required
                 type="file"
-                style={{ alignSelf: "center" }}
                 name="cv"
                 accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, .pdf"
             ></input>
+            
             <p>
                 {" "}
-                <input required type="checkbox" required></input>
+                <input required type="checkbox" ></input>
                 Sunt de acord cu{" "}
-                <span style={{ textDecoration: "underline" }}>
-                    Politica de Confidențialitate.
+                <span ><u>
+                    Politica de Confidențialitate.</u>
                 </span>
                 <CgAsterisk color="red"></CgAsterisk>
             </p>
@@ -142,14 +142,6 @@ export default function CarierePage() {
             <div className="cariera-page">
                 <div className="careers-header">
                     <div
-                        style={{
-                            backgroundColor: "black",
-                            top: "0",
-                            position: "absolute",
-                            opacity: ".3",
-                            height: "350px",
-                            width: "100%",
-                        }}
                     ></div>
                     <h2 className="title-cariere">
                         {" "}
@@ -206,16 +198,16 @@ export default function CarierePage() {
                             <div className="belief-content">
                                 Te potrivești într-un astfel de mediu? Mai avem
                                 câteva cerințe:{" "}
-                                <span style={{ fontWeight: "bold" }}>
+                                <span ><b>
                                     Curs Inspector S.S.M., Curs Cadru tehnic
-                                    P.S.I., Autorizaţie Operator RSVTI.
+                                    P.S.I., Autorizaţie Operator RSVTI.</b>
                                 </span>
                                 permis auto (opţional), cunoştinţe de operare pe
                                 calculator (opţional).
                                 <br></br>
-                                <span style={{ fontWeight: "bold" }}>
+                                <span ><b>
                                     Așteptăm CV-ul tău pe email sau completează
-                                    formularul de mai jos!
+                                    formularul de mai jos!</b>
                                 </span>
                             </div>
                         </div>
@@ -276,6 +268,32 @@ const JobCard = ({ JobCardData }) => {
 };
 
 const jobsData = [
+    {
+        position: "INSPECTOR SSM, CTPSI, RSVTI, RESPONSABIL MEDIU - 5 poziții",
+        city: "București, Galați, Iași, Sibiu, Târgu-Mureș",
+        expectations:
+            "- responsabil;\n" +
+            "- ambițios;\n" +
+            "- comunicativ;\n" +
+            "- ordonat și organizat;\n\n" +
+            "De asemenea, trebuie sa:\n"+
+            "- fii absolvent de studii superioare (studiile tehnice - constituie un avantaj) ;\n" +
+            "- să dețină cunoștințe de operare PC - Word, Excel, Power Point;\n" +
+            "- deții diplome de: inspector SSM, CT PSI (OP RSVTI, Responsabil gestiunea deseurilor - constituie un avantaj)",
+        job_description:
+            "Tipul jobului: Full Time, Part Time\n"+
+            "Atribuții și responsabilități:\n" +
+            " Deplasarea la sediile clienților, pentru:\n" +
+            "- instruirea introductiv generală a angajaților în domeniile securității și sănătății în muncă și al situațiilor de urgență;\n" +
+            "- consultanță pe probleme SSM, SU, RSVTI și MEDIU, privind reglementarile legale în domeniu (efectuarea controalelor interne la sediile clienților, diverse evidențe cerute de către clienți; actualizare documentații, etc);\n" +
+            "- planificarea și organizarea activităților de securitate și sănătate în muncă, situații de urgență, RSVTI și mediu;\n" +
+            "- supravegherea și verificarea tehnică a instalațiilor ce intră sub incidența legislației ISCIR;\n\n" +
+        
+            "Alte activități:\n" +
+            "- disponibilitate pentru situații neprevazute (controale din partea autorităților, evenimente de muncă, etc);\n" +
+            "- planificarea și organizarea portofoliului de clienți, din zona arondată (lunar, trimestrial);"
+            ,
+    },
     {
         position: "Asistent Manager - sediu",
         city: "București",

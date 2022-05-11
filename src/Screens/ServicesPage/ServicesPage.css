@@ -171,6 +171,13 @@
 
 .services .grid-container .grid-item-container:hover .read-more-button {
     padding-left: 10px;
+    font-weight: 800; 
+    transition: .2s;
+}
+.read-more-button-icon{
+    padding-right: 5px;
+    vertical-align: middle;
+    margin-bottom: 3px;
 }
 
 .services .grid-container .grid-item-container img {

@@ -120,14 +120,8 @@ export default function ServicesPage() {
                     >
                         <p
                             className="read-more-button"
-                            style={{ fontWeight: "900", transition: ".2s" }}
                         >
-                            <MdOutlineArrowForwardIos
-                                style={{
-                                    paddingRight: "5px",
-                                    verticalAlign: "middle",
-                                    marginBottom: "3px",
-                                }}
+                            <MdOutlineArrowForwardIos className="read-more-button-icon"
                             />
                             Mai multe
                         </p>
