@@ -36,18 +36,20 @@ export default function LandingSection() {
 
     const buttonsJsx = (
         <div id="landing-page-buttons" className="landing-page-buttons">
-            <Link to={"/servicii"} style={{ textDecoration: "none" }}>
-                <button >
+            <Link to={"/servicii"}>
+                <button>
                     Servicii
-                    <RiArrowDropDownLine className="landing-button-icon"
+                    <RiArrowDropDownLine
+                        className="landing-button-icon"
                         size={30}
                     />
                 </button>
             </Link>
-            <Link to={"/cerere-oferta"} style={{ textDecoration: "none" }}>
-                <button >
+            <Link to={"/cerere-oferta"}>
+                <button>
                     Cerere Ofertă
-                    <RiArrowDropDownLine className="landing-button-icon"
+                    <RiArrowDropDownLine
+                        className="landing-button-icon"
                         size={30}
                     />
                 </button>
@@ -61,15 +63,15 @@ export default function LandingSection() {
                 id="landing-section-container"
                 className="landing-section-container"
             >
-                <div className="landing-background"
-                ></div>
+                <div className="landing-background"></div>
                 <div id="left-panel" className="left-panel">
                     <h1>
-                        Misiunea noastră este sănătatea și siguranța companiei și a
-                        angajaților tăi.
+                        Misiunea noastră este sănătatea și siguranța companiei
+                        și a angajaților tăi.
                     </h1>
                     <h3>
-                        Asigurăm toată gama de servicii din domeniile: SSM, SU, RSVTI și MEDIU, la nivel național, fără subcontractori!
+                        Asigurăm toată gama de servicii din domeniile: SSM, SU,
+                        RSVTI și MEDIU, la nivel național, fără subcontractori!
                     </h3>
                     <h3>
                         Lasă totul pe mâna experților noștri, care te vor asista
@@ -80,12 +82,11 @@ export default function LandingSection() {
                 </div>
 
                 <div className="right-panel">
-                    <img src={lpArrowR} alt="sageata-graphics-1"  />
+                    <img src={lpArrowR} alt="sageata-graphics-1" />
                     <img
                         className="lpArrow2"
                         src={lpArrow2}
                         alt="sageata-graphics-2"
-                        
                     />
                 </div>
                 <div className="custom-shape-divider-bottom-1633974734">

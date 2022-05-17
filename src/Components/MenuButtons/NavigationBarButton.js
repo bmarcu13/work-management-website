@@ -14,19 +14,13 @@ export default function NavigationBarButton({ buttonData, index }) {
     function renderDropdown(buttonData) {
         if (buttonData.hasDropdown) {
             return (
-                <div className="dropdown-wrapper" style={{ flex: "1" }}>
+                <div className="dropdown-wrapper">
                     <div className="dropdown-separator"></div>
                     <div className="dropdown-container">
                         <div className="dropdown-container-left">
                             {dropdownItemsLeft.map((item, index) => {
                                 return (
-                                    <Link
-                                        to={`${goTo}${item.id}`}
-                                        style={{
-                                            textDecoration: "none",
-                                            marginTop: "auto",
-                                        }}
-                                    >
+                                    <Link to={`${goTo}${item.id}`}>
                                         <p>
                                             {item.icon} {item.name}
                                         </p>
@@ -37,13 +31,7 @@ export default function NavigationBarButton({ buttonData, index }) {
                         <div className="dropdown-container-right">
                             {dropdownItemsRight.map((item, index) => {
                                 return (
-                                    <Link
-                                        to={`${goTo}${item.id}`}
-                                        style={{
-                                            textDecoration: "none",
-                                            marginTop: "auto",
-                                        }}
-                                    >
+                                    <Link to={`${goTo}${item.id}`}>
                                         <p>
                                             {item.icon} {item.name}
                                         </p>
@@ -60,7 +48,7 @@ export default function NavigationBarButton({ buttonData, index }) {
     }
 
     return (
-        <Link to={buttonData.path} style={{ textDecoration: "none" }}>
+        <Link className="nav-bar-button-link" to={buttonData.path}>
             <div
                 className="navigation-bar-button"
                 style={

@@ -39,7 +39,7 @@ export default function NavigationBar() {
     });
 
     return (
-        <div style={{ position: "fixed", top: "0", width: "100%" }}>
+        <div className="navigation-component">
             <div
                 className={
                     isDrawerOpen

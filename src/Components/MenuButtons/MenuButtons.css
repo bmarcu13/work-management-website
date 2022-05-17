@@ -5,6 +5,10 @@
     flex-direction: row;
 }
 
+.nav-bar-button-link {
+    text-decoration: none;
+}
+
 .navigation-bar-button h3 {
     padding-left: 10px;
     padding-right: 10px;
@@ -17,6 +21,7 @@
 }
 
 .navigation-bar-button .dropdown-wrapper {
+    flex: 1;
     margin-top: 60px;
     margin-right: 20px;
     /* border-left: 2px solid #04264E; */
@@ -67,6 +72,11 @@
 
 .navigation-bar-button .dropdown-container p:hover {
     color: rgb(255, 255, 255);
+}
+
+.navigation-bar-button .dropdown-container a {
+    text-decoration: none;
+    margin-top: auto;
 }
 
 .navigation-bar-button .dropdown-separator {
