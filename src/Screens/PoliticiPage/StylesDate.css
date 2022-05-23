@@ -6,7 +6,13 @@
     justify-content: center;
     margin-bottom: 40px;
 }
-
+.politici-header{
+    background-color: white;
+    position: absolute;
+    opacity: .2;
+    height: 250px;
+    width: 100%;
+}
 .policy-header img {
     width: 100%;
 }
@@ -26,4 +32,11 @@
 .policy-content {
     margin-left: 50px;
     margin-right: 50px;
+}
+.list-container{
+    flex: 1;
+}
+.poza-gdpr-sign{
+    width:80%;
+    height:auto;
 }

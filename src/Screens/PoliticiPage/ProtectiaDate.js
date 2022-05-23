@@ -7,14 +7,7 @@ export default function ProtectiaDate() {
         <div className="protectia-date-page">
             <div className="policy-header">
                 <img src={HeaderPolitici} alt="header-politici-protectia-datelor-cu-caracter-personal" />
-                <div
-                    style={{
-                        backgroundColor: "white",
-                        position: "absolute",
-                        opacity: ".2",
-                        height: "250px",
-                        width: "100%",
-                    }}
+                <div className="politici-header"
                 ></div>
             </div>
            <div className="policy-content">
@@ -22,7 +15,7 @@ export default function ProtectiaDate() {
                 POLITICA PRIVIND PRELUCRAREA DATELOR CU CARACTER PERSONAL
                     <hr></hr>
                 </h2>
-           <p><span style={{fontWeight:'bold'}}>S.C. WORK MANAGEMENT S.R.L., („Work”) </span>în calitate de Operator de date cu caracter personal se angajează sa protejeze intimitatea angajaților („persoane vizate”) menținând datele personale ale acestora private și confidențiale.
+           <p><b><span >S.C. WORK MANAGEMENT S.R.L., („Work”) </span></b>în calitate de Operator de date cu caracter personal se angajează sa protejeze intimitatea angajaților („persoane vizate”) menținând datele personale ale acestora private și confidențiale.
 
 Această politică de protecție este în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și privind libera circulație a acestor date și de abrogarea Directivei 95/46/CE („Regulamentul”).
 
@@ -36,7 +29,7 @@ Oferind datele cu caracter personal către "Work", consimțiți în mod expres �
             <h3>Ce date prelucrează Work?</h3>
             <p>Work prelucrează, în cadrul sistemului de Resurse Umane, următoarele categorii de date cu caracter personal, care ajută la identificarea angajaților în mod individual:</p>
             <div className="policy-styled-section">
-                <div className="list-conteiner" style={{flex:'1'}}>
+                <div className="list-container">
                     <ul>
                         <li>Nume și prenume;</li>
                         <li>Codul numeric personal;</li>
@@ -56,7 +49,7 @@ Oferind datele cu caracter personal către "Work", consimțiți în mod expres �
                         <li>perioadele de concediu de odihna/medicale.</li>
                     </ul>
                 </div>
-                <div style={{flex:'1'}}><img src={GDPRGraphics} alt="poza-gdpr-sign" style={{width:'80%', height:'auto'}}></img>
+                <div  className="list-container"><img src={GDPRGraphics} alt="poza-gdpr-sign" className="poza-gdpr-sign"></img>
                 </div>
             </div>
         <p>De asemenea, ”Work” efectuează monitorizare video, GPS, exclusiv pentru asigurarea securității împotriva furtului/efracției. Monitorizarea video este efectuată printr-o cameră video amplasată langă ușa de la intrare în birou și are vedere către curtea sediului ”Work Management”. Monitorizarea GPS este efectuată prin instalarea dispozitivelor GPS asupra parcului auto deținut de entitate.</p>
@@ -112,7 +105,7 @@ Datele cu caracter personal sunt prelucrate prin mijloace automate sau neautomat
             <p>– alte autorități competente (Inspectoratul Teritorial de Muncă, Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal etc.)</p>
             <p>– potențialilor sau viitorilor cumpărători ai ”Work”</p>
 <p>Dezvăluirea datelor cu caracter personal către terți se efectuează prin transmitere, diseminare sau în orice alt mod, prin mijloace automate.</p>
-<p style={{fontWeight:'bold'}}>”Work” nu transferă date cu caracter personal în alte țari/state din străinătate.</p>   
+<b><p >”Work” nu transferă date cu caracter personal în alte țari/state din străinătate.</p></b>   
             <h3>Drepturile persoanelor vizate</h3>
             <p>In conformitate cu Regulamentul, persoanele vizate au următoarele drepturi:</p>
             <ul>
