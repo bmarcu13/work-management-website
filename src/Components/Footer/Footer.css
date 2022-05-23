@@ -47,10 +47,17 @@
 }
 .footer-title {
     color: white;
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
     font-size: 22px;
     position: relative;
+    align-content: center;
+  
+}
+.footer-section-line{
+    width: 200px;
+    margin-top: -5px;
+    background-color: rgb(255, 173, 80);
 }
 
 .footer-left-container p {
@@ -65,7 +72,10 @@
     flex-direction: column;
     justify-content: left;
 }
-
+.social-media-section{
+    display: flex;
+    justify-content: center;
+}
 .footer-icon:hover {
     color: rgb(255, 173, 80);
     cursor: pointer;
@@ -98,6 +108,12 @@
 .links-list {
     list-style: none;
 }
+.hr-line-footer{
+        height: 1px;
+        width: 90%;
+        border:none;
+        background: orange;
+}
 .policy-button {
     font-size: medium;
     color: rgb(168, 162, 162);
@@ -115,6 +131,7 @@
 }
 .footer-icon {
     color: rgb(253, 114, 0);
+    margin: 5px 10px;
 }
 @media (max-width: 780px) {
     .footer-section {

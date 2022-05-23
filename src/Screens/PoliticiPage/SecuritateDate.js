@@ -7,14 +7,7 @@ export default function SecuritateDate() {
         <div className="protectia-date-page">
             <div className="policy-header">
                 <img src={HeaderPolitici} alt="header-politici-securitate-date-cu-caracter-personal" />
-                <div
-                    style={{
-                        backgroundColor: "white",
-                        position: "absolute",
-                        opacity: ".2",
-                        height: "250px",
-                        width: "100%",
-                    }}
+                <div className="politici-header"
                 ></div>
             </div>
             <div className="policy-content">
@@ -23,9 +16,9 @@ export default function SecuritateDate() {
                     <hr></hr>
                 </h2>
                 <p>
-                    <span style={{ fontWeight: "bold" }}>
+                    <b><span>
                         S.C. WORK MANAGEMENT S.R.L., (“WORK”)
-                    </span>
+                    </span></b>
                     , în calitate de Operator de date cu caracter personal, in
                     conformitate cu Regulamentul (UE) 2016/679 al Parlamentului
                     European și al Consiliului din 27 aprilie 2016 privind

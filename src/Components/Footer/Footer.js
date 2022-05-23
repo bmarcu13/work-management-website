@@ -64,10 +64,6 @@ export default function Footer() {
                     <div className="footer footer-center-container">
                         <h2
                             className="footer-title"
-                            style={{
-                                alignContent: "center",
-                                fontWeight: "900",
-                            }}
                         >
                             Navighează
                         </h2>
@@ -143,16 +139,10 @@ export default function Footer() {
                     <div className="footer footer-right-container">
                         <h2
                             className="footer-title"
-                            style={{ fontWeight: "900" }}
                         >
                             Contact
                         </h2>
-                        <hr
-                            style={{
-                                width: "200px",
-                                marginTop: "-5px",
-                                backgroundColor: "rgb(255, 173, 80)",
-                            }}
+                        <hr className="footer-section-line"
                         ></hr>
 
                         <p>
@@ -208,37 +198,27 @@ export default function Footer() {
                                 nicoleta.rosu@workmanagement.ro
                             </a>
                         </p>
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                            }}
+                        <div className="social-media-section"
                         >
                             <a href="https://www.facebook.com/workmanagement.bucuresti">
                                 <ImFacebook2
                                     className="footer-icon"
                                     size={30}
-                                    style={{ margin: "5px 10px" }}
+                                  
                                 ></ImFacebook2>
                             </a>
                             <a href="https://ro.linkedin.com/company/work-management">
                                 <BsLinkedin
                                     className="footer-icon"
                                     size={30}
-                                    style={{ margin: "5px 10px" }}
+                                    
                                 ></BsLinkedin>
                             </a>
                         </div>
                     </div>
                 </div>
-                <hr
-                    style={{
-                        height: "1px",
-                        width: "90%",
-                        border: "none",
-                        background: "orange",
-                    }}
-                ></hr>
+                <hr className="hr-line-footer"
+               ></hr>
                 <div className="footer-down">
                     <Link
                         to={"/securiatea-datelor"}

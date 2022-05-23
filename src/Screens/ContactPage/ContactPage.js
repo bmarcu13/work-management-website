@@ -26,7 +26,7 @@ export default function ContactPage() {
             alt: "angajat-departament-ofertare",
             photo: StefanaTanase,
             position: "Departament ofertare",
-            tel: "+40736602115",
+            tel: "0730.709.723",
             email: "stefana.tanase@workmanagement.ro",
         },
         {
@@ -42,7 +42,7 @@ export default function ContactPage() {
             alt: "angajat-departament-consultanta-tehnica",
             photo: NicoletaRosu,
             position: "Departament consultanță",
-            tel: "0730.709.723",
+            tel: "0736 602 115",
             email: "nicoleta.rosu@workmanagement.ro",
         },
     ];
