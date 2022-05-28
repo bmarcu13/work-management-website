@@ -40,31 +40,19 @@ export default function AboutUs() {
                     <RiDoubleQuotesL
                         className="icon"
                         size={60}
-                        style={{marginTop:"-10px", transform:"rotate(180deg"}}
                     ></RiDoubleQuotesL>
                     
-                    <h5 style={{marginTop:"-5px"}}>G. C. - Director General</h5>
+                    <h5 >G. C. - Director General</h5>
                 </div>
                 <img
                     class="bg"
                     src={bg}
                     alt="fundal-despre-noi"
-                    style={{
-                        maxWidth: "75%",
-                        position: "absolute",
-                        zIndex: "0",
-                    }}
+                    className="fundal-despre-noi"
                 ></img>
             </div>
             <div className="second">
-                <div
-                    style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        position: "absolute",
-                    }}
-                >
+                <div>
                     <div class="circle-container">
                         <img src={iso_blue} className="circle circle1" alt="sigla-iso-blue"></img>
                         <img src={iso_orange} class="circle circle2" alt="sigla-iso-orange"></img>
@@ -72,7 +60,7 @@ export default function AboutUs() {
                         <img src={iso_green} class="circle circle4"alt="sigla-iso-green"></img>
                     </div>
                     <div class="center">
-                        <img src={logo} alt="logo-without-writing" style={{ width: "150px" }} />
+                        <img src={logo} alt="logo-without-writing" className="logo-without-writing" />
                     </div>
                 </div>
             </div>

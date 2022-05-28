@@ -74,43 +74,42 @@ export default function StrengthsSection() {
                     <h3>Deţinem Asigurare de Răspundere Civilă</h3>
                     <p>
                         WORK MANAGEMENT deține{" "}
-                        <span style={{ fontWeight: "bold" }}>
+                        <b><span>
                             Asigurare de Răspundere Civilă-
-                        </span>
+                        </span></b>
                         pentru toate serviciile prestate - limita de despăgubire
                         500.000 EUR.
                     </p>
                 </div>
 
                 <div className={animationClassMiddle}>
-                    <RiTeamFill color="#425fca" className="icon"></RiTeamFill>
+                    <RiTeamFill  className="icon"></RiTeamFill>
                     <h3>Experiență si Profesionalism</h3>
                     <p>
                         Personal calificat, cu vastă experiență, în toate
                         domeniile prestate. Activitatea sediului central este
                         împărțită în
-                        <span style={{ fontWeight: "bold" }}>
+                        <b><span>
                             {" "}
                             8 departamente
-                        </span>
+                        </span></b>
                         , pentru o mai bună centralizare a locațiilor.
                     </p>
                 </div>
 
                 <div class={animationClassRight}>
-                    <RiRoadMapLine
+                    <RiRoadMapLine className="strengths-map-icon"
                         size={40}
-                        color="#8c37b6"
-                        style={{ width: "40px" }}
+                        
                     ></RiRoadMapLine>
                     <h3>Puncte de lucru în toată țara</h3>
                     <p>
                         Dispunem de acoperire națională pentru a fi cât mai
                         aproape de clienții noștri.
-                        <span style={{ fontWeight: "bold" }}>
+                        <b><span >
                             {" "}
                             Nu subcontractăm serviciile.
-                        </span>
+                        </span></b>
                     </p>
                 </div>
             </div>

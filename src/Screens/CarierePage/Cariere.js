@@ -42,7 +42,7 @@ export default function CarierePage() {
             <div className="row">
                 <p ><b>
                     Nume și Prenume</b>
-                    <CgAsterisk color="red"></CgAsterisk>
+                    <CgAsterisk className="asterisk"></CgAsterisk>
                 </p>
                 <input
                     className="cerere-oferta-input"
@@ -56,7 +56,7 @@ export default function CarierePage() {
                 <div>
                     <p ><b>
                         Email
-                        </b><CgAsterisk color="red"></CgAsterisk>
+                        </b><CgAsterisk className="asterisk"></CgAsterisk>
                     </p>
                     <input
                         className="cerere-oferta-input"
@@ -68,7 +68,7 @@ export default function CarierePage() {
                 <div>
                     <p ><b>
                         Telefon</b>
-                        <CgAsterisk color="red"></CgAsterisk>
+                        <CgAsterisk className="asterisk"></CgAsterisk>
                     </p>
                     <input
                         className="cerere-oferta-input"
@@ -81,7 +81,7 @@ export default function CarierePage() {
             <div className="row">
                 <p><b>
                     Poziția pe care doriți să o ocupați </b>
-                    <CgAsterisk color="red"></CgAsterisk>
+                    <CgAsterisk className="asterisk"></CgAsterisk>
                 </p>
                 <input
                     className="cerere-oferta-input"
@@ -93,7 +93,7 @@ export default function CarierePage() {
             <div className="row">
                 <p><b>
                     Mesaj</b>
-                    <CgAsterisk color="red"></CgAsterisk>
+                    <CgAsterisk className="asterisk"></CgAsterisk>
                 </p>
 
                 <textarea
@@ -123,7 +123,7 @@ export default function CarierePage() {
                 <span ><u>
                     Politica de Confidențialitate.</u>
                 </span>
-                <CgAsterisk color="red"></CgAsterisk>
+                <CgAsterisk className="asterisk"></CgAsterisk>
             </p>
             <button className="trimite-btn">Trimite</button>
         </form>

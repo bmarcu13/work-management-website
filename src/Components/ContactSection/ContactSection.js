@@ -22,7 +22,7 @@ export default function ContactSection() {
                     ></path>
                 </svg>
             </div>
-            <div className="form-contact-section" style={{ width: "100%" }}>
+            <div className="form-contact-section">
                 <div className="car-image">
                     <img src={map} alt="masina-work-management"></img>
                 </div>
@@ -72,7 +72,3 @@ export default function ContactSection() {
         </div>
     );
 }
-
-const LeftSide = () => {
-    return <div classname="left-side-wrapper">ceva</div>;
-};

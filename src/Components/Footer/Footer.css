@@ -132,6 +132,7 @@
 .footer-icon {
     color: rgb(253, 114, 0);
     margin: 5px 10px;
+    margin-bottom: -4px;
 }
 @media (max-width: 780px) {
     .footer-section {
@@ -154,4 +155,27 @@
     .policy-button {
         font-size: small;
     }
+}
+.hr-footer{
+    height: 1px;
+    width: 100px;
+    background: orange;
+}
+.footer-left-container h3{
+    color: #ffffff;
+}
+.description-footer{
+    color: white;
+     font-size: 18px;
+}
+.footer-left-container img{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+.hr-links-footer{
+    width: 200px;
+    margin-top: -5px;
+    background: orange;
+    margin-bottom: 50px;
 }

@@ -72,7 +72,7 @@ export default function ContactForm() {
         </h3>
     );
     return (
-        <div class="contact__container">
+        <div className="contact__container">
             {sent === ""
                 ? form
                 : sent === "success"

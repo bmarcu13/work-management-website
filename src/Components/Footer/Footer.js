@@ -22,34 +22,19 @@ export default function Footer() {
                         <img
                             src={Logo}
                             alt="logo"
-                            style={{
-                                width: "100px",
-                                height: "auto",
-                                margin: "auto",
-                            }}
                         ></img>
                         <br></br>
-                        <p style={{ color: "white", fontSize: "18px" }}>
+                        <p className="description-footer" >
                             Servicii de securitate și sănătate în muncă (SSM),
                             SU, RSVTI și MEDIU.
                         </p>
-                        <hr
-                            style={{
-                                height: "1px",
-                                width: "100px",
-                                background: "orange",
-                            }}
+                        <hr className="hr-footer"
                         ></hr>
-                        <p style={{ color: "white" }}>
+                        <h3>
                             {" "}
                             S.C. WORK MANAGEMENT S.R.L.
-                        </p>
-                        <hr
-                            style={{
-                                height: "1px",
-                                width: "100px",
-                                background: "orange",
-                            }}
+                        </h3>
+                        <hr className="hr-footer"
                         ></hr>
                         <a href="https://www.google.com/maps/place/Strada+Regina+Maria+25,+Cluj-Napoca+400000,+Romania/@46.752133,23.627683,17z/data=!4m5!3m4!1s0x47490c53a998b3a7:0x766fc2571b600f51!8m2!3d46.7521325!4d23.6276832?hl=en-US">
                             <p>
@@ -67,19 +52,14 @@ export default function Footer() {
                         >
                             Navighează
                         </h2>
-                        <hr
-                            style={{
-                                width: "200px",
-                                marginTop: "-5px",
-                                background: "orange",
-                                marginBottom: "50px",
-                            }}
+                        <hr className="hr-links-footer"
+                           
                         ></hr>
                         <ul className="links-list">
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/"}
-                                    style={{ textDecoration: "none" }}
+                                    className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Acasă
@@ -88,7 +68,7 @@ export default function Footer() {
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/servicii"}
-                                    style={{ textDecoration: "none" }}
+                                    className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Toate Serviciile
@@ -98,7 +78,7 @@ export default function Footer() {
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/portofoliu"}
-                                    style={{ textDecoration: "none" }}
+                                    className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Portofoliu Clienți
@@ -108,7 +88,7 @@ export default function Footer() {
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/cerere-oferta"}
-                                    style={{ textDecoration: "none" }}
+                                    className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cerere Ofertă
@@ -118,7 +98,7 @@ export default function Footer() {
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/cariere"}
-                                    style={{ textDecoration: "none" }}
+                                   className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Cariere
@@ -128,7 +108,7 @@ export default function Footer() {
                             <li onClick={scrollToTop}>
                                 <Link
                                     to={"/contact"}
-                                    style={{ textDecoration: "none" }}
+                                    className="link"
                                 >
                                     <IoIosArrowForward className="footer-icon"></IoIosArrowForward>
                                     Contact
@@ -222,7 +202,7 @@ export default function Footer() {
                 <div className="footer-down">
                     <Link
                         to={"/securiatea-datelor"}
-                        style={{ textDecoration: "none" }}
+                        className="link"
                     >
                         <div className="policy-button" onClick={scrollToTop}>
                             Politica de Securitate a Datelor cu caracter
@@ -231,14 +211,14 @@ export default function Footer() {
                     </Link>
                     <Link
                         to={"/protectia-datelor"}
-                        style={{ textDecoration: "none" }}
+                        className="link"
                     >
                         <div className="policy-button" onClick={scrollToTop}>
                             Politica privind Protecția Datelor cu caracter
                             personal
                         </div>
                     </Link>
-                    <div style={{ color: " rgb(168, 162, 162)" }}>
+                    <div className="policy-button">
                         Website created by{" "}
                         <a
                             target="_blank"

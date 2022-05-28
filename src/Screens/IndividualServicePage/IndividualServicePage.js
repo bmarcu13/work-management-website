@@ -51,7 +51,7 @@ export default function IndividualServicePage(props) {
                     {formatText(information2)}
                 </div>
             )}
-            <Link to={"/cerere-oferta"} style={{ textDecoration: "none" }}>
+            <Link to={"/cerere-oferta"} classname="link">
                 <div className="offer-button-container" onClick={scrollToTop}>
                     <div className="offerBtn">
                         <span className="text1">

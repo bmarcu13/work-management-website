@@ -42,8 +42,12 @@
 .strength .icon {
     font-size: 40px;
     min-width: 40px;
+    color:#425fca;
 }
-
+.strengths-map-icon{
+    color:#8c37b6;
+    width: 40px;
+}
 .strength h3 {
     max-width: 200px;
     text-align: center;

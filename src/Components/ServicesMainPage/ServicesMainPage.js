@@ -22,42 +22,14 @@ export default function ServicesMainPage() {
             <div className="services-page-container">
                 <div className="cards-container">
                     <div className="title-section">
-                        <TiArrowSortedUp
-                            color={"white"}
-                            size={60}
-                            style={{
-                                position: "absolute",
-                                right: -26,
-                                transform: "rotate(-90deg)",
-                                top: "calc(50% - 30px)",
-                            }}
-                        ></TiArrowSortedUp>
-                        <div
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                margin: "auto",
-                            }}
-                        >
+                        
+                        <div>
                             <h2
-                                style={{
-                                    color: "white",
-                                    margin: "auto",
-                                    marginBottom: "20px",
-                                    fontSize: "28px",
-                                    fontWeight: "bold",
-                                }}
-                            >
+>
                                 Serviciile noastre
                             </h2>
                             <p
-                                style={{
-                                    color: "white",
-                                    margin: "10px 20px auto",
-                                    textAlign: "center",
-                                    fontSize: "20px",
-                                    fontWeight: "bold",
-                                }}
+                               
                             >
                                 WORK MANAGEMENT prestează servicii și
                                 consultanță, în urmatoarele domenii:
@@ -66,27 +38,10 @@ export default function ServicesMainPage() {
                         <div>
                             <Link
                                 to={"/servicii"}
-                                style={{ textDecoration: "none" }}
+                               className="link"
                             >
                                 <button
                                     className="our-services-btn"
-                                    style={{
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                        alignSelf: "center",
-                                        marginBottom: "30px",
-                                        width: "150px",
-                                        height: "40px",
-                                        backgroundColor: "orange",
-                                        borderRadius: "20px",
-                                        border: "none",
-                                        fontSize: "16px",
-                                        fontWeight: "bold",
-                                        color: "white",
-                                        marginLeft: "auto",
-                                        marginRight: "auto",
-                                    }}
                                     onClick={scrollToTop}
                                 >
                                     Toate serviciile
@@ -113,46 +68,20 @@ const CardGrid = () => {
 const Card = ({ cardData }) => {
     return (
         <div className="card-wrapper">
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-
-                    height: "fit-content",
-                }}
+            <div className="card-wraper-content"  
             >
                 <div
-                    style={{
-                        width: "calc(30% - 10px)",
-                        aspectRatio: "1",
-                        position: "relative",
-                        marginRight: "10px",
-                    }}
+                    
                 >
                     <img
                         src={cardData.card_icon}
                         alt="icon-serviciu-pagina-principala"
-                        style={{
-                            // position: "absolute",
-                            width: "100%",
-                            height: "auto",
-                            margin: "auto",
-                            top: 0,
-                            bottom: 0,
-                            right: 0,
-                            left: 0,
-                        }}
+                        className="icon-serviciu-pagina-principala"
+                        
                     ></img>
                 </div>
 
-                <h3
-                    style={{
-                        width: "100%",
-                        textAlign: "center",
-                        marginBottom: "0px",
-                    }}
-                >
+                <h3>
                     {cardData.name}
                 </h3>
             </div>
@@ -170,48 +99,28 @@ const Card = ({ cardData }) => {
             <div className="key-words">
                 <p
                     className="key-word-card"
-                    style={{
-                        backgroundColor: "#00416A",
-                        color: "white",
-                        marginRight: "6px",
-                        marginBottom: "5px",
-                    }}
                 >
                     • {cardData.keyword1}
                 </p>
                 <p
                     className="key-word-card"
-                    style={{
-                        marginRight: "5px",
-                        color: "white",
-                        backgroundColor: "#00416A",
-                        marginBottom: "5px",
-                    }}
                 >
                     • {cardData.keyword2}
                 </p>
                 <p
                     className="key-word-card"
-                    style={{
-                        color: "white",
-                        backgroundColor: "#00416A",
-                    }}
-                >
+                   >
                     • {cardData.keyword3}
                 </p>
             </div>
             <Link
                 to={`/servicii/${cardData.id}`}
-                style={{ textDecoration: "none", marginTop: "auto" }}
+                className="link-servicii"
             >
-                <div className="read-more-button" style={{ fontWeight: "900" }}>
+                <div className="read-more-button" >
                     <p>
-                        <MdOutlineArrowForwardIos
-                            style={{
-                                paddingRight: "5px",
-                                verticalAlign: "middle",
-                                marginBottom: "3px",
-                            }}
+                        <MdOutlineArrowForwardIos className="icon-mai-multe"
+                            
                         />
                         Mai multe
                     </p>
