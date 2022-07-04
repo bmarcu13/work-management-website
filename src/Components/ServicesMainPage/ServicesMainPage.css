@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    background-image: url("../../img/landing-page-services-divider-photo.jpg");
+    background-image: url("../../img/webp/landing-page-services-divider-photo.webp");
     background-position-x: -100px;
     background-size: cover;
     overflow: hidden;
@@ -46,20 +46,19 @@
 .cards-container .title-section * {
     position: relative;
 }
-.title-section div{
+.title-section div {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
-.title-section div h2{
+.title-section div h2 {
     color: white;
     margin: auto;
     margin-bottom: 20px;
-    font-size:28px;
+    font-size: 28px;
     font-weight: bold;
 }
-.title-section div p{
-    
+.title-section div p {
     color: white;
     margin: 10px 20px auto;
     text-align: center;
@@ -81,6 +80,7 @@
     cursor: default;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: relative;
     background-color: #ffffff;
     margin: 0px 15px;
@@ -99,37 +99,37 @@
     -webkit-box-shadow: 1px 2px 50px -24px rgba(0, 0, 0, 1);
     -moz-box-shadow: 1px 2px 50px -24px rgba(0, 0, 0, 1);
 }
-.card-wraper-content{
+.card-wraper-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: fit-content;
 }
-/* .card-wrapper div div{
-    width: calc(30% - 10px);
-    aspect-ratio:  1;
-    position:relative;
+.card-wrapper div div {
+    width: calc(40% - 10px);
+    aspect-ratio: 1;
+    position: relative;
     margin-right: 10px;
-} */
-.card-wraper-content h3{
+}
+.card-wraper-content h3 {
     width: 100%;
     text-align: center;
     margin-bottom: 0px;
 }
-.container-icon-serviciu{
+.container-icon-serviciu {
     width: calc(30% - 30px);
     position: relative;
-    aspect-ratio:auto;
+    aspect-ratio: auto;
     margin-right: 10px;
 }
-.icon-serviciu-pagina-principala{
+.icon-serviciu-pagina-principala {
     width: 100%;
     height: auto;
     margin: auto;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0
+    left: 0;
 }
 .card-section .card-wrapper .cvcv {
     width: 60px;
@@ -162,12 +162,12 @@
     border-radius: 5px;
     margin: 0;
     height: 20px;
-    background-color: #00416A;
+    background-color: #00416a;
     color: white;
     margin-right: 6px;
     margin-bottom: 5px;
 }
-.our-services-btn{
+.our-services-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +218,7 @@
     margin-top: auto;
     position: relative;
 }
-.read-more-button .icon-mai-multe{
+.read-more-button .icon-mai-multe {
     padding-right: 5px;
     vertical-align: middle;
     margin-bottom: 3px;
@@ -291,8 +291,7 @@
 .custom-shape-divider-top-1640519852 .shape-fill {
     fill: #d5a3ec;
 }
-.link-servicii{
-    margin: auto;
+.link-servicii {
     margin-left: 0;
     text-decoration: none;
 }

@@ -8,19 +8,19 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 import headerWaves from "../../../src/img/layered-waves-services.svg";
 
-import SecuritateSanatateInMunca from "../../img/services/protectia-muncii-psi.jpg";
-import CoordonareaSantierelor from "../../img/services/coordonarea-santierelor.png";
-import SituatiiUrgenta from "../../img/services/situatii-urgenta.jpg";
-import Deseuri from "../../img/services/deseuri.jpg";
-import RSVTI from "../../img/services/rsvti.jpg";
-import AnalizaRiscuri from "../../img/services/analiza-riscuri.jpg";
-import ELearning from "../../img/services/e-learning.jpg";
-import Vibratii from "../../img/services/vibratii.png";
-import Indicatoare from "../../img/services/indicatoare-ssm.jpg";
-import ResurseUmane from "../../img/services/resurse-umane.jpg";
-import Audit from "../../img/services/audit.jpg";
-import MedicinaMuncii from "../../img/services/medicina-muncii.jpg";
-import FormareProfesionala from "../../img/services/formare-profesionala.png";
+import SecuritateSanatateInMunca from "../../img/services/webp/protectia-muncii-psi.webp";
+import CoordonareaSantierelor from "../../img/services/webp/coordonarea-santierelor.webp";
+import SituatiiUrgenta from "../../img/services/webp/situatii-urgenta.webp";
+import Deseuri from "../../img/services/webp/deseuri.webp";
+import RSVTI from "../../img/services/webp/rsvti.webp";
+import AnalizaRiscuri from "../../img/services/webp/analiza-riscuri.webp";
+import ELearning from "../../img/services/webp/e-learning.webp";
+import Vibratii from "../../img/services/webp/vibratii.webp";
+import Indicatoare from "../../img/services/webp/indicatoare-ssm.webp";
+import ResurseUmane from "../../img/services/webp/resurse-umane.webp";
+import Audit from "../../img/services/webp/audit.webp";
+import MedicinaMuncii from "../../img/services/webp/medicina-muncii.webp";
+import FormareProfesionala from "../../img/services/webp/formare-profesionala.webp";
 import Footer from "../../Components/Footer/Footer";
 
 export default function ServicesPage() {
@@ -118,11 +118,8 @@ export default function ServicesPage() {
                         to={`${url}/${item.url}`}
                         style={{ textDecoration: "none", marginTop: "auto" }}
                     >
-                        <p
-                            className="read-more-button"
-                        >
-                            <MdOutlineArrowForwardIos className="read-more-button-icon"
-                            />
+                        <p className="read-more-button">
+                            <MdOutlineArrowForwardIos className="read-more-button-icon" />
                             Mai multe
                         </p>
                     </Link>

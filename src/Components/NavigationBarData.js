@@ -8,16 +8,16 @@ import {
     MdOutlineHealthAndSafety,
     MdRecycling,
     MdWorkOutline,
-    MdHealing
+    MdHealing,
 } from "react-icons/md";
 import { GiSoundWaves } from "react-icons/gi";
 
-import cascuta from "../img/service-icons/casca-f.png";
-import atentie from "../img/service-icons/atentie-f.png";
-import hidrant from "../img/service-icons/hidrant-f.png";
-import macara from "../img/service-icons/macara-f.png";
-import reciclare from "../img/service-icons/reciclare-f.png";
-import vestuta from "../img/service-icons/vestuta-f.png";
+import cascuta from "../img/service-icons/webp/casca-f.webp";
+import atentie from "../img/service-icons/webp/atentie-f.webp";
+import hidrant from "../img/service-icons/webp/hidrant-f.webp";
+import macara from "../img/service-icons/webp/macara-f.webp";
+import reciclare from "../img/service-icons/webp/reciclare-f.webp";
+import vestuta from "../img/service-icons/webp/vestuta-f.webp";
 
 export const menuItems = [
     {

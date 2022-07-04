@@ -4,7 +4,7 @@ import ContactForm from "../v2/ContactForm/ContactForm";
 import "./ContactSection.css";
 
 import { SiTheconversation } from "react-icons/si";
-import map from "../../img/romania_judete_tr.png";
+import map from "../../img/webp/romania_judete_tr.webp";
 
 export default function ContactSection() {
     return (

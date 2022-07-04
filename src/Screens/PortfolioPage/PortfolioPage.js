@@ -7,7 +7,6 @@ import Scroll from "../../Components/Scroll";
 
 import headerWaves from "../../../src/img/layered-waves-services.svg";
 
-import headerBanner from "../../img/our-clients-banner.png";
 import Footer from "../../Components/Footer/Footer";
 
 export default function PortfolioPage() {

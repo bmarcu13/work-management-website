@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import "./LandingSection.css";
 import "animate.css";
 
-import lpArrow2 from "../../img/arrow2Rounded.png";
-import lpArrowR from "../../img/arrow1Rounded.png";
+import lpArrow2 from "../../img/webp/arrow2Rounded.webp";
+import lpArrowR from "../../img/webp/arrow1Rounded.webp";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -82,7 +82,11 @@ export default function LandingSection() {
                 </div>
 
                 <div className="right-panel">
-                    <img src={lpArrowR} alt="sageata-graphics-1" />
+                    <img
+                        className="lpArrowR"
+                        src={lpArrowR}
+                        alt="sageata-graphics-1"
+                    />
                     <img
                         className="lpArrow2"
                         src={lpArrow2}

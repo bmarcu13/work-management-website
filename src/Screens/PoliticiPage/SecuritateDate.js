@@ -1,14 +1,15 @@
 import React from "react";
-import HeaderPolitici from "../../img/header-politici.png";
-import GDPRGraphics from "../../img/gdpr.png";
+import HeaderPolitici from "../../img/webp/header-politici.webp";
 import "./StylesDate.css";
 export default function SecuritateDate() {
     return (
         <div className="protectia-date-page">
             <div className="policy-header">
-                <img src={HeaderPolitici} alt="header-politici-securitate-date-cu-caracter-personal" />
-                <div className="politici-header"
-                ></div>
+                <img
+                    src={HeaderPolitici}
+                    alt="header-politici-securitate-date-cu-caracter-personal"
+                />
+                <div className="politici-header"></div>
             </div>
             <div className="policy-content">
                 <h2>
@@ -16,9 +17,9 @@ export default function SecuritateDate() {
                     <hr></hr>
                 </h2>
                 <p>
-                    <b><span>
-                        S.C. WORK MANAGEMENT S.R.L., (“WORK”)
-                    </span></b>
+                    <b>
+                        <span>S.C. WORK MANAGEMENT S.R.L., (“WORK”)</span>
+                    </b>
                     , în calitate de Operator de date cu caracter personal, in
                     conformitate cu Regulamentul (UE) 2016/679 al Parlamentului
                     European și al Consiliului din 27 aprilie 2016 privind

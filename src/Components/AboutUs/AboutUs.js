@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutUs.css";
-import iso_blue from "../../img/iso_albastru.png";
-import iso_orange from "../../img/iso-orange.png";
-import iso_purple from "../../img/iso_mov.png";
-import iso_green from "../../img/iso_green.png";
-import logo from "../../img/logo-work.png";
-import bg from "../../img/about-us-circle.png";
+import iso_blue from "../../img/webp/iso_albastru.webp";
+import iso_orange from "../../img/webp/iso-orange.webp";
+import iso_purple from "../../img/webp/iso_mov.webp";
+import iso_green from "../../img/webp/iso_green.webp";
+import logo from "../../img/webp/logo-work.webp";
+import bg from "../../img/webp/about-us-circle.webp";
 
 import { RiDoubleQuotesL } from "react-icons/ri";
 
@@ -41,8 +41,8 @@ export default function AboutUs() {
                         className="icon"
                         size={60}
                     ></RiDoubleQuotesL>
-                    
-                    <h5 >G. C. - Director General</h5>
+
+                    <h5>G. C. - Director General</h5>
                 </div>
                 <img
                     class="bg"
@@ -54,13 +54,33 @@ export default function AboutUs() {
             <div className="second">
                 <div>
                     <div class="circle-container">
-                        <img src={iso_blue} className="circle circle1" alt="sigla-iso-blue"></img>
-                        <img src={iso_orange} class="circle circle2" alt="sigla-iso-orange"></img>
-                        <img src={iso_purple} class="circle circle3" alt="sigla-iso-purple"></img>
-                        <img src={iso_green} class="circle circle4"alt="sigla-iso-green"></img>
+                        <img
+                            src={iso_blue}
+                            className="circle circle1"
+                            alt="sigla-iso-blue"
+                        ></img>
+                        <img
+                            src={iso_orange}
+                            class="circle circle2"
+                            alt="sigla-iso-orange"
+                        ></img>
+                        <img
+                            src={iso_purple}
+                            class="circle circle3"
+                            alt="sigla-iso-purple"
+                        ></img>
+                        <img
+                            src={iso_green}
+                            class="circle circle4"
+                            alt="sigla-iso-green"
+                        ></img>
                     </div>
                     <div class="center">
-                        <img src={logo} alt="logo-without-writing" className="logo-without-writing" />
+                        <img
+                            src={logo}
+                            alt="logo-without-writing"
+                            className="logo-without-writing"
+                        />
                     </div>
                 </div>
             </div>

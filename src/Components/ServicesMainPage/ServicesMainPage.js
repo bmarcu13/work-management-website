@@ -22,24 +22,15 @@ export default function ServicesMainPage() {
             <div className="services-page-container">
                 <div className="cards-container">
                     <div className="title-section">
-                        
                         <div>
-                            <h2
->
-                                Serviciile noastre
-                            </h2>
-                            <p
-                               
-                            >
+                            <h2>Serviciile noastre</h2>
+                            <p>
                                 WORK MANAGEMENT prestează servicii și
                                 consultanță, în urmatoarele domenii:
                             </p>
                         </div>
                         <div>
-                            <Link
-                                to={"/servicii"}
-                               className="link"
-                            >
+                            <Link to={"/servicii"} className="link">
                                 <button
                                     className="our-services-btn"
                                     onClick={scrollToTop}
@@ -68,22 +59,16 @@ const CardGrid = () => {
 const Card = ({ cardData }) => {
     return (
         <div className="card-wrapper">
-            <div className="card-wraper-content"  
-            >
-                <div
-                    
-                >
+            <div className="card-wraper-content">
+                <div>
                     <img
                         src={cardData.card_icon}
                         alt="icon-serviciu-pagina-principala"
                         className="icon-serviciu-pagina-principala"
-                        
                     ></img>
                 </div>
 
-                <h3>
-                    {cardData.name}
-                </h3>
+                <h3>{cardData.name}</h3>
             </div>
             <div
                 className="cvcv"
@@ -97,31 +82,14 @@ const Card = ({ cardData }) => {
                 // }}
             ></div>
             <div className="key-words">
-                <p
-                    className="key-word-card"
-                >
-                    • {cardData.keyword1}
-                </p>
-                <p
-                    className="key-word-card"
-                >
-                    • {cardData.keyword2}
-                </p>
-                <p
-                    className="key-word-card"
-                   >
-                    • {cardData.keyword3}
-                </p>
+                <p className="key-word-card">• {cardData.keyword1}</p>
+                <p className="key-word-card">• {cardData.keyword2}</p>
+                <p className="key-word-card">• {cardData.keyword3}</p>
             </div>
-            <Link
-                to={`/servicii/${cardData.id}`}
-                className="link-servicii"
-            >
-                <div className="read-more-button" >
+            <Link to={`/servicii/${cardData.id}`} className="link-servicii">
+                <div className="read-more-button">
                     <p>
-                        <MdOutlineArrowForwardIos className="icon-mai-multe"
-                            
-                        />
+                        <MdOutlineArrowForwardIos className="icon-mai-multe" />
                         Mai multe
                     </p>
                 </div>
