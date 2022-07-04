@@ -2,8 +2,8 @@ import React from "react";
 import "./NavigationBar.css";
 
 import { useState, useEffect } from "react";
-import Logo from "../../img/logo-white-inside.png";
-import LogoSmall from "../../img/logo-work.png";
+import Logo from "../../img/webp/logo-white-inside.webp";
+import LogoSmall from "../../img/webp/logo-work.webp";
 import { menuItems } from "../NavigationBarData";
 import NavigationBarButton from "../MenuButtons/NavigationBarButton";
 import SideBarButton from "../MenuButtons/SideBarButton";

@@ -14,6 +14,7 @@ import CarierePage from "./Screens/CarierePage/Cariere";
 import ProtectiaDate from "./Screens/PoliticiPage/ProtectiaDate";
 import SecuritateDate from "./Screens/PoliticiPage/SecuritateDate";
 import IndividualServicePage from "./Screens/IndividualServicePage/IndividualServicePage";
+import NotFound from "./Screens/404/NotFound";
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
                     path="/servicii/:serviciu"
                     component={IndividualServicePage}
                 ></Route>
+                <Route path="/*" component={NotFound}></Route>
                 <NavigationBar></NavigationBar>
             </BrowserRouter>
         </>

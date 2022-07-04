@@ -43,7 +43,7 @@
             rgba(238, 28, 9, 0.8) 0%,
             rgba(250, 177, 4, 0.8) 100%
         ),
-        url(../../../img/oras.jpg);
+        url(../../../img/webp/oras.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right -8px;
@@ -121,10 +121,10 @@
     box-shadow: rgb(65, 60, 51) 2px 3px 5px;
     background-color: rgb(255, 197, 5);
 }
-.service-data-container{
+.service-data-container {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100vh;
 }
