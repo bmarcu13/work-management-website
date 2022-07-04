@@ -26,7 +26,7 @@ export default function ContactPage() {
             alt: "angajat-departament-ofertare",
             photo: StefanaTanase,
             position: "Departament ofertare",
-            tel: "0730.709.723",
+            tel: "+40736602115",
             email: "stefana.tanase@workmanagement.ro",
         },
         {
@@ -42,7 +42,7 @@ export default function ContactPage() {
             alt: "angajat-departament-consultanta-tehnica",
             photo: NicoletaRosu,
             position: "Departament consultanță",
-            tel: "0736 602 115",
+            tel: "+40730709723",
             email: "nicoleta.rosu@workmanagement.ro",
         },
     ];
@@ -50,7 +50,8 @@ export default function ContactPage() {
     const mapComponent = () => {
         return (
             <div classname="gmap_canvas">
-                <iframe classname="map-iframe"
+                <iframe
+                    classname="map-iframe"
                     style={{
                         width: "100%",
                         height: "100%",
@@ -114,27 +115,31 @@ export default function ContactPage() {
             </div>
             <div className="aditional-info">
                 <p>
-                    <BsFillHouseFill className="aditional-info-icon"
-                        size={25}                    
-                    ></BsFillHouseFill >
+                    <BsFillHouseFill
+                        className="aditional-info-icon"
+                        size={25}
+                    ></BsFillHouseFill>
                     Denumire: S.C. WORK MANAGEMENT S.R.L.
                 </p>
                 <p>
-                    <BsPinMapFill className="aditional-info-icon"
-                        size={25}                        
+                    <BsPinMapFill
+                        className="aditional-info-icon"
+                        size={25}
                     ></BsPinMapFill>
                     Sediul social: B-dul Regina Maria, Nr. 25, Sector 4,
                     București
                 </p>
                 <p>
-                    <AiOutlineFieldNumber className="aditional-info-icon"
-                        size={25}                        
+                    <AiOutlineFieldNumber
+                        className="aditional-info-icon"
+                        size={25}
                     ></AiOutlineFieldNumber>
                     Nr. Reg. Com: J40 / 127 / 2007
                 </p>
                 <p>
-                    <BsFillFileEarmarkCodeFill className="aditional-info-icon"
-                        size={25}                       
+                    <BsFillFileEarmarkCodeFill
+                        className="aditional-info-icon"
+                        size={25}
                     ></BsFillFileEarmarkCodeFill>
                     Cod fiscal: RO20363205
                 </p>
