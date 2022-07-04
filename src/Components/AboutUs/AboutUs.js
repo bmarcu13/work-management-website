@@ -52,7 +52,7 @@ export default function AboutUs() {
                 ></img>
             </div>
             <div className="second">
-                <div>
+                <div className="spinner-wrapper">
                     <div class="circle-container">
                         <img
                             src={iso_blue}

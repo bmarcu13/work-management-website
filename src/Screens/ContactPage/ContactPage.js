@@ -9,7 +9,6 @@ import {
 } from "react-icons/bs";
 import { AiOutlineFieldNumber } from "react-icons/ai";
 
-import ContactSection from "../../Components/ContactSection/ContactSection";
 import Footer from "../../Components/Footer/Footer";
 
 import StefanaTanase from "../../img/webp/stefana_tanase.webp";
@@ -17,7 +16,6 @@ import NicoletaRosu from "../../img/webp/nicoleta_rosu.webp";
 import AlinaMihai from "../../img/webp/alina_mihai.webp";
 import ContactForm from "../../Components/v2/ContactForm/ContactForm";
 import TeamMemberCard from "../../Components/v2/TeamMemberCard/TeamMemberCard";
-import { CgSmileNone } from "react-icons/cg";
 
 export default function ContactPage() {
     const teamMembers = [

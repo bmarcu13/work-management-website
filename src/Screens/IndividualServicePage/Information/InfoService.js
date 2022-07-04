@@ -18,7 +18,8 @@ import {
 } from "react-icons/bs";
 import { GiCustodianHelmet, GiToolbox, GiHealing } from "react-icons/gi";
 import {
-    AiFillGift,AiFillMedicineBox, 
+    AiFillGift,
+    AiFillMedicineBox,
     AiOutlineFileProtect,
     AiFillSafetyCertificate,
     AiOutlineComment,
@@ -33,21 +34,21 @@ import {
 } from "react-icons/fa";
 import { GrUserWorker, GrPlan } from "react-icons/gr";
 
-import evaluarea_riscurilor from "../../../img/evaluarea-riscurilor.png";
-import medicina_muncii from "../../../img/medicina_muncii.png";
-import formare_profesionala from "../../../img/formare-profesionala.png";
-import zgomote from "../../../img/zgomote.png";
-import santiere from "../../../img/santiere.png";
-// import ssm from '../../../img/worker_graphics.png';
-import e_learning from "../../../img/app-work.png";
-import hr from "../../../img/hr.png";
-import SU from "../../../img/SU.png";
-import ssm from "../../../img/work-safety.jpg";
-import protectia_mediului from "../../../img/prot-mediului.jpg";
-import signs from "../../../img/signs.png";
-import risc from "../../../img/risc.png";
-import rsvti from "../../../img/rsvti-sign.png";
-// import  from '../../../img/rsvti-sign.png';
+import evaluarea_riscurilor from "../../../img/webp/evaluarea-riscurilor.webp";
+import medicina_muncii from "../../../img/webp/medicina_muncii.webp";
+import formare_profesionala from "../../../img/webp/formare-profesionala.webp";
+import zgomote from "../../../img/webp/zgomote.webp";
+import santiere from "../../../img/webp/santiere.webp";
+// import ssm from '../../../img/webp/worker_graphics.webp';
+import e_learning from "../../../img/webp/app-work.webp";
+import hr from "../../../img/webp/hr.webp";
+import SU from "../../../img/webp/SU.webp";
+import ssm from "../../../img/webp/work-safety.webp";
+import protectia_mediului from "../../../img/webp/prot-mediului.webp";
+import signs from "../../../img/webp/signs.webp";
+import risc from "../../../img/webp/risc.webp";
+import rsvti from "../../../img/webp/rsvti-sign.webp";
+// import  from '../../../img/webp/rsvti-sign.webp';
 
 ///import-uri icons main
 import { GiElectricalResistance } from "react-icons/gi";
@@ -188,18 +189,19 @@ export const servicesInfo = [
                 text: "Te protejăm de răspunderea penală în cazul producerii unor evenimente.",
             },
         ],
-        information:'Compania noastră este #style{"fontWeight":"bold"}autorizată de către ISCIR#/, să desfășoare activități de supraveghere și verificare tehnică a echipamentelor/instalațiilor de ridicat și sub presiune.\n\n'+
-        "Orice societate care deţine/utilizează instalaţii/ echipamente: instalații mecanice sub presiune -  IMSP (centrale termice sub presiune, centrale cu aburi, etc.) și instalații de ridicat - IR (stivuitoare, tranpalete, elevatoare auto, platforme autoridicatoare, macarale, nacele, etc) are obligaţia să aibă propriul angajat sau să externlizeze serviciile de RSVTI. \n\n"+
+        information:
+            'Compania noastră este #style{"fontWeight":"bold"}autorizată de către ISCIR#/, să desfășoare activități de supraveghere și verificare tehnică a echipamentelor/instalațiilor de ridicat și sub presiune.\n\n' +
+            "Orice societate care deţine/utilizează instalaţii/ echipamente: instalații mecanice sub presiune -  IMSP (centrale termice sub presiune, centrale cu aburi, etc.) și instalații de ridicat - IR (stivuitoare, tranpalete, elevatoare auto, platforme autoridicatoare, macarale, nacele, etc) are obligaţia să aibă propriul angajat sau să externlizeze serviciile de RSVTI. \n\n" +
             '#style{"fontWeight":"bold"}AVANTAJELE PRESTĂRII SERVICIULUI OPERATOR RSVTI DE CĂTRE O SOCIETATE EXTERNĂ, AUTORIZATĂ ISCIR, SUNT: #/\n\n' +
             "•eliminarea răspunderii directe a beneficiarului în faţa organelor statului;\n" +
             "•asigurarea beneficiarului de respectarea în totalitate a legalităţii şi a prescripţiilor tehnice în vigoare;\n" +
             "•protejarea beneficiarului de răspunderea penală în cazul producerii unor evenimente;\n" +
             "•asigurarea verificării funcţionării în condiţii de maximă siguranţă a instalaţiilor;\n" +
             "•eliminarea unui număr mare de documente ce trebuie transmise la diverse instituţii ale statului.\n\n" +
-            '#style{"fontWeight":"bold"}INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI#/: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune.\n\n'+
+            '#style{"fontWeight":"bold"}INSTALAŢII SUB INCIDENŢA ISCIR-RSVTI#/: macarale, elevatoare, moto/electrostivuitoare, nacele, centrale termice, cazane, echipamente sub presiune (>0,5 BAR), cuptoare, compresoare, conducte sub presiune.\n\n' +
             '#style{"fontWeight":"bold", "color":"red"}WORK MANAGEMENT#/ deține personal autorizat pentru întocmirea:\n' +
             " - proiectelor de montaj, reparații, modernizare instalații sub prescripția ISCIR(inclusiv RADTP)\n" +
-            " - expertizelor tehnice, pentru evaluarea și determinarea perioadei remanente de viață(inclusiv RADTE)\n\n" ,
+            " - expertizelor tehnice, pentru evaluarea și determinarea perioadei remanente de viață(inclusiv RADTE)\n\n",
         information2:
             '#style{"fontWeight":"bold"}De ce să apelaţi la serviciile noastre de RSVTI? #/ \n\n' +
             "Nu este necesară angajarea cu contract de muncă a persoanei fizice ce îndeplineşte ocupaţia de RSVTI.\n" +
@@ -283,9 +285,9 @@ export const servicesInfo = [
             "• Servicii de Coordonare SSM prin serviciu extern de prevenire și protecție astfel încât să vă conformați în totalitate cu HG 300/2006 privind cerinţele minime de securitate şi sănătate pe şantierele temporare şi mobile care stipulează ca obligativitate, desemnarea unui coordonator de securitate şi elaborarea planului de securitate și sănătate atât în faza de întocmire a proiectului cât și pe perioada execuției lucrărilor.\n" +
             '• Întocmire #style{"fontWeight":"bold"}Plan de Securitate și Sănătate#/ în faza de proiectare;\n' +
             "• Întocmire Plan de Securitate și Sănătate în faza de execuție;\n" +
-            "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului"+
-            "• Întocmirea declarației prealabile și comunicarea acesteia inspectoratului teritorial de muncă pe raza căruia se vor desfăşura lucrarile;\n "+
-            ' • Întocmire #style{"fontWeight":"bold"}Registru de coordonare;#/\n'+
+            "• Întocmire Plan Propriu de Securitate și Sănătate al Antreprenorului" +
+            "• Întocmirea declarației prealabile și comunicarea acesteia inspectoratului teritorial de muncă pe raza căruia se vor desfăşura lucrarile;\n " +
+            ' • Întocmire #style{"fontWeight":"bold"}Registru de coordonare;#/\n' +
             ' • Întocmire #style{"fontWeight":"bold"}Dosar de intervenții ulterioare.#/',
         image: santiere,
         main_icon: <FaTools></FaTools>,
@@ -313,7 +315,6 @@ export const servicesInfo = [
         information:
             '#style{"fontWeight":"bold", "color":"red"}Obligativitatea analizei de risc#/, este prevazută, de Legea 333/2003 privind paza obiectivelor, bunurilor, valorilor și protecția persoanelor, pentru care s-au emis în anul 2012 normele de aplicare, prin Hotărârea de Guvern 301/2012.\n' +
             "Evaluarea de risc, la securitatea fizică, este documentul, prin care, un specialist analizează și stabilește, de ce anume este nevoie, pentru ca paza obiectivelor dumneavoastră, să acopere toate vulnerabilitățile acestuia, în fața hoților.\n" +
-            
             'Toate societățile comerciale, sunt obligate să contracteze, un evaluator de risc, la securitate fizică, care să realizeze analiză de risc. Aceasta urmează să fie efectuată, pentru toate obiectele de activitate active și sediile dumneavoastră. \n\n Societatea noastră, este abilitată, să întocmească astfel de evaluări, fiind înscrisă, în #style{"fontWeight":"bold"}Registrul Național al Evaluatorilor de Risc, la Securitate Fizică#/',
         image: risc,
         main_icon: <IoAnalyticsSharp></IoAnalyticsSharp>,
@@ -596,17 +597,16 @@ export const servicesInfo = [
             },
         ],
         information:
-            '#style{"fontWeight":"bold"}WORK MANAGEMENT MEDICAL#/ vă oferă servicii de medicina muncii, realizate de personal specializat, cu înaltă experiență.\n\n'+
-            '#style{"fontWeight":"bold"}Examenele medicale#/ de medicina muncii, cuprind:\n'+
-            "-	Control medical obligatoriu la angajare;\n"+
-            "-	Control medical de adaptare în muncă;\n"+
-            "-	Control medical periodic;\n"+
-            "-	Control medical la reluarea activității.\n\n"+
-            "În funcție de particularitățile pe care specialiștii în medicina muncii ai WORK MANAGEMENT MEDICAL le identifică în fiecare caz în parte, pot fi efectuate activități de:\n"+
-            "-	Supraveghere specială;\n"+
-            "-	Monitorizarea locului de muncă;\n"+
-            "-	Consilierea companiei pentru adaptarea condițiilor de muncă în funcție de persoana angajată.\n"
-           , 
+            '#style{"fontWeight":"bold"}WORK MANAGEMENT MEDICAL#/ vă oferă servicii de medicina muncii, realizate de personal specializat, cu înaltă experiență.\n\n' +
+            '#style{"fontWeight":"bold"}Examenele medicale#/ de medicina muncii, cuprind:\n' +
+            "-	Control medical obligatoriu la angajare;\n" +
+            "-	Control medical de adaptare în muncă;\n" +
+            "-	Control medical periodic;\n" +
+            "-	Control medical la reluarea activității.\n\n" +
+            "În funcție de particularitățile pe care specialiștii în medicina muncii ai WORK MANAGEMENT MEDICAL le identifică în fiecare caz în parte, pot fi efectuate activități de:\n" +
+            "-	Supraveghere specială;\n" +
+            "-	Monitorizarea locului de muncă;\n" +
+            "-	Consilierea companiei pentru adaptarea condițiilor de muncă în funcție de persoana angajată.\n",
         image: medicina_muncii,
         main_icon: <FaTools></FaTools>,
     },

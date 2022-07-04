@@ -41,14 +41,14 @@
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     letter-spacing: 1px;
 }
-.content h5{
+.content h5 {
     margin-top: -5px;
 }
 .about-section .first .content h3 {
     margin-top: 0;
     font-weight: bold;
 }
-.fundal-despre-noi{
+.fundal-despre-noi {
     max-width: 75%;
     position: absolute;
     z-index: 0;
@@ -56,9 +56,9 @@
 .about-section .first .content .icon {
     margin-top: 20px;
 }
-.icon:nth-child(4){
-    margin-top:-10px;
-     transform:rotate(180deg)
+.icon:nth-child(4) {
+    margin-top: -10px;
+    transform: rotate(180deg);
 }
 .about-section .second {
     height: 350px;
@@ -67,7 +67,7 @@
     align-items: center;
     justify-content: center;
 }
-.second div{
+.second .spinner-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,7 +115,7 @@
     bottom: -25px;
     left: -25px;
 }
-.logo-without-writing{
+.logo-without-writing {
     width: 150px;
 }
 
